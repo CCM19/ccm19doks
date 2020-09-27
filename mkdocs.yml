@@ -1,0 +1,8 @@
+site_name: CCM19 Dokumentation
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  palette:
+    primary: blue grey
+    custom_dir: overrides
