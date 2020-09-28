@@ -6,3 +6,8 @@ theme:
   palette:
     primary: blue grey
     custom_dir: overrides
+  language: de
+plugins:
+  - search
+repo_url: https://github.com/PapooSoftware/ccm19doks
+repo_name: CCM19Doks
