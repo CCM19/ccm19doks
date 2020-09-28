@@ -11,3 +11,5 @@ plugins:
   - search
 repo_url: https://github.com/PapooSoftware/ccm19doks
 repo_name: CCM19Doks
+markdown_extensions:
+  - meta
