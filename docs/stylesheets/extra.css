@@ -94,3 +94,7 @@ h2.md-search-result__title {
 .md-nav__link {
 	font-size: 16px !important;
 }
+
+.md-content__inner img {
+	box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05), 0 0 0.05rem rgba(0,0,0,.1);
+}

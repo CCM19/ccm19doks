@@ -1,20 +1,38 @@
 ---
-title: Themes
+title: Themes einrichten und anpassen
 ---
 
 # Themes einrichten und nutzen
 
 CCM19 ist komplett themefähig - d.h. Sie können alle Elemente des Frontends optisch anpassen. Sie können beliebig viele Themes ausprobieren. 
 
-In jedem Theme können Sie mit Hilfe von einigen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar. 
+Wenn Sie auf den Menüpunkt Themes klicken sehen Sie zuerst die Übersicht der vorhandenen Themes.
 
-Verwenden Sie im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben.
 
-![Theme Bearbeitung im CCM19](https://www.ccm19.de/images/10-cookiemanagementtheme2.jpg)
 
-Theme Bearbeitung im CCM19
+![screenshot-2020.09.29-13_27_27-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_27_27-CCM19%20-%20Cookie%20Consent%20Management%20Software.png)
 
-In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
+
+
+## Layout
+
+In jedem Theme können Sie mit Hilfe von einigen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar.
+
+ ![screenshot-2020.09.29-13_38_45-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_38_45-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+Verwenden Sie bei den Individuelle CSS Einstellugnen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben. In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
+
+## Vorschau
+
+Über den Button Vorschau können Sie sich eine Vorschau des Frontend Widgets anschauen. Der Klick öffnet nicht Ihre Seite sondern eine Seite im Inneren des CCM19 Adminbereiches. Nach jeder Änderung des Layouts ist ein Neuladen erforderlich. Das Widget ist voll funktionsfähig - d.h. Sie können alle Elemente des Widgets optisch anpassen und testen.
+
+
+
+![screenshot-2020.09.29-13_42_42-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_42_42-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+Vorschau mit Widget.
+
+
 
 ## Frontend Overlay - Cookie Hinweis Box
 
@@ -28,10 +46,6 @@ Die Buttons und Hintergrundfarben die Sie in der Administration einstellen, komm
 
 Weiterhin gibt es die folgenden Buttons:
 
-### Lebensdauer
-
-Hier tragen Sie ein wie lange das CCM19 Cookie dass die Einstellung für das Cookie Management speichert laufen soll. Standard sind 365 Tage - Sie können aber jeden beliebigen anderen Wert dort eintragen.
-
 ### Position
 
 Hier positionieren Sie das Overlay im Frontend, Sie können folgende Einstellungen wählen:
@@ -42,13 +56,41 @@ Hier positionieren Sie das Overlay im Frontend, Sie können folgende Einstellung
 * unten
 * mittig
 
+### Auswahltyp
+
+Sie können Häkchen oder Schalter definieren für die Ansicht in den Kategorien und einzelnen Einbindungen.
+
+#### Häkchen
+
+
+
+![screenshot-2020.09.29-13_53_33-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_53_33-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+#### Schalter
+
+![screenshot-2020.09.29-13_54_35-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_54_35-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+Die Farben können Sie natürlich über die individuellen CSS Einstellungen anpassen.
+
+### Kategorien im Hauptfenster anzeigen
+
+Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
+
+- Eine neue Schaltfläche "Speichern" erscheint neben "Alle akzeptieren" und "Ablehnen". (falls letztere aktiv ist)
+
+- Um mit dem Platz des Widgets zurechtzukommen, wird die Schaltfläche "Einstellungen" entfernt und durch einen einfachen Textlink unter den übrigen Schaltflächen ersetzt.
+
+  
+
+  ![screenshot-2020.09.29-13_56_09-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_56_09-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
 ### Blockierend
 
 Blockierend bedeutet dass wie auf dem Screenshot zu sehen ist die Seite im Hintergrund blockiert ist und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
 
 ### Do not Track Respekt
 
-Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt.
+Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt, nur technisch notwendige Elemente werden geladen.
 
 ### Nur in der EU anzeigen
 
@@ -76,12 +118,19 @@ Hier stellen Sie für die verschiedenen Buttons und Hintergründe im Frontend di
 
 Hier können Sie komplett individuelles CSS eintragen - für die einzelnen Elemente schauen Sie bitte in den Seiteninspektor Ihres Browsers. Im Zweifel müssen Sie Einstellungen per “!important” überschreiben - **Beispiel:**
 
-```
+``` css
 .ccm-root button  
 { 
     border:1px solid #c2bcbc; 
 } 
-.ccm-control-panel--purpose > input[type="checkbox"] + label { color:#ccc;} 
-.ccm-modal--footer { background-color:#26282f; }       
+.ccm-control-panel--purpose > input[type="checkbox"] + label 
+{ 
+	color:#ccc;
+} 
+.ccm-modal--footer 
+{ 
+    background-color:#26282f; 
+}       
  
 ```
+
