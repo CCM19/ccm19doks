@@ -3,6 +3,8 @@ extra_css:
   - stylesheets/extra.css
 theme:
   name: material
+  feature:
+    tabs: true
   palette:
     primary: blue grey
     custom_dir: overrides
@@ -15,3 +17,7 @@ markdown_extensions:
   - meta
   - pymdownx.inlinehilite
   - pymdownx.snippets
+nav:
+  - Onboarding:
+    - 0-Onboarding/a-Onboarding-schritt-1.md
+
