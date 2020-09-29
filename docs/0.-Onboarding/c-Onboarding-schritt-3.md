@@ -4,7 +4,7 @@ Im Schritt 3 tragen Sie die Daten Ihres Impressums und Ihrer Datenschutzbestimmu
 
 Ebenfalls können Sie später auswählen ob Sie einen Link oder den Texteintrag von hier nutzen.
 
-![screenshot-2020.09.29-15_30_34-CCM19 Onboarding - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.29-15_30_34-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
+![screenshot-2020.09.29-15_39_10-CCM19 Onboarding - Cookie Consent Management Software (6)](../assets/screenshot-2020.09.29-15_39_10-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(6).jpg)
 
 Die Daten können in einem WYSIWYG Editor - einer wordähnlichen Oberfläche - eintragen. 
 
