@@ -20,6 +20,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Erste Schritte:
+      - "Registrierung": funktionen/registrierung.md
       - "Login": funktionen/login-und-passwoerter.md
       - "Schritt 1 - Onboarding starten": erste_schritte/onboarding-schritt-1.md
       - "Schritt 2 - Domain scannen": erste_schritte/onboarding-schritt-2.md
@@ -32,7 +33,7 @@ nav:
       - funktionen/domainverwaltung.md
       - funktionen/pagecheck.md
       - funktionen/platzhalter.md
-      - funktionen/registrierung.md
+      - funktionen/kontoeinstellungen.md
       - funktionen/skripte.md
   - Logs & Protokolle:
       -  logs/consent-protokoll.md
