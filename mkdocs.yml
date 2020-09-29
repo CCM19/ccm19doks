@@ -4,7 +4,7 @@ extra_css:
 
 theme:
   name: material
-  logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
+  #logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
   features:
     - tabs
   palette:
