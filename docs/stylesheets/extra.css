@@ -48,6 +48,20 @@
 .md-tabs {
 	background-color:#2e313d;
 }
+@media screen and (max-width: 76.1875em) {
+	.md-nav--primary .md-nav__title[for=__drawer] {
+		background-color: #2e313d !important;
+	}
+	.md-nav--primary .md-nav__title {
+		background-color: #2e313d !important;
+		color:#fff !important;
+	}
+}
+@media screen and (max-width: 59.9375em) {
+	.md-nav__source {
+		background-color: #2e313d !important;
+	}
+}
 .md-typeset table:not([class]) th {
 	background-color:#3a3c43 !important;
 }
