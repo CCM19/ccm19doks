@@ -18,4 +18,30 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 nav:
-  
+  - Home: index.md
+  - Erste Schritte:
+      - "Login": funktionen/login-und-passwoerter.md
+      - "Schritt 1 - Onboarding starten": erste_schritte/onboarding-schritt-1.md
+      - "Schritt 2 - Domain scannen": erste_schritte/onboarding-schritt-2.md
+      - "Schritt 3 - Impressum & Co.": erste_schritte/onboarding-schritt-3.md
+      - "Schritt 4 - Platzhalter": erste_schritte/onboarding-schritt-4.md
+      - "Schritt 5 - Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
+  - Funktionen:
+      - funktionen/themes.md
+  - Logs:
+      - logs/consent-protokoll.md
+      - logs/system-protokoll.md
+  - System & Co.:
+      - system-und-co/system.md
+  - Integrationen:
+      - integrationen/ccm19-shopware.md
+      - integrationen/ccm19-wordpress.md
+      - integrationen/ccm19-wix.md
+  - API:
+      - api/javascript-apis.md
+  - Frontend:
+      - frontend/frontend.md
+  - Download Version:
+      - download-version/download.md
+  - Agency Version:
+      - agency-version/agency.md

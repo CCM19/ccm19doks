@@ -45,6 +45,9 @@
 .md-tabs {
 	background-color:#2e313d;
 }
+.md-typeset table:not([class]) th {
+	background-color:#3a3c43 !important;
+}
 body {
 	font-family: "Roboto",sans-serif;
 	font-weight: 300;
