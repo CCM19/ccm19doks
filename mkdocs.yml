@@ -1,6 +1,7 @@
 site_name: CCM19 Dokumentation
 extra_css:
   - stylesheets/extra.css
+logo: 
 theme:
   name: material
   features:
