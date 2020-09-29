@@ -12,15 +12,21 @@ Wenn Sie auf den Menüpunkt Themes klicken sehen Sie zuerst die Übersicht der v
 
 ![screenshot-2020.09.29-13_27_27-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_27_27-CCM19%20-%20Cookie%20Consent%20Management%20Software.png)
 
+Der Klick auf das grüne Stiftsymbol leitet Sie in die Bearbeitungsmaske, der rote Papierkorb löscht Ihr Theme ( nach Nachfrage ), der Klick auf die doppelten grünen Ordner kopiert das vorhandene Theme. 
 
+Mit dem Klick auf das blaue Icon setzen Sie das Theme als Standard für das Frontend.
 
-## Layout
+## Neues Theme anlegen
+
+Wenn Sie ein neues Theme anlegen wollen können Sie zum einen auf den Button "Erstellen" klicken oder Sie kopieren ein vorhandenes Theme und passen dieses an. Das Kopieren ist das von CCM19 empfohlene Vorgehen - auch für individuelle Anpassungen an vorhandenen Themes. Auf diese Weise haben Sie immer ein Fallback zur Hand.
+
+## Layout / Theme anpassen
 
 In jedem Theme können Sie mit Hilfe von einigen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar.
 
  ![screenshot-2020.09.29-13_38_45-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_38_45-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Verwenden Sie bei den Individuelle CSS Einstellugnen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben. In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
+Verwenden Sie bei den Individuelle CSS Einstellungen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben. In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
 
 ## Vorschau
 
