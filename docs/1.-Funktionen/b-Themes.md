@@ -88,6 +88,20 @@ Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
 
 Blockierend bedeutet dass wie auf dem Screenshot zu sehen ist die Seite im Hintergrund blockiert ist und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
 
+### Einstellungsicon anzeigen
+
+Wenn dieser Haken gesetzt ist wird nach dem Consent über die Seite ein Einstellungsicon per Javascript gesetzt. Auf diese Weise kann der von der DSGVO geforderter Widerruf einfachst möglich gesetzt werden. Das Icon wird standardmäßig links unten in die Ecke platziert.
+
+![screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+### Cookies ablehnen
+
+Die DSGVO fordert eine einfache Möglichkeit das Setzen von Cookies und die Nutzung von Skripten zu widersprechen. Daher gibt es diesen Button. Ist der Haken gesetzt - dann wird der Ablehnen Button direkt in der 1. Maske angezeigt.
+
+
+
+![screenshot-2020.09.29-14_00_58-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_00_58-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
 ### Do not Track Respekt
 
 Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt, nur technisch notwendige Elemente werden geladen.
@@ -97,6 +111,16 @@ Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Ei
 Mit dieser Einstellung können Sie festlegen dass der Cookie Hinweis nur Besuchern aus der EU angezeigt wird. Die Auflösung erfolgt anhand der verwendeten IP des Besuchers und kann daher nicht 100%ig genau sein. Bei Besuchern aus anderen Ländern werden alle Cookies aktiviert, außer wenn der Besucher „Do Not Track“ signalisiert und „Do Not Track respektieren“ aktiviert wurde.
 
 Dieses Produkt enthält GeoLite2-Daten von MaxMind, verfügbar auf [https://www.maxmind.com](https://5f3c395.ccm19.de/app/public/themes/&guot;https://www.maxmind.com&guot;).
+
+### Manipulationsschutz
+
+Verhindert simulierte Klicks auf die Akzeptieren-Buttons, um die Cookie-Auswahl des Nutzers zu schützen. **Deaktivieren Sie diese Funktion nicht, wenn Sie sich nicht sicher sind, dass es unbedingt notwendig ist. Dies könnte Ihre rechtliche Position beim Beweisen, dass Consent erteilt wurde, schwächen.**
+
+### "Alle akzeptieren"-Button anzeigen im Fenster Kategorien
+
+Mit dieser Einstellung wird im Kategorien Fenster der "Alles Akzeptieren" Button zusätzlich angezeigt.
+
+![screenshot-2020.09.29-14_03_37-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_03_37-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 ### Logo des Seitenbetreibers
 
