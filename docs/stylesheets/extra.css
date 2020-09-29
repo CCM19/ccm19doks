@@ -113,3 +113,11 @@ h2.md-search-result__title {
 .md-content {
    padding-bottom: 200px;
 }
+
+.md-nav__title {
+font-size: 1rem;
+padding: 10px;
+color: #2e313d;
+border-bottom: 1px solid;
+padding-bottom: 0px;
+}
