@@ -89,7 +89,7 @@ Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büro
 
 ### Liste der Cookies und Storage Elemente
 
-Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elmente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand.
+Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand.
 
 #### Name
 
@@ -97,13 +97,13 @@ Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie
 
 #### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _g* alle Cokies geblockt die mit _g anfangen, also _ga, _gid usw.
+Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _g* alle Cookies geblockt die mit _g anfangen, also _ga, _gid usw.
 
 #### Speichertyp
 
 Wie werden die Daten in Ihrem Browser gespeichert.
 
-#### Livetime / Expires
+#### Lifetime / Expires
 
 Wann läuft der Speichereintrag automatisch aus.
 
