@@ -20,7 +20,7 @@ CCM19 bringt ein komplettes Cookie, Skript und Storage Handling mit, Sie können
 
 ## Frontend
 
-Hier sehen Sie einen Screenshot wie die Fenster im Frontend aussehen können - das Layout ist frei definierbar - jedes Element der Consentmaske kann zu 100% an Ihre Anforderungen angepasst werden. Mehr zum Theming und Anpassung des Layouts erfahren Sie [hier]( [2.-Themes.md](1.-Funktionen/2.-Themes.md) ).
+Hier sehen Sie einen Screenshot wie die Fenster im Frontend aussehen können - das Layout ist frei definierbar - jedes Element der Consentmaske kann zu 100% an Ihre Anforderungen angepasst werden. Mehr zum Theming und Anpassung des Layouts erfahren Sie [hier](1.-Funktionen/2.-Themes.md).
 
 ![CCM19 Consent Widget](assets/19952-consent-mask-v1.png)
 

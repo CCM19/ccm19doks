@@ -1,3 +1,7 @@
+---
+title: Themes
+---
+
 # Themes einrichten und nutzen
 
 CCM19 ist komplett themefähig - d.h. Sie können alle Elemente des Frontends optisch anpassen. Sie können beliebig viele Themes ausprobieren. 
