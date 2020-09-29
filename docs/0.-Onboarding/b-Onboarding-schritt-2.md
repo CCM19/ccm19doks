@@ -109,7 +109,7 @@ Wann läuft der Speichereintrag automatisch aus.
 
 #### Wert
 
-Welchen Wert transportiert das Cookie - in der Regel sind es krytische Daten die hier gespeichert werden.
+Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
 
 ## Daten übernehmen
 

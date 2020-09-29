@@ -101,3 +101,6 @@ h2.md-search-result__title {
 .md-grid {
     max-width: 68rem;
 }
+.md-footer {
+    margin-top: 200px;
+}
