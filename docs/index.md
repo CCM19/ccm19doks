@@ -8,7 +8,7 @@ CCM19 ist ein Cookie Consent Manager Tool mit dem Sie für Ihre Webseite alle Co
 
 # Dokumentation
 
-Hier sehen Sie einen Screenshot aus der Administration.
+Hier sehen Sie einen Screenshot aus der Administration, zu sehen ist das Dashboard direkt nach dem Login.
 
 ![screenshot-localhost-2020.09.28-23_01_23](assets/screenshot-localhost-2020.09.28-23_01_23.png)
 
