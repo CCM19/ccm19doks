@@ -39,6 +39,9 @@
 	font-weight: 600;
 	src: url("./Roboto/Roboto-Black.ttf");
 }
+.md-tabs__link--active {
+	font-weight: 600;
+}
 .md-header {
 	background-color:#2e313d;
 	}
@@ -107,6 +110,6 @@ h2.md-search-result__title {
 .md-grid {
     max-width: 68rem;
 }
-.md-footer {
-    margin-top: 200px;
+.md-content {
+   padding-bottom: 200px;
 }

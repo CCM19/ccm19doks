@@ -28,8 +28,14 @@ nav:
       - "Schritt 5 - Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
   - Funktionen:
       - funktionen/themes.md
-  - Logs:
-      - logs/consent-protokoll.md
+      - funktionen/cookies-und-andere.md
+      - funktionen/domainverwaltung.md
+      - funktionen/pagecheck.md
+      - funktionen/platzhalter.md
+      - funktionen/registrierung.md
+      - funktionen/skripte.md
+  - Logs & Protokolle:
+      -  logs/consent-protokoll.md
       - logs/system-protokoll.md
   - System & Co.:
       - system-und-co/system.md
