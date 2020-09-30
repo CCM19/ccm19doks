@@ -36,14 +36,14 @@ nav:
   - Funktionen:
       - funktionen/themes.md
       - funktionen/cookies-und-andere.md
-      - funktionen/domainverwaltung.md
-      - funktionen/pagecheck.md
-      - funktionen/platzhalter.md
-      - funktionen/kontoeinstellungen.md
       - funktionen/skripte.md
+      - funktionen/pagecheck.md
+      - funktionen/uebersetzungen.md
+      - funktionen/platzhalter.md
       - funktionen/externe-inhalte.md
       - funktionen/frontend-einstellungen.md
-      - funktionen/uebersetzungen.md
+      - funktionen/kontoeinstellungen.md
+      - funktionen/domainverwaltung.md
   - Logs & Protokolle:
       -  logs/consent-protokoll.md
       - logs/system-protokoll.md
