@@ -26,7 +26,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Erste Schritte:
-      - "Registrierung": erste_schritte/registrierung.md
+      - erste_schritte/registrierung.md
       - "Einloggen": erste_schritte/login-und-passwoerter.md
       - "Schritt 1 - Onboarding starten": erste_schritte/onboarding-schritt-1.md
       - "Schritt 2 - Domain scannen": erste_schritte/onboarding-schritt-2.md
