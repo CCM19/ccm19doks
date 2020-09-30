@@ -41,8 +41,8 @@ nav:
       - funktionen/platzhalter.md
       - funktionen/kontoeinstellungen.md
       - funktionen/skripte.md
-      - funktionen/externe_inhalte.md
-      - funktionen/frontend_einstellungen.md
+      - funktionen/externe-inhalte.md
+      - funktionen/frontend-einstellungen.md
       - funktionen/uebersetzungen.md
   - Logs & Protokolle:
       -  logs/consent-protokoll.md
