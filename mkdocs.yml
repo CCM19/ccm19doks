@@ -39,6 +39,8 @@ nav:
       - funktionen/skripte.md
       - funktionen/pagecheck.md
       - funktionen/uebersetzungen.md
+      - funktionen/impressum.md
+      - funktionen/datenschutz.md
       - funktionen/platzhalter.md
       - funktionen/externe-inhalte.md
       - funktionen/frontend-einstellungen.md
