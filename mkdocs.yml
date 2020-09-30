@@ -65,5 +65,10 @@ nav:
       - frontend/frontend.md
   - Download Version:
       - download-version/download.md
+      - download-version/e-mail-einstellungen.md
+      - download-version/installation.md
+      - download-version/lizenz-erwerben.md
+      - download-version/lizenzverwaltung.md
+      - download-version/updates.md
   - Agency Version:
       - agency-version/agency.md

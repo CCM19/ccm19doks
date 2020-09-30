@@ -4,7 +4,13 @@ Die Einwilligungen aller Besucher werden übersichtlich aufgelistet. Anhand eine
 
 Die Protokollierung ist laut DSGVO Art 7, Abs. 1 zwingend vorgegeben. Selbstverständlich bleiben diese - wie auch alle anderen Daten - immer unter Ihrer Kontrolle und sind vollständig anonymisiert.
 
+
+
 ![screenshot-2020.09.29-17_05_51-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-17_05_51-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+In der Übersicht sehen Sie wie oft die jeweiligen Bereiche angehakt wurden. In der in diesem Beispiel verwendeten Maske wurden nur die beiden Bereiche Essentiell und Analyse angeboten - daher sind auch nur dort Haken zu verzeichnen.
+
+
 
 ## Consent Protokoll nutzen bei Anfragen
 
