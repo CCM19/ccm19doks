@@ -60,8 +60,9 @@ nav:
       - integrationen/ccm19-shopware.md
       - integrationen/ccm19-wordpress.md
       - integrationen/ccm19-wix.md
-  - API:
+  - API & Technik:
       - api/javascript-apis.md
+      - api/technik.md
   - Frontend:
       - frontend/frontend.md
   - Download Version:
