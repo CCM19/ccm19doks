@@ -147,3 +147,13 @@ h2.md-search-result__title {
 	margin-bottom: 30px;
 	border-right: 3px solid #ccc !important;
 }
+.md-typeset a {
+	color: #3c487c;
+	word-break: break-word;
+	text-decoration: underline;
+}
+.md-typeset blockquote a {
+	color: #3c487c;
+	word-break: break-word;
+	text-decoration: none;
+}

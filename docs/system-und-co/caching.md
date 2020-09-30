@@ -2,8 +2,9 @@
 
 CCM19 nutzt intensives Caching aller Komponenten um die notwendigen Daten so schnell wie möglich zur Verfügung stellen zu können. Zeit ist Geld und wenn Seitenaufrufe zu lange dauern springen Besucher ab.
 
-> Diese Funktion steht in der Fullservice Variante nicht zur Verfügung da sie von CCM19 über alle Accouns hinweg genutzt wird. Diese Funktion wird ebenfalls serverseitig regelmäßig durchgeführt.
+> **Nicht in Fullservice enthalten**
 >
+> Diese Funktion steht in der Fullservice Variante nicht zur Verfügung da sie von CCM19 über alle Accouns hinweg genutzt wird. Diese Funktion wird ebenfalls serverseitig regelmäßig  durchgeführt.
 
 
 
