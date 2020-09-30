@@ -24,3 +24,15 @@ Falls Sie Ihre Lizenz deaktiviert haben oder sie aus anderen Gründen nicht mehr
 
 
 
+## Erfolgreicher Login -> Dashboard
+
+Nach erfolgreichem Login landen Sie im Dashboard von CCM19 - hier haben Sie die Übersicht über alle relevanten Funktionen. Auf der linken Seite finden Sie alle Menüpunkte mit allen Bereichen die Ihnen zur Verfügung stehen.
+
+
+
+![screenshot-2020.09.30-11_24_31-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-11_24_31-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+
+
+Im nächsten Schritt sollten Sie mit dem [Onboarding](onboarding-schritt-1.md) starten.
+
