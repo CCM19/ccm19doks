@@ -74,6 +74,12 @@ Dann tragen Sie in dem Feld z.B. "googletagmanager.com" ein - damit wird dann au
 
 Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
+> Beachten Sie aber bitte folgendes:
+>
+> Die Browserhersteller sind immer bemüht alle Inhalte möglichst schnell zu laden, daher kann es vorkommen dass trotz des korrekten Blockierens ein Browser eine Datei trotzdem lädt, der der Ladeprozess schneller angestoßen wurde als er von CCM19 blockiert werden kann. Da geht es um Millisekunden. Diesen Prozess kann kein Cookie Manager der Welt unterbinden da hier in interne Prozesse des Browsers **nicht** eingegriffen werden kann. 
+>
+> Wenn Sie hier auf Nummer sicher gehen wollen müssen Sie die Skripte über die Maske "Quellcode der Einbindung" in die Seite einbauen lassen nach erfolgtem Consent und Ihre Seite umbauen.
+
 
 
 ## Einträge je Sprache

@@ -42,15 +42,19 @@ nav:
       - funktionen/impressum.md
       - funktionen/datenschutz.md
       - funktionen/platzhalter.md
-      - funktionen/externe-inhalte.md
-      - funktionen/frontend-einstellungen.md
-      - funktionen/kontoeinstellungen.md
-      - funktionen/domainverwaltung.md
   - Logs & Protokolle:
       -  logs/consent-protokoll.md
       - logs/system-protokoll.md
   - System & Co.:
-      - system-und-co/system.md
+      - system-und-co/frontend-einstellungen.md
+      - system-und-co/consent-speicherung.md
+      - system-und-co/email.md
+      - system-und-co/caching.md
+      - system-und-co/netzwerk.md
+      - system-und-co/update.md
+  - Verwaltung:
+      - verwaltung/kontoeinstellungen.md
+      - verwaltung/domainverwaltung.md
   - Integrationen:
       - integrationen/ccm19-shopware.md
       - integrationen/ccm19-wordpress.md

@@ -135,3 +135,15 @@ h2.md-search-result__title {
 	padding-bottom: 5px;
 	margin-bottom: 20px;
 }
+.md-typeset blockquote {
+	padding:10px;
+	padding-right:20px;
+	padding-left: .6rem;
+	border-left: 10px solid #2e313d !important;
+	background:#efefef;
+	color:#000;
+	font-size: .9rem;
+	font-weight: 400;
+	margin-bottom: 30px;
+	border-right: 3px solid #ccc !important;
+}
