@@ -48,6 +48,20 @@ Javascript- und CSS-Code von CCM19 minifizieren um den Seitenaufbau Ihrer Websit
 
 
 
+## Verwaltungsstruktur umstellen
+
+Durch neuere rechtliche Vorgaben hat sich eine andere Struktur der Darstellung im Frontend ergeben. Diese Darstellung orientiert sich an den Skripten oder auch Einbindungen die jeweils 1 - x Cookies setzen, Local Storage Elemente und weiter Punkte setzen.
+
+Um den Umstieg zu erleichtern kann man jederzeit zwischen den verschiedenen Bereichen umstellen. Je nach Einstellung stellen sich sowohl die Cookie Masken als auch die Frontend Widgets anders da. Die aktuelle Dokumentation beschreibt nur die neue Variante da nur diese weiter entwickelt wird.
+
+![screenshot-2020.09.30-16_30_27-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-16_30_27-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+Sie können hier zwischen Embedding (neu) und Cookie (veraltet) wählen. 
+
+>  Falls Sie noch kein CCM19 im Einsatz haben ist diese Umstellung für Sie nicht relevant - diese betrifft nur Bestandskunden.
+
+
+
 ## Skripte blockieren
 
 Hier können Sie das Verhalten des Scriptblockers (Menüpunkt [Skripte](skripte.md) ) konfigurieren. Diese Funktion blockiert das Laden von Skripten, die nicht unter der Kontrolle von CCM19 stehen. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert genauso wie das ausführen unbekannter Skripte.
