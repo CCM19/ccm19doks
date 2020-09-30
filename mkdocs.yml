@@ -54,6 +54,7 @@ nav:
       - system-und-co/update.md
   - Verwaltung:
       - verwaltung/kontoeinstellungen.md
+      - verwaltung/lizenzverwaltung.md
       - verwaltung/domainverwaltung.md
   - Integrationen:
       - integrationen/ccm19-shopware.md
@@ -68,7 +69,6 @@ nav:
       - download-version/e-mail-einstellungen.md
       - download-version/installation.md
       - download-version/lizenz-erwerben.md
-      - download-version/lizenzverwaltung.md
       - download-version/updates.md
   - Agency Version:
       - agency-version/agency.md
