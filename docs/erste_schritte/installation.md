@@ -1,4 +1,4 @@
-# Installation der CCM19 Downloadversion
+# Installation der Downloadversion
 
 Wenn Sie einen Fullservice Tarif nutzen und keine Downloadversion heruntergeladen haben - Sie sich also über die ccm19.de Seite einloggen - dann können Sie diesen Schritt hier überspringen.
 
