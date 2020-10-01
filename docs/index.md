@@ -22,7 +22,7 @@ Sie können also jederzeit Fehler und Ergänzungen zur Dokumentation hinzufügen
 > *  [Integrationen](integrationen/ccm19-shopware.md) 
 > *  [API](api/javascript-apis.md) 
 > *  [Frontend](frontend/frontend.md) 
-> * 
+> * [Agency Version](agency-version/agency.md) 
 
 
 
