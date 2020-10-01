@@ -68,7 +68,6 @@ nav:
       - frontend/frontend.md
   - Agency Version:
       - agency-version/agency.md
-      - agency-version/installation-agency-version.md
       - agency-version/kunden.md
       - agency-version/kunden-api.md
       - agency-version/themes.md
