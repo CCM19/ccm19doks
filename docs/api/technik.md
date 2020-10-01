@@ -55,9 +55,13 @@ Als Server empfehlen wir einen LAMP Server - wobei das M für Mysql nicht notwen
 
 ### nginx
 
-Ebenfalls ist nginx möglich - eine Konfigurationsdatei liegt im Download bei. Sie finden die Vorlagen im Verzeichnis
+Sollte ihr Webserver **nginx** verwenden, sind unter Umständen Anpassungen an der Serverkonfiguration nötig, damit CCM19 zufriedenstellend läuft, nachdem Sie den ersten Schritt der Installation durchgeführt haben.
 
- *www/examples* 
+Bringen Sie zunächst den Pfad zur Konfigurationsdatei des nginx-Servers für Ihre (Sub-)Domain (üblicherweise /etc/nginx/nginx.conf oder /etc/nginx/conf.d/*domainname*.conf) und den Socket-Pfad für das installierte PHP-FPM-Modul (häufig unix:/run/php/php7.2-fpm.sock o.ä.) bei Ihrem Provider oder Server-Administrator in Erfahrung. 
+
+Notieren Sie bitte weiterhin den absoluten Pfad zum public-Verzeichnis der CCM19-Installation und den gewünschten URL-Pfad zu ccm19 (z.B. /ccm19).
+
+Die hier aufgeführte Beispiel Konfigurationsdatein finden Sie im Downloadpaket im Verzeichnis *www/examples/* - hier wird ccm19 in einem Unterverzeichnis installiert.
 
 Beispiel:
 
@@ -119,8 +123,7 @@ Beispiel:
 		fastcgi_pass unix:/run/php/php7.2-fpm.sock;
 	}
 
-
 ```
 
-Es gibt in dem Verzeichnis auch eine Einstellung für Subdomains.
+
 

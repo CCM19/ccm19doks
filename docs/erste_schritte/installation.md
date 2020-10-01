@@ -2,6 +2,8 @@
 
 Wenn Sie einen Fullservice Tarif nutzen und keine Downloadversion heruntergeladen haben - Sie sich also über die ccm19.de Seite einloggen - dann können Sie diesen Schritt hier überspringen.
 
+
+
 ## Installationsdatei herunterladen
 
 Die Installationsdatei finden Sie im Downloadbereich von CCM19.de - nach dem Kauf der Version bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. Die Maske sieht dabei folgendermaßen aus.
@@ -12,29 +14,33 @@ Die Installationsdatei finden Sie im Downloadbereich von CCM19.de - nach dem Kau
 
 ## Dateien entpacken und hochladen
 
-Nach dem Download der Dateien erhalten Sie eine .zip Datei. Diese Datei müssen Sie auf Ihrem PC entpacken. Wir empfehlen hierfür das hauseigene Programm von Windows oder das kostenfrei verfügbare Programm [7Zip](https://www.7-zip.org/). Auf Ihrem Rechner werden nun zwei neue Datein abgelegt. *setup.php* und *ccm19.zip*.
+Nach dem Download der Dateien erhalten Sie eine .zip Datei. Diese Datei müssen Sie auf Ihrem PC entpacken.  Auf Ihrem Rechner werden nun zwei neue Datein abgelegt. *setup.php* und *ccm19.zip*.
 
 
 
-## Schritt 2 - Dateien per FTP auf Ihren Server hochladen
+## Dateien per FTP auf Ihren Server hochladen
 
-Nach dem Entpacken müssen Sie Ihre Dateien auf den FTP-Server spielen. Es empfiehlt sich, den Anweisungen des Hosters zu folgen. Sollte der Hoster keine Informationen zu Ihrem FTP-Server hinterlegt haben, fragen Sie diese bitte bei ihm an.
+Nach dem Entpacken müssen Sie Ihre Dateien per FTP / SSH oder andere Wege auf Ihren Server spielen. Es empfiehlt sich, den Anweisungen des Hosters zu folgen. Sollte der Hoster keine Informationen zu Ihrem Server hinterlegt haben, fragen Sie diese bitte bei ihm an.
 
-**Wir können Ihnen keine Fragen zu Ihrer FTP-Login-Daten** **beantworten, wir kennen diese NICHT.** Die Dateien *setup.php* und *ccm19.zip* laden Sie in das Stamm-Verzeichnis Ihrer Webseite (oder einen beliebig erstellten Ordner).
+> **Wir können Ihnen keine Fragen zu Ihrer FTP-Login-Daten** **beantworten, wir kennen diese NICHT.** 
 
-**Hinweis: CCM19 erstellt standardmäßig einen Unterordner /ccm19. Legen Sie also Ihre Datein entsprechend Ihrer Wünsche ab. Wenn Sie CCM19 in das aktuelle Verzeichnis statt einen Unterordner installieren möchten, tragen Sie bitte `./` bei Schritt 3 in die Maske für das Verzeichnis ein.**
+Die Dateien *setup.php* und *ccm19.zip* laden Sie in das Stamm-Verzeichnis Ihrer Webseite (oder einen beliebig erstellten Ordner).
+
+CCM19 erstellt standardmäßig einen Unterordner /ccm19. Legen Sie also Ihre Datein entsprechend Ihrer Wünsche ab. Wenn Sie CCM19 in das aktuelle Verzeichnis statt einen Unterordner installieren möchten, tragen Sie bitte `./` in die Maske für das Verzeichnis ein.
 
 
 
-## Beachten Sie die PHP Version!
+## PHP Version beachten
 
-Achtung! **Die verwendete PHP Version muss mindestens PHP 7.2.x lauten – oder höher.** Falls Sie auf Ihrer Seite die PHP-Version nicht ohne Weiteres updaten können, besteht die Alternative, dass Sie bei Ihrem Provider eine **(Sub-)Domain** einrichten und dort die **PHP Version auf 7.2 oder höher stellen**. *Sie können das CCM19 Skript dann auf dieser (Sub-)Domain installieren und von dort aus in Ihre eigentliche Seite einbinden.*
+Die verwendete PHP Version muss mindestens **PHP 7.2.x** lauten – oder höher. Falls Sie auf Ihrer Seite die PHP-Version nicht ohne Weiteres updaten können, besteht die Alternative, dass Sie bei Ihrem Provider eine (Sub-)Domain einrichten und dort die PHP Version auf 7.2 oder höher stellen. 
+
+Sie können das CCM19 Skript dann auf dieser (Sub-)Domain installieren und von dort aus in Ihre eigentliche Seite einbinden.
 
 Falls auch das nicht funktioniert oder Ihnen der Aufwand zu hoch ist, steht Ihnen die [Service Variante](https://www.ccm19.de/ccm19-service-tarife.html) unseres Tools zur Verfügung – hier muss nichts installiert werden.
 
   
 
-## Schritt 3 - Installation - Screen 1
+## Installation - Schritt 1
 
 ![screen 1 Installation](../assets/10-Screen-01.png)
 
