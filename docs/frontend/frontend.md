@@ -68,10 +68,50 @@ Hier können die Besucher nun alle Elemente die auf der Webseite verwendet im De
 
 In der linken Spalte sehen Sie die Einbindungen sortiert nach Kategorien, jeder Eintrag kann angeklickt werden und die Besucher springen dann direkt zu dem passenden Eintrag um weitere Informationen zu bekommen. Die Besucher können jeder einzelnen Einbindung oder auch kategorieweise der Nutzung zustimmen.
 
-## Einfacher Widerruf oder Änderung
+
+
+## Einfacher Widerruf oder Änderung - Konfigurationsbox öffnen
 
 CCM19 bietet den Besuchern eine einfache Möglichkeit den Consent jederzeit zu widerrufen oder anzupassen. Als Betreiben können Sie das unten stehende Icon einfach einblenden lassen, ein Klick auf dieses Icon öffnet wieder die Consent Maske - so dass Ihre Besucher dort wieder Ihre Einstellungen anpassen können.
 
 
 
 ![screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+
+
+## Konfigurationsbox erneut öffnen per Link
+
+Sie möchten Ihren Besuchern die Möglichkeit geben, sich nachträglich noch umzuentscheiden und z.B. doch keine Analyse-Cookies zuzulassen? Fügen Sie einfach folgendes HTML Snippet ein:
+
+``` html
+<a href="#" onclick="CCM.openWidget();return false;">Konfigurationsbox öffnen</a>
+```
+
+Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den Besucher geöffnet.
+
+Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: **#CCM.openWidget**.
+
+
+
+## Weitere Möglichkeiten der Steuerung im Frontend
+
+Weitere Möglichkeiten finden Sie hier -  [Javascript / programmatische Steuerung](../api/javascript-apis.md) 
+
+
+
+## Impressum im Frontend
+
+Das Impressum können Sie entweder per Link oder direkt einbinden - wie das funktioniert lesen Sie hier nach:  [Impressum bearbeiten](../funktionen/impressum.md) . Die Maske im Frontend sieht dann so aus:
+
+![screenshot-2020.09.30-12_51_32-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+
+
+
+## Datenschutz im Frontend
+
+Die Datenschutzerklärung erreichen Sie wenn Sie auf den Link "Datenschutzerkläriung" klicken, bearbeiten können Sie die Daten hier:  [Datenschutz bearbeiten](../funktionen/datenschutz.md) 
+
+
+
+![screenshot-2020.09.30-13_03_09-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-13_03_09-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
