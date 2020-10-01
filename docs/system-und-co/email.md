@@ -35,3 +35,4 @@ Mit dem Button Test-EMail versenden können Sie dort eine E-Mail Adresse eintrag
 Um den SMTP Versand korrekt durchführen zu können müssen Sie Ihre Verbindungsdaten hier eintragen. Mit dem Button "Autokonfiguration" versucht CCM19 die notwendigen Daten wie Server, Format usw. selber zu ermitteln.
 
 Es ist zu empfehlen diese Funktion zu nutzen. In der Regel muss dann nur noch das Passwort eingetragen werden.
+
