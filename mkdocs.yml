@@ -24,15 +24,16 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 nav:
-  - Home: index.md
+  - "Home": index.md
   - Erste Schritte:
       - erste_schritte/registrierung.md
+      - erste_schritte/installation.md
       - "Einloggen in CCM19": erste_schritte/login-und-passwoerter.md
-      - "Schritt 1 - Onboarding starten": erste_schritte/onboarding-schritt-1.md
-      - "Schritt 2 - Domain scannen": erste_schritte/onboarding-schritt-2.md
-      - "Schritt 3 - Impressum & Co.": erste_schritte/onboarding-schritt-3.md
-      - "Schritt 4 - Platzhalter": erste_schritte/onboarding-schritt-4.md
-      - "Schritt 5 - Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
+      - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
+      - "Domain scannen": erste_schritte/onboarding-schritt-2.md
+      - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
+      - "Platzhalter": erste_schritte/onboarding-schritt-4.md
+      - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
   - Funktionen:
       - funktionen/themes.md
       - funktionen/cookies-und-andere.md
@@ -65,11 +66,5 @@ nav:
       - api/technik.md
   - Frontend:
       - frontend/frontend.md
-  - Download Version:
-      - download-version/download.md
-      - download-version/e-mail-einstellungen.md
-      - download-version/installation.md
-      - download-version/lizenz-erwerben.md
-      - download-version/updates.md
   - Agency Version:
       - agency-version/agency.md

@@ -6,10 +6,121 @@ Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von 
 
 Die Frontend Widgets werden durch pures Javascript realisiert ohne Rückgriff auf Frameworks um mögliche Inkompatibilitäten möglichst zu vermeiden.
 
+
+
 ## Sicherheit
 
-CCM19 nutzt intensiv CSP 
+CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-policy.com/) mit folgenden Einstellungen:
+
+``` php
+$response->headers->set('Content-Security-Policy',
+			"default-src 'self'; ".
+			"script-src 'self' 'unsafe-inline'; " .
+			"style-src 'self' 'unsafe-inline'; " .
+			"img-src 'self' data:; " .
+			//"frame-ancestors 'self' $referer; " .
+			"frame-src 'self' $referer;"
+		);
+```
+
+
+
+## Speicherung
+
+Alle Daten werden als json Dateien lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var*  Ihrer Installation. 
+
+Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen Aufrufe pro Tag problemlos gehändelt werden können.
+
+
+
+## Datenbank
+
+CCM19 nutzt derzeit keine Datenbank.
+
+
 
 ## Beta Phase
 
 Vor der Veröffentlichung führen wir diverse Tests durch um typische Fehler zu finden und zu korrigieren. Weiterhin gibt es eine ausgedehnte Beta Phase an der viele Kunden teilnehmen und uns Feedback vor der endgültigen Veröffentlichung geben.
+
+
+
+## Systemvoraussetzungen für Download Variante
+
+Die Self Service / Download Version von CCM19 braucht lediglich PHP ab 7.2 und das Modul mod_rewrite auf Ihrem Linux / Apache / PHP Server um zu funktionieren. 
+
+### Server Apache
+
+Als Server empfehlen wir einen LAMP Server - wobei das M für Mysql nicht notwendig ist, da ja derzeit keine Datenbank genutzt wird.
+
+### nginx
+
+Ebenfalls ist nginx möglich - eine Konfigurationsdatei liegt im Download bei. Sie finden die Vorlagen im Verzeichnis
+
+ *www/examples* 
+
+Beispiel:
+
+``` nginx
+# Fügen Sie den Inhalt dieser Datei Ihrer nginx-Konfiguration innerhalb eines
+# server-Blocks hinzu, wenn Sie CCM19 in einem Unterverzeichnis betreiben wollen.
+# Dazu wird das PHP-FPM-Modul mit mindestens PHP 7.2 benötigt.
+#
+# Sie müssen folgende Anpassungen vornehmen:
+# - "/ccm19" durch den URL-Pfad ersetzen unter dem CCM19 erreichbar sein soll,
+# - "/path/to/ccm/public" durch den Pfad zum public-Verzeichnis in Ihrer
+#   CCM19-Installation (ohne / am Ende!) ersetzen,
+# - "unix:/run/php/php7.2-fpm.sock" je nach Serverkonfiguration durch den
+#   Socket-Pfad zu Ihrem PHP-FPM-Modul ersetzen.
+
+	set $ccm19_urlpath /ccm19;
+	set $ccm19_realpath /path/to/ccm/public;
+
+	location ~ /ccm19(/.*) {
+		root $ccm19_realpath;
+		try_files $1 @ccm19;
+	}
+
+	location ^~ /ccm19/index.php {
+		return 403;
+	}
+
+	location @ccm19 {
+		root $ccm19_realpath;
+
+		fastcgi_index index.php;
+		fastcgi_split_path_info ^($ccm19_urlpath)(/.*)$;
+		set $path_info $fastcgi_path_info;
+		
+		fastcgi_param SCRIPT_FILENAME $document_root/index.php;
+		fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
+		fastcgi_param PATH_INFO $path_info;
+		fastcgi_param PATH_TRANSLATED $document_root$path_info;
+
+		fastcgi_param HTTP_PROXY	"";
+		fastcgi_param QUERY_STRING	$query_string;
+		fastcgi_param REQUEST_METHOD	$request_method;
+		fastcgi_param CONTENT_TYPE	$content_type;
+		fastcgi_param CONTENT_LENGTH	$content_length;
+		fastcgi_param REQUEST_URI	$request_uri;
+		fastcgi_param DOCUMENT_URI	$document_uri;
+		fastcgi_param DOCUMENT_ROOT	$document_root;
+		fastcgi_param SERVER_PROTOCOL	$server_protocol;
+		fastcgi_param REQUEST_SCHEME	$scheme;
+		fastcgi_param HTTPS		$https if_not_empty;
+		fastcgi_param GATEWAY_INTERFACE	CGI/1.1;
+		fastcgi_param SERVER_SOFTWARE	nginx/$nginx_version;
+		fastcgi_param REMOTE_ADDR	$remote_addr;
+		fastcgi_param REMOTE_PORT	$remote_port;
+		fastcgi_param SERVER_ADDR	$server_addr;
+		fastcgi_param SERVER_PORT	$server_port;
+		fastcgi_param SERVER_NAME	$server_name;
+
+		fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+	}
+
+
+```
+
+Es gibt in dem Verzeichnis auch eine Einstellung für Subdomains.
+

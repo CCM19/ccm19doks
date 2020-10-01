@@ -79,19 +79,24 @@ h1 {
 	color: #333 !important;
 	font-size: 2.4rem !important;
 	margin-bottom: 20px !important;
+	border-bottom: 1px solid #eee;
 }
 h2 {
 	font-family: "Anton" !important;
-	font-size: 1.8rem !important;
+	font-size: 1.6rem !important;
 	margin-top:.5rem !important;
+
+	border-bottom: 1px solid #eee;
 }
 h3 {
 	font-family: "Anton" !important;
-	font-size: 1.6rem !important;
+	font-size: 1.4rem !important;
+
+	border-bottom: 1px solid #eee;
 }
 h4 {
 	font-family: "Anton" !important;
-	font-size: 1.4rem !important;
+	font-size: 1.2rem !important;
 }
 p {
 	font-size: .75rem !important;
