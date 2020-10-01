@@ -9,7 +9,7 @@ theme:
     - tabs
   palette:
     primary: blue grey
-    custom_dir: overrides
+  custom_dir: overrides
   language: de
   icon:
     repo: fontawesome/brands/github
