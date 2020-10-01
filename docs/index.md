@@ -1,5 +1,6 @@
 ---
 title: Dokumentation CCM19
+description: CCM19 ist ein Cookie Consent Manager Tool mit dem Sie für Ihre Webseite alle Cookoies, externe Skripte und deren Nutzung verwalten und den Besuchern Ihrer Webseite zur Auswahl stellen können. CCM19 bringt ein komplettes Cookie, Skript und Storage Handling mit, Sie können jeden Bereich von den Besuchern abnicken lassen und alle Details komplett selber verwalten.
 ---
 
 # Cookie Consent Manager CCM19
