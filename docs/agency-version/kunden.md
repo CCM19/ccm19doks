@@ -30,7 +30,7 @@ Der Haken "aktiv" setzt einen Kunden aktiv oder deaktiviert ihn.
 
 ### Whitelabel Lizenzen
 
-Hier können Sie definieren wieviele WL Lizenzen der jeweilige User in seinem Account zur Verfügung hat. Diese können die Kunden dann frei auf Ihre Domains verteilen. Whitelabel bedeutet hier - sie können den Link zum Hersteller im Frontend Widget entfernen.
+Hier können Sie definieren wieviele WL Lizenzen der jeweilige User in seinem Account zur Verfügung hat. Diese können die Kunden dann frei auf Ihre Domains verteilen. Whitelabel bedeutet hier - Ihre kunden können den Link zum Hersteller im Frontend Widget entfernen.
 
 ### CCM19 Aufrufe
 
