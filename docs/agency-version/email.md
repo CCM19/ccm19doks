@@ -1,42 +1,6 @@
 # E-Mail
 
-Der E-Mail Bereich für die Agency Version ist erweitert im Vergleich zur Downloadversion. Die grundsätzlichen Einstellungen sind aber identisch.
-
-CCM19 kann aus sich heraus E-Mails versenden. Das sind immer Statusmails die an den Betreiber gehen und über diverse Status Änderungen informieren.
-
-## Mails gehen raus bei
-
-+ Update durchgeführt
-+ Limits erreicht
-
-
-
-## Konfiguration des Mail Versands
-
-![screenshot-2020.09.30-14_41_14-CCM19 - Cookie Consent Management Software (../assets/screenshot-2020.09.30-14_41_14-CCM19%2520-%2520Cookie%2520Consent%2520Management%2520Software%2520(1).jpg)](../assets/screenshot-2020.09.30-14_41_14-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
-
-Wie auf dem Screenshot zu sehen ist, können Sie hier die typischen Daten einer VersendeAdresse eintragen. Als Versandmethoden stehen folgende Funktionen zur Verfügung.
-
-+ sendmail (keine Zugangsdaten erforderlich)
-+ SMTP Versand (Zugangsdaten erforderlich)
-
-
-
-## Testversand
-
-![screenshot-2020.09.30-14_44_26-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_44_26-CCM19%2520-%2520Cookie%2520Consent%2520Management%2520Software.jpg)
-
-Mit dem Button Test-EMail versenden können Sie dort eine E-Mail Adresse eintragen und eine Testmail an diese Adresse schicken. Damit überprüfen Sie ob alles funktioniert.
-
-
-
-## Konfiguration SMTP Versand
-
-![screenshot-2020.09.30-14_41_14-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_41_14-CCM19%2520-%2520Cookie%2520Consent%2520Management%2520Software.jpg)
-
-Um den SMTP Versand korrekt durchführen zu können müssen Sie Ihre Verbindungsdaten hier eintragen. Mit dem Button "Autokonfiguration" versucht CCM19 die notwendigen Daten wie Server, Format usw. selber zu ermitteln.
-
-Es ist zu empfehlen diese Funktion zu nutzen. In der Regel muss dann nur noch das Passwort eingetragen werden.
+Der E-Mail Bereich für die Agency Version ist erweitert im Vergleich zur Downloadversion. Die grundsätzlichen Einstellungen sind aber identisch und sind hier zu finden: [Standard Mail Einstellungen](../system-und-co/email.md) 
 
 ## Quota Mails
 
@@ -45,3 +9,25 @@ Wenn Sie ein Quota für die Zugriffszahlen nutzen, gehen automatisch bei Annähr
 Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie der Quota Mails bekommt.
 
 ![screenshot-2020.10.01-15_04_49-1601557489896 (1)](../assets/screenshot-2020.10.01-15_04_49-1601557489896%20(1).jpg)
+
+
+
+## Quota Mails Vorlagen resp. Inhalt
+
+Die Quota Mails selber können Sie hier vorbelegen. Dabei stehen folgende Variablen zur Verfügung. Die Synthax muss dabei beachtet werden - die geschweiften Klammern sind obligatorisch {{ varname }}.
+
+| Variablen          | Inhalt                                                       |
+| ------------------ | ------------------------------------------------------------ |
+| {{ callMaxCount }} | Die Anzahl der verfügbaren Aufrufe im jeweils gewählten Tarif |
+| {{ quota }}        | Der numerische Wert des prozentualen Verbrauchs - d.h. wenn 94% verbraucht sind enthält die Variable den Wert 94 |
+| {{ username }}     | Benutzername des Kunden                                      |
+| {{ email }}        | E-Mail Adresse des Kunden                                    |
+
+## Mail Templates
+
+Die Variablen können im Fließtext der Mails verwendet werden.
+
+
+
+![screenshot-2020.10.01-15_29_43-1601558983189](../assets/screenshot-2020.10.01-15_29_43-1601558983189.jpg)
+
