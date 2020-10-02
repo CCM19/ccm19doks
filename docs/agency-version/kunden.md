@@ -62,7 +62,7 @@ Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Inf
 
 
 
-Es werden hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.
+Es wird hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.
 
 
 
@@ -78,7 +78,7 @@ In der Auflistung werden die Basisdaten Ihrer Kunden aufgelistet, wieviel Zugrif
 
 Außerdem sehen Sie eine Übersicht über die Domains die der Kunden nutzt. In der Übersicht sehen Sie einen Testkunden dessen Domains wir zu Darstellungszwecken immer wieder kopiert haben.
 
-Außerdem wird angezeigt wann der Kunde sich das letzte mal eingeloggt hat und ob der Kunde überhaupt aktiv ist.
+Außerdem wird angezeigt, wann der Kunde sich das letzte mal eingeloggt hat und ob der Kunde überhaupt aktiv ist.
 
 ### Bearbeiten
 
