@@ -52,6 +52,20 @@ Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in d
 
 
 
+## Kunden bearbeiten
+
+Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Informationen im Bereich Aufrufe.
+
+
+
+![screenshot-2020.10.02-15_04_41-1601643881678](../assets/screenshot-2020.10.02-15_04_41-1601643881678.jpg)
+
+
+
+Es werden hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.
+
+
+
 ## Übersicht über vorhandene Kunden
 
 Eine Auflistung Ihrer Kunden finden Sie wenn Sie auf den Menüpunkte Kunden links im Menü klicken.
