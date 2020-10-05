@@ -166,4 +166,7 @@ h2.md-search-result__title {
 	.md-content__inner p {
 		font-size: .78rem !important;
 	}
+	.md-nav__source {
+		display:none;
+	}
 }
