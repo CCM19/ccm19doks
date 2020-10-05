@@ -163,7 +163,7 @@ h2.md-search-result__title {
 	text-decoration: none;
 }
 @media screen and (max-width: 1024px) {
-	p {
-		font-size: 1.3rem;
+	.md-content__inner p {
+		font-size: 1.3rem !important;
 	}
 }
