@@ -13,11 +13,11 @@ Die Installation der Agency Version erfolgt genauso wie die Downloadvariante - d
 
 ## Installationsdatei herunterladen
 
-Die Installationsdatei finden Sie im Downloadbereich von CCM19.de - nach dem Kauf der Version bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. Die Maske sieht dabei folgendermaßen aus. Unter dem Reiter Lizenzen finden Sie den Lizenkey den Sie im Schritt 2 der Installation brauchen. Die Keys können auch zurückgesetzt werden.
+Die Installationsdatei bekommen Sie entweder per Mail oder WeTransfer zugesendet oder Sie finden sie im Downloadbereich von CCM19.de - nach Abschluß als Reseller bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. 
+
+Die Maske sieht dabei folgendermaßen aus. Unter dem Reiter Lizenzen finden Sie den Lizenkey den Sie im Schritt 2 der Installation brauchen. Die Keys können auch zurückgesetzt werden.
 
 ![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%20_%20Download%20Version%20Login.jpg)
-
-Je nach Ablauf bekommen Sie die aktuelle Version auch per E-Mail oder Wetransfer zugesendet
 
 ## Dateien entpacken und hochladen
 
@@ -95,6 +95,12 @@ Weiterhin können Sie unter "Erweiterte Einstellungen" einen Proxy Server angebe
 ## Fertig
 
 Sobald das Installationskript fertig ist, werden Sie zur [Loginmaske](login-und-passwoerter.md) weitergeleitet oder direkt eingeloggt und Sie landen im Dashboard.
+
+
+
+## Etwas klappt nicht?
+
+Dann fragen Sie unseren Support unter 0228 / 280 5668 oder einfach per E-Mail an [info@ccm19.de](mailto:info@ccm19.de). 
 
 
 
