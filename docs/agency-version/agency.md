@@ -128,3 +128,4 @@ Außerdem sehen Sie eine kleine Grafik die die Auslastung Ihrer CCM19 Instanz ze
 
 ![screenshot-2020.10.01-12_09_01](../assets/screenshot-2020.10.01-12_09_01.jpg)
 
+ Weitere Informationen finden Sie links im Menü.
