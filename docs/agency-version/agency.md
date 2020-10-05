@@ -11,20 +11,13 @@ Mit der Agency Version haben Sie auch die Möglichkeit das CCM19 an Ihre Kundenv
 Die Installation der Agency Version erfolgt genauso wie die Downloadvariante - der Prozess ist der gleiche. Sie bekommen nur eine spezielle Downloaddatei und einen speziellen Lizenzkey der die Nutzung ermöglicht.
 
 
-
-# Installation der Downloadversion
-
-Wenn Sie einen Fullservice Tarif nutzen und keine Downloadversion heruntergeladen haben - Sie sich also über die ccm19.de Seite einloggen - dann können Sie diesen Schritt hier überspringen.
-
-
-
 ## Installationsdatei herunterladen
 
 Die Installationsdatei finden Sie im Downloadbereich von CCM19.de - nach dem Kauf der Version bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. Die Maske sieht dabei folgendermaßen aus. Unter dem Reiter Lizenzen finden Sie den Lizenkey den Sie im Schritt 2 der Installation brauchen. Die Keys können auch zurückgesetzt werden.
 
 ![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%2520_%2520Download%2520Version%2520Login.jpg)
 
-
+Je nach Ablauf bekommen Sie die aktuelle Version auch per E-Mail oder Wetransfer zugesendet
 
 ## Dateien entpacken und hochladen
 
@@ -34,9 +27,7 @@ Nach dem Download der Dateien erhalten Sie eine .zip Datei. Diese Datei müssen 
 
 ## Dateien per FTP auf Ihren Server hochladen
 
-Nach dem Entpacken müssen Sie Ihre Dateien per FTP / SSH oder andere Wege auf Ihren Server spielen. Es empfiehlt sich, den Anweisungen des Hosters zu folgen. Sollte der Hoster keine Informationen zu Ihrem Server hinterlegt haben, fragen Sie diese bitte bei ihm an.
-
-> **Wir können Ihnen keine Fragen zu Ihrer FTP-Login-Daten** **beantworten, wir kennen diese NICHT.** 
+Nach dem Entpacken müssen Sie Ihre Dateien per FTP / SSH oder andere Wege auf Ihren Server spielen. Es empfiehlt sich, den Anweisungen des Hosters zu folgen. 
 
 Die Dateien *setup.php* und *ccm19.zip* laden Sie in das Stamm-Verzeichnis Ihrer Webseite (oder einen beliebig erstellten Ordner).
 
@@ -95,6 +86,9 @@ Oder Sie navigieren auf der ccm19.de Seite im Top-Menu unter **Login** > **Downl
 Danach tragen Sie noch eine gültige E-Mail Adresse ein (ohne gültige E-Mail Adresse können Sie später Ihr Passwort nicht zurücksetzen!). Danach können Sie noch einen Usernamen und ein Passwort wählen. **Der Benutzername kann später NICHT mehr geändert werden!** Klicken Sie danach auf "Setup durchführen" und das System wird installiert.
 
 Weiterhin können Sie unter "Erweiterte Einstellungen" einen Proxy Server angeben falls in Ihrem Unternehmen einer benutzt wird für die Ausgabe der Webseite - dies ist aber ein sehr seltener Zustand. In der Regel wird dies nicht gemacht.
+
+> Beachten Sie bitte das der Benutzername / Benutzer den Sie bei der Installation erstellen auch der spätere Administratoraccount ist.
+> 
 
 
 
