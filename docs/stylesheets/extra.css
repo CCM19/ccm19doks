@@ -162,3 +162,8 @@ h2.md-search-result__title {
 	word-break: break-word;
 	text-decoration: none;
 }
+@media screen and (max-width: 1024px) {
+	p {
+		font-size: 1.3rem;
+	}
+}
