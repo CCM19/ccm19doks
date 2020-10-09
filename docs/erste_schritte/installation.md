@@ -56,12 +56,9 @@ Sie sollten bei 1&1 oder domainfactory darauf achten, dass Sie nach der Installa
 
 2. setup.php sollte Sie zu [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) weiterleiten – **Hier tritt der 500er auf.**
 
-3. [meinedomain.de/cookies/ccm19/.htaccess](http://meinedomain.de/cookies/ccm19/.htaccess) bearbeiten – unter der Zeile "RewriteEngine On" eintragen:
-
+3.  bearbeiten – unter der Zeile "RewriteEngine On" eintragen:
    `RewriteBase /cookies/ccm19/`
-
-4. [meinedomain.de/cookies/ccm19/public/.htaccess](http://meinedomain.de/cookies/ccm19/public/.htaccess) bearbeiten – auch hier unter "RewriteEngine On" ergänzen:
-
+4.  bearbeiten – auch hier unter "RewriteEngine On" ergänzen:
    `RewriteBase /cookies/ccm19/public/`
 
   Versuchen Sie jetzt [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) aufzurufen.
