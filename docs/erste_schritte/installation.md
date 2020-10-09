@@ -63,7 +63,7 @@ Sie sollten bei 1&1 oder domainfactory darauf achten, dass Sie nach der Installa
 
   Versuchen Sie jetzt [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) aufzurufen.
 
-> Sollte der 500er Fehler weiter bestehen, handelt es sich evtl. um ein anderes Problem. Gerne würden wir das Problem dann für Sie kostenfrei untersuchen; dazu reicht ein temporärer FTP-Zugang, den Sie nach abgeschlossenen Arbeiten wieder schließen können. Schreiben Sie uns einfach über unser Supportformular: 
+> Sollte der 500er Fehler weiter bestehen, handelt es sich evtl. um ein anderes Problem. Gerne würden wir das Problem dann für Sie kostenfrei untersuchen; dazu reicht ein temporärer FTP-Zugang, den Sie nach abgeschlossenen Arbeiten wieder schließen können. Schreiben Sie uns einfach über unser [Supportformular](https://www.ccm19.de/supportanfrage/).
 
 **Das CCM19-Tool wird in diesem Beispiel später über https://www.MeineDomain.de/ccm19/ erreichbar sein.**
 
