@@ -48,6 +48,26 @@ Navigieren Sie auf Ihrer Webseite nun zu dem Ordner, in dem Sie die Dateien abge
 
 
 
+## Ups - ein Fehler 500 oder ein andere tritt auf?
+
+Sie sollten bei 1&1 oder domainfactory darauf achten, dass Sie nach der Installation die RewriteBase setzen. Hier kurze eine Erklärung, wie das funktioniert:
+
+1. [meinedomain.de/cookies/setup.php](http://meinedomain.de/cookies/setup.php) aufrufen und Instruktionen folgen.
+
+2. setup.php sollte Sie zu [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) weiterleiten – **Hier tritt der 500er auf.**
+
+3. [meinedomain.de/cookies/ccm19/.htaccess](http://meinedomain.de/cookies/ccm19/.htaccess) bearbeiten – unter der Zeile "RewriteEngine On" eintragen:
+
+   `RewriteBase /cookies/ccm19/`
+
+4. [meinedomain.de/cookies/ccm19/public/.htaccess](http://meinedomain.de/cookies/ccm19/public/.htaccess) bearbeiten – auch hier unter "RewriteEngine On" ergänzen:
+
+   `RewriteBase /cookies/ccm19/public/`
+
+  Versuchen Sie jetzt [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) aufzurufen.
+
+> Sollte der 500er Fehler weiter bestehen, handelt es sich evtl. um ein anderes Problem. Gerne würden wir das Problem dann für Sie kostenfrei untersuchen; dazu reicht ein temporärer FTP-Zugang, den Sie nach abgeschlossenen Arbeiten wieder schließen können.
+
 **Das CCM19-Tool wird in diesem Beispiel später über https://www.MeineDomain.de/ccm19/ erreichbar sein.**
 
 In diesem Screen können Sie das Installationsverzeichnis ändern. Hier können Sie auch Ordner wie /cookies/, /kekse/ oder ähnliches, aber auch ./ für das aktuelle Verzeichnis angeben. Für unser Beispiel belassen wir es bei /ccm19/.
