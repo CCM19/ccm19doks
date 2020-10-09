@@ -48,7 +48,7 @@ Navigieren Sie auf Ihrer Webseite nun zu dem Ordner, in dem Sie die Dateien abge
 
 
 
-## Ups - ein Fehler 500 oder ein andere tritt auf?
+## Ups - ein Fehler 500 oder ein anderer tritt auf?
 
 Sie sollten bei 1&1 oder domainfactory darauf achten, dass Sie nach der Installation die RewriteBase setzen. Hier kurze eine Erklärung, wie das funktioniert:
 
