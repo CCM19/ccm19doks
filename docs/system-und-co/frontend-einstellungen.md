@@ -54,9 +54,15 @@ Durch neuere rechtliche Vorgaben hat sich eine andere Struktur der Darstellung i
 
 Um den Umstieg zu erleichtern kann man jederzeit zwischen den verschiedenen Bereichen umstellen. Je nach Einstellung stellen sich sowohl die Cookie Masken als auch die Frontend Widgets anders da. Die aktuelle Dokumentation beschreibt nur die neue Variante da nur diese weiter entwickelt wird.
 
-![screenshot-2020.09.30-16_30_27-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-16_30_27-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.10.12-17_11_39-1602515499431](../assets/screenshot-2020.10.12-17_11_39-1602515499431.jpg)
 
-Sie können hier zwischen Embedding (neu) und Cookie (veraltet) wählen. 
+
+
+Sie können hier zwischen Embedding (neu) und Cookie (veraltet) wählen. Allerdings müssen Sie die Umstellung erst bestätigen.
+
+> Ab der 2. Generation erkennt und trennt das Frontend-Widget unter Verwendung der Embeddingstruktur zwischen Cookies und Web-Speichereinträgen. Es bereinigt sie auf Ihrer Webseite entsprechend der Zustimmung Ihrer Besucher. Bitte überprüfen Sie nach dem Wechsel zur Embeddingstruktur, ob die gesamte Funktionalität Ihrer Webseite noch intakt ist. Stellen Sie sicher, dass alle wesentlichen Cookies und Web-Speichereinträge (LocalStorage/SessionStorage) in CCM19 konfiguriert sind. Sollten Probleme auftreten, können Sie jederzeit wieder auf die Cookiestruktur zurückschalten.
+
+
 
 >  Falls Sie noch kein CCM19 im Einsatz haben ist diese Umstellung für Sie nicht relevant - diese betrifft nur Bestandskunden.
 

@@ -10,6 +10,12 @@ Die Protokollierung ist laut DSGVO Art 7, Abs. 1 zwingend vorgegeben. Selbstvers
 
 In der Übersicht sehen Sie wie oft die jeweiligen Bereiche angehakt wurden. In der in diesem Beispiel verwendeten Maske wurden nur die beiden Bereiche Essentiell und Analyse angeboten - daher sind auch nur dort Haken zu verzeichnen.
 
+## Consent Details
+
+Für jeden Eintrag werden auch Consent Details gespeichert. Also ob in den einzelnen Kategorien auch einzelne Skripte / Einbindungen angehakt wurden. 
+
+![screenshot-2020.10.12-17_13_51-1602515631145](../assets/screenshot-2020.10.12-17_13_51-1602515631145.jpg)
+
 
 
 ## Consent Protokoll nutzen bei Anfragen
