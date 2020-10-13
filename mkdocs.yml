@@ -35,6 +35,7 @@ nav:
       - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
       - "Platzhalter": erste_schritte/onboarding-schritt-4.md
       - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
+      - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
   - Funktionen:
       - funktionen/themes.md
       - funktionen/cookies-und-andere.md
