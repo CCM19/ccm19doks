@@ -66,6 +66,7 @@ nav:
   - API & Technik:
       - api/javascript-apis.md
       - api/technik.md
+      - api/google-tag-manager.md
   - Frontend:
       - frontend/frontend.md
   - Agency Version:
