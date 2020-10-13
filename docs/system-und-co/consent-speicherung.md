@@ -39,3 +39,9 @@ Mit CCM19 ist es möglich den Consent unabhängig von Thirdparty Cookies über b
 > Diese Funktion steht nur in der Fullservice, Inhouse CMP und  Agency Variante zur Verfügung.
 
 Für jede eingetragene Domain kann der Consent zwischen den Subdomains der eingegebenen Domain geteilt werden, solange das selbe Code-Snippet verwendet wird. Geben Sie z.B. <code>example.com</code> ein, damit nur einmal Consent für example.com, www.example.com und alle anderen Subdomains, die auf .example.com enden, erteilt werden muss. Ungültige Eingaben können dazu führen, dass das Speichern des Consents nur noch unzuverlässig funktioniert
+
+Der Consent wird über HTML Links, Iframes und über Javscript generierte Links weitergeben. 
+
+## Consent Teilung im iframe
+
+Falls Sie eine Webseite haben wo ein iframe einer anderen ihrer Seiten eingesetzt wird, z.B. eine Buchungsmaske erscheint dann in dem iframe nicht nochmal eine Abfrage, sondern der Consent wird übertragen. Dies funktioniert natürlich nur wenn sie oben eingetragen sind und somit auch die gleichen Skripte und Cookies teilen.
