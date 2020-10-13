@@ -6,7 +6,7 @@ Wenn Sie einen Fullservice Tarif nutzen und keine Downloadversion heruntergelade
 
 ## Installationsdatei herunterladen
 
-Die Installationsdatei finden Sie im Downloadbereich von CCM19.de - nach dem Kauf der Version bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. Die Maske sieht dabei folgendermaßen aus. Unter dem Reiter Lizenzen finden Sie den Lizenkey den Sie im Schritt 2 der Installation brauchen. Die Keys können auch zurückgesetzt werden.
+Die Installationsdatei finden Sie im Downloadbereich von [CCM19.de](https://www.ccm19.de/account/) - nach dem Kauf der Version bekommen Sie eine E-Mail wo genau steht wo Sie die Dateien finden. Die Maske sieht dabei folgendermaßen aus. Unter dem Reiter Lizenzen finden Sie den Lizenkey den Sie im Schritt 2 der Installation brauchen. Die Keys können auch zurückgesetzt werden.
 
 ![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%20_%20Download%20Version%20Login.jpg)
 
