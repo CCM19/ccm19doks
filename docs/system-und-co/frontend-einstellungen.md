@@ -107,15 +107,35 @@ Ist dieser Haken gesetzt werden auch Inline Skripte die als Schnipsel in Ihrer S
 
 Verwenden Sie diese Funktion, um zu verhindern, dass externe Ressourcen geladen werden, die über einen Iframe-Container eingebettet sind. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert. Der Benutzer kann mit dem stattdessen angezeigten Dialog dem Laden des Inhalts zustimmen.
 
-![screenshot-2020.09.30-13_31_47-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-13_31_47-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.10.13-16_34_33-1602599673775](../assets/screenshot-2020.10.13-16_34_33-1602599673775.jpg)
+
+
 
 ### Iframe Blockierung aktivieren
 
 Mit dem Haken aktivieren Sie die Blockierung der IFrames - vermutlich offensichtlich...
 
+## Einwilligung pro Domain merken
+
+Ist dieser Haken gesetzt merkt sich CCM19 für welche iframes von welcher Seite bereits ein Consent gesetzt wurde. Wenn z.B. einmal ein Youtube Video per Consent bestätigt wurde, werden alle weiteren Youtube Videos ohne Consent eingeblendet, da der Benutzer der Nutzung ja schon einmal zugestimmt hat. 
+
+> Ob das DSGVO konform ist kann man derzeit nicht sagen, wir schätzen das derzeit positiv ein, allerdings bleibt die Entscheidung natürlich bei Ihnen.
+
 ### Iframe Ausnahmen
 
-Schreiben Sie einen Ausdruck pro Zeile. Iframes, deren HTML-Code einen dieser Textbausteine enthält, werden nicht blockiert. Wenn Sie z.B. youtube eintragen, dann werden Youtube Videos nicht mehr geblockt.
+Hier gibt es verschiedene Varianten, wenn Sie hier nichts einstellen wird standardmäßig alles immer blockiert.
+
+### Whitelist Modus
+
+Wenn Sie diese Auswahl treffen werden alle Iframes blockiert die nicht in der Filterliste drin stehen. Tragen Sie dort z.B. youtube ein, wird nur das iframe von Youtube nicht geblockt, wohl aber alle anderen. (Dieses Vorgehen empfehlen wir jedoch gerade für Youtube nicht!) 
+
+### Blacklist Modus
+
+In dieser Variante werden keine iframes blockiert, es sei denn sie stehen hier in der Liste. Tragen Sie dort nun youtube ein, werden nur die Iframes von Youtube blockiert, nicht aber alle anderen.
+
+## Filter
+
+Schreiben Sie einen Ausdruck pro Zeile. 
 
 ### Vorschaubilder
 
