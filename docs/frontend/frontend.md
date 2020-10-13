@@ -92,6 +92,10 @@ Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den 
 
 Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: **#CCM.openWidget**.
 
+```html
+<a href="#CCM.openWidget">Konfigurationsbox öffnen</a>
+```
+
 
 
 ## Weitere Möglichkeiten der Steuerung im Frontend

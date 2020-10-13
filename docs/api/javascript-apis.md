@@ -6,15 +6,17 @@ CCM19 bietet mehrere Javascript-APIs, mit denen auf Funktionalitäten des Cookie
 
 Die direkten Steuerungsmöglichkeiten von CCM19 sind im globalen Javascript-Objekt `CCM` gebündelt:
 
-| Variable/Methode        | Typ      | Beschreibung                                                 |
-| :---------------------- | :------- | :----------------------------------------------------------- |
-| CCM.consent             | boolean  | Gibt an, ob der Consent-Dialog geschlossen wurde.            |
-| CCM.ucid                | ?string  | Die eindeutige Consent-ID, oder null, wenn noch kein [Consent](https://www.ccm19.de/glossar/10-Consent.html#10) erteilt wurde. |
-| CCM.acceptedCookies     | string[] | Liste der Namen aller akzeptierten [Cookies.](https://www.ccm19.de/glossar/13-Cookies.html#13) |
-| CCM.openWidget()        |          | Öffnet den Cookie-Dialog erneut.                             |
-| CCM.closeWidget()       |          | Schließt den Cookie-Dialog.                                  |
-| CCM.openControlPanel()  |          | Öffnet den Dialog zur Auswahl der zu akzeptierenden Zwecke.  |
-| CCM.closeControlPanel() |          | Schließt den Dialog zur Auswahl der zu akzeptierenden Zwecke. |
+| Variable/Methode             | Typ      | Beschreibung                                                  |
+| :--------------------------- | :------- | :------------------------------------------------------------ |
+| CCM.consent                  | boolean  | Gibt an, ob der Consent-Dialog geschlossen wurde.             |
+| CCM.ucid                     | ?string  | Die eindeutige Consent-ID, oder null, wenn noch kein [Consent](https://www.ccm19.de/glossar/10-Consent.html#10) erteilt wurde. |
+| CCM.acceptedCookies          | string[] | Liste der Namen aller akzeptierten [Cookies.](https://www.ccm19.de/glossar/13-Cookies.html#13). |
+| CCM.crossDomainConsentString | string   | Fragmentbezeichner zum manuellen Zusammensetzen einer URL für die [Consent-Teilung](../system-und-co/consent-speicherung.md#consent-teilung). (ab Version 2020.10.14) |
+| CCM.openWidget()             |          | Öffnet den Cookie-Dialog erneut.                              |
+| CCM.closeWidget()            |          | Schließt den Cookie-Dialog.                                   |
+| CCM.openControlPanel()       |          | Öffnet den Dialog zur Auswahl der zu akzeptierenden Zwecke.   |
+| CCM.closeControlPanel()      |          | Schließt den Dialog zur Auswahl der zu akzeptierenden Zwecke. |
+| CCM.navigate(url\[, replace\[, navigateTop]]) |    | Navigiert zu einer anderen URL (wie `location.href = url`), berücksichtigt dabei aber die [Consent-Teilung](../system-und-co/consent-speicherung.md#consent-teilung). `replace` steuert, ob `location.replace` verwendet wird und `navigateTop` steuert, ob bei Frames die vollständige Seite navigiert wird. (ab Version 2020.10.14) |
 
 Die Dialoge können alternativ auch über Links mit den Zielen `#CCM.openWidget`, `#CCM.closeWidget`, `#CCM.openControlPanel` und `#CCM.closeControlPanel` gesteuert werden.
 
