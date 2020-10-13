@@ -32,7 +32,7 @@ CCM19 erstellt standardmäßig einen Unterordner /ccm19. Legen Sie also Ihre Dat
 
 ## PHP Version beachten
 
-Die verwendete PHP Version muss mindestens **PHP 7.2.x** lauten – oder höher. Falls Sie auf Ihrer Seite die PHP-Version nicht ohne Weiteres updaten können, besteht die Alternative, dass Sie bei Ihrem Provider eine (Sub-)Domain einrichten und dort die PHP Version auf 7.2 oder höher stellen. 
+Die verwendete PHP Version muss mindestens **PHP 7.2.x** lauten – oder höher (7.3.x,  7.4.x). Falls Sie auf Ihrer Seite die PHP-Version nicht ohne Weiteres updaten können, besteht die Alternative, dass Sie bei Ihrem Provider eine (Sub-)Domain einrichten und dort die PHP Version auf 7.2 oder höher stellen. 
 
 Sie können das CCM19 Skript dann auf dieser (Sub-)Domain installieren und von dort aus in Ihre eigentliche Seite einbinden.
 
