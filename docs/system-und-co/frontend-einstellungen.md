@@ -2,12 +2,6 @@
 
 Hier können Sie eine Reihe von Einstellungen treffen die das Verhalten im Frontend der Seite beeinflussen die CCM19 nutzen. Die verfügbaren Einstellungen werden im folgenden erläutert.
 
-
-
-![screenshot-2020.09.30-13_09_34-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-13_09_34-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
-
-
-
 # Bitte zuerst bestätigen
 
 CCM19 arbeitet sehr hart daran alle möglichen Fallstricke abzudecken - bei der schieren Anzahl an möglichen Überschneidungen mit anderen Skripten oder Problemen können wir leider nicht garantieren dass nach Aktivierung alles 100%ig funktioniert. Alleine die Kombinationsmöglichkeiten der uns bekannten Skripte mit den jeweiligen Einstellmöglichkeiten geht in die Milliarden.
@@ -19,6 +13,16 @@ Mit dem Betätigen dieses Hakens bestätigen Sie, dass Sie dies zur Kenntnis gen
 > **Prüfen Sie Ihre Seite nach Aktivierung auf Herz und Nieren ob z.B. auch essentielle Funktionen wie Warenkorb, Bezahlfunktionen und alle anderen gewünschten weiter funktionieren**!!!
 
 
+
+![screenshot-2020.10.14-13_52_20-1602676340145](../assets/screenshot-2020.10.14-13_52_20-1602676340145.jpg)
+
+
+
+Nach der Aktivierung sieht die Maske folgendermaßen aus und Sie können nun alle Einstellungen treffen.
+
+
+
+![screenshot-2020.09.30-13_09_34-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-13_09_34-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
 
 
