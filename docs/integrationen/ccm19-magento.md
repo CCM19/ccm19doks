@@ -16,4 +16,4 @@ Bearbeiten Sie in Ihrer Magento Installation, die Datei ``/app/design/frontend/r
 
 Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Magento Seite.
 
-Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrem Shop aktiv sein.
+Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrer Seite aktiv sein.

@@ -27,4 +27,4 @@ page.headerData.1.value (
 
 Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Typo3 Seite.
 
-Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrem Shop aktiv sein.
+Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrer Seite aktiv sein.
