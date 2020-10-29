@@ -6,13 +6,11 @@ Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von 
 
 Die Frontend Widgets werden durch pures Javascript realisiert ohne Rückgriff auf Frameworks um mögliche Inkompatibilitäten möglichst zu vermeiden.
 
-
-
 ## Sicherheit
 
 CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-policy.com/) mit folgenden Einstellungen:
 
-``` php
+```
 $response->headers->set('Content-Security-Policy',
 			"default-src 'self'; ".
 			"script-src 'self' 'unsafe-inline'; " .
@@ -23,31 +21,23 @@ $response->headers->set('Content-Security-Policy',
 		);
 ```
 
-
-
 ## Speicherung
 
-Alle Daten werden als json Dateien lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var*  Ihrer Installation. 
+Alle Daten werden als json Dateien lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var* Ihrer Installation.
 
 Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen Aufrufe pro Tag problemlos gehändelt werden können.
-
-
 
 ## Datenbank
 
 CCM19 nutzt derzeit keine Datenbank.
 
-
-
 ## Beta Phase
 
 Vor der Veröffentlichung führen wir diverse Tests durch um typische Fehler zu finden und zu korrigieren. Weiterhin gibt es eine ausgedehnte Beta Phase an der viele Kunden teilnehmen und uns Feedback vor der endgültigen Veröffentlichung geben.
 
-
-
 ## Systemvoraussetzungen für Download Variante
 
-Die Self Service / Download Version von CCM19 braucht lediglich PHP ab 7.2 und das Modul mod_rewrite auf Ihrem Linux / Apache / PHP Server um zu funktionieren. 
+Die Self Service / Download Version von CCM19 braucht lediglich PHP ab 7.2 und das Modul mod_rewrite auf Ihrem Linux / Apache / PHP Server um zu funktionieren.
 
 ### Server Apache
 
@@ -57,7 +47,7 @@ Als Server empfehlen wir einen LAMP Server - wobei das M für Mysql nicht notwen
 
 Sollte ihr Webserver **nginx** verwenden, sind unter Umständen Anpassungen an der Serverkonfiguration nötig, damit CCM19 zufriedenstellend läuft, nachdem Sie den ersten Schritt der Installation durchgeführt haben.
 
-Bringen Sie zunächst den Pfad zur Konfigurationsdatei des nginx-Servers für Ihre (Sub-)Domain (üblicherweise /etc/nginx/nginx.conf oder /etc/nginx/conf.d/*domainname*.conf) und den Socket-Pfad für das installierte PHP-FPM-Modul (häufig unix:/run/php/php7.2-fpm.sock o.ä.) bei Ihrem Provider oder Server-Administrator in Erfahrung. 
+Bringen Sie zunächst den Pfad zur Konfigurationsdatei des nginx-Servers für Ihre (Sub-)Domain (üblicherweise /etc/nginx/nginx.conf oder /etc/nginx/conf.d/*domainname*.conf) und den Socket-Pfad für das installierte PHP-FPM-Modul (häufig unix:/run/php/php7.2-fpm.sock o.ä.) bei Ihrem Provider oder Server-Administrator in Erfahrung.
 
 Notieren Sie bitte weiterhin den absoluten Pfad zum public-Verzeichnis der CCM19-Installation und den gewünschten URL-Pfad zu ccm19 (z.B. /ccm19).
 
@@ -65,7 +55,7 @@ Die hier aufgeführte Beispiel Konfigurationsdatein finden Sie im Downloadpaket 
 
 Beispiel:
 
-``` nginx
+```
 # Fügen Sie den Inhalt dieser Datei Ihrer nginx-Konfiguration innerhalb eines
 # server-Blocks hinzu, wenn Sie CCM19 in einem Unterverzeichnis betreiben wollen.
 # Dazu wird das PHP-FPM-Modul mit mindestens PHP 7.2 benötigt.
@@ -124,6 +114,3 @@ Beispiel:
 	}
 
 ```
-
-
-

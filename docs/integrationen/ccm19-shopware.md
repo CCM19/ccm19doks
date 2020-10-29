@@ -14,7 +14,7 @@ Ist die Installation abgeschlossen können Sie das CCM19 Code-Snippet in das daf
 
 Gehen Sie anschließend in CCM19 zurück. Rufen Sie den Cookie **_ga** auf und fügen Sie folgende Zeile in den Quellcode des [Cookies](https://www.ccm19.de/integration/glossar/13-Cookies.html#13) ein:
 
-<script src="/custom/plugins/SwagGoogle/Resources/frontend/js/jquery.google_analytics_plugin.js"></script>
+` <script src="/custom/plugins/SwagGoogle/Resources/frontend/js/jquery.google_analytics_plugin.js"></script> `
 
 ![CCM19 Backend Screen _ga Cookie](../assets/10-03.png)
 
