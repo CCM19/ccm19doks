@@ -1,6 +1,6 @@
 # Typo3
 
-Um unseren Cookie [Consent](https://www.ccm19.de/integration/glossar/10-Consent.html#10) Manager für Ihre Typo3-Seite zu installieren, führen Sie einfach die folgenden Schritte aus:
+Um unseren Cookie Consent Manager für Ihre Typo3-Seite zu installieren, führen Sie einfach die folgenden Schritte aus:
 
 ## Dashboard in CCM19 anwählen
 
