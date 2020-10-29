@@ -1,6 +1,6 @@
 # Skripte, Cookies und Einbindungen
 
-Mit CCM19 können Sie Ihren Besuchern die rechtliche notwendige Möglichkeit geben, selber zu entscheiden welche Daten über die Besucher erhoben werden.
+Mit CCM19 können Sie Ihren Besuchern die Möglichkeit geben, selber zu entscheiden welche Daten über die Besucher erhoben werden.
 
 Damit dies funktioniert müssen alle relevanten Daten im CCM19 zur Verfügung stehen und die Einbindungen müssen getestet werden. Auch wenn CCM19 viel übernehmen kann an automatischen Tests - bleibt es doch immer dem Betreiber überlassen sämtliche Funktionen zu überprüfen. 
 
@@ -26,17 +26,17 @@ Mitunter ist noch eine Anpassung an Ihr Unternehmen oder Webseite notwendig, die
 
 ## Bearbeitungsmaske der Einbindungen
 
-![screenshot-2020.09.29-16_07_45-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.29-16_07_45-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
+![screenshot-2020.10.29-13_03_32-1603973012799](../assets/screenshot-2020.10.29-13_03_32-1603973012799.jpg)
 
 In der Bearbeitungsmaske können Sie folgendes eintragen:
 
 ### Name der Integration / Einbindung
 
-Der Name der Einbindung - das kann z.B. Google Analytics sein oder Facebook Pixel. Hier sollten Sie einen aussagekräftigen Namen nutzen.
+Der Name der Einbindung - das kann z.B. Matomo sein. Hier sollten Sie einen aussagekräftigen Namen nutzen.
 
 ### Zweck
 
-Hier tauchen wieder die schon oben genannten Kategorien auf. Sie können damit jeden Eintrag jeder beliebigen Kategorie zuweisen. Beachten Sie bitte aber dass Sie die rechtlichen Rahmenbedingungen beachten. Facebook Pixel z.B. wird sicher kaum unter technisch notwendig korrekt einsortiert sein.
+Hier tauchen wieder die schon oben genannten Kategorien auf. Sie können damit jeden Eintrag jeder beliebigen Kategorie zuweisen. Beachten Sie bitte aber dass Sie die rechtlichen Rahmenbedingungen beachten. Facebook Pixel z.B. wird sicher kaum unter technisch notwendig korrekt einsortiert sein. Für eine genaue rechtliche Einordnung sollten Sie auf jeden Fall einen Anwalt konsultieren.
 
 ### Aktivieren
 
@@ -44,33 +44,42 @@ Hiermit aktivieren Sie den Eintrag, so dass er auch im Frontend abgehakt werden 
 
 ### Quellcode der Einbindung
 
-Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einbindung generiert wird. In unserem Beispiel wäre dies der Google Analytics-Code. **Wenn Sie einen Code einfügen, muss dieser einmalig sein und darf in keinem anderen Cookie eingetragen werden. **
+Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einbindung generiert wird. In unserem Beispiel wäre dies der Matomo. **Wenn Sie einen Code einfügen, muss dieser einmalig sein und darf in keinem anderen Cookie eingetragen werden. **
 
 > **Außerdem muss er aus dem direkten Webseitentext entfernt werden, da Sie den Code ansonsten doppelt einbinden würden. Das führt zu technischen Problemen!**
+
+#### Beispiel Matomo
+
+```javascript
+<!-- Matomo / voll anonymisiert, Daten verbleiben auf Firmeneigenen Servern -->
+ <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.www.xy.de"]);
+    _paq.push(["setDomains", ["*.www.xy.de"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//analytics.xy.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+<!-- End Matomo Code -->
+```
 
 
 
 ### Anbieter
 
-Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Google Ireland Limited. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
+Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Ihr Unternehmen. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
 
 ### Skripte blockieren.
 
-Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Google Analytics:
-
-```javascript
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123456789-2');
-</script>
-```
-
-Dann tragen Sie in dem Feld z.B. "googletagmanager.com" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
+Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Matomo: Dann tragen Sie in dem Feld z.B. "matomo" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
 
 Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
@@ -84,7 +93,7 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 ## Einträge je Sprache
 
-![screenshot-2020.09.29-16_25_04-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_25_04-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.10.29-13_10_37-1603973437002](../assets/screenshot-2020.10.29-13_10_37-1603973437002.jpg)
 
 Für jede verwendete Sprache können die folgenden sprachabhängigen Inhalte noch erstellt werden.
 
@@ -114,17 +123,17 @@ Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büro
 
 ## Liste der Cookies und Storage Elemente
 
-![screenshot-2020.09.29-16_26_27-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_26_27-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.10.29-13_11_42-1603973502795](../assets/screenshot-2020.10.29-13_11_42-1603973502795.jpg)
 
 Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand. Auch die von CCM19 handgepflegte Datenbank muss nicht vollständig sein - überprüfen Sie die Daten immer genau.
 
 #### Name
 
-Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie
+Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie oder _pk_id.* für Matomo - das * ist ein Platzhalter.
 
 #### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _g* alle Cokies geblockt die mit _g anfangen, also _ga, _gid usw.
+Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _pk_id.* alle Cokies geblockt die mit _pk_id. anfangen, also _pk_id.123 usw.
 
 #### Speichertyp
 
