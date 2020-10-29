@@ -21,7 +21,7 @@ In dem Setup fügen Sie nun folgenden Code ein (Achtung: Dieser Code kann mit ve
 ```html
 page.headerData.1 = TEXT
 page.headerData.1.value (
-    <script src="https://www.lsb-sportmanagement.de/ccm19/public/ccm19.js?apiKey=8a2eeaf1c09cf6dee716f99f56ac8b19e8f696a289827c2a&amp;domain=96d3b6a&amp;lang=de_DE" referrerpolicy="origin"></script>
+    <script src="https://www.xy.de/ccm19/public/ccm19.js?apiKey=123a&amp;domain=123&amp;lang=de_DE" referrerpolicy="origin"></script>
 )
 ```
 
