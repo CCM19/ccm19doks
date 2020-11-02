@@ -14,8 +14,6 @@ Melden Sie sich bei Ihrem CCM19 Tool an und suchen Sie auf dem Dashboard den Pun
 
 Für die Integration des Cookie Managers in eine WordPress-Webseite, muss Ihre Webseite in der Lage sein, Codes oder Skripte in den Head-Bereich aller Seiten und Unterseiten zu integrieren. Dafür stehen bei WordPress kostenlose PlugIns bereit. Loggen Sie sich in Ihre Wordpress-Seite ein, wie Sie es gewohnt sind.
 
-![WP-Tutorial Screen 7](../assets/10-tutscreen7.png)
-
  
 
 ## Plugin auswählen
@@ -34,33 +32,11 @@ Im Menü auf der linken Seite sollte nun ein neuer Menüpunkt ("Snippets") aufta
 
 
 
-## Code einkopieren
+## Code einfügen
 
-**Kopieren** Sie aus dem Fenster "Code" den gesamten Code, der dort angezeigt wird.
+Fügen Sie den Snippet-Code, der vom Cookie Consent Manager bereitgestellt wird, dort ein, wo in dem neuen Snippet der Text "/* Schreibe Deinen JavaScript Code hier */" steht. Vergessen Sie nicht, auf "Speichere Änderungen und Aktiviere" zu klicken.
 
 ![WP-Tutorial Screen 10](../assets/10-tutscreen10.png)
-
- 
-
-## Code eintragen in Wordpress
-
-Klicken Sie nun im Menü auf der linken Seite (unter "Snippets") auf die Schaltfläche "Neu Hinzufügen" und tragen Sie dort im Fenster "Code" den gerade kopierten Code ein. Als Namen haben wir hier "CCM19" in die oberste Eingabezeile eingepflegt.
-
-![WP-Tutorial Screen 11](../assets/10-tutscreen11.png)
-
-**Sie können den Code auch von hier kopieren:**
-
-```php+HTML
-add_action( 'wp_head', function () { ?>
-/* Füge hier das CCM19 Snippet ein. */
-<?php } );
-```
-
-## Daten speichern
-
-Nun fügen Sie den Snippet-Code, der vom Cookie Consent Manager bereitgestellt wird, dort ein, wo in dem neuen Snippet der Text "/* Schreibe Deinen JavaScript Code hier */" steht. Vergessen Sie nicht, auf "Speichere Änderungen und Aktiviere" zu klicken.
-
-![Wordpress Installion 12](../assets/10-10-tutscreen12.png)
 
  
 

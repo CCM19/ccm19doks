@@ -14,6 +14,10 @@ Leider gibt es bei Magento keine gute Möglichkeit, dass Script von CCM19 weit g
 
 Bearbeiten Sie in Ihrer Magento Installation, die Datei ``/app/design/frontend/rwd/default/template/page/html/head.phtml` und tragen Sie das Javascript von CCM19 ein. (Sollte sich die Datei dort nicht finden, benutzen Sie ein anderes Teheme als das standardmäßife "rwd" Theme)
 
+![Magento Head Datei bearbeiten](../assets/Magento/magento_01.png)
+
+![Magento Head Datei bearbeiten](../assets/Magento/magento_02.png)
+
 Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Magento Seite.
 
 Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrer Seite aktiv sein.

@@ -63,6 +63,7 @@ nav:
       - integrationen/ccm19-shopware.md
       - integrationen/ccm19-wordpress.md
       - integrationen/ccm19-wix.md
+      - integrationen/ccm19-magento.md
       - integrationen/ccm19-typo3.md
   - API & Technik:
       - api/javascript-apis.md
