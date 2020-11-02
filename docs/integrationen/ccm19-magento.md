@@ -12,7 +12,7 @@ Um unseren Cookie Consent Manager für Ihre Magento-Seite zu installieren, führ
 
 Leider gibt es bei Magento keine gute Möglichkeit, dass Script von CCM19 weit genug oben im Kopf der Seite einzubauen, wodurch Sie das Template hierfür bearbeiten müssen.
 
-Bearbeiten Sie in Ihrer Magento Installation, die Datei ``/app/design/frontend/rwd/default/template/page/html/head.phtml` und tragen Sie das Javascript von CCM19 ein.
+Bearbeiten Sie in Ihrer Magento Installation, die Datei ``/app/design/frontend/rwd/default/template/page/html/head.phtml` und tragen Sie das Javascript von CCM19 ein. (Sollte sich die Datei dort nicht finden, benutzen Sie ein anderes Teheme als das standardmäßife "rwd" Theme)
 
 Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Magento Seite.
 

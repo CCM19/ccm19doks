@@ -12,9 +12,15 @@ Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einricht
 
 Anschließend, melden Sie sich normal im Typo3 Backend an. Dort angekommen, öffnen Sie den Menüpunkt "Template".
 
+![Typo 3 Template Menü](../assets/Typo3/typo3_01.png)
+
 Im Menüpunkt "Template", öffnen Sie das Template, was derzeit für Ihrer Webseite aktiv ist.
 
+![Typo 3 Template Werkzeuge](../assets/Typo3/typo3_02.png)
+
 In diesem Template angekommen, bearbeiten Sie das Setup.
+
+![Typo 3 Template bearbeiten](../assets/Typo3/typo3_03.png)
 
 In dem Setup fügen Sie nun folgenden Code ein (Achtung: Dieser Code kann mit verschiedenen Typo3 Version nicht korrekt sein):
 
@@ -25,6 +31,8 @@ page.headerData.1.value (
 )
 ```
 
-Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Typo3 Seite.
+Anschließend speichern Sie diese Änderung einfach und leeren den Cache Ihrer Typo3 Seite.
+
+![Typo 3 Template bearbeiten](../assets/Typo3/typo3_04.png)
 
 Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrer Seite aktiv sein.

@@ -6,7 +6,7 @@ Um den Cookie [Consent](https://www.ccm19.de/integration/glossar/10-Consent.html
 
 Melden Sie sich bei Ihrem CCM19 Tool an und suchen Sie auf dem Dashboard den Punkt "CCM19 in Ihre Seite einbinden". Dort ist das"Code-Snippets" für Ihre CCM19 Installation hinterlegt. Für unsere Test-Installation verwenden wir den "Code-Snippet mit autom. Sprachwahl".
 
-![WP-Tutorial Screen 6](../assets/10-tutscreen6.png)
+![CCM19 Backend Screen](../assets/10-01.png)
 
  
 
@@ -56,8 +56,6 @@ add_action( 'wp_head', function () { ?>
 <?php } );
 ```
 
-
-
 ## Daten speichern
 
 Nun fügen Sie den Snippet-Code, der vom Cookie Consent Manager bereitgestellt wird, dort ein, wo in dem neuen Snippet der Text "/* Schreibe Deinen JavaScript Code hier */" steht. Vergessen Sie nicht, auf "Speichere Änderungen und Aktiviere" zu klicken.
@@ -69,7 +67,5 @@ Nun fügen Sie den Snippet-Code, der vom Cookie Consent Manager bereitgestellt w
 ## Fertig
 
 Et voila, nun sollte der Cookie Consent Manager auf Ihrem WordPress-Blog installiert sein und Cookiemeldungen einblenden.
-
-![CMM19 unter WP installieren](../assets/10-screen-ccm19-blog.jpg)
 
  
