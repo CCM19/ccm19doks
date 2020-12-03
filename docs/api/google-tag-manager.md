@@ -4,7 +4,9 @@ Da der Tag Manager als Container fungiert, über den Skripte in die Webseite ein
 
 Um Skripte, die über den Tag Manager geladen werden, zu blocken, wird idealerweise ausschließlich das Feature "Embeddings blockieren, die folgenden Text enthalten" verwendet. Damit das Blocken der Skripte funktioniert, muss aber sichergestellt werden, dass der CCM19-Code im Quelltext vor dem Tag-Manager-Code steht.
 
-Vorab möchten wir ausdrücklich darauf hinweisen, dass wir die Nutzung des Google Tag Managers nicht empfehlen.
+Vorab möchten wir ausdrücklich darauf hinweisen, dass wir die Nutzung des Google Tag Managers nicht empfehlen, weil in den meisten Fällen ein Cookie gesetzt werden muss damit es funktioniert was technisch nicht wirklich notwendig ist, aber als solches definiert werden muss.
+
+Außerdem ist unter dem Gesichtspunkt des Schrems II Urteils in Hinsicht Privacy Shield die ungefragte Einbindung von Google Services zumindest fraglich und sollte gut überlegt sein.
 
 Um die Funktionalität des Tag Managers und auch von allen damit verbunden Diensten gewährleisten zu können, muss der Tag Manager immer aktiv sein. Somit sendet er zumindest immer die IP-Adresse des Nutzers an den Server des Tag Managers und damit auch an Google.
 
