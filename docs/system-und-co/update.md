@@ -1,6 +1,6 @@
 # Updates
 
-Durch die Update-Funktion bekommen Sie immer die aktuellste und neuste stabel-Version des CCM19 Tools. Im Changelog können Sie sehen, was für Änderungen vorgenommen wurden. 
+Durch die Update-Funktion bekommen Sie immer die aktuellste und neuste stable-Version des CCM19 Tools. Im Changelog können Sie sehen, was für Änderungen vorgenommen wurden. 
 
 ![screenshot-2020.09.30-14_59_11-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_59_11-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
