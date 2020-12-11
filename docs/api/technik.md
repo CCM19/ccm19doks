@@ -1,47 +1,58 @@
 # Verwendete Technik
 
-Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von CCM19. Die Grundlage der Software ist das PHP Framework [Symfony©](https://symfony.com/) mit über 600.000 Entwicklern weltweit eines der bewährtesten und sichersten Frameworks die zur Verfügung stehen.
+Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von CCM19. Die Grundlage der Software ist das PHP-Framework [Symfony©](https://symfony.com/), mit über 600.000 Entwicklern weltweit eines der bewährtesten und sichersten Frameworks, die zur Verfügung stehen.
 
-## Frontend Widgets
+## Frontend-Widgets
 
-Die Frontend Widgets werden durch pures Javascript realisiert ohne Rückgriff auf Frameworks um mögliche Inkompatibilitäten möglichst zu vermeiden.
+Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks um mögliche Inkompatibilitäten möglichst zu vermeiden.
 
 ## Sicherheit
 
-CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-policy.com/) mit folgenden Einstellungen:
+CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-policy.com/) mit regulär folgenden Einschränkungen:
 
 ```
-$response->headers->set('Content-Security-Policy',
-			"default-src 'self'; ".
-			"script-src 'self' 'unsafe-inline'; " .
-			"style-src 'self' 'unsafe-inline'; " .
-			"img-src 'self' data:; " .
-			//"frame-ancestors 'self' $referer; " .
-			"frame-src 'self' $referer;"
-		);
+Content-Security-Policy:
+	default-src 'self';
+	connect-src 'self' https://update.ccm19.de;
+	script-src 'self' 'unsafe-inline';
+	style-src 'self' 'unsafe-inline';
+	img-src 'self' data:;
+	frame-ancestors 'self';
+	form-action 'self'
 ```
 
 ## Speicherung
 
-Alle Daten werden als json Dateien lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var* Ihrer Installation.
+Alle Daten werden im JSON-Format lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var* Ihrer Installation.
 
 Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen Aufrufe pro Tag problemlos gehändelt werden können.
 
 ## Datenbank
 
-CCM19 nutzt derzeit keine Datenbank.
+CCM19 nutzt derzeit kein Datenbank-Management-System.
 
-## Beta Phase
+## Beta-Phase
 
 Vor der Veröffentlichung führen wir diverse Tests durch um typische Fehler zu finden und zu korrigieren. Weiterhin gibt es eine ausgedehnte Beta Phase an der viele Kunden teilnehmen und uns Feedback vor der endgültigen Veröffentlichung geben.
 
-## Systemvoraussetzungen für Download Variante
+## Systemvoraussetzungen für Download-Variante
 
-Die Self Service / Download Version von CCM19 braucht lediglich PHP ab 7.2 und das Modul mod_rewrite auf Ihrem Linux / Apache / PHP Server um zu funktionieren.
+Die Self-Service / Download Version von CCM19 benötigt lediglich
 
-### Server Apache
+- Linux oder ein anderes POSIX-kompatibles Betriebssystem
+- PHP ab Version 7.2
+- Apache httpd 2.2+ oder nginx
 
-Als Server empfehlen wir einen LAMP Server - wobei das M für Mysql nicht notwendig ist, da ja derzeit keine Datenbank genutzt wird.
+### Apache httpd
+
+Als Server empfehlen wir einen LAMP-Server - wobei das M für MySQL nicht notwendig ist, da derzeit keine Datenbank genutzt wird.
+
+Beim Betrieb mit Apache httpd werden folgende Module benötigt:
+- mod_rewrite
+- mod_headers (optional)
+- mod_expires (optional)
+
+CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel.
 
 ### nginx
 
@@ -51,7 +62,7 @@ Bringen Sie zunächst den Pfad zur Konfigurationsdatei des nginx-Servers für Ih
 
 Notieren Sie bitte weiterhin den absoluten Pfad zum public-Verzeichnis der CCM19-Installation und den gewünschten URL-Pfad zu ccm19 (z.B. /ccm19).
 
-Die hier aufgeführte Beispiel Konfigurationsdatein finden Sie im Downloadpaket im Verzeichnis *www/examples/* - hier wird ccm19 in einem Unterverzeichnis installiert.
+Die hier aufgeführte Beispiel-Konfigurationsdatei finden Sie im Downloadpaket im Verzeichnis *www/examples/* - hier wird ccm19 in einem Unterverzeichnis installiert.
 
 Beispiel:
 
@@ -85,7 +96,7 @@ Beispiel:
 		fastcgi_index index.php;
 		fastcgi_split_path_info ^($ccm19_urlpath)(/.*)$;
 		set $path_info $fastcgi_path_info;
-		
+
 		fastcgi_param SCRIPT_FILENAME $document_root/index.php;
 		fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
 		fastcgi_param PATH_INFO $path_info;

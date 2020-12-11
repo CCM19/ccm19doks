@@ -1,6 +1,6 @@
 # Consent Speicherung
 
-CCM19 kann die Daten für den Consent sowohl in einem Cookie, im Local Storage oder auch im Session Storage speichern. Die einzelnen Methoden haben Vor und Nachteile.
+CCM19 kann die Daten für den Consent sowohl in einem Cookie, im Local Storage oder auch im Session Storage speichern. Die einzelnen Methoden haben Vor- und Nachteile.
 
 ![screenshot-2020.09.30-14_25_38-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-14_25_38-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
@@ -26,7 +26,7 @@ Den Consent im Session Storage zu speichern, hält den Consent für jeden Browse
 
 Über die Maske können Sie festlegen wie lange das CCM19 Cookie gespeichert werden soll. Standard sind 356 Tage = 1 Jahr ;-). Wenn Sie eine 0 eintragen, wird das Cookie beim Schließen des Browsers gelöscht.
 
-Die Option für "sichere" Cookies sollte nur deaktiviert werden, wenn HTTPS/SSL nur optional verwendet wird und ermöglicht dann, dass der Consent zwischen der Seite ohne HTTPS und der mit HTTPS geteilt wird.. Dies ist aber heutzutage extrem selten. Zudem kann das Abschalten dieser Option aufgrund der Sicherheitsfunktionen moderner Browser bei den restlichen Consent-Teilungs-Funktionen und beim Einbetten der Website in IFrames Probleme verursachen.
+Die Option für "sichere" Cookies sollte nur deaktiviert werden, wenn HTTPS/SSL nur optional verwendet wird und ermöglicht dann, dass der Consent zwischen der Seite ohne HTTPS und der mit HTTPS geteilt wird. Dies ist aber heutzutage extrem selten. Zudem kann das Abschalten dieser Option aufgrund der Sicherheitsfunktionen moderner Browser bei den restlichen Consent-Teilungs-Funktionen und beim Einbetten der Website in IFrames Probleme verursachen.
 
 ![screenshot-2020.09.30-14_30_36-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_30_36-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
@@ -36,7 +36,7 @@ Die Option für "sichere" Cookies sollte nur deaktiviert werden, wenn HTTPS/SSL 
 
 Mit CCM19 ist es möglich den Consent unabhängig von Third-Party-Cookies über beliebig viele Domains und Subdomains hinweg zu teilen. Tragen Sie dazu die Liste der gewünschten Domains in das Feld ein.
 
-> Diese Funktion steht nur in der Fullservice, Inhouse CMP und  Agency Variante zur Verfügung.
+> Diese Funktion steht nur in der Fullservice, Inhouse-CMP- und Agency-Variante zur Verfügung.
 
 Für jede eingetragene Domain kann der Consent zwischen den Subdomains der eingegebenen Domain geteilt werden, solange das selbe Code-Snippet verwendet wird. Geben Sie z.B. <code>example.com</code> ein, damit nur einmal Consent für example.com, www.example.com und alle anderen Subdomains, die auf .example.com enden, erteilt werden muss. Ungültige Eingaben können dazu führen, dass das Speichern des Consents nur noch unzuverlässig funktioniert
 
@@ -44,4 +44,4 @@ Der Consent wird über HTML-Links, HTML-Formulare und IFrames weitergeben.
 
 ## Consent-Teilung im IFrame
 
-Falls Sie eine Webseite haben, bei der ein IFrame einer anderen ihrer Seiten eingesetzt wird, z.B. eine Buchungsmaske, erscheint dann in dem IFrame nicht nochmal eine Abfrage, sondern der Consent wird übertragen. Dies funktioniert natürlich nur wenn sie oben eingetragen sind und somit auch die gleichen Skripte und Cookies teilen.
+Falls Sie eine Webseite haben, bei der ein IFrame einer anderen ihrer Seiten eingesetzt wird, z.B. eine Buchungsmaske, erscheint dann in dem IFrame nicht nochmal eine Abfrage, sondern der Consent wird übertragen. Dies funktioniert natürlich nur, wenn sie oben eingetragen sind und somit auch die gleichen Skripte und Cookies teilen.
