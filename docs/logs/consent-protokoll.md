@@ -4,7 +4,7 @@ Die Einwilligungen aller Besucher werden übersichtlich aufgelistet. Anhand eine
 
 Die Protokollierung ist laut DSGVO Art 7, Abs. 1 zwingend vorgegeben. Selbstverständlich bleiben diese - wie auch alle anderen Daten - immer unter Ihrer Kontrolle und sind vollständig anonymisiert.
 
-![screenshot-2020.12.17-13_46_18-1608209178770](../assets/screenshot-2020.12.17-13_46_18-1608209178770.jpg)
+![screenshot-2020.12.17-13_46_18-1608209178770](../assets/screenshot-2020.12.17-13_46_18-1608209178770-1608211161873.jpg)
 
 In der Übersicht sehen Sie wie oft die jeweiligen Bereiche angehakt wurden. In der in diesem Beispiel verwendeten Maske wurden nur die beiden Bereiche Essentiell und Analyse angeboten - daher sind auch nur dort Haken zu verzeichnen.
 
