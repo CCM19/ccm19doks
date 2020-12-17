@@ -70,8 +70,8 @@ nav:
       - api/javascript-apis.md
       - api/technik.md
       - api/google-tag-manager.md
-      - api/general_api.md
       - api/apikey.md
+      - api/general_api.md
   - Frontend:
       - frontend/frontend.md
   - Agency Version:
