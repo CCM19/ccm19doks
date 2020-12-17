@@ -11,15 +11,15 @@ Der Aufruf erfolgt generell per simplen GET Aufruf im Browser, curl oder eine be
 Sie können einen Testaufruf durchführen. Rufen Sie dafür folgende url auf:
 
 ```url
-https://ihre_ccm19_instanz/api/test/IHR_API_KEY
+https://ihre_ccm19_instanz/api/test?apikey=IHR_API_KEY
 ```
 
 Darauf sollte das System folgendermaßen antworten.
 
 ```json
 {
-    "Username": "Ihr_Username",
-    "ApiKey": "IHR_API_KEY"
+    "username": "Ihr_Username",
+    "apiKey": "IHR_API_KEY"
 }
 ```
 
@@ -28,7 +28,7 @@ Darauf sollte das System folgendermaßen antworten.
 Um alle Domains Ihres Accounts zu listen rufen Sie bitte folgende URL auf.
 
 ```url
-https://ihre_ccm19_instanz/api/getdomains/IHR_API_KEY
+https://ihre_ccm19_instanz/api/getdomains?apikey=IHR_API_KEY
 ```
 
 Die Antwort sollte folgendermaßen lauten
@@ -36,16 +36,16 @@ Die Antwort sollte folgendermaßen lauten
 ```json
 {
     "b61cd4a": {
-        "domId": "b61cd4a",
-        "domName": "https:\/\/www.test-xy.de",
-        "domWL": false,
-        "domViewCount": 0
+        "domainId": "b61cd4a",
+        "domainName": "https:\/\/www.test-xy.de",
+        "domainWhiteLabel": false,
+        "domainViewCount": 0
     },
     "1ed845d": {
-        "domId": "1ed845d",
-        "domName": "test-12.de",
-        "domWL": false,
-        "domViewCount": 0
+        "domainId": "1ed845d",
+        "domainName": "test-12.de",
+        "domainWhiteLabel": false,
+        "domainViewCount": 0
     }
 }
 ```
@@ -57,7 +57,7 @@ Die domId ist die wichtigste Information - damit können Sie weitere Information
 Mit dem folgenden Aufruf holen Sie alle Consents des aktuellen Monats. Bitte ersetzen Sie in der url DOM_ID mit einer domId aus der obigen Abfrage.
 
 ```url
-https://ihre_ccm19_instanz/api/domain/DOM_ID/consents/IHR_API_KEY
+https://ihre_ccm19_instanz/api/domain/consents?apikey=IHR_API_KEY&domainId=DOM_ID
 ```
 
 Die Antwort lautet wie folgt:
@@ -121,7 +121,7 @@ Mit Hilfe der ucId können Sie dann einen Eintrag herausholen.
 Mit diesem Aufruf bekommen Sie die Daten eines Eintrages:
 
 ```url
-https://ihre_ccm19_instanz/api/domain/DOM_ID/consent/UCID/IHR_API_KEY
+https://ihre_ccm19_instanz/api/domain/consents?apikey=IHR_API_KEY&domainId=DOM_ID&ucid=UC_ID
 ```
 
 Dieser Aufruf zeigt dann die gesamte Consent Historie dieses Key - im Beispiel
