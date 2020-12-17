@@ -4,11 +4,30 @@ Die Einwilligungen aller Besucher werden übersichtlich aufgelistet. Anhand eine
 
 Die Protokollierung ist laut DSGVO Art 7, Abs. 1 zwingend vorgegeben. Selbstverständlich bleiben diese - wie auch alle anderen Daten - immer unter Ihrer Kontrolle und sind vollständig anonymisiert.
 
-
-
-![screenshot-2020.09.29-17_05_51-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-17_05_51-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.12.17-13_46_18-1608209178770](../assets/screenshot-2020.12.17-13_46_18-1608209178770.jpg)
 
 In der Übersicht sehen Sie wie oft die jeweiligen Bereiche angehakt wurden. In der in diesem Beispiel verwendeten Maske wurden nur die beiden Bereiche Essentiell und Analyse angeboten - daher sind auch nur dort Haken zu verzeichnen.
+
+## Export
+
+Mit dem Button Export können Sie die Consent Daten des jeweiligen Monats per Klick auf den Button im .json Format exportieren. Ein Beispiel Eintrag sieht so aus - sie erkennen hier die ucid - mit der sich Ihre Besucher identifizieren können.
+
+```json
+{
+        "consent": true,
+        "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
+        "timestamp": 1608208345,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    }
+```
+
+
 
 ## Consent Details
 
@@ -41,4 +60,14 @@ Alternativ kann die ID auch immer in den Entwicklerwerkzeugen entnommen werden w
 # Speicherdauer Consent
 
 Da der Consent für 1 Jahr gespeichert wird, werden die Daten des Consents auch für diese Zeit gespeichert. Nach dem Ablauf dieses Jahres plus 1 Monat Karrenzzeit werden die Daten gelöscht. Somit sollte auch an dieser Stelle der DSGVO genüge getan sein.
+
+## Protokoll archivieren
+
+Hier können Sie alle bisherigen Protokolleinträge archivieren. Archivierte Einträge werden im Consent-Protokoll nicht mehr angezeigt, werden aber intern in komprimierter Form erhalten. Eine Archivierung erfolgt auch automatisch, sobald das Consent-Protokoll eine gewisse Größe überschreitet.
+
+![screenshot-2020.12.17-13_47_04-1608209224291](../assets/screenshot-2020.12.17-13_47_04-1608209224291.jpg)
+
+### Statistiken zurücksetzen
+
+Wenn ausgewählt, werden auch alle Statistiken über Einblendungen und akzeptierte Verwendungszwecke dieser Domain zurückgesetzt, sobald Sie das Protokoll archivieren. Die Daten werden also aus der Listung hier archiviert.
 

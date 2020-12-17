@@ -46,7 +46,7 @@ nav:
       - funktionen/datenschutz.md
       - funktionen/platzhalter.md
   - Logs & Protokolle:
-      -  logs/consent-protokoll.md
+      - logs/consent-protokoll.md
       - logs/system-protokoll.md
   - System & Co.:
       - system-und-co/frontend-einstellungen.md
@@ -59,6 +59,7 @@ nav:
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
       - verwaltung/domainverwaltung.md
+      - verwaltung/theme-verwaltung.md
   - Integrationen:
       - integrationen/ccm19-shopware.md
       - integrationen/ccm19-wordpress.md
@@ -69,6 +70,8 @@ nav:
       - api/javascript-apis.md
       - api/technik.md
       - api/google-tag-manager.md
+      - api/general_api.md
+      - api/apikey.md
   - Frontend:
       - frontend/frontend.md
   - Agency Version:
