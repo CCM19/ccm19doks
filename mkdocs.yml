@@ -44,6 +44,7 @@ nav:
       - funktionen/uebersetzungen.md
       - funktionen/impressum.md
       - funktionen/datenschutz.md
+      - funktionen/barrierefreiheit.md
       - funktionen/platzhalter.md
   - Logs & Protokolle:
       - logs/consent-protokoll.md
