@@ -45,3 +45,11 @@ Der Consent wird über HTML-Links, HTML-Formulare und IFrames weitergeben.
 ## Consent-Teilung im IFrame
 
 Falls Sie eine Webseite haben, bei der ein IFrame einer anderen ihrer Seiten eingesetzt wird, z.B. eine Buchungsmaske, erscheint dann in dem IFrame nicht nochmal eine Abfrage, sondern der Consent wird übertragen. Dies funktioniert natürlich nur, wenn sie oben eingetragen sind und somit auch die gleichen Skripte und Cookies teilen.
+
+## Cookie Reset erzwingen
+
+Mit diesen Einstellungen kann man erzwingen dass alle Besucher die Ihren Consent vor diesem Datum gesetzt haben, den Consent neu erteilen müssen. Dies kommt vor wenn man die Maske geändert hat und den Consent neu bekommen möchte, auch für Bestandsbesucher.
+
+![screenshot-2020.12.18-11_07_14-1608286034551](../assets/screenshot-2020.12.18-11_07_14-1608286034551.jpg)
+
+Wenn Sie hier ein Datum eintragen, werden alle Consents die vor diesem Datum gesetzt wurden von Ihren Besuchern zwangsweise zurück gesetzt und die müssen die Maske neu abnicken.
