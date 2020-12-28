@@ -2,16 +2,16 @@
 
 Mit der domainspezifischen API können Sie Consent und Ereignisdaten pro Domain und über eine gesicherte SSL Schnittstelle in andere Systeme integrieren.
 
-Der Aufruf erfolgt generell mit Ihrem Api Key als GET-Parameter `apiKey` - ohne diesen ist der Aufruf nicht erfolgreich. Jeder Key ist immer nur für einen Account valide.
+Der Aufruf erfolgt generell mit Ihrem Api Key - ohne diesen ist der Aufruf nicht erfolgreich. Jeder Key ist immer nur für einen Account valide.
 
 Der Aufruf erfolgt generell per simplen GET Aufruf im Browser, curl oder eine beliebige andere Möglichkeit Webdaten aufzurufen.
 
 ## API testen
 
-Sie können einen Testaufruf durchführen. Nutzen Sie dafür folgenden API-Endpunkt:
+Sie können einen Testaufruf durchführen. Rufen Sie dafür folgende url auf:
 
 ```url
-GET /api/test
+https://ihre_ccm19_instanz/api/test?apikey=IHR_API_KEY
 ```
 
 Darauf sollte das System folgendermaßen antworten.
@@ -25,39 +25,39 @@ Darauf sollte das System folgendermaßen antworten.
 
 ## Alle Domains des Accounts listen
 
-Um alle Domains Ihres Accounts zu listen, nutzen Sie bitte folgenden API-Endpunkt.
+Um alle Domains Ihres Accounts zu listen rufen Sie bitte folgende URL auf.
 
 ```url
-GET /api/domains
+https://ihre_ccm19_instanz/api/getdomains?apikey=IHR_API_KEY
 ```
 
 Die Antwort sollte folgendermaßen lauten
 
 ```json
-[
-    {
-        "id": "b61cd4a",
-        "name": "https:\/\/www.test-xy.de",
-        "whiteLabel": false,
-        "viewCount": 0
+{
+    "b61cd4a": {
+        "domainId": "b61cd4a",
+        "domainName": "https:\/\/www.test-xy.de",
+        "domainWhiteLabel": false,
+        "domainViewCount": 0
     },
-    {
-        "id": "1ed845d",
-        "name": "test-12.de",
-        "whiteLabel": false,
-        "viewCount": 0
+    "1ed845d": {
+        "domainId": "1ed845d",
+        "domainName": "test-12.de",
+        "domainWhiteLabel": false,
+        "domainViewCount": 0
     }
-]
+}
 ```
 
 Die domId ist die wichtigste Information - damit können Sie weitere Informationen zur Domain holen.
 
 ## Alle Consents des aktuellen Monats holen
 
-Mit dem folgenden API-Endpunkt holen Sie alle Consents des aktuellen Monats. Bitte ersetzen Sie in der url `{domainId}` mit einer Domain-ID aus der obigen Abfrage.
+Mit dem folgenden Aufruf holen Sie alle Consents des aktuellen Monats. Bitte ersetzen Sie in der url DOM_ID mit einer domId aus der obigen Abfrage.
 
 ```url
-GET /api/domains/{domainId}/consents
+https://ihre_ccm19_instanz/api/domain/consents?apikey=IHR_API_KEY&domainId=DOM_ID
 ```
 
 Die Antwort lautet wie folgt:
@@ -118,12 +118,10 @@ Mit Hilfe der ucId können Sie dann einen Eintrag herausholen.
 
 ## Einen Eintrag finden und Daten auslesen
 
-Mit diesem API-Endpunkt lassen sich die Protokolleinträge nach Consent-ID filtern. Entweder ist diese vollständig anzugeben oder eine Teilzeichenkette beginnend vom Anfang der Consent-ID. Im folgenden Beispiel lassen sich die Einträge also auch mit dem Wert `387f1` für den Parameter `{consentId}`.
-
-Wichtig dabei ist lediglich, dass es nur eine Consent-ID gibt, die mit `387f1` beginnt. **Bei Kollisionen liefert die Anfrage eine leere Liste.**
+Mit diesem Aufruf bekommen Sie die Daten eines Eintrages:
 
 ```url
-GET /api/domains/{domainId}/consents/{consentId}
+https://ihre_ccm19_instanz/api/domain/consents?apikey=IHR_API_KEY&domainId=DOM_ID&ucid=UC_ID
 ```
 
 Dieser Aufruf zeigt dann die gesamte Consent Historie dieses Key - im Beispiel
@@ -158,4 +156,4 @@ Dieser Aufruf zeigt dann die gesamte Consent Historie dieses Key - im Beispiel
 ]
 ```
 
-Sie sehen, die ucid ist jeweils identisch und die Consents haben unterschiedliche Zeitstempel.
+Sie sehen die ucid ist jeweils identisch und die Consents haben unterschiedliche Zeitstempel.

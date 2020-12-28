@@ -45,9 +45,10 @@ Die Self-Service / Download Version von CCM19 benötigt lediglich
 
 ### Apache httpd
 
-Als Server empfehlen wir einen LAMP-Server - wobei das M für MySQL nicht notwendig ist, da derzeit keine Datenbank genutzt wird.
+Als Server empfehlen wir einen LAMP-Server – wobei das M für MySQL nicht notwendig ist, da derzeit keine Datenbank genutzt wird.
 
 Beim Betrieb mit Apache httpd werden folgende Module benötigt:
+
 - mod_rewrite
 - mod_headers (optional)
 - mod_expires (optional)
@@ -94,13 +95,12 @@ Beispiel:
 		root $ccm19_realpath;
 
 		fastcgi_index index.php;
-		fastcgi_split_path_info ^($ccm19_urlpath)(/.*)$;
+		fastcgi_split_path_info ^(/ccm19)(/.*)$;
 		set $path_info $fastcgi_path_info;
 
 		fastcgi_param SCRIPT_FILENAME $document_root/index.php;
 		fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
 		fastcgi_param PATH_INFO $path_info;
-		fastcgi_param PATH_TRANSLATED $document_root$path_info;
 
 		fastcgi_param HTTP_PROXY	"";
 		fastcgi_param QUERY_STRING	$query_string;
