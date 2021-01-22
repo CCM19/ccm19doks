@@ -31,7 +31,7 @@ Um alle Domains Ihres Accounts zu listen, nutzen Sie bitte folgenden API-Endpunk
 GET /api/domains
 ```
 
-Die Antwort sollte folgendermaßen lauten
+Die Antwort sollte folgendermaßen lauten:
 
 ```json
 [
@@ -52,9 +52,9 @@ Die Antwort sollte folgendermaßen lauten
 
 Die domId ist die wichtigste Information - damit können Sie weitere Informationen zur Domain holen.
 
-## Alle Consents des aktuellen Monats holen
+## Alle Consents aus dem Protokoll holen
 
-Mit dem folgenden API-Endpunkt holen Sie alle Consents des aktuellen Monats. Bitte ersetzen Sie in der url `{domainId}` mit einer Domain-ID aus der obigen Abfrage.
+Mit dem folgenden API-Endpunkt holen Sie alle Consents aus dem aktuellen Datenblock des Protokolls. Bereits archivierte Protokolleinträge werden dabei nicht berücksichtigt. Bitte ersetzen Sie in der url `{domainId}` mit einer Domain-ID aus der obigen Abfrage.
 
 ```url
 GET /api/domains/{domainId}/consents
