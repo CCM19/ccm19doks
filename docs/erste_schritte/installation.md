@@ -46,6 +46,10 @@ Navigieren Sie auf Ihrer Webseite nun zu dem Ordner, in dem Sie die Dateien abge
 
 ![screenshot-2020.10.01-10_50_39](../assets/screenshot-2020.10.01-10_50_39.jpg)
 
+## Verzeichnis Name ändern
+
+Optimalerweise ändern Sie den Namen des Verzeichnisses auf irgendetwas unverfängliches. Am besten eine zufällige Kombination aus Buchstaben und Zahlen um die Blocker abzufangen die sonst das Skript blocken könnten.
+
 
 
 ## Ups - ein Fehler 500 oder ein anderer tritt auf?
