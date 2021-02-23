@@ -46,7 +46,11 @@ Stellen Sie ein wieviele Domains Kunden in Ihren Accounts zur Verfügung haben. 
 
 ### Automatische Domain Erstellung
 
-Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in die Seite einbinden ohne individuelle Domainerkennung. Domains werden damit auch automatisch erstellt und können darüber verwaltet werden. Hier gibt es aber oft unsinnigen Beifang wenn z.B. Domains wie Google die Seite als iframe einbinden oder über Proxys die Seite besuchen.
+Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in die Seite einbinden ohne individuelle Domainerkennung. D.h. der Link der eingebunden wird enthält **nicht** den Parameter domainid=1234.
+
+Domains werden damit auch automatisch erstellt. Das heißt Sie binden den Code ein und wenn CCM19 erkennt der Code läuft unter einer Domain die das System noch nicht kennt wird ein Eintrag in der Datenbank erstellt und er erscheint im Domainlisting im Backend. Hier können die Einträge dann darüber verwaltet werden. 
+
+**Hier gibt es aber oft unsinnigen Beifang wenn z.B. Domains wie Google die Seite als iframe einbinden oder über Proxys die Seite besuchen.**
 
 > Hier sollten Sie das also gut im Auge behalten was passiert.
 
