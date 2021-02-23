@@ -1,13 +1,14 @@
 # Onboarding - Schritt 3
 
-Im Schritt 3 tragen Sie die Daten Ihres Impressums und Ihrer Datenschutzbestimmungen ein. An dieser Stelle können Sie die Daten nur in der Primärsprache eintragen die ausgewählt ist. Weitere Sprachdaten lassen sich später in der Administration ergänzen.
+Im Schritt 3 tragen Sie die LInks zu Ihrem Impressum und Ihrer Datenschutzbestimmungen ein. Diese Daten können Sie später in der Administration jederzeit ändern.
 
-Ebenfalls können Sie später auswählen ob Sie einen Link oder den Texteintrag von hier nutzen.
+Da das System die Seite kennt und im vorherigen Schritt gescannt hat, versucht es ebenfalls die Links zum Impressum und zu den Datenschutzbestimmungen automatisch auszulesen und diese im Formular vorzubelegen wie im nächsten Screenshot zu sehen ist.
 
-![screenshot-2020.09.29-15_39_10-CCM19 Onboarding - Cookie Consent Management Software (6)](../assets/screenshot-2020.09.29-15_39_10-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(6).jpg)
 
-Die Daten können in einem WYSIWYG Editor - einer wordähnlichen Oberfläche - eintragen. 
 
-## Quelltext eintragen
+![screenshot-1614090313403-403](../assets/screenshot-1614090313403-403.jpg)
 
-Mit Klick auf den Button Werkzeuge können Sie auch den Button Quelltext aktivieren. Hier können Sie dann direkt HTML eintragen. ![screenshot-2020.09.29-15_33_42-CCM19 Onboarding - Cookie Consent Management Software](../assets/screenshot-2020.09.29-15_33_42-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+
+Bitte passen Sie die Daten falls nötig an, so dass die korrekten Links dort drin stehen. Klicken Sie dann auf den grünen Button um zum nächsten Schritt zu kommen.
+

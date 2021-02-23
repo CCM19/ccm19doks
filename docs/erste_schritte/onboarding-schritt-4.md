@@ -6,6 +6,6 @@ Hier definieren Sie die Platzhalter Texte für Ihre Seite - die wichtigsten sind
 * **{Firma_Datenschutz}** -> Tragen Sie hier den Link zu Ihren Datenschutzbestimmungen ein.
 * **{Firma_Ort}** -> Tragen Sie hier den Sitz Ihres Unternehmens ein mit PLZ und Ort.
 
-Wenn Sie die Daten eingetragen haben, klicken Sie auf den unten stehenden grünen Button.
+Wenn Sie die Daten eingetragen haben, klicken Sie auf den unten stehenden grünen Button. Da das System den Link zum Impressum kennt, versucht es die notwendigen Daten aus der Seite auszulesen, bitte korrigieren Sie diese wenn nötig.
 
-![screenshot-2020.09.29-15_39_10-CCM19 Onboarding - Cookie Consent Management Software (4)](../assets/screenshot-2020.09.29-15_39_10-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(4).jpg)
+![screenshot-1614090487279-2791](../assets/screenshot-1614090487279-2791.jpg)
