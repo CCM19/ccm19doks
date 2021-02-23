@@ -2,6 +2,18 @@
 
 Laut DSGVO müssen die Datenschutzerklärung einer Seite - ebenso wie das Impressum - noch vor einem Consent vom Benutzer lesbar sein. Der Besucher darf nicht gezwungen werden einen Consent zu machen bevor er diese Daten nicht gesehen hat.
 
+
+
+## Datenschutzerklärung als Link - Standard
+
+Sie haben die Möglichkeit den Link zur Datenschutzerklärung direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Datenschutzerklärung als Link".
+
+![screenshot-1614091536940-940](../assets/screenshot-1614091536940-940.jpg)
+
+Dann können Sie den Link zum Datenschutzerklärung direkt eingeben und er wird auch so im Frontend genutzt.
+
+
+
 ## Datenschutzerklärung bearbeiten
 
 Die Datenschutzerklärung können Sie in der Administration direkt erstellen und bearbeiten, auf dem folgenden Screenshot sehen Sie die Bearbeitungsmaske.
@@ -30,12 +42,3 @@ Der Link öffnet dann eine Maske wo die Datenschutzerklärung der Seite ausgeben
 
 
 
-## Datenschutzerklärung als Link
-
-Sie haben die Möglichkeit den Link zur Datenschutzerklärung direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Datenschutzerklärung als Link".
-
-![screenshot-2020.09.30-13_04_39-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-13_04_39-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
-
-
-
-Dann können Sie den Link zum Datenschutzerklärung direkt eingeben und er wird auch so im Frontend genutzt.
