@@ -1,14 +1,8 @@
 # Onboarding - Schritt 5
 
-Auf der letzten Seite des Onboardings finden Sie den Einbettungscode des CCM19 für Ihre Webseite. Den müssen Sie sich hier nicht merken - er wird genauso auch im Dashboard der Administration auch immer angezeigt.
+Auf der letzten Seite des Onboardings finden Sie den Einbettungscode des CCM19 für Ihre Webseite. Den müssen Sie sich hier nicht merken - er wird genauso auch im Dashboard der Administration auch immer angezeigt. Sie können ihn aber natürlich direkt kopieren und in Ihre Seite einbinden.
 
-
-
-![screenshot-2020.09.29-15_39_10-CCM19 Onboarding - Cookie Consent Management Software (5)](../assets/screenshot-2020.09.29-15_39_10-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(5).jpg)
-
-
-
-
+![screenshot-1614090586768-768](../assets/screenshot-1614090586768-768.jpg)
 
 ## Einbindungscode
 
