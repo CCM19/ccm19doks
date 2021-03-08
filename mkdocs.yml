@@ -47,9 +47,7 @@ nav:
       - funktionen/datenschutz.md
       - funktionen/barrierefreiheit.md
       - funktionen/platzhalter.md
-  - Logs & Protokolle:
-      - logs/consent-protokoll.md
-      - logs/system-protokoll.md
+      - frontend/frontend.md
   - System & Co.:
       - system-und-co/frontend-einstellungen.md
       - system-und-co/consent-speicherung.md
@@ -57,6 +55,8 @@ nav:
       - system-und-co/caching.md
       - system-und-co/netzwerk.md
       - system-und-co/update.md
+      - logs/consent-protokoll.md
+      - logs/system-protokoll.md
   - Verwaltung:
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
@@ -74,10 +74,9 @@ nav:
       - api/google-tag-manager.md
       - api/apikey.md
       - api/general_api.md
-  - Frontend:
-      - frontend/frontend.md
-      - Test:
-          - frontend/frontend.md
+  - Plugins:
+      - plugins/plugins.md
+      - plugins/erweiterte_statistik.md
   - Agency Version:
       - agency-version/agency.md
       - agency-version/kunden.md
