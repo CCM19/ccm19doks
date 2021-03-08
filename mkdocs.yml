@@ -76,6 +76,8 @@ nav:
       - api/general_api.md
   - Frontend:
       - frontend/frontend.md
+      - Test:
+          - frontend/frontend.md
   - Agency Version:
       - agency-version/agency.md
       - agency-version/kunden.md
