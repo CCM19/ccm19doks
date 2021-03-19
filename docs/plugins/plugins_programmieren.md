@@ -150,5 +150,5 @@ Liegt das Plugin nun in dieser Form vor und ist die json Datei aktuell dann kann
 
 
 
-
+![screenshot-1616173207763-763](../assets/screenshot-1616173207763-763.jpg)
 
