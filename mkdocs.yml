@@ -77,6 +77,11 @@ nav:
   - Plugins:
       - plugins/plugins.md
       - plugins/erweiterte_statistik.md
+      - Plugins Programmieren:
+          - plugins/programmieren/plugins_programmieren.md
+          - plugins/programmieren/assets.md
+          - plugins/programmieren/config.md
+          - plugins/programmieren/testpluginClass.md
   - Agency Version:
       - agency-version/agency.md
       - agency-version/kunden.md
