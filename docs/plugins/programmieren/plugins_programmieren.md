@@ -2,6 +2,8 @@
 
 Diese Anleitung richtet sich an alle die Plugins selber erstellen möchten. Zum derzeitigen Zeitpunkt können die Plugins noch nicht über eine Infrastruktur bereit gestellt werden, sondern sie müssen durch unser Team freigegeben und auch ins System integriert werden. Bei der Beschreibung hier gehen wir davon aus dass Sie mehr als nur Grundkenntnisse in PHP, HTML, CSS, und Javascript besitzen sowie das PHP Framework Symfony kennen.
 
+Für die Programmierung brauchen Sie eine funktionierende Instanz von CCM19 - diese können Sie jederzeit bekommen, fragen Sie einfach über unser Kontaktformular: https://www.ccm19.de/kontaktccm19/ nach einer kostenfreien Lizenz für Entwickler. Beachten Sie bitte dass diese Version dann nur für lokale Entwicklung freigegeben ist.
+
 
 
 ## Verzeichnisstruktur eines Plugins
@@ -150,13 +152,13 @@ Liegt das Plugin nun in dieser Form vor und ist die json Datei aktuell dann kann
 
 
 
-![screenshot-1616173207763-763](../assets/screenshot-1616173207763-763.jpg)
+![screenshot-1616173207763-763](../../assets/screenshot-1616173207763-763.jpg)
 
 
 
 ## Programmierung
 
-Der Einstiegspunkt für 
+Die Programmierung der Plugins kann beliebig komplex sein, im Plugin selber haben Sie Zugriff auf alle Codebestandteile.
 
-Die wesentlichen Programmcodes finden sich im Ordner `src` und dort dann die Verzeichnisse `controller` und `model`.
+
 
