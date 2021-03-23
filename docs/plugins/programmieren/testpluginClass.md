@@ -1,6 +1,10 @@
 # Testplugin Klasse
 
-Die Testplugin Klasse ist der zentrale Controller des Plugins, hierüber laufen alle Aufrufe. Damit das klappt muss der Eintrag in der json Datei der **menuitemroute** enthät in diesem Controller auch auftauchen.
+Die Testplugin Klasse ist der zentrale Controller des Plugins, hierüber laufen alle Aufrufe. Damit das klappt muss der Eintrag in der json Datei der **menuitemroute** enthät in diesem Controller auch auftauchen -> app_testplugin_index - setzt sich zusammen aus dem Namen in der Beschreibung der Klasse und dem Namen aus der Beschreibung der Funktion name="app_testplugin_" + name="index".
+
+Stimmen die Daten nicht überein wird der Menüpunkt nicht angezeigt - daher bei der Erstellung unbedingt darauf achten dass es da klappt.
+
+
 
 ```php
 <?php
@@ -20,8 +24,7 @@ class TestPlugin extends DomainDependantController
 	 */
 	public function index(): Response
 	{}
-
-
+    
 	/**
 	 * @Route("testplugin_save", name="save"), methods={"HEAD","POST"})
 	 * @param Request $request
