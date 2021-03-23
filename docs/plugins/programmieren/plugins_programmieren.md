@@ -42,9 +42,9 @@ Sie sehen hier den Aufbau des Testplugins. So sollten Sie also auch Ihr Testplug
 
 ## Testplugin
 
-Das Testplugin ist derzeit auch auf github zu finden im folgenden Repository: 
+Das Testplugin ist derzeit auch auf github zu finden im folgenden Repository: [Testplugin](https://github.com/PapooSoftware/ccm19TestPlugin)
 
-(https://github.com/PapooSoftware/ccm19TestPlugin)
+
 
 ## Einbindung
 
