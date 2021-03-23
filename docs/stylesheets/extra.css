@@ -97,6 +97,7 @@ h3 {
 h4 {
 	font-family: "Anton" !important;
 	font-size: 1.2rem !important;
+	font-weight: 400 !important;
 }
 p {
 	font-size: .75rem !important;
@@ -170,3 +171,8 @@ h2.md-search-result__title {
 		display:none;
 	}
 }
+.md-typeset pre>code {
+	background-color: #181818 !important;
+	color:#efefef;
+}
+

@@ -24,7 +24,7 @@ Wenn Sie ein neues Theme anlegen wollen können Sie zum einen auf den Button "Er
 
 In jedem Theme können Sie mit Hilfe von einigen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar.
 
- ![screenshot-2020.09.29-13_38_45-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_38_45-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.12.17-14_24_47-1608211487460](../assets/screenshot-2020.12.17-14_24_47-1608211487460.jpg)
 
 Verwenden Sie bei den Individuelle CSS Einstellungen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben. In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
 
@@ -164,3 +164,20 @@ Hier können Sie komplett individuelles CSS eintragen - für die einzelnen Eleme
  
 ```
 
+### Individuelles CSS Iframeblocker
+
+Hier können Sie für den iframe Blocker individuelle CSS Anweisungen vergeben, spezielle Hintergrundbilder usw. Man kann die geblockte Domain als Klasse vergeben, um dann gezielter CSS definieren zu können. 
+Beispiel:
+\- Blockiert wird ``https://www.google.com/maps/…``
+\- Im Iframe erhält das HTML-Element die Klasse z. B. wie folgt: ``domain--www-google-com``
+\- Mögliches CSS
+
+~~~css
+```
+html.domain--www-google-com body {
+    background-image: url('google-maps-placeholder.jpg');
+}
+html.domain--www-facebook-com body {
+    background-image: url('facebook-placeholder.jpg');
+}
+~~~

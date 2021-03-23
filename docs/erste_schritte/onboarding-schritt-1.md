@@ -8,23 +8,17 @@ Falls das Onboarding nicht automatisch startet können Sie auf dem Dashboard ein
 
 ![screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_20_02-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-## Eingabe der Domain
-
-Bei der Download Version ist die Domain noch nicht bekannt, daher müssen Sie diese in der folgenden Maske eingeben.
-
-![screenshot-2020.09.29-14_26_41-CCM19 Onboarding - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_26_41-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
+## Eingabe der Domain.
 
-Nutzer der Online Service Version haben schon in einem vorherigen Schritt die Domain ausgewählt und sehen dann die folgende Maske. 
+Nach dem ersten Login erscheint die folgende Maske -  hier können Sie Ihre Domain eintragen und nach Cookies und Skripten scannen lassen. Wichtig ist dass Sie den Sicherheitshinweis abhaken.
 
-## Scan starten oder aussteigen
+![screenshot-1614089750586-586](../assets/screenshot-1614089750586-586.jpg)
 
-Diese sehen dann auch die Nutzer der Download Version NACH eintragen der URL.
+Natürlich können Sie auch alles manuell durchführen, klicken Sie dafür einfach auf den Link "Setup überspriungen - ich mache alles manuell". 
 
-![screenshot-2020.09.29-14_28_39-CCM19 Onboarding - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_28_39-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Hier können Sie nochmal entscheide ob Sie das Onboarding durchführen wollen oder nicht.
 
 
 

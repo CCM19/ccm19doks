@@ -1,0 +1,86 @@
+site_name: CCM19 Cookie Consent Manager Documentation
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  #logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
+  features:
+    - tabs
+  palette:
+    primary: blue grey
+  custom_dir: overrides
+  language: de
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+repo_url: https://github.com/PapooSoftware/ccm19doks
+repo_name: CCM19Doks
+edit_uri: blob/master/docs/
+
+markdown_extensions:
+  - meta
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+nav:
+  - "Home": index.md
+  - First Steps:
+      - erste_schritte/registrierung.md
+      - erste_schritte/installation.md
+      - "Login into CCM19": erste_schritte/login-und-passwoerter.md
+      - "Onboarding": erste_schritte/onboarding-schritt-1.md
+      - "Scan the Domain": erste_schritte/onboarding-schritt-2.md
+      - "Imprint & Co.": erste_schritte/onboarding-schritt-3.md
+      - "Placeholder": erste_schritte/onboarding-schritt-4.md
+      - "Save & embed": erste_schritte/onboarding-schritt-5.md
+      - "Upgrade gen 2": erste_schritte/upgrade_g2.md
+  - Functions:
+      - funktionen/themes.md
+      - funktionen/cookies-und-andere.md
+      - funktionen/skripte.md
+      - funktionen/pagecheck.md
+      - funktionen/cookietabelle.md
+      - funktionen/uebersetzungen.md
+      - funktionen/impressum.md
+      - funktionen/datenschutz.md
+      - funktionen/barrierefreiheit.md
+      - funktionen/platzhalter.md
+      - frontend/frontend.md
+  - System & Co.:
+      - system-und-co/frontend-einstellungen.md
+      - system-und-co/consent-speicherung.md
+      - system-und-co/email.md
+      - system-und-co/caching.md
+      - system-und-co/netzwerk.md
+      - system-und-co/update.md
+      - logs/consent-protokoll.md
+      - logs/system-protokoll.md
+  - Management:
+      - verwaltung/kontoeinstellungen.md
+      - verwaltung/lizenzverwaltung.md
+      - verwaltung/domainverwaltung.md
+      - verwaltung/theme-verwaltung.md
+  - Integrations:
+      - integrationen/ccm19-shopware.md
+      - integrationen/ccm19-wordpress.md
+      - integrationen/ccm19-wix.md
+      - integrationen/ccm19-magento.md
+      - integrationen/ccm19-typo3.md
+  - API & Tech:
+      - api/javascript-apis.md
+      - api/technik.md
+      - api/google-tag-manager.md
+      - api/apikey.md
+      - api/general_api.md
+  - Plugins:
+      - plugins/plugins.md
+      - plugins/erweiterte_statistik.md
+  - Agency version:
+      - agency-version/agency.md
+      - agency-version/kunden.md
+      - agency-version/kunden-api.md
+      - agency-version/themes.md
+      - agency-version/einstellungen.md
+      - agency-version/email.md

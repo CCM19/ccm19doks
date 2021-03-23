@@ -12,7 +12,7 @@ Im Hintergrund läuft eine Datenbank von CCM19 die abgefragt wird anhand der ver
 
 Weiterhin wird ein Screenshot der Seite erstellt für Ihrer Kontrolle dass auch tatsächlich die korrekte Seite gescannt wurde.
 
-![screenshot-2020.09.29-14_44_36-CCM19 Onboarding - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_44_36-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1614090058662-662](../assets/screenshot-1614090058662-662.jpg)
 
 Die Ergebnisse teilen sich in die 5 Standard Kategorien auf in die Skripte, Cookies und Storage Elemente normalerweise zugeordnet werden.
 

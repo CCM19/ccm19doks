@@ -10,6 +10,10 @@ Wenn Sie das CCM19 aufrufen - egal mit welcher Version - sehen Sie als erstes da
 
 Bei der Downloadversion funktioniert das zusenden der Daten nur, wenn Sie eine funktionierende E-Mail Adresse  in der Administration von CCM19 eingetragen haben. Falls Sie sich komplett ausgesperrt haben und eine Neuinstallation nicht möglich ist, wenden Sie sich hier an den [CCM19 Support](https://www.ccm19.de/supportanfrage/).  
 
+## Hintergrundbild
+
+Das Hintergrundbild wechselt in unregelmäßigen Abständen.
+
 
 
 ![screenshot-localhost-2020.09.28-23_02_35](../assets/images/screenshot-localhost-2020.09.28-23_02_35.png)
