@@ -170,3 +170,8 @@ h2.md-search-result__title {
 		display:none;
 	}
 }
+.md-typeset pre>code {
+	background-color: #181818 !important;
+	color:#efefef;
+}
+

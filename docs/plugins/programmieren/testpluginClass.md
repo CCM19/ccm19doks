@@ -10,7 +10,7 @@ Stimmen die Daten nicht überein wird der Menüpunkt nicht angezeigt - daher bei
 <?php
     
 namespace Plugins\testplugin\src\controller;
-use ...
+//use
 
 /**
  * Controller for Testplugin - domain dependent

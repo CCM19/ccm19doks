@@ -1,12 +1,12 @@
 site_name: CCM19 Cookie Consent Manager Dokumentation
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - javascripts/highlight.js
   - javascripts/config.js
 
 extra_css:
   - stylesheets/extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - stylesheets/dracula.css
 
 theme:
   name: material

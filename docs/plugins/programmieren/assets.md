@@ -7,7 +7,7 @@ Die Assets.php sieht folgendermaßen aus, hier das Skelett der Datei.
 ```php
 <?php
 namespace Plugins\testplugin\assets;
-use ....
+//use ....
 
 /**
  * Controller für Assets - internal Assets
