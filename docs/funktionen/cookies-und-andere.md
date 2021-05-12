@@ -89,39 +89,50 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 ## IFrames über Embeddings freischalten
 
-Seit kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und co) über den Cookie-Banner freizuschalten.
+Seit Kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und Co.) über den Cookie-Banner freizuschalten.
 
-Um Iframes über den Cookiebanner freischalten zu können, tragen Sie in das Feld "Iframes blockieren, die folgenden Text enthalten" Zeichenketten ein, die im IFrame vorkommen.\
-Für einen Youtube-iFrame wäre die Zeichenkette zum Beispiel "Youtube.com"\
+Um Iframes über den Cookiebanner freischalten zu können, tragen Sie in das Feld "Iframes blockieren, die folgenden Text enthalten" Zeichenketten ein, die im IFrame vorkommen.
+
+Für einen Youtube-iFrame wäre die Zeichenkette zum Beispiel "youtube.com"
+
 Für einen Google Maps-iFrame wäre die Zeichenkette zum Beispiel "maps.google.com"
 
-Mit dem akzeptieren der Kategorie werden automatisch alle entsprechenden iFrames freigeschaltet.\
-**Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf iFrames und die korrekte Kategorisierung.**
+Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames freigeschaltet.
 
-![Bildschirmfoto vom 2021-05-12 13-06-29.png](/index.php/core/preview?fileId=910258&x=1024&y=1024&a=true#mimetype=image%2Fpng&hasPreview=true&fileId=910258)Damit die Freischaltung über die Embeddings aktiv ist, müssen Sie den iFrame-Blocker über den Punkt Frontend-Verhalten -> iFrames blockieren.
+**Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
+
+![Bildschirmfoto vom 2021-05-12 13-06-29.png](/index.php/core/preview?fileId=910258&x=1024&y=1024&a=true#mimetype=image%2Fpng&hasPreview=true&fileId=910258)Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Frontend-Verhalten -> iFrames blockieren** aktivieren.
 
 ![Bildschirmfoto vom 2021-05-12 13-06-55.png](/index.php/core/preview?fileId=910259&x=1024&y=1024&a=true#mimetype=image%2Fpng&hasPreview=true&fileId=910259)
 
 ### iFrame-Ausnahmen
 
-**iFrame-Blockierung aktivieren**\
+**iFrame-Blockierung aktivieren**
+
 Mit diesem Schalter aktivieren Sie den iFrame-Blocker. Ab dem Moment der Aktivierung werden **alle** iFrames der Webseite blockiert.
 
-**Einwilligung pro Domain merken**\
-Wenn diese Option aktiviert ist, werden die iFrame-Daten (welchen iFrames wurde zugestimmt) mit allen Domains unter dem Punkt **Consent-Speicherung"** geteilt. Somit muss der Besucher z.B. auf der de. Seite nur einmal den iFrame aktivieren und dieser wird automatisch ebenfalls auf der en. Seite freigeschaltet.
+**Einwilligung pro Domain merken**
 
-**Allowlist** (Freischaltliste)\
-Mit dem Allowlist-Modus werden alle iFrames blockiert, außer die die im Filter eingetragen sind. \
-\
-**Filter**: Open Street Map, Twitter\
-**Nicht** blockiert werden iFrames von Open Street Map oder Twitter\
-**Blockiert** werden alle anderen iFrames
+Wenn diese Option aktiviert ist, werden die iFrame-Daten (welchen iFrames wurde zugestimmt) mit allen Domains unter dem Punkt **Consent-Speicherung** geteilt. Somit muss der Besucher z. B. auf der de.-Seite nur einmal den iFrame aktivieren und dieser wird automatisch ebenfalls auf der en.-Seite freigeschaltet.
 
-**Blacklist** (Blockierliste)\
-MIt dem Blacklist-Modus werden alle iFrames blockiert, die nicht auf die im Feld **Filter** eingetragenen Begriffe passen.\
-\
-**Filter**: Youtube, Google, Twitter\
-**Blockiert** werden iFrames von Youtube, Google und Twitter\
+**Allowlist** (Freischaltliste)
+
+Mit dem Allowlist-Modus werden alle iFrames blockiert, außer die, die im Filter eingetragen sind.
+
+**Filter**: open street map, twitter
+
+**Nicht blockiert** werden iFrames von Open Street Map oder Twitter.
+
+**Blockiert** werden alle anderen iFrames.
+
+**Blacklist** (Blockierliste)
+
+MIt dem Blacklist-Modus werden alle iFrames blockiert, die nicht auf die im Feld **Filter** eingetragenen Begriffe passen.
+
+**Filter**: youtube, google, twitter
+
+**Blockiert** werden iFrames von Youtube, Google und Twitter
+
 Alle anderen iFrames werden **nicht** blockiert.
 
 ## Einträge je Sprache
