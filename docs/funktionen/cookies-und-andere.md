@@ -89,7 +89,14 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 ## IFrames über Embeddings freischalten
 
-Seit kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und co) über den Cookie-Banner freizuschalten. 
+Seit kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und co) über den Cookie-Banner freizuschalten.
+
+Um Iframes über den Cookiebanner freischalten zu können, tragen Sie in das Feld "Iframes blockieren, die folgenden Text enthalten" Zeichenketten ein, die im IFrame vorkommen.\
+Für einen Youtube-iFrame wäre die Zeichenkette zum Beispiel "Youtube.com"\
+Für einen Google Maps-iFrame wäre die Zeichenkette zum Beispiel "maps.google.com"
+
+Mit dem akzeptieren der Kategorie werden automatisch alle entsprechenden iFrames freigeschaltet.\
+**Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf iFrames und die korrekte Kategorisierung.**
 
 ## Einträge je Sprache
 
