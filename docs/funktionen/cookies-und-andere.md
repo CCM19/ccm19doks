@@ -2,7 +2,7 @@
 
 Mit CCM19 können Sie Ihren Besuchern die Möglichkeit geben, selber zu entscheiden welche Daten über die Besucher erhoben werden.
 
-Damit dies funktioniert müssen alle relevanten Daten im CCM19 zur Verfügung stehen und die Einbindungen müssen getestet werden. Auch wenn CCM19 viel übernehmen kann an automatischen Tests - bleibt es doch immer dem Betreiber überlassen sämtliche Funktionen zu überprüfen. 
+Damit dies funktioniert müssen alle relevanten Daten im CCM19 zur Verfügung stehen und die Einbindungen müssen getestet werden. Auch wenn CCM19 viel übernehmen kann an automatischen Tests - bleibt es doch immer dem Betreiber überlassen sämtliche Funktionen zu überprüfen.
 
 Eine Übersicht über vorhandene Einbindungen finden Sie unter dem Menüpunkt "Einbindungen & Cookies".
 
@@ -44,13 +44,13 @@ Hiermit aktivieren Sie den Eintrag, so dass er auch im Frontend abgehakt werden 
 
 ### Quellcode der Einbindung
 
-Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einbindung generiert wird. In unserem Beispiel wäre dies der Matomo. **Wenn Sie einen Code einfügen, muss dieser einmalig sein und darf in keinem anderen Cookie eingetragen werden. **
+Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einbindung generiert wird. In unserem Beispiel wäre dies der Matomo. \*\*Wenn Sie einen Code einfügen, muss dieser einmalig sein und darf in keinem anderen Cookie eingetragen werden. \*\*
 
 > **Außerdem muss er aus dem direkten Webseitentext entfernt werden, da Sie den Code ansonsten doppelt einbinden würden. Das führt zu technischen Problemen!**
 
 #### Beispiel Matomo
 
-```javascript
+```
 <!-- Matomo / voll anonymisiert, Daten verbleiben auf Firmeneigenen Servern -->
  <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -71,8 +71,6 @@ Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einb
 <!-- End Matomo Code -->
 ```
 
-
-
 ### Anbieter
 
 Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Ihr Unternehmen. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
@@ -85,11 +83,13 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 > Beachten Sie aber bitte folgendes:
 >
-> Die Browserhersteller sind immer bemüht alle Inhalte möglichst schnell zu laden, daher kann es vorkommen dass trotz des korrekten Blockierens ein Browser eine Datei trotzdem lädt, der der Ladeprozess schneller angestoßen wurde als er von CCM19 blockiert werden kann. Da geht es um Millisekunden. Diesen Prozess kann kein Cookie Manager der Welt unterbinden da hier in interne Prozesse des Browsers **nicht** eingegriffen werden kann. 
+> Die Browserhersteller sind immer bemüht alle Inhalte möglichst schnell zu laden, daher kann es vorkommen dass trotz des korrekten Blockierens ein Browser eine Datei trotzdem lädt, der der Ladeprozess schneller angestoßen wurde als er von CCM19 blockiert werden kann. Da geht es um Millisekunden. Diesen Prozess kann kein Cookie Manager der Welt unterbinden da hier in interne Prozesse des Browsers **nicht** eingegriffen werden kann.
 >
 > Wenn Sie hier auf Nummer sicher gehen wollen müssen Sie die Skripte über die Maske "Quellcode der Einbindung" in die Seite einbauen lassen nach erfolgtem Consent und Ihre Seite umbauen.
 
+## IFrames über Embeddings freischalten
 
+Seit kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und co) über den Cookie-Banner freizuschalten. 
 
 ## Einträge je Sprache
 
@@ -97,7 +97,7 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 Für jede verwendete Sprache können die folgenden sprachabhängigen Inhalte noch erstellt werden.
 
-### Beschreibung 
+### Beschreibung
 
 Bei der Beschreibung tragen Sie die Aufgabe der Einbindung ein. Wieso wird diese gesetzt? Was macht diese Einbindung?
 
@@ -111,7 +111,7 @@ Welche Daten werden ganz genau gesammelt? Nur die IP? Oder auch Klickdaten, Date
 
 ### Zu welchem Zweck werden die Daten gesammelt?
 
-Warum sammeln Sie diese Daten? Was wollen Sie damit machen? Conversionoptimierung? Nutzererfahrung verbessern? Oder nur eine Warenkorb Funktion realisieren? 
+Warum sammeln Sie diese Daten? Was wollen Sie damit machen? Conversionoptimierung? Nutzererfahrung verbessern? Oder nur eine Warenkorb Funktion realisieren?
 
 ### Rechtliche Grundlage
 
@@ -129,11 +129,11 @@ Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Si
 
 #### Name
 
-Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie oder _pk_id.* für Matomo - das * ist ein Platzhalter.
+Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie oder _pk_id.\* für Matomo - das \* ist ein Platzhalter.
 
 #### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _pk_id.* alle Cokies geblockt die mit _pk_id. anfangen, also _pk_id.123 usw.
+Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _pk_id.\* alle Cokies geblockt die mit _pk_id. anfangen, also _pk_id.123 usw.
 
 #### Speichertyp
 
@@ -150,6 +150,3 @@ Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten di
 ## Speichern
 
 Mit Klick auf den Button Speichern werden die Daten in die CCM19 Administration Ihrer Seite übernommen und stehen dann direkt für das Frontend Widget zur Verfügung.Cookies der eigenen Seite manuell bestimmen
-
-
-
