@@ -56,15 +56,13 @@ Optimalerweise ändern Sie den Namen des Verzeichnisses auf irgendetwas unverfä
 
 Sie sollten bei 1&1 oder domainfactory darauf achten, dass Sie nach der Installation die RewriteBase setzen. Hier kurze eine Erklärung, wie das funktioniert:
 
-Wir gehen im folgenden davon aus dass Sie die CCM19 Installation in das Verzeichnis "cookies" gelegt haben. Falls Sie CCM19 in ein anderes Verzeichnis kaden müssten Sie das natürlich passend anpassen.
+Wir gehen im folgenden davon aus dass Sie die CCM19 Installation in das Verzeichnis "cookies" gelegt haben. Falls Sie CCM19 in ein anderes Verzeichnis kaden müssten Sie das natürlich passend anpassen. Prinzipiell müssten 2 .htaccess Dateien geändert werden.
 
 1. [meinedomain.de/cookies/setup.php](http://meinedomain.de/cookies/setup.php) aufrufen und Instruktionen folgen.
-
 2. setup.php sollte Sie zu [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) weiterleiten – **Hier tritt der 500er auf.**
-
-3.  bearbeiten – unter der Zeile "RewriteEngine On" eintragen:
+3.  meinedomain.de/cookies/ccm19/.htaccess bearbeiten – unter der Zeile "RewriteEngine On" eintragen:
    `RewriteBase /cookies/ccm19/`
-4.  bearbeiten – auch hier unter "RewriteEngine On" ergänzen:
+4. meinedomain.de/cookies/ccm19/public/.htaccess bearbeiten – auch hier unter "RewriteEngine On" ergänzen:
    `RewriteBase /cookies/ccm19/public/`
 
   Versuchen Sie jetzt [meinedomain.de/cookies/ccm19/public/setup](http://meinedomain.de/cookies/ccm19/public/setup) aufzurufen.
