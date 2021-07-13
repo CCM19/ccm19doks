@@ -1,6 +1,6 @@
 # Shopware
 
-Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung der Einrichtung bekommen Sie einen Javascript-Code im Dashboard von CCM19 (hier unten im Screenshot zu sehen).
+Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code im Dashboard von CCM19 (hier unten im Screenshot zu sehen).
 
 ![CCM19 Backend Screen](../assets/10-01.png)
 
