@@ -34,7 +34,7 @@ Normalerweise wird das auch automatisch nach einem Update durchgeführt, mitunte
 >
 > Dort befinden sich u. U. mehrere Ordner, die mit `prod_` beginnen und auf einer längeren Ziffernfolge enden – z. B. `prod_20210929152426`. Der Ordner mit dem jüngsten Änderungszeitpunkt ist vermutlich das aktuelle Cache-Verzeichnis.
 >
-> Benennen Sie das entsprechende Verzeichnis um, bevor Sie es löschen, damit CCM19 es nicht gleichzeitig wieder befüllt, wenn Seitenbesucher bspw. das Widget während des Löschvorgangs aufrufen. Warten Sie nach der Bearbeitung etwa 5 Sekunden ab, um sicherzugehen, dass alle Anfragen an CCM19, die noch das alte Cache-Verzeichnis verwenden haben könnten, abgeschlossen sind.
+> Benennen Sie das entsprechende Verzeichnis um, bevor Sie es löschen, damit CCM19 es nicht gleichzeitig wieder befüllt, wenn Seitenbesucher bspw. das Widget während des Löschvorgangs aufrufen. Warten Sie nach der Bearbeitung etwa 5 Sekunden ab, um sicherzugehen, dass alle Anfragen an CCM19, die noch das alte Cache-Verzeichnis verwendet haben könnten, abgeschlossen sind.
 >
 > Löschen Sie anschließend das alte, umbenannte Cache-Verzeichnis; per FTP dauert dieser Vorgang möglicherweise ein paar Minuten. Das neue Cache-Verzeichnis wird beim nächsten Aufruf von CCM19 automatisch angelegt.
 
