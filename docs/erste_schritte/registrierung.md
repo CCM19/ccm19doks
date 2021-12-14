@@ -12,7 +12,7 @@ Dort können sie dann einfach den für Sie passenden Tarif buchen und er wird im
 
 Die Download Version finden Sie auf unserer Webseite in diesem Bereich: https://www.ccm19.de/ccm19-download-lizenzen.html
 
-Nach dem Kauf können Sie das CCM19 Tool einfach über unsere Webseite herunterladen. Nutzen Sie dafür einfach [diesen Link](https://www.ccm19.de/account.php?menuid=248&account_extuser=3) oder gehen Sie über das Menü unter **Login** -> **Download Version Login**. Danach klicken Sie im kleinen Untermenu auf **Download** und können dort Ihre Dateien herunterladen.
+Nach dem Kauf können Sie das CCM19 Tool einfach über unsere Webseite herunterladen. Nutzen Sie dafür einfach [diesen Link](https://www.ccm19.de/ccm19-login.html) oder gehen Sie über das Menü unter **Login** -> **Download Version Login**. Danach klicken Sie im kleinen Untermenu auf **Download** und können dort Ihre Dateien herunterladen.
 
 ![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%20_%20Download%20Version%20Login.jpg)
 
