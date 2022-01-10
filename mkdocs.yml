@@ -50,9 +50,11 @@ nav:
         - erste_schritte/login-und-passwoerter.md
     - Verwaltung:
       - verwaltung/domainverwaltung.md
+      - verwaltung/tarife.md
+      - verwaltung/theme-verwaltung.md
+      - verwaltung/standardtexte.md
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
-      - verwaltung/theme-verwaltung.md
     - "Downloadversion":
       - erste_schritte/installation.md
   - Cookies & Co. einrichten:
