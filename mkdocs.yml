@@ -44,18 +44,23 @@ markdown_extensions:
 
 nav:
   - "Home": index.md
-  - "Übersicht": index.md
-  - "Erste Schritte":
-      - erste_schritte/registrierung.md
-      - erste_schritte/installation.md
-      - "Einloggen in CCM19": erste_schritte/login-und-passwoerter.md
-      - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
-      - "Domain scannen": erste_schritte/onboarding-schritt-2.md
-      - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
-      - "Platzhalter": erste_schritte/onboarding-schritt-4.md
-      - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
-      - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
-  - Domain einrichten:
+  - "Übersicht / Verwaltung":
+    - "Erste Schritte":
+        - "Registrierung": erste_schritte/registrierung.md
+        - erste_schritte/login-und-passwoerter.md
+        - erste_schritte/installation.md
+        - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
+        - "Domain scannen": erste_schritte/onboarding-schritt-2.md
+        - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
+        - "Platzhalter": erste_schritte/onboarding-schritt-4.md
+        - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
+        - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
+    - Verwaltung:
+      - verwaltung/kontoeinstellungen.md
+      - verwaltung/lizenzverwaltung.md
+      - verwaltung/domainverwaltung.md
+      - verwaltung/theme-verwaltung.md
+  - Cookies & Co. einrichten:
       - "Funktionen":
         - funktionen/themes.md
         - funktionen/cookies-und-andere.md
@@ -69,20 +74,15 @@ nav:
         - funktionen/platzhalter.md
         - frontend/frontend.md
       - System & Co.:
-          - system-und-co/frontend-einstellungen.md
-          - system-und-co/consent-speicherung.md
-          - system-und-co/email.md
-          - system-und-co/caching.md
-          - system-und-co/netzwerk.md
-          - system-und-co/update.md
-          - logs/consent-protokoll.md
-          - logs/system-protokoll.md
-  - Verwaltung:
-      - verwaltung/kontoeinstellungen.md
-      - verwaltung/lizenzverwaltung.md
-      - verwaltung/domainverwaltung.md
-      - verwaltung/theme-verwaltung.md
-  - Integrationen:
+        - system-und-co/frontend-einstellungen.md
+        - system-und-co/consent-speicherung.md
+        - system-und-co/email.md
+        - system-und-co/caching.md
+        - system-und-co/netzwerk.md
+        - system-und-co/update.md
+        - logs/consent-protokoll.md
+        - logs/system-protokoll.md
+  - CMS / Shop Integrationen:
       - integrationen/ccm19-shopware.md
       - integrationen/ccm19-shopify.md
       - integrationen/ccm19-wordpress.md
