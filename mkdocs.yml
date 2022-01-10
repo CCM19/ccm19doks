@@ -13,6 +13,7 @@ theme:
   #logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.instant
@@ -35,6 +36,11 @@ markdown_extensions:
   - meta
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
   - "Home": index.md
   - Erste Schritte:
