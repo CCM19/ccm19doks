@@ -22,7 +22,7 @@ theme:
 
 plugins:
   - search
-repo_url: https://github.com/PapooSoftware/ccm19doks
+repo_url: https://github.com/CCM19/ccm19doks
 repo_name: CCM19Doks
 edit_uri: blob/master/docs/
 
