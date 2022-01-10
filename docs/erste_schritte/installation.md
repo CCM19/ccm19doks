@@ -1,6 +1,9 @@
+---
+title: Installation
+---
 # Installation der Downloadversion
 
-Wenn Sie einen Fullservice Tarif nutzen und keine Downloadversion heruntergeladen haben - Sie sich also über die ccm19.de Seite einloggen - dann können Sie diesen Schritt hier überspringen.
+Diesen Teil brauchen Sie nur dann, wenn Sie eine Downloadversion heruntergeladen haben und diese installieren wollen. Die meisten Kunden nutzen unsere Cloudvariante. Für diese ist dieser Teil nicht relevant.
 
 
 

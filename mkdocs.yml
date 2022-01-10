@@ -48,19 +48,20 @@ nav:
     - "Erste Schritte":
         - "Registrierung": erste_schritte/registrierung.md
         - erste_schritte/login-und-passwoerter.md
-        - erste_schritte/installation.md
-        - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
-        - "Domain scannen": erste_schritte/onboarding-schritt-2.md
-        - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
-        - "Platzhalter": erste_schritte/onboarding-schritt-4.md
-        - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
-        - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
     - Verwaltung:
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
       - verwaltung/domainverwaltung.md
       - verwaltung/theme-verwaltung.md
+    - "Downloadversion":
+      - erste_schritte/installation.md
   - Cookies & Co. einrichten:
+      - "Onboarding":
+        - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
+        - "Domain scannen": erste_schritte/onboarding-schritt-2.md
+        - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
+        - "Platzhalter": erste_schritte/onboarding-schritt-4.md
+        - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
       - "Funktionen":
         - funktionen/themes.md
         - funktionen/cookies-und-andere.md
@@ -75,7 +76,9 @@ nav:
         - frontend/frontend.md
       - System & Co.:
         - system-und-co/frontend-einstellungen.md
-        - system-und-co/consent-speicherung.md
+        - "Consent Speicherung":
+          - system-und-co/consent-speicherung.md
+          - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
         - system-und-co/email.md
         - system-und-co/caching.md
         - system-und-co/netzwerk.md

@@ -62,6 +62,15 @@
 		background-color: #333333 !important;
 	}
 }
+@media screen and (min-width: 59.9375em) {
+	.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+		display: none;
+	}
+
+	.md-nav__item--section > .md-nav__link {
+		font-size: 20px !important;
+	}
+}
 .md-typeset table:not([class]) th {
 	background-color:#3a3c43 !important;
 }
@@ -175,7 +184,7 @@ h2.md-search-result__title {
 	background-color: #333333 !important;
 	color:#efefef !important;
 }
-
-.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
-	display: none;
+.md-nav__item .md-nav__link--active {
+	color: #1c779f;
+	font-weight: bold;
 }
