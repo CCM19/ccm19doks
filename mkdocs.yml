@@ -61,6 +61,7 @@ nav:
     - "Downloadversion":
       - erste_schritte/installation.md
       - verwaltung/lizenzverwaltung.md
+      - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
   - Cookies & Co. einrichten:
       - "Onboarding":
         - "Onboarding durchführen": erste_schritte/onboarding-complete.md
@@ -80,9 +81,7 @@ nav:
         - frontend/frontend.md
       - System & Co.:
         - system-und-co/frontend-einstellungen.md
-        - "Consent Speicherung":
-          - system-und-co/consent-speicherung.md
-          - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
+        - system-und-co/consent-speicherung.md
         - system-und-co/email.md
         - system-und-co/caching.md
         - system-und-co/netzwerk.md
