@@ -44,6 +44,7 @@ markdown_extensions:
 
 nav:
   - "Home": index.md
+  - "Übersicht": index.md
   - "Erste Schritte":
       - erste_schritte/registrierung.md
       - erste_schritte/installation.md
@@ -54,27 +55,28 @@ nav:
       - "Platzhalter": erste_schritte/onboarding-schritt-4.md
       - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
       - "Upgrade Generation 2": erste_schritte/upgrade_g2.md
-  - Funktionen:
-      - funktionen/themes.md
-      - funktionen/cookies-und-andere.md
-      - funktionen/skripte.md
-      - funktionen/pagecheck.md
-      - funktionen/cookietabelle.md
-      - funktionen/uebersetzungen.md
-      - funktionen/impressum.md
-      - funktionen/datenschutz.md
-      - funktionen/barrierefreiheit.md
-      - funktionen/platzhalter.md
-      - frontend/frontend.md
-  - System & Co.:
-      - system-und-co/frontend-einstellungen.md
-      - system-und-co/consent-speicherung.md
-      - system-und-co/email.md
-      - system-und-co/caching.md
-      - system-und-co/netzwerk.md
-      - system-und-co/update.md
-      - logs/consent-protokoll.md
-      - logs/system-protokoll.md
+  - Domain einrichten:
+      - "Funktionen":
+        - funktionen/themes.md
+        - funktionen/cookies-und-andere.md
+        - funktionen/skripte.md
+        - funktionen/pagecheck.md
+        - funktionen/cookietabelle.md
+        - funktionen/uebersetzungen.md
+        - funktionen/impressum.md
+        - funktionen/datenschutz.md
+        - funktionen/barrierefreiheit.md
+        - funktionen/platzhalter.md
+        - frontend/frontend.md
+      - System & Co.:
+          - system-und-co/frontend-einstellungen.md
+          - system-und-co/consent-speicherung.md
+          - system-und-co/email.md
+          - system-und-co/caching.md
+          - system-und-co/netzwerk.md
+          - system-und-co/update.md
+          - logs/consent-protokoll.md
+          - logs/system-protokoll.md
   - Verwaltung:
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
