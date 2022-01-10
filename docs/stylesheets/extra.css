@@ -59,7 +59,7 @@
 }
 @media screen and (max-width: 59.9375em) {
 	.md-nav__source {
-		background-color: #2e313d !important;
+		background-color: #333333 !important;
 	}
 }
 .md-typeset table:not([class]) th {
