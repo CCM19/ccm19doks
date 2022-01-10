@@ -49,9 +49,9 @@ nav:
         - "Registrierung": erste_schritte/registrierung.md
         - erste_schritte/login-und-passwoerter.md
     - Verwaltung:
+      - verwaltung/domainverwaltung.md
       - verwaltung/kontoeinstellungen.md
       - verwaltung/lizenzverwaltung.md
-      - verwaltung/domainverwaltung.md
       - verwaltung/theme-verwaltung.md
     - "Downloadversion":
       - erste_schritte/installation.md
