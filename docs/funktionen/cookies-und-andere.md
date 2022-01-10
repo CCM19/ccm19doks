@@ -1,4 +1,4 @@
-# Skripte, Cookies und Einbindungen
+# Cookies & Einbindungen
 
 Mit CCM19 können Sie Ihren Besuchern die Möglichkeit geben, selber zu entscheiden welche Daten über die Besucher erhoben werden.
 
