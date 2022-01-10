@@ -18,6 +18,7 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.top
+    - navigation.tracking
   palette:
     primary: blue grey
   custom_dir: overrides
@@ -43,7 +44,7 @@ markdown_extensions:
 
 nav:
   - "Home": index.md
-  - Erste Schritte:
+  - "Erste Schritte":
       - erste_schritte/registrierung.md
       - erste_schritte/installation.md
       - "Einloggen in CCM19": erste_schritte/login-und-passwoerter.md
