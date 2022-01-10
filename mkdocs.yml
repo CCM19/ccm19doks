@@ -12,7 +12,11 @@ theme:
   name: material
   #logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
   palette:
     primary: blue grey
   custom_dir: overrides
