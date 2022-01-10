@@ -54,9 +54,10 @@ nav:
       - verwaltung/theme-verwaltung.md
       - verwaltung/standardtexte.md
       - verwaltung/kontoeinstellungen.md
-      - verwaltung/lizenzverwaltung.md
+      - verwaltung/domainapi.md
     - "Downloadversion":
       - erste_schritte/installation.md
+      - verwaltung/lizenzverwaltung.md
   - Cookies & Co. einrichten:
       - "Onboarding":
         - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
