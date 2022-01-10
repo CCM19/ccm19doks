@@ -63,11 +63,7 @@ nav:
       - verwaltung/lizenzverwaltung.md
   - Cookies & Co. einrichten:
       - "Onboarding":
-        - "Onboarding starten": erste_schritte/onboarding-schritt-1.md
-        - "Domain scannen": erste_schritte/onboarding-schritt-2.md
-        - "Impressum & Co.": erste_schritte/onboarding-schritt-3.md
-        - "Platzhalter": erste_schritte/onboarding-schritt-4.md
-        - "Speichern & Einbinden": erste_schritte/onboarding-schritt-5.md
+        - "Onboarding durchführen": erste_schritte/onboarding-complete.md
       - "Funktionen":
         - funktionen/themes.md
         - funktionen/cookies-und-andere.md

@@ -1,5 +1,5 @@
 ---
-title: Themes einrichten und anpassen
+title: Themes
 ---
 
 # Themes einrichten und nutzen
