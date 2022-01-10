@@ -8,3 +8,16 @@ In jedem Account können Unterbenutzer und Untergruppen erstellt und verwaltet w
 
 Der grüne Edit Button führt zur Bearbeitungsmaske des jeweiligen Benutzers, mit dem roten Löschen Button kann der Account entfernt werden.
 
+## Benutzer bearbeiten
+
+![screenshot-1641850127701 (1)](../assets/screenshot-1641850127701%20(1).jpg)
+
+### Zugriffsrechte via Gruppen
+
+Die oberen Felder erklären sich von selber, wichtig sind die Gruppenrechte anhand derer der Zugriff auf die verschiedenen Bereiche von CCM19 genutzt werden können.
+
+### Zugriff auf Domains
+
+Außerdem kann hier definiert werden auf welche Domain der User zugreifen darf.
+
+Auf diesem Wege können Sie z.B. definieren dass bestimmte User auf nur eine Domain zugreifen darf, dabei aber nur Impressum und Datenschutzlinks eintragen darf.
