@@ -61,6 +61,9 @@
 	.md-nav__source {
 		background-color: #333333 !important;
 	}
+	.md-tabs__link {
+		font-size: .75rem;
+	}
 }
 @media screen and (min-width: 59.9375em) {
 	.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
@@ -109,7 +112,7 @@ h4 {
 	font-weight: 400 !important;
 }
 p {
-	font-size: .9rem !important;
+	font-size: .8rem !important;
 }
 .md-content__inner p {
 	line-height: 1.4rem;

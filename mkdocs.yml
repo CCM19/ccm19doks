@@ -55,6 +55,9 @@ nav:
       - verwaltung/standardtexte.md
       - verwaltung/kontoeinstellungen.md
       - verwaltung/domainapi.md
+    - "Benutzer & Gruppen":
+        - verwaltung/user.md
+        - verwaltung/gruppen.md
     - "Downloadversion":
       - erste_schritte/installation.md
       - verwaltung/lizenzverwaltung.md
