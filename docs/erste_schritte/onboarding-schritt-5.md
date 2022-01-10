@@ -8,7 +8,7 @@ Auf der letzten Seite des Onboardings finden Sie den Einbettungscode des CCM19 f
 
 Der Einbindungscode kann z.B. so aussehen.
 
-``` javascript
+``` html
 <script src="http://localhost/ccm19/cookie-consent-management/www/public/ccm19.js?apiKey=1234&amp;domain=1234&amp;lang=de_DE" 
 referrerpolicy="origin">
     </script>
