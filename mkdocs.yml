@@ -101,12 +101,12 @@ nav:
         - integrationen/ccm19-wix.md
         - integrationen/ccm19-magento.md
         - integrationen/ccm19-typo3.md
-  - API & Technik:
-      - api/javascript-apis.md
-      - api/technik.md
-      - api/google-tag-manager.md
-      - api/apikey.md
-      - api/general_api.md
+      - API & Technik:
+          - api/javascript-apis.md
+          - api/technik.md
+          - api/google-tag-manager.md
+          - api/apikey.md
+          - api/general_api.md
   - Plugins:
       - plugins/plugins.md
       - plugins/erweiterte_statistik.md
@@ -115,7 +115,7 @@ nav:
           - plugins/programmieren/assets.md
           - plugins/programmieren/config.md
           - plugins/programmieren/testpluginClass.md
-  - Agency Version:
+  - Enterprise / Agency Version:
       - agency-version/agency.md
       - agency-version/kunden.md
       - agency-version/kunden-api.md
