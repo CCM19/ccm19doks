@@ -15,38 +15,6 @@ Die alte CCM19 Version erlaubte dies dennoch, das wurde aber schon vor langer Ze
 
 
 
-# Gefundene Skripte
-
-Unter dem Menüpunkt Skripte finden Sie eine Auflistung aller externen Skripte die der automatische Scanner des CCM19 Widgets auf Ihrer Seite findet.
-
-## Skripte deaktivieren
-
-Sie können die gefundenen Skripte hier manuell und global deaktivieren. Wenn Sie z.B. keine 100%ige Kontrolle über den Quellcode der Seite haben, wie es z.B. bei vielen Cloud Anbietern der Fall ist, haben Sie hier die Möglichkeit darauf zu zugreifen und Einbindungen zu unterbinden.
-
-Um ein Skript zu deaktivieren, setzen Sie den Haken auf inaktiv. Damit wird es dann im Frontend solange geblockt wie das CCM19 Widget aktiv ist.
-
-
-
-## Auflistung der Skripte
-
-Die Auflistung zeigt Ihnen welche Skripte auf Ihrer Seite zu finden sind, es wird dabei der gesamte Codeschnipsel angezeigt. Weiterhin zeigt ein Link wo das Skript zum ersten mal gefunden wurde, und ob es aktiv ist. 
-
-Der rote Button löschen entfernt das Skript aus diesem Listing - es führt **nicht** dazu dass das Skript aus Ihrer Seite entfernt wird, dort bleibt es weiterhin erhalten und ausführbar.
-
-
-
-
-
-## Ausnahmen für Inline-Skripte
-
-Wenn im CCM19 das scannen auch nach inline und eigenen Skripten aktiviert ist (nicht zu empfehlen da sehr ressourcenhungrig), können Sie dort Ausnahmen eintragen aufgrund spezielle Schnipsel nicht mehr beachtet werden sollen.
-
-
-
-
-
-
-
 ## Unbekannte Cookies entfernen
 
 CCM19 kann so konfiguriert werden, dass Cookies, die im Tool nicht hinterlegt sind, entfernt werden, sobald sie bemerkt werden.
@@ -55,19 +23,15 @@ Das funktioniert natürlich nur für First Party Cookies. Third Party Cookies di
 
 Daher muss man diese Skripte oder iframes blocken bevor sie ausgeführt werden - also auch bevor sie die Cookies setzen.
 
+**Denken Sie darüber nach, ob Sie jedes verwendete Cookie auf Ihrer Seite finden? Wenn Sie z.B. ein Shopping Card Cookie verwenden, das nicht in CCM19 gelistet ist, wird es blockiert -> KEINE VERKÄUFE!!!** 
 
-
-
+**Daher gilt hier TESTEN! TESTEN! TESTEN!**
 
 
 
 ## Skripte blockieren
 
-Hier können Sie das Verhalten des Scriptblockers (Menüpunkt [Skripte](skripte.md) ) konfigurieren. Diese Funktion blockiert das Laden von Skripten, die nicht unter der Kontrolle von CCM19 stehen. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert genauso wie das ausführen unbekannter Skripte.
-
-![screenshot-2020.09.30-13_29_13-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-13_29_13-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
-
-
+Hier können Sie das Verhalten des Scriptblockers konfigurieren. Diese Funktion blockiert das Laden von Skripten, die nicht unter der Kontrolle von CCM19 stehen. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert genauso wie das ausführen unbekannter Skripte.
 
 ### Neue Skripte automatisch blockieren
 
@@ -77,8 +41,8 @@ Wenn dieser Haken aktiviert ist werden von CCM19 neu gefundene Skripte direkt de
 
 Ist dieser Haken gesetzt werden alle Skripte auch der eigenen Domain blockiert wenn sie neu gefunden werden. Beispiel:
 
-``` javascript
-<script type="text/javascript" src="/papoo_git_full/js/main.js" defer="defer"></script>
+``` html
+<script type="text/javascript" src="/js/main.js" defer="defer"></script>
 ```
 
 ### Inline Skripte auch blockieren
@@ -94,9 +58,29 @@ Ist dieser Haken gesetzt werden auch Inline Skripte die als Schnipsel in Ihrer S
 </script>
 ```
 
+## Ausnahmen für Inline-Skripte
+
+Wenn im CCM19 das Scannen auch nach inline und eigenen Skripten aktiviert ist (nicht zu empfehlen da sehr ressourcenhungrig), können Sie dort Ausnahmen eintragen aufgrund spezielle Schnipsel nicht mehr beachtet werden sollen.
 
 
 
+# Gefundene Skripte
+
+Hier finden Sie eine Auflistung aller externen Skripte die der automatische Scanner des CCM19 Widgets auf Ihrer Seite findet.
+
+![screenshot-1641913652262](../assets/screenshot-1641913652262.jpg)
 
 
+
+## Auflistung der Skripte
+
+Die Auflistung zeigt Ihnen welche Skripte auf Ihrer Seite zu finden sind, es wird dabei der gesamte Codeschnipsel angezeigt. Weiterhin zeigt ein Link wo das Skript zum ersten mal gefunden wurde, und ob es aktiv ist. 
+
+Der rote Button löschen entfernt das Skript aus diesem Listing - es führt **nicht** dazu dass das Skript aus Ihrer Seite entfernt wird, dort bleibt es weiterhin erhalten und ausführbar.
+
+## Skripte deaktivieren
+
+Sie können die gefundenen Skripte hier manuell und global deaktivieren. Wenn Sie z.B. keine 100%ige Kontrolle über den Quellcode der Seite haben, wie es z.B. bei vielen Cloud Anbietern der Fall ist, haben Sie hier die Möglichkeit darauf zu zugreifen und Einbindungen zu unterbinden.
+
+Um ein Skript zu deaktivieren, setzen Sie den Haken auf inaktiv. Damit wird es dann im Frontend solange geblockt wie das CCM19 Widget aktiv ist.
 
