@@ -8,7 +8,7 @@ Das Frontend von CCM19 besteht aus den Widgets die Sie sehen und bedienen könne
 
 Das Widget und alle anderen Daten werden minifiziert, komprimiert und serverseitig gechached um einen bestmögliche Performance zu erreichen. 
 
-Durchschnittliche Ladezeiten unseres Skriptes betragen zwischen 0,2 und 0,4 Sekunden pro Aufruf, dies ist im Schnitt für diese Skripte eine sehr gute Ladezeit - auch im Vergleich zum Mitbewerb.
+Durchschnittliche Ladezeiten unseres Skriptes betragen zwischen 0,03 und 0,2 Sekunden pro Aufruf.
 
 > Wenn Sie eine Download Version verwenden wird die Aufrufzeit durch Ihren Server wesentlich mitbestimmt. In der Regel ist aber auch bei fast allen Server gewährleistet dass ein schneller Aufruf möglich ist.
 
@@ -30,25 +30,37 @@ Dies ist das erste Widget was die Besucher Ihrer Webseite zu sehen bekommen. Dah
 
   
 
-![screenshot-2020.09.30-16_13_37-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-16_13_37-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1641918855521](../assets/screenshot-1641918855521.jpg)
 
-Der Klick auf "Alles akzeptieren" akzeptiert alle eingestellten Skripte und Cookies und schließt das Fenster sofort. Der Consent wird dabei im Browser der Besucher gespeichert.
+Der Klick auf "Akzeptieren" akzeptiert alle eingestellten Skripte und Cookies und schließt das Fenster sofort. Der Consent wird dabei im Browser der Besucher gespeichert. Der Klick auf "Schließen" entspricht einer Ablehnung und über Informationen kommt man zu den weiteren Daten in einem weiteren Widget.
 
 ### Consent bleibt erhalten
 
-Der Consent bleibt solange erhalten wie der Besucher die Cookie oder Local Storage Daten in seinem Browser nicht löscht. Die maximale Laufzeit stellen Sie hier [Consentspeicherung](../system-und-co/consent-speicherung.md) ein.  Bei einem weiteren Aufruf der Seite wird die Maske nicht mehr gezeigt.
+Der Consent bleibt solange erhalten wie der Besucher die Cookie oder Local Storage Daten in seinem Browser nicht löscht. Die maximale Laufzeit stellen Sie hier [Consentspeicherung](../system-und-co/consent-speicherung.md) ein.  Bei einem weiteren Aufruf der Seite wird die Maske **nicht** mehr gezeigt. 
 
-## Einstellungen
+Sie können die Laufzeit auch manuell beenden über die Administration indem Sie die Cookie Laufzeit absenken oder einen Reset erzwingen.
+
+
+
+## Einstellungen / Informationen
 
 Klickt der Besucher auf den Button Einstellungen erreicht er die nächste Maske wo er die Kategorien der Einbindungen, Skripte und Cookies anschauen, durchlesen und bestätigen kann.
 
- ![screenshot-2020.09.30-16_15_54-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-16_15_54-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1641919201131](../assets/screenshot-1641919201131.jpg)
+
+
+
+
 
 Die Kategorie "Technisch notwendig" oder auch "Technisch notwendig / Essentiell" ist immer angehakt und kann nicht abgehakt werden. 
 
-Hier werden nur die Einbindungen und Cookies beschrieben die für das Funktionieren der Webseite unabdingbar sind oder für die nach $6 DSGVO ein begründetes Interesse des Betreibers besteht. Auf die rechtlichen Implikationen wollen wir an dieser Stelle lieber nicht eingehen.
+Hier werden nur die Einbindungen und Cookies beschrieben die für das Funktionieren der Webseite unabdingbar sind. Seit dem das neue TTDSG gilt können Cookies oder Skripte hier nicht mehr nach §6 DSGVO - begründetes Interesse des Betreibers - eingetragen werden. 
+
+Auf die rechtlichen Implikationen wollen wir an dieser Stelle lieber **nicht** eingehen. Hier fragen Sie den am besten den Anwalt Ihres Vertrauens.
 
 Die Besucher können nur diese Haken setzen oder nicht. Klicken die Besucher auf Speichern wird der Zustand wie er angezeigt wird, gespeichert. Klickt man hier auf "Alle Akzeptieren" werden alle Kategorien mit allen sich darin befindenden Einbindungen akzeptiert.
+
+Abbrechen bringt einen zurück zur vorherigen Maske.
 
 ### Informationen zu den Kategorien
 
@@ -62,7 +74,9 @@ Die einzelnen Kategorien können auch Zusatztexte bekommen, diese können Sie in
 
 Wenn Besucher mehr Informationen über die einzelnen Einbindungen lesen möchte dann können sie auf das Fragezeichen klicken und kommen dann in die folgende Maske.
 
-![screenshot-2020.09.30-16_39_00-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-16_39_00-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1641919400638](../assets/screenshot-1641919400638.jpg)
+
+
 
 Hier können die Besucher nun alle Elemente die auf der Webseite verwendet im Detail nachlesen, was machen die Skripte, was wird wohin gespeichert, wer hat Zugriff darauf usw. Diese Einstellungen können Sie hier anpassen:  [Embeddings & Cookies](../funktionen/cookies-und-andere.md) .#
 
