@@ -81,14 +81,18 @@ nav:
       - System & Co.:
         - system-und-co/frontend-einstellungen.md
         - system-und-co/consent-speicherung.md
-        - system-und-co/email.md
+        - system-und-co/verfuegbare-plugins.md
+        - system-und-co/dev-einstellungen.md
+        - logs/consent-protokoll.md
+      - "Downloadversion":
         - system-und-co/caching.md
         - system-und-co/netzwerk.md
         - system-und-co/update.md
-        - logs/consent-protokoll.md
+        - system-und-co/email.md
         - logs/system-protokoll.md
   - Frontend / Integrationen:
-      - frontend/frontend.md
+      - "Frontend / Webseite":
+        - frontend/frontend.md
       - "CMS / Shop Integrationen":
         - integrationen/ccm19-shopware.md
         - integrationen/ccm19-shopify.md
