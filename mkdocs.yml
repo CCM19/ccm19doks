@@ -78,7 +78,6 @@ nav:
         - funktionen/datenschutz.md
         - funktionen/barrierefreiheit.md
         - funktionen/platzhalter.md
-        - frontend/frontend.md
       - System & Co.:
         - system-und-co/frontend-einstellungen.md
         - system-und-co/consent-speicherung.md
@@ -88,13 +87,15 @@ nav:
         - system-und-co/update.md
         - logs/consent-protokoll.md
         - logs/system-protokoll.md
-  - CMS / Shop Integrationen:
-      - integrationen/ccm19-shopware.md
-      - integrationen/ccm19-shopify.md
-      - integrationen/ccm19-wordpress.md
-      - integrationen/ccm19-wix.md
-      - integrationen/ccm19-magento.md
-      - integrationen/ccm19-typo3.md
+  - Frontend / Integrationen:
+      - frontend/frontend.md
+      - "CMS / Shop Integrationen":
+        - integrationen/ccm19-shopware.md
+        - integrationen/ccm19-shopify.md
+        - integrationen/ccm19-wordpress.md
+        - integrationen/ccm19-wix.md
+        - integrationen/ccm19-magento.md
+        - integrationen/ccm19-typo3.md
   - API & Technik:
       - api/javascript-apis.md
       - api/technik.md
