@@ -102,15 +102,9 @@ Wenn dieser Haken gesetzt ist wird nach dem Consent über die Seite ein Einstell
 
 
 
-Einstellungsicon öffnet
+### Einstellungsicon öffnet
 
-### Cookies ablehnen
-
-Die DSGVO fordert eine einfache Möglichkeit das Setzen von Cookies und die Nutzung von Skripten zu widersprechen. Daher gibt es diesen Button. Ist der Haken gesetzt - dann wird der Ablehnen Button direkt in der 1. Maske angezeigt.
-
-
-
-![screenshot-2020.09.29-14_00_58-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_00_58-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+Hier stellen Sie ein welches Fenster das Icon öffnen soll, den 1. oder den 2. Layer des Widgets, also die generelle Startansicht oder die Detailansicht mit der entsprechenden Auswahl.
 
 ### Do not Track Respekt
 
@@ -128,11 +122,29 @@ Dieses Produkt enthält GeoLite2-Daten von MaxMind, verfügbar auf [https://www.
 
 Verhindert simulierte Klicks auf die Akzeptieren-Buttons, um die Cookie-Auswahl des Nutzers zu schützen. **Deaktivieren Sie diese Funktion nicht, wenn Sie sich nicht sicher sind, dass es unbedingt notwendig ist. Dies könnte Ihre rechtliche Position beim Beweisen, dass Consent erteilt wurde, schwächen.**
 
+
+
+## Hauptfenster Schaltflächen
+
+Nach TTDSG und DSGVO braucht es in einem Consent Widget eine gleichwertige Möglichkeit die Cookies abzulehnen oder abzubrechen wie die Cookies anzunehmen.
+
+Daher wird hier überprüft ob mind. diese 2 Buttons aktiv sind und auch der Ablehnen Button aktiviert ist.
+
+Mit den Einstellungen definieren Sie welche Buttons an welche Position kommen.
+
+
+
 ### "Alle akzeptieren"-Button anzeigen im Fenster Kategorien
 
 Mit dieser Einstellung wird im Kategorien Fenster der "Alles Akzeptieren" Button zusätzlich angezeigt.
 
 ![screenshot-2020.09.29-14_03_37-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_03_37-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+
+
+
+### Alles aus/abwählen Buttons anzeigen
+
+
 
 ### Logo des Seitenbetreibers
 
