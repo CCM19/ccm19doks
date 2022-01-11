@@ -95,6 +95,7 @@ nav:
       - "Frontend / Webseite":
         - frontend/frontend.md
       - "CMS / Shop Integrationen":
+        - integrationen/ccm19-standard.md
         - integrationen/ccm19-shopware.md
         - integrationen/ccm19-shopify.md
         - integrationen/ccm19-wordpress.md
