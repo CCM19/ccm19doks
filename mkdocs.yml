@@ -114,11 +114,9 @@ nav:
         - plugins/erweiterte_statistik.md
         - plugins/abtests.md
         - plugins/importexport.md
+        - plugins/2fa.md
       - Plugins Programmieren:
           - plugins/programmieren/plugins_programmieren.md
-          - plugins/programmieren/assets.md
-          - plugins/programmieren/config.md
-          - plugins/programmieren/testpluginClass.md
   - Enterprise / Agency Version:
       - agency-version/agency.md
       - agency-version/kunden.md

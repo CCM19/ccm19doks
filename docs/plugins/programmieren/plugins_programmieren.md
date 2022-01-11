@@ -1,166 +1,185 @@
-# Einleitung - Plugins selber Programmieren
+# CCM19-Plugins
 
-Diese Anleitung richtet sich an alle die Plugins selber erstellen möchten. Zum derzeitigen Zeitpunkt können die Plugins noch nicht über eine Infrastruktur bereit gestellt werden, sondern sie müssen durch unser Team freigegeben und auch ins System integriert werden. Bei der Beschreibung hier gehen wir davon aus dass Sie mehr als nur Grundkenntnisse in PHP, HTML, CSS, und Javascript besitzen sowie das PHP Framework Symfony kennen.
+## Namensgebung
 
-Für die Programmierung brauchen Sie eine funktionierende Instanz von CCM19 - diese können Sie jederzeit bekommen, fragen Sie einfach über unser Kontaktformular: https://www.ccm19.de/kontaktccm19/ nach einer kostenfreien Lizenz für Entwickler. Beachten Sie bitte dass diese Version dann nur für lokale Entwicklung freigegeben ist.
+Jedes Plugin hat einen eindeutigen Namen, der aus einem Hersteller-Präfix und dem eigentlichen Plugin-Namen besteht. Der Plugin-Name sollte aus englischen Wörtern bestehen.
 
+Für das Plugin-Verzeichnis wird der Name mit dem Hersteller-Präfix in CamelCase-Schreibweise zusammengesetzt.
 
+Als Plugin-ID im `name`-Feld der `composer.json` wird der Name als `hersteller/pluginname` in snake_case geschrieben.
 
-## Verzeichnisstruktur eines Plugins
+Von uns entwickelte Plugins tragen den Präfix `Ccm19`.
 
-Die Verzeichnisse sind generell folgendermaßen aufgebaut, natürlich können Sie davon in einem gewissen Rahmen abweichen indem Sie z.B. noch Unterverzeichnisse in `templates` oder `src` ergänzen.
+Ein Plugin von uns für "erweiterten Iframe-Support" würde also `ccm19/extended_iframe` bzw. `Ccm19ExtendedIframe` heißen, ein Fremdplugin z.B. `examplevendor/really_special_plugin` bzw. `ExamplevendorReallySpecialPlugin`.
 
-```bash
-testplugin
-    ├── assets
-    │   ├── Assets.php
-    │   └── images
-    │       └── testimage1.jpg
-    ├── composer.json
-    ├── Config
-    │   └── Config.php
-    ├── index.html
-    ├── src
-    │   ├── controller
-    │   │   └── TestPlugin.php
-    │   └── model
-    │       └── TestPluginModell.php
-    ├── templates
-    │   ├── index.html.twig
-    │   ├── index.html.twig
-    │   ├── list.html.twig
-    │   ├── script.js.twig
-    │   └── style-css.css.twig
-    ├── translations
-    │   ├── messages.de.twig
-    │   └── messages.xx.twig
-    └── vendor
+## Grundstruktur
+
+Ein Plugin wird als Ordner im Verzeichnis `plugins` angelegt und enthält folgende Dateien und Ordner:
+
+- `composer.json` – Metadaten über das Plugin
+- `preview.`{`png`|`jpeg`|`svg`|`webp`|`gif`} – Vorschaubild
+- `src/` – PHP-Quelldateien (Idealerweise in einer Substruktur wie im CCM19-src-Verzeichnis)
+- `src/Controller/` – Controller-PHP-Dateien (optional)
+- `config/` – Symfony-Config-Dateien (optional)
+- `templates/` – Twig-Templates (optional)
+- `translations/` – Übersetzungsdateien (optional)
+
+## Composer.json
+
+Die `composer.json` sieht folgendermaßen aus:
 
 ```
-
-Sie sehen hier den Aufbau des Testplugins. So sollten Sie also auch Ihr Testplugin aufbauen.
-
-## Testplugin
-
-Das Testplugin ist derzeit auch auf github zu finden im folgenden Repository: [Testplugin](https://github.com/PapooSoftware/ccm19TestPlugin)
-
-
-
-## Einbindung
-
-Eingebunden wird das Plugin folgendermaßen. Es gibt im Verzeichnis `var`  die json Datei `cm-plugins.json` diese hat z.B. folgenden Inhalt.
-
-```json
 {
-  "f5c45c8": {
-	"pluginUID": "jpdubuehl35gozfvkshjbdf",
-	"name": "Erweiterte Statistik",
-	"description": "Dieses Plugin stellt eine erweiterte Statistik zur Verf\u00fcgung ",
-	"menupunktname": "Statistik \/ Analyse",
-	"menuitemroute": "app_testplugin_index",
-	"faIcon": "fa-bar-chart-o",
-	"version": "1.1",
-	"versionID": "knp0728zifgzzgaitgjdkvh",
-	"free": true,
-	"price": "0,00 EUR",
-	"img": "data:image\/png;base64, base64ImagesString",
-	"dirname": "statistics\/",
-	"activateForAllAccounts": "on",
-	"activateForAllAccountsOnTheirOwn": null
-  }
+	"name": "examplevendor/really_special_plugin",
+	"description": "This plugin does something really special that should be described here.",
+	"version": "1.0",
+	"type": "ccm19-plugin",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "ExampleVendor GmbH",
+			"role": "Manufacturer"
+		}
+	],
+	"extra": {
+		"copyright": "(c) Copyright...",
+		"activatePerDomain": true, // Plugin in der Agency-Version für einzelne Domains (de-)aktivierbar
+		"label": {
+			"en": "Really special plugin" // Anzeigename in der Pluginverwaltung
+			"de": "Wirklich besonderes Plugin",
+			"fr": "Plugin vraiment spécial"
+		},
+		"description": {
+			"de": "Dieses Plugin macht etwas ganz Besonderes, das hier beschrieben werden sollte.",
+			"fr": "Ce plugin fait quelque chose de vraiment spécial qui devrait être décrit ici."
+		},
+		"manufacturerLink": {
+			"de": "https://examplevendor.example",
+			"en": "https://examplevendor.example"
+		},
+		"supportLink": {
+			"de": "https://examplevendor.example/support_de/",
+			"en": "https://examplevendor.example/support_en/"
+		},
+		"preview": "pfad/zu/preview.png" // OPTIONAL: Wenn das Vorschaubild nicht am o.g. Standard-Ort liegt
+	}
 }
 ```
 
+Für unsere eigenen Plugins gibt es drei weitere optionale Einstellungen im `"extra"`-Bereich:
 
+- `"preinstalled": true,` markiert Plugins als nicht-löschbar.
+- `"hidden": true,` Plugin wird nicht in der Plugin-Übersicht angezeigt und ist nicht konfigurierbar (aktuell nur für das Payment-Plugin)
+- `"compatId": "abcdefghij",` Plugin-ID aus dem alten Plugin-System. Wird zur Zuordnung beim Wechsel auf die neue Infrastruktur verwendet
 
-**"f5c45c8"**
+Wenn übersetzbare Angaben in einer Sprache fehlen, wird als Fallback die englische Angabe verwendet.
 
-Key - sollte einzigartig sein :-)
+## Templates
 
-**pluginUID**
+Templates aus dem `templates/`-Verzeichnis des Plugins werden über Twig-Namespaces nach dem Schema `@plugin:PluginVerzeichnis/` eingebunden.
 
-(string) Ein frei wählbarer 23 Stellen langer String der eindeutig ist.
+Beim obrigen Beispielplugin wäre `templates/index.html.twig` also `@plugin:ExamplevendorReallySpecialPlugin/index.html.twig`.
 
-**name**
+### Templates des Hauptsystems verändern
 
-(string) Der Name Ihres Plugins
+Um Templates anderer Menüpunkte als der eigenen zu ergänzen oder zu bearbeiten, kann das Event `App\Event\TemplateRenderEvent` verwendet werden.
 
-**description**
+Dabei können Twig-Blöcke genutzt werden um Teile des Ausgabe zu ersetzen und Template-Variablen gelesen und gesetzt werden.
 
-(string) Beschreibung Ihres Plugins
-
-**menupunktname**
-
-(string) Der Name des Menüpunktes zum Plugin in der Administration
-
-**menuitemroute**
-
-(string) //klein_unterstriche - die Route zum Plugin - diese sollte dann auch in Ihrem Plugin so zu finden sein.
-
-```php
-/**
- * Controller for Testplugin - domain dependent
- * @Route("/domains/{_domainId}/plugins/testplugin/", name="app_testplugin_")
- */
-class TestPlugin extends DomainDependantController
+```
+class BackendTemplateListener implements EventSubscriberInterface
 {
-	/**
-	 * @Route("index", name="index")
-	 * @return Response
-	 */
-	public function index(): Response
+	private $pluginState;
+
+	public function __construct(PluginState $pluginState)
 	{
+		$this->pluginState = $pluginState;
+	}
+
+	/**
+	 * @return array
+	 */
+	public static function getSubscribedEvents()
+	{
+		return [
+			TemplateRenderEvent::nameForView('domain/index.html.twig') => ['onRenderDomainIndex', 100],
+		];
+	}
+
+	/**
+	 * @return void
+	 */
+	public function onRenderDomainIndex(TemplateRenderEvent $event)
+	{
+		if (!$this->pluginState->isActiveForCurrentDomain()) {
+			return;
+		}
+
+		$event->extendTemplate('@plugin:ExamplevendorReallySpecialPlugin/domain_index.html.twig');
+		$event->set('someVariable', ...);
+	}
+}
 ```
 
-**faIcon**
+## Routen und Menüpunkte
 
-(string) Ein FontAwesome Favivon auf Grundlage der enthaltenen - da bitte im Verzeichnis `public` reinschauen bzw einen Editor nutzen der die Einbindung auflösen kann - was z.B. mit PHPStorm super funktioniert.
+Routen und Menüpunkte können über die `@Route` und `@Menu`-Annotations in Controllern in `src/Controller/` erzeugt werden.
 
-**version**
+Routen-Namen **müssen** mit `plugin_herstellername_pluginname_` beginnen, damit die Rechteverwaltung greift und Plugin-Routen aktiviert/deaktiviert werden, je nachdem ob ein Plugin für einen User aktiviert ist.
 
-(string) - naja - die Versiosnr ebend...
+Details zu der Syntax der Menu-Annotation stehen in menu-component.md.
 
-**versionID**
+```
+namespace Plugins\ExamplevendorReallySpecialPlugin;
 
-(string) eine eindeutige VersionsID - wird derzeit nicht genutzt - könnte aber in Zukunft so kommen
+use App\Component\Menu\Annotation\Menu;
+use App\Controller\DomainDependantController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-**free**
+/**
+ * @Route("/domains/{_domainId}/plugins/examplevendor/really_special/", name="plugin_examplevendor_really_special_plugin_")
+ */
+class MainController extends DomainDependantController
+{
+	/**
+	 * @Menu("Really special", icon="fa-plug", methods={"HEAD", "GET"})
+	 * @Route("", name="index")
+	 */
+	public function index(...): Response
+	{
+		...
+	}
 
-(bool) - true oder false - also kostenlos oder nicht.
+	/**
+	 * @Route("", name="save")
+	 */
+	public function indexSave(...): Response
+	{
+		...
+	}
+}
+```
 
-**price**
+Das Symfony-Autowiring kann verwendet werden. Innerhalb von Plugins sind zusätzlich zwei besondere Autowiring-Argumente möglich:
 
-(string) Falls nicht free - dann den Preis hier eintragen
+- `App\Model\PluginState` liefert das Plugin-Status-Model für das aktuelle Plugin, mit dem z.B. überprüft werden kann, ob das Plugin aktiv sein soll.
+- `string $PLUGINPATH` liefert den vollständigen Pfad zum Plugin-Verzeichnis.
 
-**img**
+Menüpunkte im Domain-Menü (also solche, deren Controller von `DomainDependantController` ableitet) werden automatisch ein-/ausgeblendet, wenn das Plugin für die Domain (de-)aktiviert wird.
 
-(string) - base64 kodiertes Bild für die Vorschau - am besten klein rechnen und die Größe anpassen.
+Menüpunkte die nicht domainabhängig sind, werden in der Agency-Version automatisch ausgeblendet, wenn das Plugin für einen Kunden gesperrt wird.
 
-**dirname**
+Für speziellere Anforderungen ist es auch möglich Menüeinträge über das Event `App\Event\MenuGenerationEvent` manuell zu setzen.
 
-(string) - der Name des Verzeichnisses wo das Plugin lokalisiert wird unterhalb von `plugins`
+### Auf Routen anderer Controller reagieren
 
-**activateForAllAccounts**
+Mit dem Event `ccm19.controller.request.<route_name>` also z.B. `ccm19.controller.request.app_dashboard` kann auf eine Route bevor der jeweilige Controller ausgeführt wird, reagiert werden.
 
-(string) - on oder off oder null- wird dynamisch befüllt über die Administration - kann aber vorausgefüllt werden. Beschreibt ob das Plugin direkt für alle Nutzer aktiv ist. 
+Das Event-Objekt ist ein `Symfony\Component\HttpKernel\Event\ControllerEvent`. Mit der Methode `setController()` kann der Request auch auf einen anderen Controller umgeleitet werden.
 
-**activateForAllAccountsOnTheirOwn**
+Das Event `ccm19.controller.response.<route_name>` ermöglicht dagegen Code auszuführen, nachdem der Controller durchgelaufen ist.
 
-(string) - on oder off oder null - wird dynamisch befüllt über die Administration - kann aber vorausgefüllt werden. Beschreibt ob jeder Account Owner das Plugin für sich aktivieren muss.
+Beide Events werden nicht bei unautorisiertem Zugriff ausgelöst, also z.B. wenn eine Route, die einen angemeldeten Benutzer erfordert, ohne gültige Session aufgerufen wird.
 
-## Aktivierung
-
-Liegt das Plugin nun in dieser Form vor und ist die json Datei aktuell dann kann man das Plugin aktivieren und es sollte direkt zur Verfügung stehen sobald man die Administration aufruft. Für das Testplugin sieht das dann so aus:
-
-
-
-![screenshot-1616173207763-763](../../assets/screenshot-1616173207763-763.jpg)
-
-
-
-## Programmierung
-
-Die Programmierung der Plugins kann beliebig komplex sein, im Plugin selber haben Sie Zugriff auf alle Codebestandteile.
-
-
-
+**Wichtig:** Bei allen Event-Handlern ist grundsätzlich mittels `$pluginState->isActiveForCurrentDomain()` bzw. je nach Kontext `$pluginState->isAllowedForCurrentUser()` zu überprüfen, ob eine Aktion des Plugins im aktuellen Kontext erwünscht ist.
