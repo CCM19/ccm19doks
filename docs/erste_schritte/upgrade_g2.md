@@ -1,5 +1,7 @@
 # CCM19 Upgrade auf Generation 2
 
+Wenn Sie eine Version nutzen die nach dem 13.10.2020 gekauft wurde betrifft Sie das nicht. Für alle anderen:
+
 Mit dem Release der Version 13.10.2020 wurde das CCM19 Cookie Consent Tool auf die Darstellung und Verarbeitung von Einbindungen statt der Nutzung von "nur" Cookies umgebaut. 
 
 > Die alte Variante Generation 1 wird noch mindestens bis Ende 03.2021 gepflegt, erhält aber in der Regel keine neuen Funktionen mehr sondern nur noch Bugfixes.

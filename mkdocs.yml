@@ -78,12 +78,13 @@ nav:
         - funktionen/datenschutz.md
         - funktionen/barrierefreiheit.md
         - funktionen/platzhalter.md
+      - "Protokolle":
+        - logs/consent-protokoll.md
       - System & Co.:
         - system-und-co/frontend-einstellungen.md
         - system-und-co/consent-speicherung.md
         - system-und-co/verfuegbare-plugins.md
         - system-und-co/dev-einstellungen.md
-        - logs/consent-protokoll.md
       - "Downloadversion":
         - system-und-co/caching.md
         - system-und-co/netzwerk.md
