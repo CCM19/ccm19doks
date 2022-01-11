@@ -2,11 +2,13 @@
 
 Verwenden Sie diese Funktion, um zu verhindern, dass externe Ressourcen geladen werden, die über einen Iframe-Container eingebettet sind. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert. Der Benutzer kann mit dem stattdessen angezeigten Dialog dem Laden des Inhalts zustimmen.
 
-![screenshot-2020.10.13-16_34_33-1602599673775](../assets/screenshot-2020.10.13-16_34_33-1602599673775.jpg)
+![screenshot-1641906162637](../assets/screenshot-1641906162637.jpg)
 
 
 
-### Iframe Blockierung aktivieren
+
+
+## Iframe Blockierung aktivieren
 
 Mit dem Haken aktivieren Sie die Blockierung der IFrames - vermutlich offensichtlich...
 
