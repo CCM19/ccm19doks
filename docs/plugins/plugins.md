@@ -25,11 +25,9 @@ Der Klick auf Settings öffnet folgende Maske
 
 Sie können das Plugin direkt für alle Accounts aktivieren. In der Downloadversion ist der Haken immer gesetzt - da es nur einen Benutzer gibt.
 
-Mit der Einstellung "Accounts / Kunden können und müßen die Plugins selber aktivieren" übergeben Sie die Verwantwortung für die Nutzung an Ihre Kunden. Diese Funktion ist in der Downloadversion nicht aktiv - da es nur 1 Kunden gibt.
+Mit der Einstellung "Accounts / Kunden können und müßen die Plugins selber aktivieren" übergeben Sie die Verwantwortung für die Nutzung an Ihre Kunden. Diese Funktion ist in der OnPremise Version nicht aktiv - da es nur 1 Nutzer gibt.
 
-## Installieren
-
-Hier sehen Sie in Zukunft eine Auflistung verfügbarer Plugins, mit einem Klick auf Installieren können Sie diese in ihrem System installieren.
+**Verfügbare Plugins finden Sie links im Menü.**
 
 
 
