@@ -30,3 +30,6 @@ Verwenden Sie diese Option **nur**, wenn Verbindungen von diesem Server aus durc
 
 Hier können Sie IP-Adressen und `User-Agent`-Strings von der Aufrufzählung ausnehmen. Dies kann verwendet werden, damit Suchmaschinen-Bots und lokale Benutzer der Aufrufzähler nicht erhöhen und damit zu Tarif-Limitierungen gezählt werden.
 
+Diese Funktion wird in der Cloud Version global für alle User gesetzt.
+
+![screenshot-1641916764936](../assets/screenshot-1641916764936.jpg)

@@ -1,7 +1,7 @@
 # Onboarding 
-## Schritt 1
-
 Direkt nach dem 1. Aufruf in der Administration werden Sie durch das sogenannte Onboarding geführt. In diesem Prozess werden die wichtigsten Punkte Ihrer Seite abgefragt, gescannt und verarbeitet. Sie können hier bei jedem Schritt korrigierend eingreifen.
+
+## Schritt 1
 
 Alles was im Onboarding erstellt wird können Sie später in der Administration wieder anpassen und ändern.
 
