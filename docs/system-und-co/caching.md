@@ -2,15 +2,14 @@
 
 CCM19 nutzt intensives Caching aller Komponenten um die notwendigen Daten so schnell wie möglich zur Verfügung stellen zu können. Zeit ist Geld und wenn Seitenaufrufe zu lange dauern springen Besucher ab.
 
-> **Nicht in Fullservice enthalten**
->
-> Diese Funktion steht in der Fullservice Variante einzelnen  nicht zur Verfügung da sie von CCM19 über alle Accounts hinweg genutzt wird. Diese Funktion wird ebenfalls serverseitig regelmäßig  durchgeführt.
 
-
-
-![screenshot-2020.09.30-14_45_13-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-14_45_13-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
+![screenshot-1641916436826](../assets/screenshot-1641916436826.jpg)
 
 Auf dem Screenshot erkennen Sie die verschiedenen Caches von CCM19 und wie stark der jeweilige Cache belegt ist.
+
+**Nicht in Fullservice enthalten**
+
+Diese Funktion steht in der Fullservice Variante **einzelnen Kunden** nicht zur Verfügung da sie von CCM19 global über alle Accounts hinweg genutzt wird. Diese Funktion wird ebenfalls serverseitig regelmäßig  durchgeführt.
 
 
 
