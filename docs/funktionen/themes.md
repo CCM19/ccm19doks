@@ -30,25 +30,23 @@ In jedem Theme können Sie mit Hilfe von diversen Buttons und Einstellmöglichke
 
 **Verwenden Sie bei den Individuelle CSS Einstellungen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben.** In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
 
+
+
 ## Vorschau
 
 Über den Button Vorschau können Sie sich eine Vorschau des Frontend Widgets anschauen. Der Klick öffnet nicht Ihre Seite sondern eine Seite im Inneren des CCM19 Adminbereiches. Nach jeder Änderung des Layouts ist ein Neuladen erforderlich. Das Widget ist voll funktionsfähig - d.h. Sie können alle Elemente des Widgets optisch anpassen und testen.
 
+Im Hintergrund wird dabei immer Ihre aktuelle Startseite als Screenshot geladen damit Sie direkt den Effekt sehen.
 
-
-![screenshot-2020.09.29-13_42_42-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_42_42-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1641897784213 (1)](../assets/screenshot-1641897784213%20(1).jpg)
 
 Vorschau mit Widget.
 
 
 
-## Frontend Overlay - Cookie Hinweis Box
-
-![Frontend Light Version](../assets/images/10-frontend-light.png)
-
-Frontend Light Version
-
 Die Buttons und Hintergrundfarben die Sie in der Administration einstellen, kommen direkt im Frontend an. Sie können ebenfalls die Links Impressum und Datenschutzerklärung optisch anpassen.
+
+
 
 ## Buttons & Einstellungen
 
@@ -102,6 +100,10 @@ Wenn dieser Haken gesetzt ist wird nach dem Consent über die Seite ein Einstell
 
 ![screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
+
+
+Einstellungsicon öffnet
+
 ### Cookies ablehnen
 
 Die DSGVO fordert eine einfache Möglichkeit das Setzen von Cookies und die Nutzung von Skripten zu widersprechen. Daher gibt es diesen Button. Ist der Haken gesetzt - dann wird der Ablehnen Button direkt in der 1. Maske angezeigt.
@@ -113,6 +115,8 @@ Die DSGVO fordert eine einfache Möglichkeit das Setzen von Cookies und die Nutz
 ### Do not Track Respekt
 
 Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt, nur technisch notwendige Elemente werden geladen.
+
+Allerdings gilt zu beachten dass diese Einstellung in den meisten Browser normalerweise deaktiviert ist.
 
 ### Nur in der EU anzeigen
 
