@@ -2,6 +2,16 @@
 
 Mit der domainspezifischen API können Sie Consent und Ereignisdaten pro Domain und über eine gesicherte SSL Schnittstelle in andere Systeme integrieren.
 
+## API Key 
+
+Der Api Key selber finden Sie in der unten stehenden Maske. Mit dem Button "Neuen Api Key erstellen" wird der Key neu gesetzt und erscheint dann direkt in der Maske.
+
+Beachten Sie bitte das bei diesem Schritt evtl. vorhandene Abfragen nicht mehr funktionieren da der alte Key nicht mehr valide ist.
+
+![screenshot-2020.12.17-13_59_55-1608209995197](../assets/screenshot-2020.12.17-13_59_55-1608209995197.jpg)
+
+
+
 Der Aufruf erfolgt generell mit Ihrem Api Key als GET-Parameter `apiKey` - ohne diesen ist der Aufruf nicht erfolgreich. Jeder Key ist immer nur für einen Account valide.
 
 Der Aufruf erfolgt generell per simplen GET Aufruf im Browser, curl oder eine beliebige andere Möglichkeit Webdaten aufzurufen.

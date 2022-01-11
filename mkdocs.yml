@@ -106,7 +106,6 @@ nav:
           - api/javascript-apis.md
           - api/technik.md
           - api/google-tag-manager.md
-          - api/apikey.md
           - api/general_api.md
   - Plugins:
       - plugins/plugins.md
