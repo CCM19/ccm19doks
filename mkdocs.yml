@@ -102,14 +102,18 @@ nav:
         - integrationen/ccm19-wix.md
         - integrationen/ccm19-magento.md
         - integrationen/ccm19-typo3.md
-      - API & Technik:
+      - API & Co.:
           - api/javascript-apis.md
-          - api/technik.md
           - api/google-tag-manager.md
           - api/general_api.md
+      - "Technik & Server":
+          - api/technik.md
   - Plugins:
-      - plugins/plugins.md
-      - plugins/erweiterte_statistik.md
+      - "Plugins":
+        - plugins/plugins.md
+        - plugins/erweiterte_statistik.md
+        - plugins/abtests.md
+        - plugins/importexport.md
       - Plugins Programmieren:
           - plugins/programmieren/plugins_programmieren.md
           - plugins/programmieren/assets.md

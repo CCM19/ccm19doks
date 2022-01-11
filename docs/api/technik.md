@@ -4,7 +4,7 @@ Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von 
 
 ## Frontend-Widgets
 
-Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks um mögliche Inkompatibilitäten möglichst zu vermeiden.
+Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks wie z.B. jquery, vue, react oder sonstige um mögliche Inkompatibilitäten so weit es möglich ist zu vermeiden.
 
 ## Sicherheit
 
@@ -21,15 +21,15 @@ Content-Security-Policy:
 	form-action 'self'
 ```
 
-## Speicherung
+## Speicherung ohne Datenbank
 
 Alle Daten werden im JSON-Format lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var* Ihrer Installation.
 
 Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen Aufrufe pro Tag problemlos gehändelt werden können.
 
-## Datenbank
+## Speicherung mit Datenbank
 
-CCM19 nutzt derzeit kein Datenbank-Management-System.
+CCM19 nutzt alternativ MongoDB ab Version 4, in dieser Vairante werden alle Daten in der Datenbank gespeichert.
 
 ## Beta-Phase
 
@@ -42,10 +42,11 @@ Die Self-Service / Download Version von CCM19 benötigt lediglich
 - Linux oder ein anderes POSIX-kompatibles Betriebssystem
 - PHP ab Version 7.2
 - Apache httpd 2.2+ oder nginx
+- Und im Falle der Nutzung der Datenbank MongoDB ab Version 4
 
 ### Apache httpd
 
-Als Server empfehlen wir einen LAMP-Server – wobei das M für MySQL nicht notwendig ist, da derzeit keine Datenbank genutzt wird.
+Als Server empfehlen wir einen LAMP-Server – wobei das M für MySQL nicht notwendig ist, und alternativ durch MongoDB ersetzt wird.
 
 Beim Betrieb mit Apache httpd werden folgende Module benötigt:
 
@@ -53,7 +54,7 @@ Beim Betrieb mit Apache httpd werden folgende Module benötigt:
 - mod_headers (optional)
 - mod_expires (optional)
 
-CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel.
+CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel. Zusätzlich empfiehlt es sich auf Performance Optimierung zu setzen. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
 
 ### nginx
 
