@@ -69,8 +69,8 @@ nav:
         - funktionen/dashboard.md
         - funktionen/themes.md
         - funktionen/cookies-und-andere.md
-        - funktionen/skripte.md
         - funktionen/pagecheck.md
+        - funktionen/iframes.md
         - funktionen/cookietabelle.md
       - "Texte & Inhalte":
         - funktionen/uebersetzungen.md

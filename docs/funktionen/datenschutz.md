@@ -8,11 +8,19 @@ Laut DSGVO müssen die Datenschutzerklärung einer Seite - ebenso wie das Impres
 
 Sie haben die Möglichkeit den Link zur Datenschutzerklärung direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Datenschutzerklärung als Link".
 
-![screenshot-1614091536940-940](../assets/screenshot-1614091536940-940.jpg)
+![screenshot-1641905410135](../assets/screenshot-1641905410135-16419054459531.jpg)
 
 Dann können Sie den Link zum Datenschutzerklärung direkt eingeben und er wird auch so im Frontend genutzt.
 
+### Zeige das Widget auf der unten angegebenen Seite an
 
+Wenn Sie dieses Häkchen setzen wird das Widget auch auf der Datenschutzhinweisseite angezeigt. Dies ist allerdings in den meisten Fällen nicht sinnvoll, da laut DSGVO der Zugang zu der Seite Datenschutzhinweis auch ohne Banner möglich sein muss.
+
+Daher ist der Haken standardmäßig nicht gesezt **und** Sie sollten gut überlegen ob das auch wirklich so genutzt werden soll falls Sie den Haken aktivieren wollen.
+
+### In einem neuen Tab öffnen
+
+Ist der Haken gesetzt öffnen sich die Links in einem neuen Fenster mit target="_blank"
 
 ## Datenschutzerklärung bearbeiten
 

@@ -6,13 +6,13 @@ Mit dieser Funktion können Sie die Einbettung einer Cookie Erklärungstabelle i
 
 Verwenden Sie den folgenden Code in Ihrer Datenschutzerklärung oder einer ähnlichen Seite an der Stelle, an der die Liste aller konfigurierten Einbettungen und Cookies erscheinen soll. Der Platzhalter wird mit den Cookie-Erklärungs-Liste gefüllt, sobald CCM19 geladen wurde. Die Anzeigesprache wird automatisch vom Browser des Besuchers ermittelt.
 
-```
+```html
 <div class="ccm-cookie-declaration">Bitte aktivieren Sie Javascript, um die Liste aller deklarierten Cookies und ähnlicher Techniken zu sehen.</div>
 ```
 
 Verwenden Sie den folgenden Code, wenn Sie die Tabelle in einer festen Sprache anzeigen möchten. (Ersetzen Sie dabei *de_DE* mit einem beliebigen unter Texte & Sprachen konfigurierten und aktivierten Sprachcode):
 
-```
+```html
 <div class="ccm-cookie-declaration" data-lang="de_DE">Bitte aktivieren Sie Javascript, um die Liste aller deklarierten Cookies und ähnlicher Techniken zu sehen.</div>
 ```
 

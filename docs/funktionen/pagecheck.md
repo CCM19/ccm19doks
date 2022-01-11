@@ -6,15 +6,19 @@ Es ist wichtig diese Daten zu finden, da im Laufe der Zeit immer wieder mal Skri
 
 Allerdings findet der Scanner auch sogenannte User Skripte und Cookies die von anderen Seiten eingeschleppt werden. Browser verhalten sich hier mitunter nicht konsistent. Die Ursache ist von unserer Seite aus nicht zu erklären, da müssten die Browserhersteller einmal genauer schauen.
 
-Daher schauen Sie hier genau hin ob auch wirklich Daten hier zu finden sind die auf Ihrer Seite laufen. Falls ja, tragen Sie die Daten in Ihre lokale Datenbank ein.
+Im HIntergrund läuft immer ein Scanner der von extern in diesen Fällen überprüft ob das entsprechende Cookie oder sonstige Element auch auf den Unterseite enthalten ist wo es im CCM19 gelistet ist, falls nicht wird es automatisch auf "Ignore" gesetzt und hier auch nicht angezeigt. 
 
-![screenshot-2020.09.29-16_48_13-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_48_13-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+Daher schauen Sie hier genau hin ob auch wirklich Daten hier zu finden sind die auf Ihrer Seite laufen. Falls ja, tragen Sie die Daten in Ihre lokale Datenbank ein. Eine manuelle Überprüfung von Zeit zu Zeit ist sicher zu empfehlen.
+
+
+
+![screenshot-1641904837285](../assets/screenshot-1641904837285.jpg)
 
 
 
 ### Skript Informationen
 
-Bei den Skripten finden Sie ein blaues i in der Spalte info - wenn Sie hierauf klicken wird Inen angezeigt wo das Skript überall gefunden wurde. Die Liste ist auf ein paar Einträge limitiert. Tritt das öfter auf, sollten Sie konkreter nachforschen was da passiert. Evtl. ist die Seite auch Opfer eines Hacks geworden.
+Bei den Skripten finden Sie ein blaues **i** in der Spalte info - wenn Sie hierauf klicken wird Ihnen angezeigt wo das Skript überall gefunden wurde. Die Liste ist auf ein paar Einträge limitiert. Tritt das öfter auf, sollten Sie konkreter nachforschen was da passiert. Evtl. ist die Seite auch Opfer eines Hacks geworden.
 
 ![screenshot-2020.09.29-16_49_51-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_49_51-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 

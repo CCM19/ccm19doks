@@ -6,9 +6,19 @@ Laut DSGVO muss das Impressum einer Seite - ebenso wie die Datenschutzbestimmung
 
 Sie haben die Möglichkeit den Link zum Impressum direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Impressum verlinken".
 
-![screenshot-1614091608391-391](../assets/screenshot-1614091608391-391.jpg)
+![screenshot-1641905169722](../assets/screenshot-1641905169722.jpg)
 
 Dann können Sie den Link zum Impressum direkt eingeben und er wird auch so im Frontend genutzt.
+
+### Zeige das Widget auf der unten angegebenen Seite an
+
+Wenn Sie dieses Häkchen setzen wird das Widget auch auf der Impressumsseite angezeigt. Dies ist allerdings in den meisten Fällen nicht sinnvoll, da laut DSGVO der Zugang zu der Seite Impressum auch ohne Banner möglich sein muss.
+
+Daher ist der Haken standardmäßig nicht gesezt **und** Sie sollten gut überlegen ob das auch wirklich so genutzt werden soll falls Sie den Haken aktivieren wollen.
+
+### In einem neuen Tab öffnen
+
+Ist der Haken gesetzt öffnen sich die Links in einem neuen Fenster mit target="_blank"
 
 ## Impressum bearbeiten
 

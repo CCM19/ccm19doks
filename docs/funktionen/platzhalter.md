@@ -2,7 +2,7 @@
 
 Über die Platzhalter können Sie immer wiederkehrende Texte automatisch einfügen lassen. Zum Beispiel lohnt es sich hier den Firmen-Namen oder die eigene Datenschutz-Seite anzulegen, um diese einfach in die einzelnen Cookies einzufügen und ggf. ändern zu können, wenn die URL sich ändert.
 
-![screenshot-2020.09.30-13_06_55-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-13_06_55-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-1641905533609](../assets/screenshot-1641905533609.jpg)
 
 
 
