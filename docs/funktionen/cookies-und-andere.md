@@ -26,7 +26,7 @@ Mitunter ist noch eine Anpassung an Ihr Unternehmen oder Webseite notwendig, die
 
 ## Bearbeitungsmaske der Einbindungen
 
-![screenshot-2020.10.29-13_03_32-1603973012799](../assets/screenshot-2020.10.29-13_03_32-1603973012799.jpg)
+![screenshot-1641903648518](../assets/screenshot-1641903648518.jpg)
 
 In der Bearbeitungsmaske können Sie folgendes eintragen:
 
@@ -101,9 +101,7 @@ Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames
 
 **Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
 
-![Bildschirmfoto vom 2021-05-12 13-06-29.png](/index.php/core/preview?fileId=910258&x=1024&y=1024&a=true#mimetype=image%2Fpng&hasPreview=true&fileId=910258)Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Frontend-Verhalten -> iFrames blockieren** aktivieren.
-
-![Bildschirmfoto vom 2021-05-12 13-06-55.png](/index.php/core/preview?fileId=910259&x=1024&y=1024&a=true#mimetype=image%2Fpng&hasPreview=true&fileId=910259)
+Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Frontend-Verhalten -> iFrames blockieren** aktivieren.
 
 ### iFrame-Ausnahmen
 
@@ -190,6 +188,36 @@ Wann läuft der Speichereintrag automatisch aus.
 #### Wert
 
 Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
+
+
+
+## Google Consent Mode (beta)
+
+![screenshot-1641904109779](../assets/screenshot-1641904109779.jpg)
+
+Beta deswegen weil er bei Google noch Beta Status hat - nicht bei CCM19. Google Consent Mode ist eine neue Funktionalität für Webseiten, die den Google Tag Manager verwenden, um Google-Dienste wie Google Ads, Floodlight oder Google Analytics einzubinden.
+
+Falls Sie den Google Tag Manager verwenden, wählen Sie bitte aus, welche Zustimmungs-Arten für Google mit dieser Einbindung impliziert werden sollen.
+
+Weitere Informationen zum Google Consent Mode (beta) von Google finden Sie hier: [https://support.google.com/analytics/answer/9976101?hl=de](https://support.google.com/analytics/answer/9976101?hl=de)
+
+## Urls ausschließen
+
+![screenshot-1641904161415](../assets/screenshot-1641904161415.jpg)
+
+Auf diesen Seiten die Einbindung NICHT ausspielen, das bedeutet dass die aktuell ausgewählte Einbindung im Tag Manager Modus die Einbindung nicht aktiviert resp. im Blockmodus diese nicht freigibt. 
+
+Dies kann unter verschiedenen Umständen Sinn machen. 
+
+Tragen Sie eine URL pro Zeile ein. Am Ende können Sie ein * als Platzhalter verwenden. Ohne Platzhalter wird die URL exakt verglichen! Tragen Sie also bitte nur vollständige und gültige URLs ein.
+
+Beispiel: https://www.ccm19.de/data.html* wirkt sich aus auf
+
+- https://www.ccm19.de/data.html
+- https://www.ccm19.de/data.htmlx
+- https://www.ccm19.de/data.html?var1=test
+
+… und so weiter.
 
 ## Speichern
 

@@ -144,7 +144,17 @@ Mit dieser Einstellung wird im Kategorien Fenster der "Alles Akzeptieren" Button
 
 ### Alles aus/abwählen Buttons anzeigen
 
+![screenshot-1641902729730](../assets/screenshot-1641902729730.jpg)
 
+Wenn Sie hier das Häkchen setzen wird im 2. Layer eine entsprechende Auswahl angeboten. Der Haken ist standardmäßig nicht aktiv.
+
+### Extra Footer mit Links zu Impressum & Co.
+
+![screenshot-1641902822676](../assets/screenshot-1641902822676.jpg)
+
+Ist dieser Haken gesetzt, wird auch im 2. Layer ein weitere Bereich eingeblendet wo die Links zu Impressum und Datenschutz & Co. eingeblendet werden.
+
+Standardmäßig nicht aktiv.
 
 ### Logo des Seitenbetreibers
 
@@ -161,6 +171,14 @@ Hier geht es um den Link im Frontend Overlay, der rechts unten steht. Dies ist e
 ### Farben
 
 Hier stellen Sie für die verschiedenen Buttons und Hintergründe im Frontend die Farben ein - achten Sie hier darauf dass auch Rahmen teilweise davon abhängen, wenn Sie einen weißen Rahmen auf weißem Hintergrund setzen mit weißer Schrift sehen Sie natürlich nichts mehr. Am besten kontrollieren Sie jede Änderung einmal im Frontend indem Sie das Overlay neu aufrufen!
+
+Bitte beachten Sie dass die Einträge für die Farben auch bestimmten Mindeskontrastanforderungen genügen müssen um einen gewisses Maß an Barrierefreiheit zu erreichen.
+
+![screenshot-1641902924696](../assets/screenshot-1641902924696.jpg)
+
+Das der Kontrast hoch genug ist wird neben den Farbbereichen dargestellt, eine Maß von 5:1 sollte mindestens erreicht sein. Ist die Zahl rot, ist der Kontrast zu niedrig.
+
+Beachten Sie bitte dass diese Bereiche zwingend grün sein müssen wenn Sie TCF / IAB nutzen.
 
 ### CSS
 
