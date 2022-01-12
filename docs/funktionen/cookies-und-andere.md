@@ -50,7 +50,7 @@ Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einb
 
 #### Beispiel Matomo
 
-```
+```html
 <!-- Matomo / voll anonymisiert, Daten verbleiben auf Firmeneigenen Servern -->
  <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -86,6 +86,36 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 > Die Browserhersteller sind immer bemüht alle Inhalte möglichst schnell zu laden, daher kann es vorkommen dass trotz des korrekten Blockierens ein Browser eine Datei trotzdem lädt, der der Ladeprozess schneller angestoßen wurde als er von CCM19 blockiert werden kann. Da geht es um Millisekunden. Diesen Prozess kann kein Cookie Manager der Welt unterbinden da hier in interne Prozesse des Browsers **nicht** eingegriffen werden kann.
 >
 > Wenn Sie hier auf Nummer sicher gehen wollen müssen Sie die Skripte über die Maske "Quellcode der Einbindung" in die Seite einbauen lassen nach erfolgtem Consent und Ihre Seite umbauen.
+
+### Script-Loader
+
+Nutzen Sie die Funktion „Skripte blockieren, die folgenden Text enthalten“, können Ihre Skripte auf der Website bleiben und CCM19 blockiert diese beim Aufbau der Seite. Allerdings laden alle aktuellen Browser diese Ressourcen trotz korrekter Integration vor dem Eingreifen von CCM19, da diese durch automatisches Preloading durch die Browser geladen werden. Weder CCM19 noch andere Tools können dies verhindern, da der Download der Ressourcen startet, bevor die Ausführung von Skripten durch Browser beginnt.
+
+Um dies nun doch zu verhindern, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
+
+CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
+
+**Unser Typ-Attribut sieht so aus: `type="text/x-ccm-loader"`**
+
+Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
+```html
+<script src="https://your.site/script.js" type="text/x-ccm-loader"></script>
+```
+
+#### Gruppe für den Script-Loader
+
+Haben Sie Ihre Skripte auf der Website mit unserem Typ-Attribut `type="text/x-ccm-loader"` manuell ausgestattet, können Sie mit dieser Funktion diese Skripte gruppieren und einheitlich blockieren.
+
+Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfalls dem entsprechenden Skript hinzu. Die Gruppenbezeichnung besteht immer aus folgendem Teil: `data-ccm-loader-group="beispiel_bezeichnung"`.
+
+Zusammen mit dem `type`-Attribut sieht es dann so aus:
+```html
+<script src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
+```
+
+Tragen Sie den Gruppennamen in der relevanten Einbindung unter dem Punkt "Gruppe für den Script-Loader" ein, um die Einbindung mit den markierten Skripten Ihrer Webseite zu verknüpfen.
+
+Sobald ein Seitenbesucher eine solche Einbindung zulässt, werden die gruppierten Skripte nachgeladen.
 
 ### Iframes freischalten
 
