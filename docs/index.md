@@ -15,17 +15,13 @@ Sie können also jederzeit Fehler und Ergänzungen zur Dokumentation hinzufügen
 
 ## Inhaltsverzeichnis
 
-> * [Übersicht / Verwaltung](erste_schritte/registrierung/) 
->
-> * [Cookies & Co. einrichten](/erste_schritte/onboarding-complete/) für Ihre Domains
->
-> * [Frontend / Integration](/frontend/frontend/) - wie und wo Sie CCM19 einbinden
->
-> * [Plugins](/plugins/plugins/) - alles rund um Plugins, welche es gibt, was sie tun, wie man sie baut
->
-> * [Enterprise / Agency Version](/agency-version/agency/) - was sie so speziell macht
->
->   
+ * [Übersicht / Verwaltung](erste_schritte/registrierung/) 
+ * [Cookies & Co. einrichten](/erste_schritte/onboarding-complete/) für Ihre Domains
+ * [Frontend / Integration](/frontend/frontend/) - wie und wo Sie CCM19 einbinden
+ * [Plugins](/plugins/plugins/) - alles rund um Plugins, welche es gibt, was sie tun, wie man sie baut
+ * [Enterprise / Agency Version](/agency-version/agency/) - was sie so speziell macht
+
+   
 
 
 
