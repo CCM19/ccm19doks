@@ -73,6 +73,9 @@ Die `composer.json` sieht folgendermaßen aus:
 
 Wenn übersetzbare Angaben in einer Sprache fehlen, wird als Fallback die englische Angabe verwendet.
 
+Plugins können auch eigene Abhängigkeiten mittels Composer mitliefern. Dafür müssen die `composer.lock` und das `vendor/`-Verzeichnis mit im
+Hauptverzeichnis des Plugins mitgeliefert werden. Die Abhängigkeiten des Plugins werden dann automatisch beim Aktivieren des Plugins mitgeladen.
+
 ## Templates
 
 Templates aus dem `templates/`-Verzeichnis des Plugins werden über Twig-Namespaces nach dem Schema `@plugin:PluginVerzeichnis/` eingebunden.
