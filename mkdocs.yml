@@ -115,7 +115,7 @@ nav:
         - plugins/abtests.md
         - plugins/importexport.md
         - plugins/2fa.md
-      - Plugins Programmieren:
+      - Plugins programmieren:
           - plugins/programmieren/plugins_programmieren.md
   - Enterprise / Agency Version:
       - Enterprise Funktionen:
