@@ -30,7 +30,4 @@ Die Quota Mails selber können Sie hier vorbelegen. Dabei stehen folgende Variab
 
 Die Variablen können im Fließtext der Mails verwendet werden.
 
-
-
-![screenshot-2020.10.01-15_29_43-1601558983189](../assets/screenshot-2020.10.01-15_29_43-1601558983189.jpg)
-
+![screenshot-1641988818841](../assets/screenshot-1641988818841.jpg)
