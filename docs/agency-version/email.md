@@ -4,11 +4,13 @@ Der E-Mail Bereich für die Agency Version ist erweitert im Vergleich zur Downlo
 
 ## Quota Mails
 
-Wenn Sie ein Quota für die Zugriffszahlen nutzen, gehen automatisch bei Annährung an das Quota Mails an die Kunden raus die darauf hinweisen. 
+Wenn Sie ein Quota für die Zugriffszahlen nutzen, gehen automatisch bei Annährung an das Quota Mails an die Kunden raus die darauf hinweisen. Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie der Quota Mails bekommt.
 
-Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie der Quota Mails bekommt.
+![screenshot-1641988621764](../assets/screenshot-1641988621764.jpg)
 
-![screenshot-2020.10.01-15_04_49-1601557489896 (1)](../assets/screenshot-2020.10.01-15_04_49-1601557489896%20(1).jpg)
+Zusätzlich können Sie einstellen ob eine Kopie der Quota Mails an den Admin rausgehen und ob Kunden über durchgeführte Updates per E-Mail informiert werden.
+
+Falls Sie Call Limits nutzen, können Sie hier die prozentualen Schwellenwerte eintragen ab denen die jeweiligen Mails rausgehen die die Kunden / Mandanten darauf hinweisen dass demnächst der maximale Call Count erreicht wird.
 
 
 
@@ -16,12 +18,13 @@ Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie
 
 Die Quota Mails selber können Sie hier vorbelegen. Dabei stehen folgende Variablen zur Verfügung. Die Synthax muss dabei beachtet werden - die geschweiften Klammern sind obligatorisch {{ varname }}.
 
-| Variablen          | Inhalt                                                       |
-| ------------------ | ------------------------------------------------------------ |
-| {{ callMaxCount }} | Die Anzahl der verfügbaren Aufrufe im jeweils gewählten Tarif |
-| {{ quota }}        | Der numerische Wert des prozentualen Verbrauchs - d.h. wenn 94% verbraucht sind enthält die Variable den Wert 94 |
-| {{ username }}     | Benutzername des Kunden                                      |
-| {{ email }}        | E-Mail Adresse des Kunden                                    |
+| Variablen          | Inhalt                                                       | Benutzen in                     |
+| ------------------ | ------------------------------------------------------------ | ------------------------------- |
+| {{ callMaxCount }} | Die Anzahl der verfügbaren Aufrufe im jeweils <br />gewählten Tarif | Mail für die gefundenen Cookies |
+| {{ quota }}        | Der numerische Wert des prozentualen Verbrauchs - <br />d.h. wenn 94% verbraucht sind enthält die Variable den Wert 94 | In der Mail "Call Limit"        |
+| {{ username }}     | Benutzername des Kunden                                      | In der Mail "Call Limit"        |
+| {{ email }}        | E-Mail Adresse des Kunden                                    | In der Mail "Call Limit"        |
+| {{ domainvar }}    | Der Name der Domain für die die Mail versendet wurde         | Alle E-Mail Templates           |
 
 ## Mail Templates
 

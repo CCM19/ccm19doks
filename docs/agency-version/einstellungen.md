@@ -6,7 +6,7 @@ Unter Einstellungen steht Ihnen in der Standard Agency Version die Möglichkeit 
 
 
 
-# Agency Whitelabel Version
+## Agency Whitelabel Version
 
 In der Whitelabel Version stehen Ihnen an dieser Stelle wesentlich mehr Funktionen zur Verfügung, Sie können mit den verfügbaren Funktionen die Optik sowohl des Frontends als auch des Backends komplett an Ihre Ideen und CI anpassen.
 

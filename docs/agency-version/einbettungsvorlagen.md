@@ -18,5 +18,9 @@ Sie können einen neuen Eintrag einfach aus der CCM19 Datenbank übernehmen, kli
 
 ![screenshot-1641985526514](../assets/screenshot-1641985526514.jpg)
 
-Hieraus können Sie dann einen Eintrag direkt übernehmen, er steht dann in Ihrer Datenbank zur Verfügung.
+Hieraus können Sie dann einen Eintrag direkt übernehmen, er steht dann in Ihrer Datenbank zur Verfügung und Sie können den Eintrag dort bearbeiten.
+
+Die Bearbeitung erfolgt genauso wie im Bereich [Embedding](/funktionen/cookies-und-andere/) beschrieben.
+
+![screenshot-1641987916812](../assets/screenshot-1641987916812.jpg)
 
