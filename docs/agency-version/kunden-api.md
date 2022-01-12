@@ -6,6 +6,8 @@ Informationen zu Ihrer Kunden API finden Sie im Admin Dashboard unter dem Menüp
 * Kundendaten auslesen
 * Kundendaten bearbeiten / aktualisieren
 * Kunde löschen
+* Alle KundenIds mit Domaindaten für Statistische Daten auslesen
+* Mit einem String nach einer KundenID suchen
 
 Natürlich können alle diese Aktionen nur durchgeführt werden wenn eine entsprechende Autorisierung vorliegt.
 
@@ -167,6 +169,10 @@ Antwort (HTTP Status-Codes)
 
 ## Kunden löschen
 
+```
+DELETE
+```
+
 **URL** `http://localhost/ccm19/cookie-consent-management/www/public/hosting/api/client/~CLIENT_ID~`
 
 Methode `DELETE`
@@ -182,9 +188,66 @@ Methode `DELETE`
 
 
 
+## Alle KundenIds mit Domaindaten für Statistische Daten auslesen
+
+```
+GET
+```
+
+URL `http://ccm19.localhost/hosting/api/client_all`
+
+Methode `GET`
+
+Antwort (HTTP Status-Codes)
+
+- ```
+  201
+  ```
+
+   
+
+  – Success!
+
+  - `userId`: *string*
+
+  - `actualCallCount`: *int*
+
+  - `domainCountData`: *array*
+
+  - - `domName`: *string*
+    - `count`: *int*
+
+- `404` – Keine Daten gefunden
 
 
 
+## Mit einem String nach einer KundenID suchen
+
+```
+GET
+```
+
+URL `http://ccm19.localhost/hosting/api/clientgetid/~SEARCH_TERM~`
+
+Methode `GET`
+
+Query-Parameter
+
+- `~SEARCH_TERM~`: *string* – Benutzername, E-Mail-Adresse
+
+Antwort (HTTP Status-Codes)
+
+- ```
+  200
+  ```
+
+   
+
+  – Success!
+
+  - `id`: *string*
+
+- `404` – Keine Daten gefunden
 
 
 

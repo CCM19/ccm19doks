@@ -75,7 +75,7 @@ Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einb
 
 Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Ihr Unternehmen. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
 
-### Skripte blockieren.
+### Skripte blockieren
 
 Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Matomo: Dann tragen Sie in dem Feld z.B. "matomo" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
 
@@ -87,7 +87,9 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 >
 > Wenn Sie hier auf Nummer sicher gehen wollen müssen Sie die Skripte über die Maske "Quellcode der Einbindung" in die Seite einbauen lassen nach erfolgtem Consent und Ihre Seite umbauen.
 
-## IFrames über Embeddings freischalten
+### Iframes freischalten
+
+> Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Iframes > Iframe-Blockierung aktivieren** aktivieren.
 
 Seit Kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und Co.) über den Cookie-Banner freizuschalten.
 
@@ -100,38 +102,6 @@ Für einen Google Maps-iFrame wäre die Zeichenkette zum Beispiel "maps.google.c
 Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames freigeschaltet.
 
 **Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
-
-Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Frontend-Verhalten -> iFrames blockieren** aktivieren.
-
-### iFrame-Ausnahmen
-
-**iFrame-Blockierung aktivieren**
-
-Mit diesem Schalter aktivieren Sie den iFrame-Blocker. Ab dem Moment der Aktivierung werden **alle** iFrames der Webseite blockiert.
-
-**Einwilligung pro Domain merken**
-
-Wenn diese Option aktiviert ist, werden die iFrame-Daten (welchen iFrames wurde zugestimmt) mit allen Domains unter dem Punkt **Consent-Speicherung** geteilt. Somit muss der Besucher z. B. auf der de.-Seite nur einmal den iFrame aktivieren und dieser wird automatisch ebenfalls auf der en.-Seite freigeschaltet.
-
-**Allowlist** (Freischaltliste)
-
-Mit dem Allowlist-Modus werden alle iFrames blockiert, außer die, die im Filter eingetragen sind.
-
-**Filter**: open street map, twitter
-
-**Nicht blockiert** werden iFrames von Open Street Map oder Twitter.
-
-**Blockiert** werden alle anderen iFrames.
-
-**Blacklist** (Blockierliste)
-
-MIt dem Blacklist-Modus werden alle iFrames blockiert, die nicht auf die im Feld **Filter** eingetragenen Begriffe passen.
-
-**Filter**: youtube, google, twitter
-
-**Blockiert** werden iFrames von Youtube, Google und Twitter
-
-Alle anderen iFrames werden **nicht** blockiert.
 
 ## Einträge je Sprache
 
