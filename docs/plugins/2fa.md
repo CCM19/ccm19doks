@@ -30,9 +30,7 @@ Der Ablauf ist in anderen Apps weitgehend vergleichbar.
 Öffnen Sie die Authentifizierungs-App auf Ihrem Smartphone und scannen Sie den QR-Code.
 Falls Sie das CCM19-Backend direkt auf Ihrem Smartphone geöffnet haben, tippen Sie stattdessen doppelt auf den QR-Code.
 
-![App: Plus-Zeichen antippen und dann 'QR-Code scannen'](../assets/2fa/Screenshot_1642005392.png)
-![App: Smartphone vor QR-Code halten](../assets/2fa/Screenshot_1642005396.png)
-![App: Neuen Eintrag hinzufügen-Dialog](../assets/2fa/Screenshot_1642005429.png)
+![Ablauf in der App 'Aegis Authenticator'](../assets/2fa/Screenshot-App-Add.png)
 
 Die App sollte durch das Scannen des Codes die notwenigen Parameter automatisch importieren.
 Sollte das nicht funktionieren, können Sie die Daten auch manuell aus dem linken Bereich neben dem QR-Code übertragen.
@@ -63,3 +61,10 @@ Geben Sie einen aktuellen Anmeldecode aus Ihrer App ein und klicken Sie danach a
 Wenn alles geklappt hat, erscheint ein Hinweis „2-Faktor-Authentifizierung erfolgreich deaktiviert.“
 und Sie benötigen keinen Anmeldecode mehr um sich in CCM19 anzumelden.
 
+## Was kann ich tun, wenn ich keinen Zugriff mehr auf die App habe?
+
+Falls Sie keine Anmeldecodes mehr erstellen können, nutzen Sie die „Passwort vergessen?“-Funktion
+im Anmeldefenster von CCM19.
+
+Sie erhalten daraufhin eine E-Mail. Befolgen Sie die Anleitung in der Mail, um ein neues Passwort
+zu setzen. Mit dem neuen Passwort wird auch die 2-Faktor-Authentizifizerung zurückgesetzt.
