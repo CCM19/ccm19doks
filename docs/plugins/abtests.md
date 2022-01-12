@@ -20,3 +20,8 @@ Ob ein Test aktiv ist sehen Sie in der Übersicht im Screenshot oben.
 
 ## Auswertung
 
+Wenn Sie in der Übersicht auf den blauen Button mit der Kurve klicken kommen Sie zur Auswertung des Tests. Hier werden die Daten der beiden Varianten gegeneinander dargestellt. Aufgrund der postiviven Klickrate wird automatisiert ein Gewinner dargestellt.
+
+In der rechten Spalte über der Grafik sehen Sie den Änderungsverlauf des Test, also welche Änderungen wann an den beiden genutzten Themes durchgeführt wurden.
+
+![screenshot-1641981460932](../assets/screenshot-1641981460932.jpg)

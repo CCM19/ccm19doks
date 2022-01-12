@@ -118,9 +118,11 @@ nav:
       - Plugins Programmieren:
           - plugins/programmieren/plugins_programmieren.md
   - Enterprise / Agency Version:
-      - agency-version/agency.md
-      - agency-version/kunden.md
-      - agency-version/kunden-api.md
-      - agency-version/themes.md
-      - agency-version/einstellungen.md
-      - agency-version/email.md
+      - Enterprise Funktionen:
+        - agency-version/agency.md
+        - agency-version/kunden.md
+        - agency-version/kunden-api.md
+        - agency-version/einbettungsvorlagen.md
+        - agency-version/themes.md
+        - agency-version/einstellungen.md
+        - agency-version/email.md
