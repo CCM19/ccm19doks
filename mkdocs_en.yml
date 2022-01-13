@@ -1,86 +1,128 @@
-site_name: CCM19 Cookie Consent Manager Documentation
+site_name: CCM19 Cookie Consent Manager Dokumentation
+
+extra_javascript:
+  - javascripts/highlight.js
+  - javascripts/config.js
+
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/dracula.css
 
 theme:
   name: material
   #logo: https://www.ccm19.de/images/10-ccm-19-logo-02-a.png
   features:
-    - tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
   palette:
     primary: blue grey
   custom_dir: overrides
-  language: de
+  language: en
   icon:
     repo: fontawesome/brands/github
 
 plugins:
   - search
-repo_url: https://github.com/PapooSoftware/ccm19doks
+repo_url: https://github.com/CCM19/ccm19doks
 repo_name: CCM19Doks
 edit_uri: blob/master/docs/
+
 
 markdown_extensions:
   - meta
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
   - "Home": index.md
-  - First Steps:
-      - erste_schritte/registrierung.md
-      - erste_schritte/installation.md
-      - "Login into CCM19": erste_schritte/login-und-passwoerter.md
-      - "Onboarding": erste_schritte/onboarding-schritt-1.md
-      - "Scan the Domain": erste_schritte/onboarding-schritt-2.md
-      - "Imprint & Co.": erste_schritte/onboarding-schritt-3.md
-      - "Placeholder": erste_schritte/onboarding-schritt-4.md
-      - "Save & embed": erste_schritte/onboarding-schritt-5.md
-      - "Upgrade gen 2": erste_schritte/upgrade_g2.md
-  - Functions:
-      - funktionen/themes.md
-      - funktionen/cookies-und-andere.md
-      - funktionen/skripte.md
-      - funktionen/pagecheck.md
-      - funktionen/cookietabelle.md
-      - funktionen/uebersetzungen.md
-      - funktionen/impressum.md
-      - funktionen/datenschutz.md
-      - funktionen/barrierefreiheit.md
-      - funktionen/platzhalter.md
-      - frontend/frontend.md
-  - System & Co.:
-      - system-und-co/frontend-einstellungen.md
-      - system-und-co/consent-speicherung.md
-      - system-und-co/email.md
-      - system-und-co/caching.md
-      - system-und-co/netzwerk.md
-      - system-und-co/update.md
-      - logs/consent-protokoll.md
-      - logs/system-protokoll.md
-  - Management:
-      - verwaltung/kontoeinstellungen.md
-      - verwaltung/lizenzverwaltung.md
-      - verwaltung/domainverwaltung.md
-      - verwaltung/theme-verwaltung.md
-  - Integrations:
-      - integrationen/ccm19-shopware.md
-      - integrationen/ccm19-wordpress.md
-      - integrationen/ccm19-wix.md
-      - integrationen/ccm19-magento.md
-      - integrationen/ccm19-typo3.md
-  - API & Tech:
-      - api/javascript-apis.md
-      - api/technik.md
-      - api/google-tag-manager.md
-      - api/apikey.md
-      - api/general_api.md
+  - "Overview / administration":
+      - "FIrst Steps":
+          - "Registration": erste_schritte/registrierung.md
+          - erste_schritte/login-und-passwoerter.md
+      - Administration:
+          - verwaltung/domainverwaltung.md
+          - verwaltung/tarife.md
+          - verwaltung/theme-verwaltung.md
+          - verwaltung/standardtexte.md
+          - verwaltung/kontoeinstellungen.md
+          - verwaltung/domainapi.md
+      - "User & groups":
+          - verwaltung/user.md
+          - verwaltung/gruppen.md
+      - "Downloadversion":
+          - erste_schritte/installation.md
+          - verwaltung/lizenzverwaltung.md
+          - "Upgrade gen. 2": erste_schritte/upgrade_g2.md
+  - Cookies & Co. einrichten:
+      - "Onboarding":
+          - "Onboarding road": erste_schritte/onboarding-complete.md
+      - "Cookies & Settings":
+          - funktionen/dashboard.md
+          - funktionen/themes.md
+          - funktionen/cookies-und-andere.md
+          - funktionen/pagecheck.md
+          - funktionen/iframes.md
+          - funktionen/cookietabelle.md
+      - "Text & content":
+          - funktionen/uebersetzungen.md
+          - funktionen/impressum.md
+          - funktionen/datenschutz.md
+          - funktionen/barrierefreiheit.md
+          - funktionen/platzhalter.md
+      - "Logs":
+          - logs/consent-protokoll.md
+      - System & Co.:
+          - system-und-co/frontend-einstellungen.md
+          - system-und-co/consent-speicherung.md
+          - system-und-co/verfuegbare-plugins.md
+          - system-und-co/dev-einstellungen.md
+      - "Downloadversion":
+          - system-und-co/caching.md
+          - system-und-co/netzwerk.md
+          - system-und-co/update.md
+          - system-und-co/email.md
+          - logs/system-protokoll.md
+  - Frontend / integrations:
+      - "Frontend / website":
+          - frontend/frontend.md
+      - "CMS / Shop integration":
+          - integrationen/ccm19-standard.md
+          - integrationen/ccm19-shopware.md
+          - integrationen/ccm19-shopify.md
+          - integrationen/ccm19-wordpress.md
+          - integrationen/ccm19-wix.md
+          - integrationen/ccm19-magento.md
+          - integrationen/ccm19-typo3.md
+      - API & Co.:
+          - api/javascript-apis.md
+          - api/google-tag-manager.md
+          - api/general_api.md
+      - "Technic & Server":
+          - api/technik.md
   - Plugins:
-      - plugins/plugins.md
-      - plugins/erweiterte_statistik.md
-  - Agency version:
-      - agency-version/agency.md
-      - agency-version/kunden.md
-      - agency-version/kunden-api.md
-      - agency-version/themes.md
-      - agency-version/einstellungen.md
-      - agency-version/email.md
+      - "Plugins":
+          - plugins/plugins.md
+          - plugins/erweiterte_statistik.md
+          - plugins/abtests.md
+          - plugins/importexport.md
+          - plugins/2fa.md
+      - Plugins programming:
+          - plugins/programmieren/plugins_programmieren.md
+  - Enterprise / Agency Version:
+      - Enterprise Functions:
+          - agency-version/agency.md
+          - agency-version/kunden.md
+          - agency-version/kunden-api.md
+          - agency-version/einbettungsvorlagen.md
+          - agency-version/themes.md
+          - agency-version/einstellungen.md
+          - agency-version/email.md
