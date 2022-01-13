@@ -1,8 +1,8 @@
-# Onboarding - Schritt 3
+# Onboarding - Step 3
 
-Im Schritt 3 tragen Sie die LInks zu Ihrem Impressum und Ihrer Datenschutzbestimmungen ein. Diese Daten können Sie später in der Administration jederzeit ändern.
+In step 3 you enter the links to your imprint and your privacy policy. You can change this data later in the administration at any time.
 
-Da das System die Seite kennt und im vorherigen Schritt gescannt hat, versucht es ebenfalls die Links zum Impressum und zu den Datenschutzbestimmungen automatisch auszulesen und diese im Formular vorzubelegen wie im nächsten Screenshot zu sehen ist.
+Since the system knows the page and has scanned it in the previous step, it also tries to automatically read the links to the imprint and privacy policy and pre-populate them in the form as you can see in the next screenshot.
 
 
 
@@ -10,5 +10,5 @@ Da das System die Seite kennt und im vorherigen Schritt gescannt hat, versucht e
 
 
 
-Bitte passen Sie die Daten falls nötig an, so dass die korrekten Links dort drin stehen. Klicken Sie dann auf den grünen Button um zum nächsten Schritt zu kommen.
+Please adjust the data if necessary, so that the correct links are in there. Then click on the green button to go to the next step.
 

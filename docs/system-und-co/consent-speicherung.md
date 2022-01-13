@@ -1,59 +1,59 @@
-# Consent Speicherung
+# Consent storage
 
-CCM19 kann die Daten für den Consent sowohl in einem Cookie, im Local Storage oder auch im Session Storage speichern. Die einzelnen Methoden haben Vor- und Nachteile.
+CCM19 can store the data for the consent in a cookie, in the local storage or in the session storage. Each method has advantages and disadvantages.
 
 ![screenshot-2020.09.30-14_25_38-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-14_25_38-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
-### Speicherung als Cookie
+### Storage as cookie
 
-Den Consent in einem Cookie zu speichern, erlaubt das Teilen des Consents über mehrere Subdomains und verschiedene Ports, aber kann die Seitenladezeit geringfügig verlängern. Das ist die klassische Speicherung der Daten.
-
-
-
-### Speicherung im Local Storage
-
-Den Consent im Local Storage zu speichern erlaubt es die Information in vielen Browsern unbegrenzt zu erhalten. Dabei wird der Consent aber auf eine Hostnamen-Port-Kombination beschränkt.
+Storing the consent in a cookie allows sharing the consent across multiple subdomains and different ports, but may slightly increase the page load time. This is the classic way of storing the data.
 
 
 
-### Speicherung im Session Storage
+### Storage in local storage
 
-Den Consent im Session Storage zu speichern, hält den Consent für jeden Browser-Tab getrennt. In dem Moment in dem der Tab geschlossen wird, wird auch der Consent vergessen.
+Storing the consent in local storage allows the information to be retained indefinitely in many browsers. However, the consent is limited to a hostname-port combination.
 
 
 
-## Eigenschaften des CCM19 Elements
+### Storage in session storage
+
+Storing the consent in the session storage keeps the consent for each browser tab separate. The moment the tab is closed, the consent is also forgotten.
+
+
+
+## Properties of the CCM19 element
 
 ![screenshot-1641906509765 (1)](../assets/screenshot-1641906509765%20(1).jpg)
 
-Über die Maske können Sie festlegen wie lange das CCM19 Cookie gespeichert werden soll. Standard sind 356 Tage = 1 Jahr ;-). Wenn Sie eine 0 eintragen, wird das Cookie beim Schließen des Browsers gelöscht.
+The mask allows you to specify how long the CCM19 cookie should be stored. Default is 356 days = 1 year ;-). If you enter 0, the cookie will be deleted when you close the browser.
 
-Die Option für "sichere" Cookies sollte nur deaktiviert werden, wenn HTTPS/SSL nur optional verwendet wird und ermöglicht dann, dass der Consent zwischen der Seite ohne HTTPS und der mit HTTPS geteilt wird. Dies ist aber heutzutage extrem selten. Zudem kann das Abschalten dieser Option aufgrund der Sicherheitsfunktionen moderner Browser bei den restlichen Consent-Teilungs-Funktionen und beim Einbetten der Website in IFrames Probleme verursachen.
+The option for "secure" cookies should only be disabled if HTTPS/SSL is only used optionally and then allows the consent to be shared between the page without HTTPS and the one with HTTPS. However, this is extremely rare nowadays. Moreover, due to the security features of modern browsers, disabling this option can cause problems with the rest of the Consent sharing features and when embedding the website in IFrames.
 
 
 
-## Consent-Teilung
+## Consent Sharing
 
 ![screenshot-1641906640564](../assets/screenshot-1641906640564-16419066808212.jpg)
 
-Mit CCM19 ist es möglich den Consent unabhängig von Third-Party-Cookies über beliebig viele Domains und Subdomains hinweg zu teilen. Tragen Sie dazu die Liste der gewünschten Domains in das Feld ein.
+With CCM19 it is possible to share the Consent across any number of domains and subdomains independently of third-party cookies. To do this, enter the list of desired domains in the field.
 
-> Diese Funktion steht nur in der Fullservice, Inhouse-CMP- und Agency-Variante zur Verfügung.
+&gt; This function is only available in the Fullservice, Inhouse-CMP and Agency variants.
 
-Für jede eingetragene Domain kann der Consent zwischen den Subdomains der eingegebenen Domain geteilt werden, solange das selbe Code-Snippet verwendet wird. Geben Sie z.B. <code>example.com</code> ein, damit nur einmal Consent für example.com, www.example.com und alle anderen Subdomains, die auf .example.com enden, erteilt werden muss. Ungültige Eingaben können dazu führen, dass das Speichern des Consents nur noch unzuverlässig funktioniert
+For each domain entered, the Consent can be shared between the subdomains of the domain entered, as long as the same code snippet is used. For example, enter example. <code>com</code> so that Consent only needs to be granted once for example.com, www.example.com and all other subdomains ending in .example.com. Invalid entries can lead to unreliable saving of the Consent
 
-Der Consent wird über HTML-Links, HTML-Formulare und IFrames weitergeben.
+The Consent is passed on via HTML links, HTML forms and IFrames.
 
-### Consent-Teilung im IFrame
+### Consent sharing in IFrame
 
-Falls Sie eine Webseite haben, bei der ein IFrame einer anderen ihrer Seiten eingesetzt wird, z.B. eine Buchungsmaske, erscheint dann in dem IFrame nicht nochmal eine Abfrage, sondern der Consent wird übertragen. Dies funktioniert natürlich nur, wenn sie oben eingetragen sind und somit auch die gleichen Skripte und Cookies teilen.
+If you have a website where an IFrame of another of your pages is used, e.g. a booking mask, then a query does not appear again in the IFrame, but the Consent is transferred. Of course, this only works if they are entered above and thus also share the same scripts and cookies.
 
-## Cookie Reset erzwingen
+## Force cookie reset
 
-Mit diesen Einstellungen kann man erzwingen dass alle Besucher die Ihren Consent vor diesem Datum gesetzt haben, den Consent neu erteilen müssen. Dies kommt vor wenn man die Maske geändert hat und den Consent neu bekommen möchte, auch für Bestandsbesucher.
+With these settings you can force that all visitors who have set their consent before this date, must give the consent again. This happens if you have changed the mask and want to get the consent again, even for existing visitors.
 
 ![screenshot-1641906827649](../assets/screenshot-1641906827649.jpg)
 
 
 
-Wenn Sie hier ein Datum eintragen, werden alle Consents die vor diesem Datum gesetzt wurden von Ihren Besuchern zwangsweise zurück gesetzt und die müssen die Maske neu abnicken.
+If you enter a date here, all consents that were set before this date will be forced back by your visitors and they will have to re-sign the mask.

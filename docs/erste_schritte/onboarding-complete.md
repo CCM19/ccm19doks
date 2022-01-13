@@ -1,69 +1,69 @@
 # Onboarding 
-Direkt nach dem 1. Aufruf in der Administration werden Sie durch das sogenannte Onboarding geführt. In diesem Prozess werden die wichtigsten Punkte Ihrer Seite abgefragt, gescannt und verarbeitet. Sie können hier bei jedem Schritt korrigierend eingreifen.
+Directly after the 1st call in the administration you will be guided through the so-called onboarding. In this process, the most important points of your page are queried, scanned and processed. You can take corrective action at every step.
 
-## Schritt 1
+## Step 1
 
-Alles was im Onboarding erstellt wird können Sie später in der Administration wieder anpassen und ändern.
+Everything that is created in Onboarding can later be adjusted and changed in Administration.
 
-Falls das Onboarding nicht automatisch startet können Sie auf dem Dashboard einfach den folgenden Link klicken:
+If onboarding does not start automatically, you can simply click the following link on the dashboard:
 
 ![screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_20_02-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
-### Eingabe der Domain.
+### Enter the domain.
 
-Nach dem ersten Login erscheint die folgende Maske -  hier können Sie Ihre Domain eintragen und nach Cookies und Skripten scannen lassen. Wichtig ist dass Sie den Sicherheitshinweis abhaken.
+After the first login the following screen will appear - here you can enter your domain and scan for cookies and scripts. It is important that you tick off the security note.
 
 ![screenshot-1614089750586-586](../assets/screenshot-1614089750586-586.jpg)
 
-Natürlich können Sie auch alles manuell durchführen, klicken Sie dafür einfach auf den Link "Setup überspriungen - ich mache alles manuell". 
+Of course you can also do everything manually, just click on the link "Setup skipped - I do everything manually" 
 
-## Onboarding - Schritt 2
+## Onboarding - Step 2
 
-In diesem Schritt werden die Ergebnisse des automatischen Scans Ihrer Seite dargestellt. Hier können Sie die Daten übernehmen und anpassen. Für jeden gefundenen Anbieter resp. Einbettung wird ein Eintrag erstellt. 
+In this step you will see the results of the automatic scan of your site. Here you can take over and adjust the data. An entry is created for each provider or embedding found 
 
-Zu jedem dieser Einträge werden die jeweils verwendeten Cookies und Storage Elemente aufgelistet.
+For each of these entries, the cookies and storage elements used are listed.
 
-### Scan Ergebnisse beurteilen
+### Evaluate scan results
 
-Für jeden Eintrag können Sie hier die rechtlich notwendigen Texte ergänzen und anpassen. 
+For each entry, you can add and adjust the legally required texts here 
 
-Im Hintergrund läuft eine Datenbank von CCM19 die abgefragt wird anhand der verwendeten Cookies und Storage Elemente. 
+A database from CCM19 runs in the background and is queried based on the cookies and storage elements used 
 
-Weiterhin wird ein Screenshot der Seite erstellt für Ihrer Kontrolle dass auch tatsächlich die korrekte Seite gescannt wurde.
+Furthermore, a screenshot of the page is created for your control that actually the correct page was scanned.
 
 ![screenshot-1614090058662-662](../assets/screenshot-1614090058662-662.jpg)
 
-Die Ergebnisse teilen sich in die 5 Standard Kategorien auf in die Skripte, Cookies und Storage Elemente normalerweise zugeordnet werden.
+The results are divided into the 5 standard categories into which scripts, cookies and storage elements are usually assigned.
 
-* Technisch notwendig ( Essentiell)
-* Anzeigen / Ads
+* Technically Necessary (Essential)
+* Advertisements / Ads
 * Analytics / Statistics
-* Personalisierung
+* Personalization
 * Social Media
-* Sonstiges
+* Other
 
-Hinter jedem Eintrag steht wie viele Einträge in der jeweiligen Kategorie gefunden wurden und automatisch zu sortiert werden konnten.
+Behind each entry you can see how many entries were found in the respective category and could be sorted automatically.
 
-Für alle nach dem dafürhalten von CCM19 notwendigen Angaben werden Eingabefelder bereit gestellt.
+Input fields are provided for all information that CCM19 considers necessary.
 
-#### Name der Integration / Einbindung
+#### Name of the integration
 
-Der Name der Einbindung - das kann z.B. Google Analytics sein oder Facebook Pixel. Hier sollten Sie einen aussagekräftigen Namen nutzen.
+The name of the integration - this can be e.g. Google Analytics or Facebook Pixel. Here you should use a meaningful name.
 
-#### Zweck
+#### Purpose
 
-Hier tauchen wieder die schon oben genannten Kategorien auf. Sie können damit jeden Eintrag jeder beliebigen Kategorie zuweisen. Beachten Sie bitte aber dass Sie die rechtlichen Rahmenbedingungen beachten. Facebook Pixel z.B. wird sicher kaum unter technisch notwendig korrekt einsortiert sein.
+Here again the categories already mentioned above appear. You can assign any entry to any category. Please note, however, that you must observe the legal framework. Facebook Pixel, for example, will hardly be correctly sorted under technically necessary.
 
-#### Aktivieren
+#### Activate
 
-Hiermit aktivieren Sie den Eintrag, so dass er auch im Frontend abgehakt werden kann
+Here you activate the entry, so that it can also be checked off in the frontend
 
-#### Skripte blockieren.
+#### Block scripts.
 
-Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Google Analytics:
+Here you can block scripts that are included in the source code of your page by CCM19. Use e.g. Google Analytics:
 
-```javascript
+``javascript
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
 <script>
@@ -75,75 +75,75 @@ Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM
 </script>
 ```
 
-Dann tragen Sie in dem Feld z.B. "googletagmanager.com" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
+Then enter in the field e.g. "googletagmanager.com" - this will block any javascript on your page that contains these characters (string) and the script will not be executed unless consent is given.
 
-Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
+This way you don't have to rebuild your page.
 
-#### Anbieter
+#### Provider
 
-Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Google Ireland Limited. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
+The provider - here you have to enter the company name of the provider offering the script. In our case it would be Google Ireland Limited. You can also enter the complete address of the company here.
 
-#### Beschreibung 
+#### Description 
 
-Bei der Beschreibung tragen Sie die Aufgabe der Einbindung ein. Wieso wird diese gesetzt? Was macht diese Einbindung?
+In the description, enter the task of the integration. Why is it set? What does this embedding do?
 
-#### Datenschutz-Link
+#### Privacy link
 
-Hier gehört der Link zu den Datenschutzbestimmungen des Anbieters hinein. Diesen finden Sie in der Regel wenn Sie auf die Webseite des Anbieters gehen.
+This is the link to the provider's privacy policy. You can usually find this when you go to the provider's website.
 
-#### Welche Daten werden gesammelt?
+#### What data is collected?
 
-Welche Daten werden ganz genau gesammelt? Nur die IP? Oder auch Klickdaten, Daten des Browsers, Logins, Verhalten uvm? Informieren Sie sich genau bei dem Anbieter des Skriptes und tragen Sie möglichst genau ein was mit den Daten passiert. Nur so ist eine informierte Einwilligung Ihrer Besucher möglich.
+What data is collected exactly? Only the IP? Or also click data, browser data, logins, behavior, etc.? Find out exactly from the provider of the script and enter as precisely as possible what happens to the data. This is the only way to get informed consent from your visitors.
 
-#### Zu welchem Zweck werden die Daten gesammelt?
+#### For what purpose is the data collected?
 
-Warum sammeln Sie diese Daten? Was wollen Sie damit machen? Conversionoptimierung? Nutzererfahrung verbessern? Oder nur eine Warenkorb Funktion realisieren? 
+Why do you collect this data? What do you want to do with it? Conversion optimization? Improve user experience? Or just implement a shopping cart function? 
 
-#### Rechtliche Grundlage
+#### Legal basis
 
-Hier definieren Sie die rechtliche Grundlage aufgrund dessen Sie diese Einbindung vornehmen wollen. Bei Tracking Skripten greift in der Regel nur "Einwilligung, Art. 6 Abs. 1 lit. a DSGVO" - Einwilligung des Besuchers durch eine informierte Entscheidung. Also rein freiwillig.
+Here you define the legal basis on the basis of which you want to make this integration. For tracking scripts, usually only "consent, Art. 6 para. 1 lit. a DSGVO" applies - consent of the visitor by an informed decision. So purely voluntary.
 
-#### Ort der Verarbeitung
+#### Place of processing
 
-Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büros sondern auch wo steht der Server? Berücksichtigen Sie bitte auch das Sie derzeit keine Daten in unsichere Drittländern übertragen dürfen. Anbieter die Daten in die USA exportieren sind derzeit rechtlich vermutlich nicht möglich (Stand 29.09.2020).
+Where the data is processed. This is not only the address of your office but also where is the server located? Please also consider that you are currently not allowed to transfer data to unsafe third countries. Providers who export data to the USA are currently legally probably not possible (as of 29.09.2020).
 
-#### Liste der Cookies und Storage Elemente
+#### List of cookies and storage elements
 
-Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand.
+Here is a list of all cookies and storage elements set by the script. You can add more elements manually, because the automatic scan cannot always find all data. E.g. the scanner cannot find data for a logged in state.
 
 ##### Name
 
-Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie
+The name in the browser - e.g. _ga for a Google Analytics cookie
 
 ##### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _g* alle Cookies geblockt die mit _g anfangen, also _ga, _gid usw.
+This determines whether it is a dynamic variable - e.g. _g* blocks all cookies that begin with _g, i.e. _ga, _gid, etc.
 
-##### Speichertyp
+##### memory type
 
-Wie werden die Daten in Ihrem Browser gespeichert.
+How the data is stored in your browser.
 
 ##### Lifetime / Expires
 
-Wann läuft der Speichereintrag automatisch aus.
+When does the memory entry expire automatically.
 
-##### Wert
+##### Value
 
-Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
+What value does the cookie transport - usually it is cryptic data that is stored here.
 
-### Daten übernehmen
+### Accept data
 
-Wenn Sie alle Daten überprüft und notwendige Anpassungen durchgeführt haben, klicken Sie auf den Button unter dem Formular um die Daten in die CCM19 Administration zu übernehmen - siehe Screenshot.
+When you have checked all the data and made necessary adjustments, click on the button below the form to transfer the data to CCM19 Administration - see screenshot.
 
 
 
 ![screenshot-2020.09.29-15_27_23-CCM19 Onboarding - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.29-15_27_23-CCM19%20Onboarding%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
-## Onboarding - Schritt 3
+## Onboarding - Step 3
 
-Im Schritt 3 tragen Sie die LInks zu Ihrem Impressum und Ihrer Datenschutzbestimmungen ein. Diese Daten können Sie später in der Administration jederzeit ändern.
+In step 3 you enter the links to your imprint and your privacy policy. You can change this data later in the administration at any time.
 
-Da das System die Seite kennt und im vorherigen Schritt gescannt hat, versucht es ebenfalls die Links zum Impressum und zu den Datenschutzbestimmungen automatisch auszulesen und diese im Formular vorzubelegen wie im nächsten Screenshot zu sehen ist.
+Since the system knows the page and has scanned it in the previous step, it also tries to automatically read the links to the imprint and privacy policy and pre-populate them in the form as you can see in the next screenshot.
 
 
 
@@ -151,31 +151,31 @@ Da das System die Seite kennt und im vorherigen Schritt gescannt hat, versucht e
 
 
 
-Bitte passen Sie die Daten falls nötig an, so dass die korrekten Links dort drin stehen. Klicken Sie dann auf den grünen Button um zum nächsten Schritt zu kommen.
+Please adjust the data if necessary, so that the correct links are in there. Then click on the green button to go to the next step.
 
-## Onboarding - Schritt 4
+## Onboarding - Step 4
 
-Hier definieren Sie die Platzhalter Texte für Ihre Seite - die wichtigsten sind folgende die Sie auch in dem Screenshot unten sehen:
+Here you define the placeholder texts for your page - the most important ones are the ones you can see in the screenshot below:
 
-* **{FIRMA}** -> Tragen Sie hier den Namen Ihrer Firma ein.
-* **{Firma_Datenschutz}** -> Tragen Sie hier den Link zu Ihren Datenschutzbestimmungen ein.
-* **{Firma_Ort}** -> Tragen Sie hier den Sitz Ihres Unternehmens ein mit PLZ und Ort.
+* **{Company}** -&gt; Enter the name of your company here.
+* **{Company_Privacy}** -&gt; Enter the link to your privacy policy here.
+* **{Company_Location}** -&gt; Enter here the location of your company with zip code and city.
 
-Wenn Sie die Daten eingetragen haben, klicken Sie auf den unten stehenden grünen Button. Da das System den Link zum Impressum kennt, versucht es die notwendigen Daten aus der Seite auszulesen, bitte korrigieren Sie diese wenn nötig.
+When you have entered the data, click on the green button below. Since the system knows the link to the imprint, it tries to read the necessary data from the page, please correct it if necessary.
 
 ![screenshot-1614090487279-2791](../assets/screenshot-1614090487279-2791.jpg)
 
-## Onboarding - Schritt 5
+## Onboarding - Step 5
 
-Auf der letzten Seite des Onboardings finden Sie den Einbettungscode des CCM19 für Ihre Webseite. Den müssen Sie sich hier nicht merken - er wird genauso auch im Dashboard der Administration auch immer angezeigt. Sie können ihn aber natürlich direkt kopieren und in Ihre Seite einbinden.
+On the last page of the onboarding you will find the embed code of the CCM19 for your website. You don't need to remember it here - it is always displayed in the administration dashboard as well. But of course you can copy it directly and embed it into your page.
 
 ![screenshot-1614090586768-768](../assets/screenshot-1614090586768-768.jpg)
 
-### Einbindungscode
+### Embed code
 
-Der Einbindungscode kann z.B. so aussehen.
+The embed code may look like this.
 
-``` html
+`` html
 <script src="http://localhost/ccm19/cookie-consent-management/www/public/ccm19.js?apiKey=1234&amp;domain=1234&amp;lang=de_DE" 
 referrerpolicy="origin">
     </script>
@@ -183,9 +183,9 @@ referrerpolicy="origin">
 
 
 
-### Beispielintegration
+### Example integration
 
-Diesen Code kopieren Sie und binden in auf Ihrer Seite möglichst weit oben im Kopf der Seite ein, am besten direkt nach dem ersten <head> Element
+Copy this code and paste it on your page as high as possible in the page header, preferably right after the first <head>element
 
 ``` html
 <html>
@@ -195,11 +195,12 @@ Diesen Code kopieren Sie und binden in auf Ihrer Seite möglichst weit oben im K
  </head>
  <body>
  </body>
-<html>    
+<html>   
 ```
 
 
 
-## Fertig und raus
+## Ready and out
 
-Wenn Sie fertig sind, klicken Sie auf den blauen Button und springen damit zurück in die CCM19 Administration.
+When you are done, click the blue button to jump back to CCM19 Administration.
+</html></html></head> 

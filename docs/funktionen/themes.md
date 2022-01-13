@@ -2,213 +2,213 @@
 title: Themes
 ---
 
-# Themes einrichten und nutzen
+# Set up and use themes
 
-CCM19 ist komplett themefähig - d.h. Sie können alle Elemente des Frontends optisch anpassen. Sie können beliebig viele Themes ausprobieren. 
+CCM19 is completely themeable - that means you can customize the look of all elements of the frontend. You can try as many themes as you like 
 
-Wenn Sie auf den Menüpunkt Themes klicken sehen Sie zuerst die Übersicht der vorhandenen Themes.
+If you click on the menu item Themes you will first see the overview of the existing themes.
 
 ![screenshot-1641895769313](../assets/screenshot-1641895769313.jpg)
 
 
 
-Der Klick auf das **grüne** Stiftsymbol leitet Sie in die Bearbeitungsmaske, der **rote** Papierkorb löscht Ihr Theme ( nach Nachfrage ), der Klick auf die doppelten **grünen** Ordner kopiert das vorhandene Theme. 
+Clicking on the **green** pencil icon will take you to the edit screen, the **red** trash will delete your theme ( after asking ), clicking on the double **green** folders will copy the existing theme 
 
-Mit dem Klick auf das **blaue** Icon setzen Sie das Theme als Standard für das Frontend.
+Clicking on the **blue** icon sets the theme as default for the frontend.
 
-## Neues Theme anlegen
+## Create new theme
 
-Wenn Sie ein neues Theme anlegen wollen können Sie zum einen auf den Button "Erstellen" klicken oder Sie kopieren ein vorhandenes Theme und passen dieses an. 
+If you want to create a new theme you can click on the button "Create" or you can copy an existing theme and adapt it 
 
-Das Kopieren ist das von CCM19 empfohlene Vorgehen - auch für individuelle Anpassungen an vorhandenen Themes. Auf diese Weise haben Sie immer ein Fallback zur Hand.
+Copying is the recommended procedure by CCM19 - also for individual adjustments to existing themes. This way you always have a fallback at hand.
 
-## Layout / Theme anpassen
+## Customize Layout / Theme
 
-In jedem Theme können Sie mit Hilfe von diversen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar.
+In each theme you can define the theme with the help of various buttons and setting options. In addition, you have the possibility to customize every visual detail with the help of CSS instructions, the complete frontend mask is accessible via CSS.
 
 ![screenshot-1641896393753](../assets/screenshot-1641896393753.jpg)
 
-**Verwenden Sie bei den Individuelle CSS Einstellungen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben.** In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
+**Use in the individual CSS settings in doubt !important to overwrite settings of your CMS system. ** In the interface you can set some things. The settings you see here result in the following frontend.
 
 
 
-## Vorschau
+## Preview
 
-Über den Button Vorschau können Sie sich eine Vorschau des Frontend Widgets anschauen. Der Klick öffnet nicht Ihre Seite sondern eine Seite im Inneren des CCM19 Adminbereiches. Nach jeder Änderung des Layouts ist ein Neuladen erforderlich. Das Widget ist voll funktionsfähig - d.h. Sie können alle Elemente des Widgets optisch anpassen und testen.
+The Preview button allows you to preview the frontend widget. The click will not open your page but a page inside the CCM19 admin area. A reload is required after any change to the layout. The widget is fully functional - that means you can visually customize and test all elements of the widget.
 
-Im Hintergrund wird dabei immer Ihre aktuelle Startseite als Screenshot geladen damit Sie direkt den Effekt sehen.
+In the background your current start page is always loaded as a screenshot so you can see the effect directly.
 
 ![screenshot-1641897784213 (1)](../assets/screenshot-1641897784213%20(1).jpg)
 
-Vorschau mit Widget.
+Preview with widget.
 
 
 
-Die Buttons und Hintergrundfarben die Sie in der Administration einstellen, kommen direkt im Frontend an. Sie können ebenfalls die Links Impressum und Datenschutzerklärung optisch anpassen.
+The buttons and background colors you set in the administration arrive directly in the frontend. You can also customize the imprint and privacy policy links.
 
 
 
-## Buttons & Einstellungen
+## Buttons &amp; Settings
 
-Weiterhin gibt es die folgenden Buttons:
+Furthermore there are the following buttons:
 
 ### Position
 
-Hier positionieren Sie das Overlay im Frontend, Sie können folgende Einstellungen wählen:
+Here you position the overlay in the frontend, you can choose the following settings:
 
-* links
-* rechts
-* oben
-* unten
-* mittig
+* left
+* right
+* top
+* bottom
+* center
 
-### Auswahltyp
+### Selection type
 
-Sie können Häkchen oder Schalter definieren für die Ansicht in den Kategorien und einzelnen Einbindungen.
+You can define checkmarks or switches for the view in the categories and individual embeddings.
 
-#### Häkchen
+#### Checkmark
 
 
 
 ![screenshot-2020.09.29-13_53_33-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_53_33-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-#### Schalter
+#### Switch
 
 ![screenshot-2020.09.29-13_54_35-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_54_35-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Die Farben können Sie natürlich über die individuellen CSS Einstellungen anpassen.
+Of course, you can adjust the colors using the individual CSS settings.
 
-### Kategorien im Hauptfenster anzeigen
+### Show categories in main window
 
-Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
+This option places all categories in the main window for quick selection.
 
-- Eine neue Schaltfläche "Speichern" erscheint neben "Alle akzeptieren" und "Ablehnen". (falls letztere aktiv ist)
+- A new "Save" button appears next to "Accept All" and "Reject". (if the latter is active)
 
-- Um mit dem Platz des Widgets zurechtzukommen, wird die Schaltfläche "Einstellungen" entfernt und durch einen einfachen Textlink unter den übrigen Schaltflächen ersetzt.
+- To deal with the widget space, the "Settings" button is removed and replaced with a simple text link below the remaining buttons.
 
   
 
   ![screenshot-2020.09.29-13_56_09-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_56_09-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-### Blockierend
+### Blocking
 
-Blockierend bedeutet dass wie auf dem Screenshot zu sehen ist die Seite im Hintergrund blockiert ist und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
+Blocking means that as you can see on the screenshot the page is blocked in the background and only when a visitor has definitely decided whether to accept the [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) or not he will be allowed to enter the page.
 
-### Einstellungsicon anzeigen
+### Show settings icon
 
-Wenn dieser Haken gesetzt ist wird nach dem Consent über die Seite ein Einstellungsicon per Javascript gesetzt. Auf diese Weise kann der von der DSGVO geforderter Widerruf einfachst möglich gesetzt werden. Das Icon wird standardmäßig links unten in die Ecke platziert.
+If this checkmark is set, a settings icon will be set via Javascript after the consent over the page. In this way, the revocation required by the GDPR can be set as easily as possible. The icon is placed by default in the bottom left corner.
 
 ![screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-### Einstellungsicon öffnet
+### Settings icon opens
 
-Hier stellen Sie ein welches Fenster das Icon öffnen soll, den 1. oder den 2. Layer des Widgets, also die generelle Startansicht oder die Detailansicht mit der entsprechenden Auswahl.
+Here you set which window the icon should open, the 1st or the 2nd layer of the widget, i.e. the general home view or the detail view with the corresponding selection.
 
-### Do not Track Respekt
+### Do not track respect
 
-Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt, nur technisch notwendige Elemente werden geladen.
+If this setting is checked - then the Do not Track setting in the browser is automatically respected and implemented - i.e. no tracking cookies are set, only technically necessary elements are loaded.
 
-Allerdings gilt zu beachten dass diese Einstellung in den meisten Browser normalerweise deaktiviert ist.
+However, please note that this setting is usually disabled in most browsers.
 
-### Nur in der EU anzeigen
+### Show only in the EU
 
-Mit dieser Einstellung können Sie festlegen dass der Cookie Hinweis nur Besuchern aus der EU angezeigt wird. Die Auflösung erfolgt anhand der verwendeten IP des Besuchers und kann daher nicht 100%ig genau sein. Bei Besuchern aus anderen Ländern werden alle Cookies aktiviert, außer wenn der Besucher „Do Not Track“ signalisiert und „Do Not Track respektieren“ aktiviert wurde.
+With this setting you can specify that the cookie notice is only displayed to visitors from the EU. The resolution is based on the visitor's IP used and therefore cannot be 100% accurate. For visitors from other countries, all cookies will be enabled unless the visitor signals "Do Not Track" and "Respect Do Not Track" has been enabled.
 
-Dieses Produkt enthält GeoLite2-Daten von MaxMind, verfügbar auf [https://www.maxmind.com](https://5f3c395.ccm19.de/app/public/themes/&guot;https://www.maxmind.com&guot;).
+This product contains GeoLite2 data from MaxMind, available at [https://www.maxmind.com](https://5f3c395.ccm19.de/app/public/themes/&amp;guot;https://www.maxmind.com&amp;guot;).
 
-### Manipulationsschutz
+### Tamper protection
 
-Verhindert simulierte Klicks auf die Akzeptieren-Buttons, um die Cookie-Auswahl des Nutzers zu schützen. **Deaktivieren Sie diese Funktion nicht, wenn Sie sich nicht sicher sind, dass es unbedingt notwendig ist. Dies könnte Ihre rechtliche Position beim Beweisen, dass Consent erteilt wurde, schwächen.**
-
-
-
-## Hauptfenster Schaltflächen
-
-Nach TTDSG und DSGVO braucht es in einem Consent Widget eine gleichwertige Möglichkeit die Cookies abzulehnen oder abzubrechen wie die Cookies anzunehmen.
-
-Daher wird hier überprüft ob mind. diese 2 Buttons aktiv sind und auch der Ablehnen Button aktiviert ist.
-
-Mit den Einstellungen definieren Sie welche Buttons an welche Position kommen.
+Prevents simulated clicks on the Accept buttons to protect the user's cookie selection. **Do not disable this feature unless you are sure it is absolutely necessary. This could weaken your legal position in proving that Consent was granted
 
 
 
-### "Alle akzeptieren"-Button anzeigen im Fenster Kategorien
+## Main window buttons
 
-Mit dieser Einstellung wird im Kategorien Fenster der "Alles Akzeptieren" Button zusätzlich angezeigt.
+According to TTDSG and DSGVO, there needs to be an equivalent option in a Consent Widget to reject or cancel the cookies as to accept the cookies.
+
+Therefore it is checked here if at least these 2 buttons are active and also the reject button is activated.
+
+With the settings you define which buttons come to which position.
+
+
+
+### Show "Accept all" button in the Categories window
+
+With this setting, the "Accept All" button will be displayed additionally in the Categories window.
 
 ![screenshot-2020.09.29-14_03_37-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_03_37-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-### Alles aus/abwählen Buttons anzeigen
+### Show all off/unselect buttons
 
 ![screenshot-1641902729730](../assets/screenshot-1641902729730.jpg)
 
-Wenn Sie hier das Häkchen setzen wird im 2. Layer eine entsprechende Auswahl angeboten. Der Haken ist standardmäßig nicht aktiv.
+If you set the checkmark here a corresponding selection will be offered in the 2nd layer. The check mark is not active by default.
 
-### Extra Footer mit Links zu Impressum & Co.
+### Extra footer with links to imprint &amp; co.
 
 ![screenshot-1641902822676](../assets/screenshot-1641902822676.jpg)
 
-Ist dieser Haken gesetzt, wird auch im 2. Layer ein weitere Bereich eingeblendet wo die Links zu Impressum und Datenschutz & Co. eingeblendet werden.
+If this check mark is set, an additional area is also displayed in the 2nd layer where the links to imprint and privacy &amp; Co. are displayed.
 
-Standardmäßig nicht aktiv.
+Not active by default.
 
-### Logo des Seitenbetreibers
+### Logo of the site operator
 
-Hier laden Sie Ihr Logo hoch das im Frontend - also Ihre Webseite - im Overlay angezeigt wird. Im obigen Screenshot sehen Sie dort das Logo von ccm19 - das können Sie gegen Ihres tauschen.
+Here you upload your logo which will be displayed in the frontend - your website - in the overlay. In the screenshot above you can see the logo of ccm19 there - you can exchange it for yours.
 
-### Logo anzeigen
+### Show logo
 
-Damit können Sie einstellen ob das Logo im Frontend im Overlay angezeigt werden soll.
+Here you can set whether the logo should be displayed in the frontend overlay.
 
-### Powerd By CCM19 entfernen
+### Remove Powerd By CCM19
 
-Hier geht es um den Link im Frontend Overlay, der rechts unten steht. Dies ist ein Link der auf die CCM19 Seite verlinkt. Dieser kann durch setzen dieses Hakens entfernt werden. Allerdings ist dies nur möglich wenn vorher eine Whitelabel Lizenz für diese Installation erworben wurde.
+This is about the link in the frontend overlay that is on the bottom right. This is a link that links to the CCM19 page. This can be removed by checking this box. However, this is only possible if a whitelabel license for this installation has been purchased before.
 
-### Farben
+### Colors
 
-Hier stellen Sie für die verschiedenen Buttons und Hintergründe im Frontend die Farben ein - achten Sie hier darauf dass auch Rahmen teilweise davon abhängen, wenn Sie einen weißen Rahmen auf weißem Hintergrund setzen mit weißer Schrift sehen Sie natürlich nichts mehr. Am besten kontrollieren Sie jede Änderung einmal im Frontend indem Sie das Overlay neu aufrufen!
+Here you can set the colors for the different buttons and backgrounds in the frontend - please note that frames are also partially dependent on this, if you set a white frame on a white background with white text, you will of course not see anything. It is best to check each change once in the frontend by calling the overlay again!
 
-Bitte beachten Sie dass die Einträge für die Farben auch bestimmten Mindeskontrastanforderungen genügen müssen um einen gewisses Maß an Barrierefreiheit zu erreichen.
+Please note that the entries for the colors must also meet certain minimum contrast requirements to achieve a certain degree of accessibility.
 
 ![screenshot-1641902924696](../assets/screenshot-1641902924696.jpg)
 
-Das der Kontrast hoch genug ist wird neben den Farbbereichen dargestellt, eine Maß von 5:1 sollte mindestens erreicht sein. Ist die Zahl rot, ist der Kontrast zu niedrig.
+That the contrast is high enough is shown next to the color ranges, a measure of 5:1 should be reached at least. If the number is red, the contrast is too low.
 
-Beachten Sie bitte dass diese Bereiche zwingend grün sein müssen wenn Sie TCF / IAB nutzen.
+Please note that these areas must be green if you use TCF / IAB.
 
 ### CSS
 
-Hier können Sie komplett individuelles CSS eintragen - für die einzelnen Elemente schauen Sie bitte in den Seiteninspektor Ihres Browsers. Im Zweifel müssen Sie Einstellungen per “!important” überschreiben - **Beispiel:**
+Here you can enter completely individual CSS - for the individual elements please have a look at the page inspector of your browser. In case of doubt you have to overwrite settings with "!important" - **Example:**
 
-``` css
+`` css
 .ccm-root button  
 { 
-    border:1px solid #c2bcbc; 
+    border:1px solid #c2bcbc 
 } 
-.ccm-control-panel--purpose > input[type="checkbox"] + label 
+.ccm-control-panel--purpose &gt; input[type="checkbox"] + label 
 { 
 	color:#ccc;
 } 
 .ccm-modal--footer 
 { 
-    background-color:#26282f; 
-}       
+    background-color:#26282f 
+} 
  
 ```
 
-### Individuelles CSS Iframeblocker
+### Custom CSS iframe blocker
 
-Hier können Sie für den iframe Blocker individuelle CSS Anweisungen vergeben, spezielle Hintergrundbilder usw. Man kann die geblockte Domain als Klasse vergeben, um dann gezielter CSS definieren zu können. 
-Beispiel:
-\- Blockiert wird ``https://www.google.com/maps/…``
-\- Im Iframe erhält das HTML-Element die Klasse z. B. wie folgt: ``domain--www-google-com``
-\- Mögliches CSS
+Here you can assign individual CSS instructions for the iframe blocker, special background images, etc. You can assign the blocked domain as a class to then define more specific CSS 
+Example:
+\- Blocked is ``https://www.google.com/maps/...``
+\- In the iframe the HTML element gets the class e.g. as follows: ``domain--www-google-com``
+\- Possible CSS
 
-~~~css
+~~css
 ```
 html.domain--www-google-com body {
     background-image: url('google-maps-placeholder.jpg');

@@ -1,23 +1,23 @@
-# Erste Schritte
+# First steps
 
-Um mit CCM19 zu starten brauchen Sie entweder einen Account aus unserem Fullservice Bereich oder eine Download Version.
+To get started with CCM19 you need either an account from our full service area or a download version.
 
 ## Fullservice Version
 
-Die Registrierung bei der Service-Variante ist denkbar einfach. Sie wählen auf der Webseite im [Bereich "Service-Variante"](https://www.ccm19.de/ccm19-service-tarife.html) den für Sie passenden Tarif aus und registrieren sich mit Ihren Daten. Danach erhalten Sie per E-Mail die Daten für den Login ins System bzw. Sie haben die Daten schon vorher eingetragen. 
+The registration for the service version is very easy. You choose on the website in the [area "Service-Variante"](https://www.ccm19.de/ccm19-service-tarife.html) the tariff that fits for you and register with your data. Afterwards you will receive an e-mail with the data for the login into the system or you have already entered the data before 
 
-Sollten Sie bereits einen Account auf CCM19 haben, loggen Sie sich in den bestehenden Account ein und navigieren Sie wieder zu der Service-Varianten Übersicht.
+If you already have an account on CCM19, log in to the existing account and navigate back to the service variants overview.
 
-Dort können sie dann einfach den für Sie passenden Tarif buchen und er wird im System hinterlegt. Danach können Sie sich über den Punkt **Login** oben rechs auf unserer in das CCM19 System einloggen und es verwenden. Falls Sie eine Downloadversion verwenden müssen Sie sich natürlich dort einloggen wo Sie das CCM19 installiert haben.
+There you can simply book the tariff that suits you and it will be stored in the system. After that you can log in to the CCM19 system by clicking **Login** in the upper right corner of our page. If you use a download version you have to log in where you installed the CCM19.
 
-Weitere Informationen zum Login finden Sie hier: [Login](login-und-passwoerter.md)
+More information about the login can be found here: [Login](login-and-passwords.md)
 
-## Downloadversion
+## Download version
 
-Die Download Version finden Sie auf unserer Webseite in diesem Bereich: https://www.ccm19.de/ccm19-download-lizenzen.html
+You can find the download version on our website in this section: https://www.ccm19.de/ccm19-download-lizenzen.html
 
-Nach der Bestellung der Mietversion können Sie das CCM19 Tool einfach über unsere Webseite herunterladen. Nutzen Sie dafür einfach [diesen Link](https://www.ccm19.de/ccm19-login.html) oder gehen Sie über das Menü hierhin: [https://www.ccm19.de/account/](https://www.ccm19.de/account/). Danach klicken Sie im kleinen Untermenu auf **Download** und können dort Ihre Dateien herunterladen.
+After ordering the rental version, you can easily download the CCM19 tool from our website. Just use [this link](https://www.ccm19.de/ccm19-login.html) or go here via the menu: [https://www.ccm19.de/account/](https://www.ccm19.de/account/). After that click **Download** in the small submenu and you can download your files there.
 
 ![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%20_%20Download%20Version%20Login.jpg)
 
-Sollten Sie Probleme beim Download haben oder die Dateien nicht angezeigt werden können Sie sich gerne an unseren Online-Support oder per E-Mail an uns wenden. Im Reiter Lizenzen finden Sie auch den Lizenzkey den Sie für die Installation brauchen. Alle Informationen zur Installation finden Sie [hier](https://www.docs.ccm19.de/erste_schritte/installation/).
+If you have problems downloading or the files are not displayed you are welcome to contact our online support or email us. In the Licenses tab you will also find the license key you need for the installation. All information about the installation can be found [here](https://www.docs.ccm19.de/erste_schritte/installation/).

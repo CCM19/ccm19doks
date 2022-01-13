@@ -1,11 +1,11 @@
-# Onboarding - Schritt 4
+# Onboarding - Step 4
 
-Hier definieren Sie die Platzhalter Texte für Ihre Seite - die wichtigsten sind folgende die Sie auch in dem Screenshot unten sehen:
+Here you define the placeholder texts for your page - the most important are the following you can also see in the screenshot below:
 
-* **{FIRMA}** -> Tragen Sie hier den Namen Ihrer Firma ein.
-* **{Firma_Datenschutz}** -> Tragen Sie hier den Link zu Ihren Datenschutzbestimmungen ein.
-* **{Firma_Ort}** -> Tragen Sie hier den Sitz Ihres Unternehmens ein mit PLZ und Ort.
+* **{Company}** -&gt; Enter the name of your company here.
+* **{Company_Privacy}** -&gt; Enter the link to your privacy policy here.
+* **{Company_Location}** -&gt; Enter here the location of your company with zip code and city.
 
-Wenn Sie die Daten eingetragen haben, klicken Sie auf den unten stehenden grünen Button. Da das System den Link zum Impressum kennt, versucht es die notwendigen Daten aus der Seite auszulesen, bitte korrigieren Sie diese wenn nötig.
+When you have entered the data, click on the green button below. Since the system knows the link to the imprint, it tries to read the necessary data from the page, please correct it if necessary.
 
 ![screenshot-1614090487279-2791](../assets/screenshot-1614090487279-2791.jpg)

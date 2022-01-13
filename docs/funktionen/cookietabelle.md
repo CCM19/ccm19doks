@@ -1,25 +1,25 @@
-# Cookie-Erklärungs-Tabelle
+# Cookie explanation table
 
-Mit dieser Funktion können Sie die Einbettung einer Cookie Erklärungstabelle in den Content definieren. Diese Tabelle können Sie an beliebiger Stelle auf Ihrer Seite einbinden, es empfiehlt sich natürlich die Seite der Datenschutzeinstellungen und dort der Cookie Bereich.
+With this function you can define the embedding of a cookie explanation table in the content. You can embed this table anywhere on your page, it is recommended of course the page of the privacy settings and there the cookie section.
 
-## Einbindung.
+## Embedding.
 
-Verwenden Sie den folgenden Code in Ihrer Datenschutzerklärung oder einer ähnlichen Seite an der Stelle, an der die Liste aller konfigurierten Einbettungen und Cookies erscheinen soll. Der Platzhalter wird mit den Cookie-Erklärungs-Liste gefüllt, sobald CCM19 geladen wurde. Die Anzeigesprache wird automatisch vom Browser des Besuchers ermittelt.
+Use the following code in your privacy policy or similar page in the place where you want the list of all configured embeds and cookies to appear. The placeholder will be populated with the cookie declaration list once CCM19 is loaded. The display language is automatically determined by the visitor's browser.
 
-```html
-<div class="ccm-cookie-declaration">Bitte aktivieren Sie Javascript, um die Liste aller deklarierten Cookies und ähnlicher Techniken zu sehen.</div>
-```
+``html
+<div class="ccm-cookie-declaration">Please enable javascript to see the list of all declared cookies and similar techniques.
+</div>```
 
-Verwenden Sie den folgenden Code, wenn Sie die Tabelle in einer festen Sprache anzeigen möchten. (Ersetzen Sie dabei *de_DE* mit einem beliebigen unter Texte & Sprachen konfigurierten und aktivierten Sprachcode):
+Use the following code if you want to display the table in a fixed language. (Replace *en_DE* with any language code configured and enabled under Texts &amp; Languages):
 
-```html
-<div class="ccm-cookie-declaration" data-lang="de_DE">Bitte aktivieren Sie Javascript, um die Liste aller deklarierten Cookies und ähnlicher Techniken zu sehen.</div>
-```
+``html
+<div class="ccm-cookie-declaration" data-lang="de_DE">Please enable Javascript to see the list of all declared cookies and similar techniques.
+</div>```
 
-Die Liste verwendet das Styling der umschließenden Website. Anpassungen sind durch Verändern der CSS-Stylesheets Ihrer Website oder über Individuelles CSS im Menüpunkt Theme möglich.
+The list uses the styling of the enclosing website. Customization is possible by changing the CSS stylesheets of your website or via Custom CSS in the Theme menu item.
 
-## Einstellungen der Cookie Tabelle
+## Cookie table settings
 
-Hier können Sie einstellen ob die Standard Texte ausgegeben werden und ob Sie den Consent ändern Link bei der Tabelle anzeigen lassen wollen. Im Selectfeld wählen Sie die Überschriften Hirarchie aus mit der die Daten dargestellt werden damit es gut in Ihre DS passt.
+Here you can set whether the default texts are output and whether you want to display the Consent change link at the table. In the select field you choose the headings hierarchy with which the data is displayed so that it fits well into your DS.
 
 ![screenshot-1614090824206-206](../assets/screenshot-1614090824206-206.jpg)

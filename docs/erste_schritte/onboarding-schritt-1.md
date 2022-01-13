@@ -1,22 +1,22 @@
-# Onboarding - Schritt 1
+# Onboarding - Step 1
 
-Direkt nach dem 1. Aufruf in der Administration werden Sie durch das sogenannte Onboarding geführt. In diesem Prozess werden die wichtigsten Punkte Ihrer Seite abgefragt, gescannt und verarbeitet. Sie können hier bei jedem Schritt korrigierend eingreifen.
+Directly after the 1st call in the administration you will be guided through the so-called onboarding. In this process, the most important points of your page are queried, scanned and processed. You can take corrective action here at every step.
 
-Alles was im Onboarding erstellt wird können Sie später in der Administration wieder anpassen und ändern.
+Everything that is created in the onboarding can be adjusted and changed later in the administration.
 
-Falls das Onboarding nicht automatisch startet können Sie auf dem Dashboard einfach den folgenden Link klicken:
+If onboarding does not start automatically, you can simply click the following link on the dashboard:
 
 ![screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_20_02-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-## Eingabe der Domain.
+## Enter the domain.
 
-Nach dem ersten Login erscheint die folgende Maske -  hier können Sie Ihre Domain eintragen und nach Cookies und Skripten scannen lassen. Wichtig ist dass Sie den Sicherheitshinweis abhaken.
+After the first login the following mask appears - here you can enter your domain and scan for cookies and scripts. It is important that you tick off the security note.
 
 ![screenshot-1614089750586-586](../assets/screenshot-1614089750586-586.jpg)
 
-Natürlich können Sie auch alles manuell durchführen, klicken Sie dafür einfach auf den Link "Setup überspriungen - ich mache alles manuell". 
+Of course you can also do everything manually, just click on the link "Setup skipped - I do everything manually" 
 
 
 

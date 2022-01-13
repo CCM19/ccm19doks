@@ -1,23 +1,23 @@
 # Enterprise / Agency Version
 
-Die Enterprise oder Agency Version verfügt über diverse spezielle Features, die speziell für größere Unternehmen oder für Agenturen relevant sind. Der Usecase ist in Hinsicht der Verwendung relativ ähnlich, da es darum geht diverse Domains verschiedener meist unabhängiger Einheiten zu verwalten.
+The Enterprise or Agency version has various special features that are especially relevant for larger companies or agencies. The use case is relatively similar in terms of usage, as it is about managing various domains of mostly independent entities.
 
-**Allen voran ist es die Mandantenfähigkeit, die Kunden / Mandantend API, die Pflege einer eigenen individuelle und accountübergreifende Cookie und Skripte Datenbank und eigene Themes.**
+**First of all it is the multi-client capability, the customer/client API, the maintenance of an own individual and cross-account cookie and scripts database and own themes
 
-Zusätzlich kann die Enterprise / Agency Version auch als komplette Whitelabel Version umgesetzt werden, wo sowohl das Frontend wie auch das Backend komplett individualisiert sind und alle Hinweise auf CCM19 entfernt sind.
+In addition, the Enterprise / Agency version can also be implemented as a complete whitelabel version, where both the frontend and the backend are completely individualized and all references to CCM19 are removed.
 
-Mit der Agency Version haben Sie auch die Möglichkeit das CCM19 an Ihre Kundenverwaltung anzuschließen oder per API neue Kunden zu erstellen und zu bearbeiten.
+With the Agency version you also have the possibility to connect CCM19 to your customer management or to create and edit new customers via API.
 
 ## Installation Enterprise / Agency Version OnPremise
 
-**In der Regel führt CCM19 die Installation für Sie durch,** Sie können das natürlich auch selber durchführen,die Installation der Agency Version erfolgt genauso wie die [Downloadvariante](/erste_schritte/installation/) - der Prozess ist der gleiche. Sie bekommen nur eine spezielle Downloaddatei und einen speziellen Lizenzkey der die Nutzung ermöglicht.
+**In general CCM19 will do the installation for you,** You can of course do it yourself,the installation of the Agency Version is the same as the [download variant](/first_steps/installation/) - the process is the same. You only get a special download file and a special license key that enables the usage.
 
-**Die Enterprise Version kann auch auf einer CCM19 Subdomain genutzt werden, z.B. unternehmen.ccm19.de - sprechen Sie dafür einfach mit unserem Support.**
+**The Enterprise Version can also be used on a CCM19 subdomain, e.g. unternehmen.ccm19.de - just talk to our support for that.**
 
 ## Enterprise / Agency Dashboard
 
-Das Dashboard bietet einige Basisinformationen über die Nutzung der Agency Version. Zum einem wieviel Kunden in der Datenbank vorliegen und wieviele Domains darüber genutzt werden. Außerdem sehen Sie eine kleine Grafik die die Auslastung Ihrer CCM19 Instanz zeigt im aktuellen Monat anzeigt.
+The dashboard provides some basic information about the usage of the Agency version. For example how many customers are in the database and how many domains are used. You can also see a small graph showing the usage of your CCM19 instance in the current month.
 
 ![screenshot-1641982525189](../assets/screenshot-1641982525189.jpg)
 
- Weitere Informationen finden Sie links im Menü.
+ More information can be found in the menu on the left.

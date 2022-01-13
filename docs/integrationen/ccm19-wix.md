@@ -1,59 +1,59 @@
 # Wix
 
-Um unseren Cookie [Consent](https://www.ccm19.de/integration/glossar/10-Consent.html#10) Manager für Ihren Wix-Blog oder Ihre Wix-Webseite zu installieren, führen Sie einfach die folgenden Schritte aus:
+To install our Cookie [Consent](https://www.ccm19.de/integration/glossar/10-Consent.html#10) Manager for your Wix blog or website, simply follow the steps below:
 
-## Anmelden im WIX Account
-
-
-
-[![Schritt 1](../assets/10-1-wix.png)](https://www.ccm19.de/images/10-1-wix.png)
-
-## Webseite auswählen
-
-Wählen Sie in der Übersicht für die Webseiten, die Webseite aus, in der Sie CCM19 einbinden möchten.
-
-[![Schritt 2](../assets/10-2-wix.png)](https://www.ccm19.de/images/10-2-wix.png)
+## Log in to WIX Account
 
 
 
-## Verwaltung der Webseite öffnen
+[![Step 1](../assets/10-1-wix.png)](https://www.ccm19.de/images/10-1-wix.png)
 
-Öffnen Sie in der Verwaltung für die Webseiten die Einstellungen.
+## Select website
 
-[![Schritt 3](../assets/10-3-wix.png)](https://www.ccm19.de/images/10-3-wix.png)
+In the overview for the web pages, select the web page in which you want to embed CCM19.
 
-
-
-## Analysewerkzeuge öffnen
-
-In der Übersicht für die Einstellungen öffnen Sie im Bereich der "Erweiterten Einstellungen" den Punkt "Analysewerkzeuge".
-
-[![Schritt 4](../assets/10-4-wix.png)](https://www.ccm19.de/images/10-4-wix.png)
+[![Step 2](../assets/10-2-wix.png)](https://www.ccm19.de/images/10-2-wix.png)
 
 
 
-## CCM19 einbauen im Kopfbereich
+## Open the website administration
 
-Nun sehen Sie drei Bereiche in denen Sie Werkzeuge hinzufügen können. Wir möchten das CCM19 im Kopf-Bereich, an der ersten Stelle einbauen.
+Open the settings in the administration for the web pages.
 
-[![Schritt 5](../assets/10-5-wix.png)](https://www.ccm19.de/images/10-5-wix.png)
-
-
-
-## Neues Werkzeug auswählen
-
-Klicken Sie auf "+ Neues Werkzeug" und wählen Sie "Benutzerdefiniert" aus.
-
-[![Schritt 6](../assets/10-6-wix.png)](https://www.ccm19.de/images/10-6-wix.png)
+[![Step 3](../assets/10-3-wix.png)](https://www.ccm19.de/images/10-3-wix.png)
 
 
 
-## Werkzeug einbauen
+## Open analysis tools
 
-Zuerst, wählen Sie einen Namen für das Werkzeug aus z. B. "CCM19". Als nächstes, fügen Sie in dem Abschnitt für den Code das Skript für CCM19 ein (Im Bild ist nur ein Beispiel). Anschließend wählen Sie im Bereich "Code zu Seite hinzufügen" "alle Seiten" aus und dass der Code auf jeder Seite neu geladen wird. Nun wählen Sie den Head-Bereich als Ausgabe aus. Nach dem Speichern des Werkzeugs, achten Sie darauf, dass CCM19, an erster Stelle steht und kein anderes Werkzeug davor positioniert ist.
+In the settings overview, open the "Analysis tools" item in the "Advanced settings" area.
 
-[![Schritt 7](../assets/10-7-wix.png)](https://www.ccm19.de/images/10-7-wix.png)
+[![Step 4](../assets/10-4-wix.png)](https://www.ccm19.de/images/10-4-wix.png)
 
-## Fertig
 
-Et voilà, nun sollte der Cookie Consent Manager auf Ihrer Webseite eingebunden sein und Cookiemeldungen einblenden, wenn das Widget im Tool selbst aktiviert wurde. Nun müssen Sie dieses nur noch für Ihrer Webseite konfigurieren.
+
+## Insert CCM19 in the header area
+
+Now you see three areas where you can add tools. We want to add the CCM19 in the header area, in the first place.
+
+[![Step 5](../assets/10-5-wix.png)](https://www.ccm19.de/images/10-5-wix.png)
+
+
+
+## Select new tool
+
+Click on "+ New Tool" and select "Custom".
+
+[![Step 6](../assets/10-6-wix.png)](https://www.ccm19.de/images/10-6-wix.png)
+
+
+
+## Install tool
+
+First, choose a name for the tool, e.g. "CCM19". Next, in the code section, add the script for CCM19 (the image is just an example). Then, in the "Add code to page" section, select "all pages" and that the code will be reloaded on each page. Now select the head area as output. After saving the tool, make sure that CCM19, is in the first position and no other tool is positioned before it.
+
+[![Step 7](../assets/10-7-wix.png)](https://www.ccm19.de/images/10-7-wix.png)
+
+## Done
+
+Et voilà, now Cookie Consent Manager should be included on your website and show cookie messages when the widget is enabled in the tool itself. Now you just need to configure it for your website.

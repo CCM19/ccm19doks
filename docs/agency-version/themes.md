@@ -1,23 +1,23 @@
 # Themes
 
-Unter dem Menüpunkt Themes können Sie systemweite neue Themes erstellen und für alle Kunden auspielen. Danach stehen diese Themes in allen Kunden Accounts zur Verfügung.
+Under the menu item Themes you can create new system-wide themes and play them out for all customers. After that, these themes are available in all customer accounts.
 
-Erstellen bzw. bearbeiten Sie das gewünschte Theme und spielen Sie es anschließen per blauen Button "Theme verteilen" an alle Ihre Benutzer aus.
+Create or edit the desired theme and then distribute it to all your users using the blue "Distribute Theme" button.
 
  ![screenshot-2020.10.01-14_11_27-1601554287383](../assets/screenshot-2020.10.01-14_11_27-1601554287383.jpg)
 
-Die Bearbeitungsmaske ist die gleiche wie Sie in den Accounts unter Themes zur Verfügung steht, weitere Erläuterungen dazu finden Sie hier: [Themes bearbeiten](../funktionen/themes.md) 
+The edit screen is the same as available in the accounts under Themes, further explanation can be found here: [edit themes](../functions/themes.md) 
 
-### Theme erstellen
+### Create theme
 
-Der Klick auf den Button führt zur folgenden Maske.
+Clicking on the button leads to the following mask.
 
 ![screenshot-1641834371507 (../assets/screenshot-1641834371507%2520(1).jpg)](../assets/screenshot-1641834371507%20(1).jpg)
 
-HIer können Sie alle relevanten Einstellungen bezgl. der Themes einstellen. Die Details zu den einzelnen Bereichen werden im Bereich Theme in der Cookie & Co, Verwaltung erklärt.
+Here you can set all relevant settings regarding the themes. The details of the individual areas are explained in the Theme section in the Cookie &amp; Co, Administration.
 
-### Themes verteilen
+### Distribute themes
 
-Der Klick auf diesen Button verteilt das Theme oder Änderungen in vorhanden Themes dann auf alle Domains. 
+Clicking this button will distribute the theme or changes in existing themes to all domains 
 
-**Bitte beachtenSie dass diese Änderungen dann sofort live sind.**
+**Please note that these changes will be live immediately

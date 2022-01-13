@@ -1,6 +1,6 @@
-# Whitelabel Einstellungen
+# Whitelabel settings
 
-Unter Einstellungen steht Ihnen in der Standard Agency Version die Möglichkeit zur Verfügung das Logo in der Administration oben links auszutauschen.
+Under Settings in the Standard Agency Version you have the possibility to change the logo in the administration on the top left.
 
 ![screenshot-2020.10.01-14_16_53-1601554613205](../assets/screenshot-2020.10.01-14_16_53-1601554613205.jpg)
 
@@ -8,13 +8,13 @@ Unter Einstellungen steht Ihnen in der Standard Agency Version die Möglichkeit 
 
 ## Agency Whitelabel Version
 
-In der Whitelabel Version stehen Ihnen an dieser Stelle wesentlich mehr Funktionen zur Verfügung, Sie können mit den verfügbaren Funktionen die Optik sowohl des Frontends als auch des Backends komplett an Ihre Ideen und CI anpassen.
+In the Whitelabel version you have much more functions available at this point, you can completely customize the look of both the frontend and the backend to your ideas and CI with the available functions.
 
 
 
-## Powered By Text im Frontend Widget
+## Powered By Text in Frontend Widget
 
-Den Powered By Text können Sie mit Hilfe dieses Bereiches an Ihr Unternehmen anpassen. 
+You can customize the Powered By Text to your business using this section 
 
 
 
@@ -22,39 +22,39 @@ Den Powered By Text können Sie mit Hilfe dieses Bereiches an Ihr Unternehmen an
 
 
 
-Den Text können Sie hier bearbeiten und an Ihr Unternehmen anpassen.
+You can edit the text here and adapt it to your company.
 
 ![screenshot-2020.10.01-14_19_26-1601554766322](../assets/screenshot-2020.10.01-14_19_26-1601554766322.jpg)
 
-## Layout der Administration 
+## Administration layout 
 
-Sie können das Layout der Administration komplett an Ihre Anforderungen anpassen. Jedes Element kann per CSS angefasst und gestylt werden. So ist ein vollständig eigenes Layout möglich - ganz einfach durch ein paar Einträge in dem folgenden Feld.
+You can completely customize the layout of the administration to your needs. Each element can be touched and styled by CSS. So a completely own layout is possible - simply by a few entries in the following field.
 
 ![screenshot-2020.10.01-14_25_42-1601555142524](../assets/screenshot-2020.10.01-14_25_42-1601555142524.jpg)
 
-Allein diese beiden Einträge verändern das Layout der Adminstration schon stark, Hier sind der Umsetzung optisch nur die Grenzen gesetzt die CSS übersteigen. Beispiel mit Auswirkung der obigen Einträge, links mit Ergänzung, rechts Standard.
+Alone these two entries change the layout of the Adminstration already strongly, Here are the conversion optically only the borders set the CSS exceed. Example with effect of the above entries, left with addition, right standard.
 
 
 
 ![whitelabellayout](../assets/whitelabellayout.png)
 
-Das Layout in dieser Form wird natürlich auch direkt für Ihre Kunden ausgespielt.
+The layout in this form is of course also played out directly for your customers.
 
 
 
-## Whitelabel Texte
+## Whitelabel texts
 
-Alle Texte und Ausgaben können in der Whitelabel Version an Ihre Vorgaben angepasst werden. Klicken Sie dafür auf den Reiter Whitelabel Content / Inhalt
+All texts and outputs can be customized to your specifications in the whitelabel version. To do this, click on the tab Whitelabel Content / Content
 
 ![screenshot-2020.10.01-14_35_34-1601555734668](../assets/screenshot-2020.10.01-14_35_34-1601555734668.jpg)
 
 
 
-Nach dem Klick kommen Sie in folgende Maske
+After the click you will get to the following mask
 
-### Inhalte bearbeiten
+### Edit contents
 
-Hier sehen Sie die Auflistung aller Spracheinträge in der Administration, diese können Sie entweder einzeln anpassen oder "on block" mit der Suchen und Ersetzen Funktion. Falls Sie sich einmal dabei total verhauen, im Verzeichnis `/messages` werden Sicherung von der jeweiligen Vorversion gespeichert. Zur Not können Sie also wieder zurückspringen indem Sie die Dateien umkopieren.
+Here you see the list of all language entries in the administration, you can either adjust them individually or "on block" with the search and replace function. If you make a complete mistake, the directory `/messages` contains backups from the previous version. So in case of need you can jump back by copying the files.
 
 
 
@@ -62,7 +62,7 @@ Hier sehen Sie die Auflistung aller Spracheinträge in der Administration, diese
 
 
 
-> Auf diese Weise können Sie z.B. auch den Namen "CCM19" gegen Ihre Bezeichnun ersetzen. Ebenfalls den Namen unseres Unternehmens im Fuß der Administration -  das kann **alles** angepasst werden.
+&gt; This way you can also replace e.g. the name "CCM19" with your name. Also the name of our company in the footer of the administration - this can be customized **all**.
 
 
 

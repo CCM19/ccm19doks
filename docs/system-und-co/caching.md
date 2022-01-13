@@ -1,23 +1,23 @@
 # Caching
 
-CCM19 nutzt intensives Caching aller Komponenten um die notwendigen Daten so schnell wie möglich zur Verfügung stellen zu können. Zeit ist Geld und wenn Seitenaufrufe zu lange dauern springen Besucher ab.
+CCM19 uses intensive caching of all components to provide the necessary data as fast as possible. Time is money and if page loads take too long, visitors will bounce.
 
 
 ![screenshot-1641916436826](../assets/screenshot-1641916436826.jpg)
 
-Auf dem Screenshot erkennen Sie die verschiedenen Caches von CCM19 und wie stark der jeweilige Cache belegt ist.
+On the screenshot you can see the different caches of CCM19 and how busy each cache is.
 
-**Nicht in Fullservice enthalten**
+**Not included in Fullservice**
 
-Diese Funktion steht in der Fullservice Variante **einzelnen Kunden** nicht zur Verfügung da sie von CCM19 global über alle Accounts hinweg genutzt wird. Diese Funktion wird ebenfalls serverseitig regelmäßig  durchgeführt.
+This function is not available in the Fullservice variant **individual customers** because it is used by CCM19 globally across all accounts. This function is also performed regularly on the server side.
 
 
 
-## Cache löschen
+## Clear cache
 
-Sie können mit Klick auf den roten Button "Alles Zwischenspeicher löschen" den Cache der Installation löschen. Dabei werden nur die temporären Dateien gelöscht, eine Auswirkung auf die Funktion gibt es nicht. Der Cache wird beim nächsten Seitenaufruf wieder komplett neu erstellt.
+You can clear the cache of the installation by clicking on the red button "Clear all cache". This only deletes the temporary files, there is no effect on the function. The cache will be completely recreated the next time you open the page.
 
-Sie können auch die Caches Zend OPCache und die Vorschaubilder einzeln löschen falls es da besondere Probleme gibt.
+You can also delete the caches Zend OPCache and the preview images individually if there are special problems.
 
-> Falls Sie ein ungewöhnliches Problem in Ihrer CCM19 Installation merken, löschen Sie im ersten Schritt einmal den Cache und testen ob es sich damit schon behoben hat. Dies passiert häufig.
+&gt; If you notice an unusual problem in your CCM19 installation, clear the cache once as a first step and test if it is already solved. This often happens.
 

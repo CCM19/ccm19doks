@@ -1,14 +1,14 @@
-# Kunden
+# Customers
 
-Innerhalb von der CCM19 Enterprise / Agency Version können Sie eigene Kunden verwalten. Jeder Kunde kann sich mit eigenen Benutzerdaten einloggen und seine eigenen Domains in seinem Account verwalten.
+Within CCM19 Enterprise / Agency version you can manage your own customers. Each customer can log in with his own user data and manage his own domains in his account.
 
 ![screenshot-1641983588731](../assets/screenshot-1641983588731.jpg)
 
-Hier sehen Sie die Übersicht der Kunden in der Ihrer Datenbank. Das können beliebig viele sein. Der Klick auf den grünen Button führt zu nächsten Maske.
+Here you can see the overview of customers in your database. There can be any number of them. Clicking the green button will take you to the next screen.
 
-## Neuen Kunden erstellen / Kunden bearbeiten
+## Create new customer / Edit customer
 
-Mit Klick auf den grünen Button neuen Kunden erstellen springen Sie in die passende Maske hinein.
+By clicking on the green button Create new customer you will jump to the appropriate mask.
 
 
 
@@ -16,70 +16,70 @@ Mit Klick auf den grünen Button neuen Kunden erstellen springen Sie in die pass
 
 
 
-## Kunden erstellen Maske
+## Create customer mask
 
-Hier können Sie die wichtigen Basisdaten für neue Kunden einstellen. Diese Maske können Sie nutzen wenn Sie die Kunden in Ihrer Installation nicht mit Hilfe der API verarbeiten.
+Here you can set the important basic data for new customers. You can use this mask if you do not process the customers in your installation with the help of the API.
 
 ![screenshot-1641983897505](../assets/screenshot-1641983897505.jpg)
 
 
 
-## Pflichtfelder für neuen Kunden
+## Mandatory fields for new customer
 
-Die Felder 
+The fields 
 
 * Username, 
-* Passwort 
-* und E-Mail Adresse 
+* Password 
+* and e-mail address 
 
-sind Pflichtfelder die immer gesetzt werden müssen. Die restlichen Felder dienen eher statistischen Zwecken und damit User sich darin etwas sicherer fühlen.
+are mandatory fields that must always be set. The rest of the fields are for statistical purposes and to make users feel more secure.
 
-### Aktivieren
+### Enable
 
-Der Haken "aktiv" setzt einen Kunden aktiv oder deaktiviert ihn.
+The "Active" checkbox activates or deactivates a customer.
 
-### Whitelabel Lizenzen
+### Whitelabel licenses
 
-Hier können Sie definieren wieviele WL Lizenzen der jeweilige User in seinem Account zur Verfügung hat. Diese können die Kunden dann frei auf Ihre Domains verteilen. Whitelabel bedeutet hier - Ihre kunden können den Link zum Hersteller im Frontend Widget entfernen.
+Here you can define how many WL licenses the respective user has available in his account. The customers can then freely distribute these to their domains. Whitelabel means here - your customers can remove the link to the manufacturer in the frontend widget.
 
-### Verfügbare CCM19 Aufrufe
+### Available CCM19 calls
 
-Hier stellen Sie ein wieviel Aufrufe den Kunden jeweils zur Verfügung stehen sollen. -1 bedeutet es gibt kein Limit. Sie können darüber also ebenfalls frei entscheiden. Die Anzahl der Aufrufe wird dabei über die Domains verteilt.
+Here you set how many calls should be available to the customers. -1 means there is no limit. You can also decide freely. The number of calls is distributed over the domains.
 
-### Max Anzahl Domains
+### Max number of domains
 
-Stellen Sie ein wieviele Domains Kunden in Ihren Accounts zur Verfügung haben. Auch hier gilt -1 = kein Limit.
+Set how many domains customers have available in their accounts. Here, too, -1 = no limit.
 
-### Automatische Domain Erstellung
+### Automatic domain creation
 
-Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in die Seite einbinden ohne individuelle Domainerkennung. D.h. der Link der eingebunden wird enthält **nicht** den Parameter domainid=1234.
+This is a somewhat tricky automatism. It allows clients to embed a code into the page without individual domain detection. I.e. the link that is included **does not** contain the domainid=1234 parameter.
 
-Domains werden damit auch automatisch erstellt. Das heißt Sie binden den Code ein und wenn CCM19 erkennt der Code läuft unter einer Domain die das System noch nicht kennt wird ein Eintrag in der Datenbank erstellt und er erscheint im Domainlisting im Backend. Hier können die Einträge dann darüber verwaltet werden. 
+Domains are also created automatically. That means you include the code and when CCM19 detects the code is running under a domain the system doesn't know yet, an entry is created in the database and it appears in the domain listing in the backend. Here the entries can be administered then over it 
 
-**Hier gibt es aber oft unsinnigen Beifang wenn z.B. Domains wie Google die Seite als iframe einbinden oder über Proxys die Seite besuchen.**
+**But there are often nonsensical bycatch if e.g. domains like Google embed the page as iframe or visit the page via proxies
 
-> Hier sollten Sie das also gut im Auge behalten was passiert.
+&gt; Here you should keep a close eye on what is happening.
 
 
 
-## Rechte
+## Rights
 
 ![screenshot-16419838975051](../assets/screenshot-16419838975051.jpg)
 
-Hier können Sie einstellen welche Rechte der Kunde jeweils haben soll. Hier können detaillierte Einstellungen durchgeführt werden worauf Kunden Zugriff haben und worauf nicht. 
+Here you can set which rights the customer should have in each case. Here detailed settings can be made what customers have access to and what not 
 
-Standardmäßig werden Neukunden so angelegt dass sie Zugriff auf alles haben, es muss also nur dann etwas eingestellt werden wenn es **nicht** so sein soll.
+By default, new customers are created so that they have access to everything, so you only need to set something if it **should not** be so.
 
-Auch der Zugriff auf die Plugins kann hier abseits der Plugin eigenen Regeln nochmal geändert werden. Es gilt dann folgendes:
+Also the access to the plugins can be changed here apart from the plugin own rules again. The following applies then:
 
-1. Plugin ist für alle freigeschaltet
-2. User hat keinen Zugriff auf das Plugin laut Usereinstellungen weil der Haken nicht gesetzt ist.
+1. Plugin is unlocked for all
+2. User has no access to the plugin according to user settings because the hook is not set.
 
-Die Usereinstellungen überschreiben damit die Plugineinstellungen, die also nur dann gelten wenn Zugriff vorhanden ist.
+The user settings overwrite the plugin settings, which are only valid if access is available.
 
-## Kunden bearbeiten
+## Edit customers
 
-Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Informationen im Bereich Aufrufe.
+If you edit a customer record you will see some additional information in the calls section.
 
 
 
@@ -87,37 +87,37 @@ Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Inf
 
 
 
-Es wird hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.
+The actual number of views is shown here and a button to reset the counter for the current month.
 
 
 
-## Übersicht über vorhandene Kunden
+## Overview of existing customers
 
-Eine Auflistung Ihrer Kunden finden Sie wenn Sie auf den Menüpunkte Kunden links im Menü klicken.
+You can find a list of your customers if you click on the menu item Customers in the left menu.
 
 ![screenshot-2020.10.01-12_13_49-1601547229455](../assets/screenshot-2020.10.01-12_13_49-1601547229455.jpg)
 
 
 
-In der Auflistung werden die Basisdaten Ihrer Kunden aufgelistet, wieviel Zugriffe und Domains erlaubt und genutzt wurden.
+The listing lists the basic data of your customers, how many accesses and domains were allowed and used.
 
-Außerdem sehen Sie eine Übersicht über die Domains die der Kunden nutzt. In der Übersicht sehen Sie einen Testkunden dessen Domains wir zu Darstellungszwecken immer wieder kopiert haben.
+You also see an overview of the domains that the customer uses. In the overview you can see a test customer whose domains we have copied again and again for display purposes.
 
-Außerdem wird angezeigt, wann der Kunde sich das letzte mal eingeloggt hat und ob der Kunde überhaupt aktiv ist.
+In addition, you can see when the customer has logged in the last time and whether the customer is active at all.
 
-### Bearbeiten
+### Edit
 
-Klicken Sie auf den grünen Button mit dem Stiftsymbol um in die Bearbeitungsmaske zu springen - diese ist die gleiche wie die oben stehende Maske zur Erstellung neuer Benutzer.
+Click on the green button with the pencil icon to jump to the edit screen - this is the same as the screen for creating new users above.
 
-### Kunden löschen
+### Delete customer
 
-Mit dem roten Papierkorb Button können Sie einen Kunden (nach Nachfrage) restlos löschen.
+With the red trash can button you can delete a customer completely (after asking).
 
-### In Kundenaccount einloggen
+### Log in to customer account
 
-Mit dem blauen Button können Sie sich ohne Passwort in den jeweiligen Kundenaccount einloggen. Beachten Sie aber bitte dass Sie sich dafür immer die Freigabe von Ihrem Kunden geben lassen. 
+With the blue button you can log in to the respective customer account without a password. Please note, however, that you always have to ask your customer for permission to do this 
 
-## Kunden suchen
+## Search customers
 
-Mit Hilfe der Suchmaske können Sie nach bestimmten Kunden suchen, die Suchfunktion durchsucht alle Datensätze der Kunden und listet nur die auf die gefunden werden.
+With the help of the search mask you can look for certain customers, the search function searches all data records of the customers and lists only those which are found.
 

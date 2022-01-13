@@ -1,41 +1,41 @@
 # Shopify
 
-Shopify ist ein immer beliebter werdender Baukasten um seinen Webshop schnell und einfach einzurichten. Genauso einfach wie die Erstellung des Shops ist auch die Implementation unseres Javascripts in Shopify.
+Shopify is an increasingly popular construction kit for setting up your webshop quickly and easily. Just as easy as the creation of the store is the implementation of our javascript in Shopify.
 
-## Dashboard in CCM19 anwählen
+## Select Dashboard in CCM19
 
-   Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code. Kopieren Sie sich diesen in Ihren Zwischenspeicher.
+   After the successful installation of CCM19 on your server or setup you will get a javascript code. Copy this to your cache.
 
 ![javascript](../../assets/javascript.png)
 
 
 
-## Shopify Backend 
+## Shopify backend 
 
-Loggen Sie sich in das Backend Ihres Shops ein. Navigieren Sie in die Themeeinstellungen (1.) und bearbeiten Sie Ihr aktuelles Theme (2.).
-
-
-
-![Anleitung Shopify 1](../../assets/Anleitung%20Shopify%201.png)
+Log into the backend of your store. Navigate to the theme settings (1.) and edit your current theme (2.).
 
 
 
-Öffnen Sie anschließend die Einstellungen mithilfe der drei Punkte im oberen linken bereich (1.) und klicken Sie auf "Edit code".
+![Instruction Shopify 1](../../assets/Instruction%20Shopify%201.png)
 
 
 
-![Anleitung Shopify 2](../../assets/Anleitung%20Shopify%202.png)
+Then open the settings using the three dots in the upper left area (1.) and click on "Edit code".
 
 
 
-Nun sehen wir die Dateien aus denen Ihr Shop besteht. Unter Layout befindet sich die Datei "theme.liquid", welche Sie nun editieren müssen (1. & 2.). Fügen Sie das Javascript von CCM19, welches sich noch im Zwischenspeicher befindet nach dem Element <head> ein, so wie hier im Bild zu sehen (3.).
+![Instruction Shopify 2](../../assets/Instruction%20Shopify%202.png)
 
 
 
-![Anleitung Shopify 3](../../assets/Anleitung%20Shopify%203.png)
+Now we see the files your store consists of. Under Layout is the file "theme.liquid", which you now have to edit (1. &amp; 2.). Insert the javascript from CCM19, which is still in the cache after the element, <head>as seen here in the picture (3.).
 
 
 
-## Fertig
+![Instruction Shopify 3](../../assets/Instruction%20Shopify%203.png)
 
-Testen Sie im Frontend Ihrer Seite ob nun das Widget erscheint. Denken Sie daran dieses auch in den EInstellungen von CCM19 vorher zu aktivieren (Menüpunkt: Frontend-Verhalten).
+
+
+## Done
+
+Test in the frontend of your page if the widget appears now. Remember to activate it in the settings of CCM19 before (menu item: Frontend behavior).</head> 

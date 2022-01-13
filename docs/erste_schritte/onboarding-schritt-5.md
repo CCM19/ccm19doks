@@ -1,14 +1,14 @@
-# Onboarding - Schritt 5
+# Onboarding - Step 5
 
-Auf der letzten Seite des Onboardings finden Sie den Einbettungscode des CCM19 für Ihre Webseite. Den müssen Sie sich hier nicht merken - er wird genauso auch im Dashboard der Administration auch immer angezeigt. Sie können ihn aber natürlich direkt kopieren und in Ihre Seite einbinden.
+On the last page of the onboarding you will find the embed code of the CCM19 for your website. You don't have to remember it here - it will be displayed in the dashboard of the administration as well. But of course you can copy it directly and embed it into your page.
 
 ![screenshot-1614090586768-768](../assets/screenshot-1614090586768-768.jpg)
 
-## Einbindungscode
+## embed code
 
-Der Einbindungscode kann z.B. so aussehen.
+For example, the embed code may look like this.
 
-``` html
+`` html
 <script src="http://localhost/ccm19/cookie-consent-management/www/public/ccm19.js?apiKey=1234&amp;domain=1234&amp;lang=de_DE" 
 referrerpolicy="origin">
     </script>
@@ -16,9 +16,9 @@ referrerpolicy="origin">
 
 
 
-## Beispielintegration
+## Example integration
 
-Diesen Code kopieren Sie und binden in auf Ihrer Seite möglichst weit oben im Kopf der Seite ein, am besten direkt nach dem ersten <head> Element
+Copy this code and paste it on your page as high as possible in the header of the page, preferably right after the first <head>element
 
 ``` html
 <html>
@@ -28,11 +28,12 @@ Diesen Code kopieren Sie und binden in auf Ihrer Seite möglichst weit oben im K
  </head>
  <body>
  </body>
-<html>    
+<html>   
 ```
 
 
 
-## Fertig und raus
+## Ready and out
 
-Wenn Sie fertig sind, klicken Sie auf den blauen Button und springen damit zurück in die CCM19 Administration.
+When you are done, click the blue button to jump back to CCM19 Administration.
+</html></html></head> 

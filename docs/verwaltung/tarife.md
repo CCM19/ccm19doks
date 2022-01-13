@@ -1,9 +1,9 @@
-# Tarife auswählen
+# Select tariffs
 
-Hier können Sie den für Sie passenden Tarif auswählen.  Oberhalb wird der durschnittliche Verbrauch pro Monat dargestellt. Die Zahl bezieht sich auf den bisher erzielten Wert plus einer kleinen Sicherheitsmarge. 
+Here you can select the tariff that suits you best.  Above the average consumption per month is shown. The figure refers to the value achieved so far plus a small safety margin 
 
-Ein Klick auf den passenden Button bringt Sie zu unserem Checkout wo Sie den Tarif buchen und bezahlen können. Auch Upgrades sind auf diesem Wege möglich.
+A click on the appropriate button takes you to our checkout where you can book and pay the tariff. Upgrades are also possible this way.
 
-Bei Fragen wenden Sie sich gerne an unseren Support der Ihnen sehr gerne weiterhilft.
+If you have any questions, please contact our support team who will be happy to help you.
 
 ![screenshot-1641832579229](../assets/screenshot-1641832579229.jpg)

@@ -1,14 +1,14 @@
 # Page Check
 
-Der Page-Check hilft Ihnen, externe Skripte, Cookies und andere externe Inhalte zu finden bzw. zu kontrollieren. Die Tabellen zeigen Ihnen an, ob Cookies existieren, die Sie nicht kontrollieren oder ob Scripte außerhalb der Kontrolle von CCM19 ausgeführt werden.
+The Page Check helps you to find or control external scripts, cookies and other external content. The tables show you if cookies exist that you don't control or if scripts are running outside of CCM19's control.
 
-Es ist wichtig diese Daten zu finden, da im Laufe der Zeit immer wieder mal Skripte in Teile der Seite integriert werden und nach einiger Zeit vergessen werden. Wer dokumentiert so etwas schon.
+It is important to find this data, because in the course of time scripts are integrated into parts of the site from time to time and are forgotten after some time. Who documents something like that.
 
-Allerdings findet der Scanner auch sogenannte User Skripte und Cookies die von anderen Seiten eingeschleppt werden. Browser verhalten sich hier mitunter nicht konsistent. Die Ursache ist von unserer Seite aus nicht zu erklären, da müssten die Browserhersteller einmal genauer schauen.
+However, the scanner also finds so-called user scripts and cookies that are brought in from other sites. Browsers sometimes do not behave consistently here. The cause cannot be explained from our side, the browser manufacturers would have to take a closer look.
 
-Im HIntergrund läuft immer ein Scanner der von extern in diesen Fällen überprüft ob das entsprechende Cookie oder sonstige Element auch auf den Unterseite enthalten ist wo es im CCM19 gelistet ist, falls nicht wird es automatisch auf "Ignore" gesetzt und hier auch nicht angezeigt. 
+In the background, a scanner always runs externally in these cases to check whether the corresponding cookie or other element is also contained on the subpage where it is listed in the CCM19, if not, it is automatically set to "Ignore" and not displayed here 
 
-Daher schauen Sie hier genau hin ob auch wirklich Daten hier zu finden sind die auf Ihrer Seite laufen. Falls ja, tragen Sie die Daten in Ihre lokale Datenbank ein. Eine manuelle Überprüfung von Zeit zu Zeit ist sicher zu empfehlen.
+Therefore, take a close look if you really find data here that is running on your site. If yes, enter the data into your local database. A manual check from time to time is certainly recommended.
 
 
 
@@ -16,16 +16,16 @@ Daher schauen Sie hier genau hin ob auch wirklich Daten hier zu finden sind die 
 
 
 
-### Skript Informationen
+### Script information
 
-Bei den Skripten finden Sie ein blaues **i** in der Spalte info - wenn Sie hierauf klicken wird Ihnen angezeigt wo das Skript überall gefunden wurde. Die Liste ist auf ein paar Einträge limitiert. Tritt das öfter auf, sollten Sie konkreter nachforschen was da passiert. Evtl. ist die Seite auch Opfer eines Hacks geworden.
+In the scripts you will find a blue **i** in the info column - if you click on it you will see where the script was found. The list is limited to a few entries. If this happens more often, you should investigate more specifically what is happening. Maybe the page has been hacked.
 
 ![screenshot-2020.09.29-16_49_51-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_49_51-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-### Neues Cookie gefunden
+### New cookie found
 
 ![screenshot-2020.09.29-16_49_51-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.29-16_49_51-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
-Wenn CCM19 ein neues Cookie findet - wie auf dem Screenshot zu erkennen ist, können Sie das Cookie mit Klick auf den Pfeil neben dem Cookienamen das Cookie in Ihre Liste übernehmen. Wenn das Cookie in unserer Datenbank bekannt ist, werden sogar direkt die passenden Einträge in Ihre Maske vorbelegt wie Sie das schon aus der Übernahme aus der Datenbank kennen.
+If CCM19 finds a new cookie - as you can see on the screenshot, you can add the cookie to your list by clicking on the arrow next to the cookie name. If the cookie is known in our database, even the matching entries will be pre-populated directly into your mask as you already know from the transfer from the database.

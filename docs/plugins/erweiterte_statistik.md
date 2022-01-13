@@ -1,49 +1,49 @@
-# Erweiterte Statistik
+# Advanced statistics
 
-Mit Hilfe der erweiterten Statistik können Sie die statistischen Consent Daten weiter auswerten. Die Daten liegen hier vollständig anonymisiert vor - ein Rückschluß auf individuelle Datensätze ist nicht möglich.
+With the help of the extended statistics you can further evaluate the statistical Consent data. The data here is completely anonymized - it is not possible to draw conclusions about individual data records.
 
-## Übersicht der Statistik
+## Overview of the statistics
 
-Hier sehen Sie die Daten einer Beispielseite von einer unserer vielen Kundenseiten die uns freundlicherweise zur Verfügung gestellt wurden, es handelt sich hier um eine reine Infoseite aus dem Agrarbereich. Das ist aber für die Erläuterung der Oberfläche letztlich nicht relevant.
+Here you can see the data of a sample page from one of our many customer sites that were kindly made available to us, it is a pure info page from the agricultural sector. But this is not relevant for the explanation of the interface in the end.
 
 ![screenshot-1641940415783](../assets/screenshot-1641940415783.jpg)
 
-## Nutzung der Maske
+## Use of the mask
 
-Oben links können Sie auswählen ob die Daten absolut - also die reinen Zahlen oder prozentual dargestellt werden sollen.
+At the top left you can select whether the data should be displayed absolutely - i.e. the pure numbers or as a percentage.
 
-Die prozentualen Werte stehen aber für die Vergangenheit aber nur für einige kurze Zeiträume zur Verfügung da sehr lange nur die Zustimmungen geloggt wurden, aber keine Einblendungen. Die wurden jeweils nur für den jeweiligen Monat für die Abrechnung gezählt und dann verworfen wurden. 
+The percentage values are available but for the past but only for some short periods because very long only the approvals were logged, but no insertions. They were only counted for the respective month for the accounting and then discarded 
 
-Wenn keine prozentualen Werte vorliegen, wird jeweils eine 0 angezeigt.
+If no percentage values are available, a 0 is displayed in each case.
 
-## Zeitraum auswählen
+## Select period
 
-Sie können über die beiden Auswahlfelder oben rechts den Zeitraum auswählen und die Kummulation auf Tage, Wochen, Monate oder Jahre.
+You can select the time period via the two selection fields in the upper right corner and the cummulation to days, weeks, months or years.
 
-## Interpretation der Daten
+## Interpretation of the data
 
-Prinzipiell ist es nun so dass die Zahl der Einblendungen sich aus allen Einblendungen der Maske berechnet, auch die Besucher die direkt wieder abspringen und die Maske nicht betätigen werden mit gezählt, außerdem alle die mit der Maske interagieren.
+In principle it is now so that the number of insertions is calculated from all insertions of the mask, also the visitors who jump off again directly and do not operate the mask are counted with, in addition all those with the mask interact.
 
-## Bitte beachten
+## Please note
 
-Die Zahl der Einblendungen ist nur eine Teilmenge der Zahl der Nutzungen von CCM19. Das Skript läuft bei **jedem** Seitenaufruf durch da immer überprüft werden muss ob ein Consent vorliegt oder nicht. Nur wenn kein Consent vorliegt wird die Maske ausgegeben und es kommt zu einer Zählung in der obigen Anzahl der Einblendungen.
+The number of insertions is only a subset of the number of uses of CCM19. The script runs on **every** page request because it always has to check if there is a consent or not. Only if there is no consent, the mask is output and the number of insertions above is counted.
 
-## Was bedeuten die Zahlen?
+## What do the numbers mean?
 
-- **Calls:** Anzahl der Aufrufe des CCM19-Skripts auf dem Server. Bestimmte Aufrufe, beispielsweise von Bots, können von der Zählung als "Call" ausgeschlossen sein, damit sie das Kontingent der Seitenaufrufe in den Tarifen nicht belasten.
-- **Einblendungen:** Die Anzahl der Aufrufe des Cookie Banner Widgets mit Anzeige des Widgetes im Browser eines Besuchers.
-- **Alle akzeptiert:** Anzahl der Klicks auf die Schaltfläche "Zustimmung" im Widget.
-- **Abgelehnt:** Anzahl der Klicks auf die Schaltfläche "Cookies ablehnen" im Widget.
-- **Absprung:** Anzahl der Nutzer, die das Banner gesehen haben, aber die Webseite wieder verlassen haben, ohne damit zu interagieren.
+- **Calls:** Number of calls of the CCM19 script on the server. Certain calls, for example from bots, may be excluded from counting as "calls" so that they do not burden the quota of page views in the tariffs.
+- **Inserts:** The number of times the cookie banner widget was called with the widget displayed in a visitor's browser.
+- **All Accepted:** Number of clicks on the "Agree" button in the widget.
+- **Rejected:** Number of clicks on the "Reject Cookies" button in the widget.
+- **Dropped:** Number of users who saw the banner but left the website without interacting with it.
 
-Detailliertere Daten werden nicht gelistet da in Regel nur 0,1% - 1% der Besucher auch detaillierte Angaben machen, diese sind aber statistisch nicht relevant.
+More detailed data is not listed because usually only 0.1% - 1% of visitors also provide detailed information, but this is not statistically relevant.
 
-## Probleme bei der Darstellung der Daten
+## Problems with the presentation of the data
 
-Mitunter kann es zu Problemen bei der Verarbeitung der Daten kommen, klicken Sie dann auf den Link "Daten aus dem Archiv importieren". Dieses Probleme treten aber wenn dann nur in den Download Versionen auf.
+Sometimes there can be problems with the processing of the data, then click on the link "Import data from archive". This problem occurs if then only in the download versions.
 
-## Daten selektiert nach Betriebssystem und Browser
+## Data selected by operating system and browser
 
-Da diese Daten ohnehin immer übermittelt werden, kann man diese auch problemlos darstellen und auswerten. Ein DSGVo / Personenbezug existiert nicht.
+Since this data is always transmitted anyway, it can be displayed and evaluated without any problems. A DSGVo / personal reference does not exist.
 
 ![screenshot-1641940714580](../assets/screenshot-1641940714580.jpg)

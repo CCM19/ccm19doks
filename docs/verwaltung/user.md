@@ -1,23 +1,23 @@
-# Userverwaltung
+# User management
 
-In jedem Account können Unterbenutzer und Untergruppen erstellt und verwaltet werden. Sie können User erstellen und bearbeiten die nur auf Ihren Account Zugriff haben **und** z.B. nur auf eine Domain.
+Sub-users and sub-groups can be created and managed in each account. You can create and edit users that have access only to your account **and** e.g. only to a domain.
 
 ![screenshot-1641849935948](../assets/screenshot-1641849935948.jpg)
 
- In der Übersicht erkennt man die Namen und Daten der jeweiligen User, letzter Login, wann erstellt usw. 
+ In the overview you can see the names and dates of each user, last login, when created etc 
 
-Der grüne Edit Button führt zur Bearbeitungsmaske des jeweiligen Benutzers, mit dem roten Löschen Button kann der Account entfernt werden.
+The green edit button leads to the edit mask of the respective user, with the red delete button the account can be removed.
 
-## Benutzer bearbeiten
+## Edit user
 
 ![screenshot-1641850127701 (1)](../assets/screenshot-1641850127701%20(1).jpg)
 
-### Zugriffsrechte via Gruppen
+### Access rights via groups
 
-Die oberen Felder erklären sich von selber, wichtig sind die Gruppenrechte anhand derer der Zugriff auf die verschiedenen Bereiche von CCM19 genutzt werden können.
+The upper fields are self-explanatory, important are the group rights by which the access to the different areas of CCM19 can be used.
 
-### Zugriff auf Domains
+### Access to domains
 
-Außerdem kann hier definiert werden auf welche Domain der User zugreifen darf.
+Here you can also define which domain the user is allowed to access.
 
-Auf diesem Wege können Sie z.B. definieren dass bestimmte User auf nur eine Domain zugreifen darf, dabei aber nur Impressum und Datenschutzlinks eintragen darf.
+This way you can e.g. define that certain users may access only one domain, but may only enter imprint and privacy links.

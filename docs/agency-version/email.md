@@ -1,33 +1,33 @@
-# E-Mail
+# Email
 
-Der E-Mail Bereich für die Agency Version ist erweitert im Vergleich zur Downloadversion. Die grundsätzlichen Einstellungen sind aber identisch und sind hier zu finden: [Standard Mail Einstellungen](../system-und-co/email.md) 
+The email section for the Agency version is extended compared to the download version. But the basic settings are identical and can be found here: [Default Mail Settings](../system-and-co/email.md) 
 
-## Quota Mails
+## Quota mails
 
-Wenn Sie ein Quota für die Zugriffszahlen nutzen, gehen automatisch bei Annährung an das Quota Mails an die Kunden raus die darauf hinweisen. Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie der Quota Mails bekommt.
+If you use a quota for the access numbers, automatically when approaching the quota mails go out to the customers pointing to it. You can set that the admin or another email address gets a copy of the quota mails.
 
 ![screenshot-1641988621764](../assets/screenshot-1641988621764.jpg)
 
-Zusätzlich können Sie einstellen ob eine Kopie der Quota Mails an den Admin rausgehen und ob Kunden über durchgeführte Updates per E-Mail informiert werden.
+Additionally you can set if a copy of the quota mails will be sent to the admin and if customers will be informed about updates via email.
 
-Falls Sie Call Limits nutzen, können Sie hier die prozentualen Schwellenwerte eintragen ab denen die jeweiligen Mails rausgehen die die Kunden / Mandanten darauf hinweisen dass demnächst der maximale Call Count erreicht wird.
+If you use call limits, you can enter here the percentage thresholds from which the respective mails go out to inform the customers / clients that the maximum call count will soon be reached.
 
 
 
-## Quota Mails Vorlagen resp. Inhalt
+## Quota Mails Templates resp. Content
 
-Die Quota Mails selber können Sie hier vorbelegen. Dabei stehen folgende Variablen zur Verfügung. Die Synthax muss dabei beachtet werden - die geschweiften Klammern sind obligatorisch {{ varname }}.
+The quota mails themselves can be predefined here. The following variables are available. The synthax must be observed - the curly brackets are mandatory {{ varname }}.
 
-| Variablen          | Inhalt                                                       | Benutzen in                     |
+| Variables | Content | Use in |
 | ------------------ | ------------------------------------------------------------ | ------------------------------- |
-| {{ callMaxCount }} | Die Anzahl der verfügbaren Aufrufe im jeweils <br />gewählten Tarif | Mail für die gefundenen Cookies |
-| {{ quota }}        | Der numerische Wert des prozentualen Verbrauchs - <br />d.h. wenn 94% verbraucht sind enthält die Variable den Wert 94 | In der Mail "Call Limit"        |
-| {{ username }}     | Benutzername des Kunden                                      | In der Mail "Call Limit"        |
-| {{ email }}        | E-Mail Adresse des Kunden                                    | In der Mail "Call Limit"        |
-| {{ domainvar }}    | Der Name der Domain für die die Mail versendet wurde         | Alle E-Mail Templates           |
+| {{ callMaxCount }} | The number of available calls in the <br />selected rate | mail for the found cookies |
+| {{ quota }}        | The numeric value of the percentage consumption - <br />i.e. if 94% is consumed the variable contains the value 94 | In the mail "Call Limit" |
+| {{ username }}     | username of the customer | In the mail "Call Limit" |
+| {{ email }}        | E-mail address of the customer | In the mail "Call Limit" |
+| {{ domainvar }}    | The name of the domain for which the mail was sent | All email templates |
 
 ## Mail Templates
 
-Die Variablen können im Fließtext der Mails verwendet werden.
+The variables can be used in the body text of the mails.
 
 ![screenshot-1641988818841](../assets/screenshot-1641988818841.jpg)

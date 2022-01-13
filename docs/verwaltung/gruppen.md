@@ -1,17 +1,17 @@
-# Gruppenverwaltung
+# Group management
 
-Über die Gruppen können Zugriffsrechte auf alle Bereiche innerhalb des CCM19 Bereichs definiert werden.
+Access rights to all areas within the CCM19 area can be defined via the groups.
 
 ![screenshot-1641850968801](../assets/screenshot-1641850968801.jpg)
 
 
 
-Sie können für jede Gruppe definieren auf welche Menüpunkt in Ihrem Bereich User dieser Gruppe Lese und/oder Schreibrechte haben.
+You can define for each group which menu item in your area users of this group have read and/or write access to.
 
-Setzen Sie dazu einfach die Häkchen und klicken Sie unter der Tabelle auf speichern, die Rechte übertragen sich dann automatisch auf die zugehörigen Benutzer.
+To do this, simply check the boxes and click Save under the table, the rights are then automatically transferred to the associated users.
 
-## Gruppennamen erstellen / bearbeiten
+## Create / edit group names
 
-Sie können den Namen jeder Gruppe bearbeiten und jederzeit ändern.
+You can edit the name of each group and change it at any time.
 
 ![screenshot-1641851116608](../assets/screenshot-1641851116608.jpg)

@@ -1,10 +1,10 @@
 # Domain API
 
-Die DomainAPI stellt eine Schnittstelle bereit mit der Daten pro Domain augelesen werden können.
+The DomainAPI provides an interface with which data can be read out per domain.
 
 ![screenshot-1641842138008](../assets/screenshot-1641842138008.jpg)
 
-Hier können Sie den API Key neu setzen resp. auslesen.
+Here you can set or read the API key.
 
-Die gesamte Dokumentation der Schnittstelle finden Sie hier. [General API Dokumentation](/api/general_api/)
+The complete documentation of the interface can be found here. [General API documentation](/api/general_api/)
 

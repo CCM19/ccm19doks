@@ -1,49 +1,49 @@
-# Onboarding - Schritt 2
+# Onboarding - Step 2
 
-In diesem Schritt werden die Ergebnisse des automatischen Scans Ihrer Seite dargestellt. Hier können Sie die Daten übernehmen und anpassen. Für jeden gefundenen Anbieter resp. Einbettung wird ein Eintrag erstellt. 
+This step displays the results of the automatic scan of your site. Here you can take over and adjust the data. An entry is created for each provider or embedding found 
 
-Zu jedem dieser Einträge werden die jeweils verwendeten Cookies und Storage Elemente aufgelistet.
+For each of these entries, the cookies and storage elements used are listed.
 
-## Scan Ergebnisse beurteilen
+## Evaluate scan results
 
-Für jeden Eintrag können Sie hier die rechtlich notwendigen Texte ergänzen und anpassen. 
+For each entry, you can add and adjust the legally required texts here 
 
-Im Hintergrund läuft eine Datenbank von CCM19 die abgefragt wird anhand der verwendeten Cookies und Storage Elemente. 
+In the background runs a database from CCM19 which is queried based on the cookies and storage elements used 
 
-Weiterhin wird ein Screenshot der Seite erstellt für Ihrer Kontrolle dass auch tatsächlich die korrekte Seite gescannt wurde.
+Furthermore, a screenshot of the page is created for your control that actually the correct page was scanned.
 
 ![screenshot-1614090058662-662](../assets/screenshot-1614090058662-662.jpg)
 
-Die Ergebnisse teilen sich in die 5 Standard Kategorien auf in die Skripte, Cookies und Storage Elemente normalerweise zugeordnet werden.
+The results are divided into the 5 standard categories into which scripts, cookies and storage elements are usually assigned.
 
-* Technisch notwendig ( Essentiell)
-* Anzeigen / Ads
+* Technically Necessary (Essential)
+* Advertisements / Ads
 * Analytics / Statistics
-* Personalisierung
+* Personalization
 * Social Media
-* Sonstiges
+* Other
 
-Hinter jedem Eintrag steht wie viele Einträge in der jeweiligen Kategorie gefunden wurden und automatisch zu sortiert werden konnten.
+Behind each entry you can see how many entries were found in the respective category and could be sorted automatically.
 
-Für alle nach dem dafürhalten von CCM19 notwendigen Angaben werden Eingabefelder bereit gestellt.
+Input fields are provided for all information that CCM19 considers necessary.
 
-### Name der Integration / Einbindung
+### Name of the integration
 
-Der Name der Einbindung - das kann z.B. Google Analytics sein oder Facebook Pixel. Hier sollten Sie einen aussagekräftigen Namen nutzen.
+The name of the integration - this can be e.g. Google Analytics or Facebook Pixel. You should use a meaningful name here.
 
-### Zweck
+### Purpose
 
-Hier tauchen wieder die schon oben genannten Kategorien auf. Sie können damit jeden Eintrag jeder beliebigen Kategorie zuweisen. Beachten Sie bitte aber dass Sie die rechtlichen Rahmenbedingungen beachten. Facebook Pixel z.B. wird sicher kaum unter technisch notwendig korrekt einsortiert sein.
+Here again the categories already mentioned above appear. You can assign any entry to any category. Please note, however, that you must observe the legal framework. Facebook Pixel, for example, will hardly be correctly sorted under technically necessary.
 
-### Aktivieren
+### Activate
 
-Hiermit aktivieren Sie den Eintrag, so dass er auch im Frontend abgehakt werden kann
+Here you activate the entry so that it can also be checked off in the frontend
 
-### Skripte blockieren.
+### Block scripts.
 
-Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Google Analytics:
+Here you can block scripts that are embedded in the source code of your page by CCM19. Use e.g. Google Analytics:
 
-```javascript
+``javascript
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
 <script>
@@ -55,65 +55,65 @@ Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM
 </script>
 ```
 
-Dann tragen Sie in dem Feld z.B. "googletagmanager.com" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
+Then enter in the field e.g. "googletagmanager.com" - this will block any javascript on your page that contains these characters (string) and the script will not be executed unless consent is given.
 
-Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
+This way you don't have to rebuild your page.
 
-### Anbieter
+### Provider
 
-Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Google Ireland Limited. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
+The provider - here you need to enter the company name of the provider offering the script. In our case it would be Google Ireland Limited. You can also enter the complete address of the company here.
 
-### Beschreibung 
+### Description 
 
-Bei der Beschreibung tragen Sie die Aufgabe der Einbindung ein. Wieso wird diese gesetzt? Was macht diese Einbindung?
+In the description, enter the task of the integration. Why is it set? What does this integration do?
 
-### Datenschutz-Link
+### Privacy link
 
-Hier gehört der Link zu den Datenschutzbestimmungen des Anbieters hinein. Diesen finden Sie in der Regel wenn Sie auf die Webseite des Anbieters gehen.
+This is where the link to the provider's privacy policy belongs. You can usually find this when you go to the provider's website.
 
-### Welche Daten werden gesammelt?
+### What data is collected?
 
-Welche Daten werden ganz genau gesammelt? Nur die IP? Oder auch Klickdaten, Daten des Browsers, Logins, Verhalten uvm? Informieren Sie sich genau bei dem Anbieter des Skriptes und tragen Sie möglichst genau ein was mit den Daten passiert. Nur so ist eine informierte Einwilligung Ihrer Besucher möglich.
+What data is collected exactly? Only the IP? Or also click data, browser data, logins, behavior, etc.? Find out exactly from the provider of the script and enter as precisely as possible what happens to the data. This is the only way to get informed consent from your visitors.
 
-### Zu welchem Zweck werden die Daten gesammelt?
+### For what purpose is the data collected?
 
-Warum sammeln Sie diese Daten? Was wollen Sie damit machen? Conversionoptimierung? Nutzererfahrung verbessern? Oder nur eine Warenkorb Funktion realisieren? 
+Why are you collecting this data? What do you want to do with it? Conversion optimization? Improve user experience? Or just implement a shopping cart function? 
 
-### Rechtliche Grundlage
+### Legal basis
 
-Hier definieren Sie die rechtliche Grundlage aufgrund dessen Sie diese Einbindung vornehmen wollen. Bei Tracking Skripten greift in der Regel nur "Einwilligung, Art. 6 Abs. 1 lit. a DSGVO" - Einwilligung des Besuchers durch eine informierte Entscheidung. Also rein freiwillig.
+Here you define the legal basis on the basis of which you want to make this integration. In the case of tracking scripts, usually only "consent, Art. 6 para. 1 lit. a DSGVO" applies - consent of the visitor through an informed decision. So purely voluntary.
 
-### Ort der Verarbeitung
+### Place of processing
 
-Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büros sondern auch wo steht der Server? Berücksichtigen Sie bitte auch das Sie derzeit keine Daten in unsichere Drittländern übertragen dürfen. Anbieter die Daten in die USA exportieren sind derzeit rechtlich vermutlich nicht möglich (Stand 29.09.2020).
+Where the data is processed. Here is not only the address of your office but also where is the server located? Please also consider that you are currently not allowed to transfer data to unsafe third countries. Providers who export data to the USA are currently legally probably not possible (as of 29.09.2020).
 
-### Liste der Cookies und Storage Elemente
+### List of cookies and storage elements
 
-Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand.
+All cookies and storage elements set by the script are listed here. You can add more elements manually, because the automatic scan cannot always find all data. For example, the scanner cannot find data for a logged in state.
 
 #### Name
 
-Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie
+The name in the browser - e.g. _ga for a Google Analytics cookie
 
 #### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _g* alle Cookies geblockt die mit _g anfangen, also _ga, _gid usw.
+This determines whether it is a dynamic variable - e.g. _g* blocks all cookies that start with _g, i.e. _ga, _gid, etc.
 
-#### Speichertyp
+#### memory type
 
-Wie werden die Daten in Ihrem Browser gespeichert.
+How the data is stored in your browser.
 
 #### Lifetime / Expires
 
-Wann läuft der Speichereintrag automatisch aus.
+When does the memory entry expire automatically.
 
-#### Wert
+#### Value
 
-Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
+What value does the cookie transport - usually it is cryptic data that is stored here.
 
-## Daten übernehmen
+## Accept data
 
-Wenn Sie alle Daten überprüft und notwendige Anpassungen durchgeführt haben, klicken Sie auf den Button unter dem Formular um die Daten in die CCM19 Administration zu übernehmen - siehe Screenshot.
+When you have checked all data and made necessary adjustments, click on the button below the form to transfer the data to the CCM19 administration - see screenshot.
 
 
 
