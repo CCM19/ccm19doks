@@ -20,13 +20,13 @@ So you can add errors and additions to the documentation at any time, the only t
 
 ## Table of contents
 
-* [Overview / Administration](first_steps/registration/)
+* [Overview / Administration](/en/erste_schritte/registrierung/)
 
-* [Set up cookies & co.](/first_steps/onboarding-complete/) for your domains
+* [Set up cookies & co.](/en/erste_schritte/onboarding-complete/) for your domains
 
-* [Frontend / Integration](/frontend/frontend/) - how and where to integrate CCM19
+* [Frontend / Integration](/en/frontend/frontend/) - how and where to integrate CCM19
 
-* [Plugins](/plugins/plugins/) - everything about plugins, which ones are available, what they do, how to build them
+* [Plugins](/en/plugins/plugins/) - everything about plugins, which ones are available, what they do, how to build them
 
-* [Enterprise / Agency Version](/agency-version/agency/) - what makes it so special
+* [Enterprise / Agency Version](/en/agency-version/agency/) - what makes it so special
 
