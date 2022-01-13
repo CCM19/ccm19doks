@@ -14,7 +14,7 @@ Die zertifizierte Cookie Banner und Skript / Tag Management Lösung aus einer Ha
 
 Diese Dokumentation erklärt alle Bereiche des CCM19 und wird ständig erweitert. Die Quellen der Dokumentation finden Sie auf Github hier:  [https://github.com/CCM19/ccm19doks/](https://github.com/CCM19/ccm19doks/)
 
-Sie können also jederzeit Fehler und Ergänzungen zur Dokumentation hinzufügen, das einzige was Sie brauchen ist ein Github Account.
+Sie können also jederzeit Fehler korrigieren und Ergänzungen zur Dokumentation hinzufügen, das einzige was Sie brauchen ist ein Github Account.
 
 
 
@@ -29,7 +29,6 @@ Sie können also jederzeit Fehler und Ergänzungen zur Dokumentation hinzufügen
 * [Plugins](/plugins/plugins/) - alles rund um Plugins, welche es gibt, was sie tun, wie man sie baut
 
 * [Enterprise / Agency Version](/agency-version/agency/) - was sie so speziell macht
-
 
 
 
