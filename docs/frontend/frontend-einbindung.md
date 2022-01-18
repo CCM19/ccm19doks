@@ -6,6 +6,8 @@ Diese Skripte können Cookies, Local Storage Elemente oder andere Objekte in den
 
 Jeder der 3 Möglichkeiten kann die Ausführung der Skripte zuverlässig blockieren, Möglichkeiten 2 und 3 verhindern auch effektiv das Skripte vorgeladen werden.
 
+Generell muss aber immer das CCM19 Code Schnipsel in Ihre Seite integriert werden, das wird [hier](/integrationen/ccm19-standard/) erklärt.
+
 
 
 ## Möglichkeit 1 - Blocking
