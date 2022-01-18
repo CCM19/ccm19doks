@@ -93,7 +93,8 @@ nav:
         - logs/system-protokoll.md
   - Frontend / Integrationen:
       - "Frontend / Webseite":
-        - frontend/frontend.md
+          - frontend/frontend.md
+          - frontend/frontend-einbindung.md
       - "CMS / Shop Integrationen":
         - integrationen/ccm19-standard.md
         - integrationen/ccm19-shopware.md
