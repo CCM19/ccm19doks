@@ -2,7 +2,7 @@
 
 Es gibt 3 mögliche Varianten wie Sie das CCM19 Cookie Consent Tool nutzen können. Prinzipiell dient das Tool dazu die Ausführung bestimmter Skripten solange zu unterbinden bis ein Consent / Zustimmung für die Ausführung vorliegt.
 
-Diese Skripte können Cookies, Local Storage Elemente oder andere Objekte in den Browsern der Besucher speichern oder anderweitig Daten auslesen. Zu den rechtlichen Hintergründen sagen wir hier nichts, hier gehts um die technische Realisierung.
+Diese Skripte können Cookies, Local Storage Elemente oder andere Objekte in den Browsern der Besucher speichern oder anderweitig Daten auslesen. Zu den rechtlichen Hintergründen sagen wir hier nichts, hier geht es um die technische Realisierung.
 
 Jeder der 3 Möglichkeiten kann die Ausführung der Skripte zuverlässig blockieren, Möglichkeiten 2 und 3 verhindern auch effektiv das Skripte vorgeladen werden.
 
