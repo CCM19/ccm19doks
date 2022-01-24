@@ -57,7 +57,7 @@ Die Zeilenumbrüche sind nur zur simpleren Veranschaulichung, es kann auch alles
 
 Da wir ja auch weitere Skripte haben, müssen nun alle anderen ebenfalls bearbeitet werden. In unserem Beispiel betrifft das noch die horizontale Anzeige:
 
-```
+```javascript
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous" type="text/x-ccm-loader" ></script>
 <!-- Horizontale Anzeige Test -->
@@ -76,7 +76,7 @@ Da wir ja auch weitere Skripte haben, müssen nun alle anderen ebenfalls bearbei
 
 Damit die Skripte nun auch zusammen freigeschaltet werden können bzw. durch den Consent der Besucher aktiviert werden können, fügen wir den Skripten ein weiteres Attribut hinzu:
 
-```
+```javascript
 data-ccm-loader-group="adsbygoogle"
 ```
 
@@ -84,13 +84,13 @@ Dabei ist der Ausdruck in den Anführungszeichen frei wählbar. Hier haben wir u
 
 Nun fügen wir diesen Teil noch den bereits bearbeiteten Skripten hinter dem Type-Attribut hinzu:
 
-```
+```javascript
 <script data-ad-client="ca-pub-XXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/x-ccm-loader" data-ccm-loader-group="adsbygoogle"></script>
 ```
 
 Und auch wider in der horizontalen Anzeige:
 
-```
+```javascript
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous" type="text/x-ccm-loader" data-ccm-loader-group="adsbygoogle"></script>
 <!-- Horizontale Anzeige Test -->
