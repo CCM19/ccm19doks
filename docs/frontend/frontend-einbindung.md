@@ -46,7 +46,7 @@ CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zu
 
 Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
 
-```html
+```javascript
 <script src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
@@ -58,7 +58,7 @@ Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfall
 
 Zusammen mit dem `type`-Attribut sieht es dann so aus:
 
-```html
+```javascript
 <script src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 

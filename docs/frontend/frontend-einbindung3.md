@@ -18,7 +18,7 @@ Hier sehen wir das Skript zur Einbindung im <head> der Seite:
 
 Und hier wäre ein Beispiel für eine horizontale Anzeige, die an einem festen Ort auf der Seite platziert wird:
 
-```
+```javascript
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous"></script>
 <!-- Horizontale Anzeige Test -->
