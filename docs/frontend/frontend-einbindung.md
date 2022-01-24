@@ -1,4 +1,4 @@
-# CCM19 nutzen
+# CCM19 Integrationsvarianten
 
 Es gibt 3 mögliche Varianten wie Sie das CCM19 Cookie Consent Tool nutzen können. Prinzipiell dient das Tool dazu die Ausführung bestimmter Skripten solange zu unterbinden bis ein Consent / Zustimmung für die Ausführung vorliegt.
 
