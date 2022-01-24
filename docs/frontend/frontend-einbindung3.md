@@ -1,4 +1,4 @@
-# Integration Möglichkeit 3 - HTML Manipulierung (Beispiel Google Adsense)
+# Integration Typ 3 - Beispiel Google Adsense
 
 Sie können CCM19 auch nutzen um im Quelltext blockierte Skripte via Consent freizugeben und ausführen zu lassen.
 
