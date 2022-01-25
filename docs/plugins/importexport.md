@@ -1,3 +1,5 @@
 # Import / Export Plugin
 
-Mit diesem Plugin bekommen Sie die Möglichkeit, bestimmte Daten aus einer Domain oder mehrere Domains aus einer CCM19-Installation zu exportieren und diese Daten wieder importieren zu können
+Mit diesem Plugin bekommen Sie die Möglichkeit, bestimmte Daten aus einer Domain oder mehrere Domains aus einer CCM19-Installation zu exportieren und diese Daten wieder importieren zu können.
+
+## Ansicht in der Domain-Übersicht
