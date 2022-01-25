@@ -109,10 +109,11 @@ Und auch wider in der horizontalen Anzeige:
 
 Aktuell hat die letzte Maßnahme noch keinen Effekt, da CCM19 die Gruppierung nicht kennt. Navigieren wir also in der administrativen Oberfläche von CCM19 zum entsprechenden Embedding und bearbeiten wir es:
 
-\####Bild von Embedding-Übersicht####
+![Embedding bearbeiten Adsense](../../assets/images/Embedding%20bearbeiten%20Adsense.png)
 
 Hier sehen wir recht weit oben ein Feld, um Gruppennamen einzutragen. Dort tragen wir unser selbst definierten Gruppennamen ein. In unserem Fall lautet er "adsbygoogle".
 
-\####Bild aus den Einstellungen####
+![CCM19 Gruppenname definieren](../../assets/images/CCM19%20Gruppenname%20definieren.png)
 
 Vergessen Sie nicht zu speichern!
+
