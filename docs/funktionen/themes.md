@@ -4,9 +4,9 @@ title: Themes
 
 # Themes einrichten und nutzen
 
-CCM19 ist komplett themefähig - d.h. Sie können alle Elemente des Frontends optisch anpassen. Sie können beliebig viele Themes ausprobieren. 
+CCM19 ist komplett themefähig – d.h. Sie können alle Elemente des Frontends optisch anpassen. Sie können beliebig viele Themes ausprobieren.
 
-Wenn Sie auf den Menüpunkt Themes klicken sehen Sie zuerst die Übersicht der vorhandenen Themes.
+Wenn Sie auf den Menüpunkt „Themes“ klicken sehen Sie zuerst die Übersicht der vorhandenen Themes.
 
 ![screenshot-1641895769313](../assets/screenshot-1641895769313.jpg)
 
@@ -18,17 +18,17 @@ Mit dem Klick auf das **blaue** Icon setzen Sie das Theme als Standard für das 
 
 ## Neues Theme anlegen
 
-Wenn Sie ein neues Theme anlegen wollen können Sie zum einen auf den Button "Erstellen" klicken oder Sie kopieren ein vorhandenes Theme und passen dieses an. 
+Wenn Sie ein neues Theme anlegen wollen können Sie zum einen auf den Button „Erstellen“ klicken oder Sie kopieren ein vorhandenes Theme und passen dieses an.
 
-Das Kopieren ist das von CCM19 empfohlene Vorgehen - auch für individuelle Anpassungen an vorhandenen Themes. Auf diese Weise haben Sie immer ein Fallback zur Hand.
+Das Kopieren ist das von CCM19 empfohlene Vorgehen – auch für individuelle Anpassungen an vorhandenen Themes. Auf diese Weise haben Sie immer ein Fallback zur Hand.
 
 ## Layout / Theme anpassen
 
-In jedem Theme können Sie mit Hilfe von diversen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen, die komplette Frontendmaske ist per CSS erreichbar.
+In jedem Theme können Sie mit Hilfe von diversen Buttons und Einstellmöglichkeiten das Theme definieren. Darüber hinaus haben Sie die Möglichkeit, mit Hilfe von CSS-Anweisungen jedes optische Detail anzupassen. Die komplette Frontendmaske ist per CSS beeinflussbar.
 
-![screenshot-1641896393753](../assets/screenshot-1641896393753.jpg)
+![Theme-Bearbeiten-Dialog](../assets/screenshot-1641896393753.png)
 
-**Verwenden Sie bei den Individuelle CSS Einstellungen im Zweifel !important um Einstellungen Ihres CMS Systems zu überschreiben.** In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
+**Verwenden Sie bei den individuellen CSS-Einstellungen im Zweifel `!important` um Einstellungen Ihres Content-Management-Systems zu überschreiben.** In der Oberfläche können Sie einiges einstellen. Die Einstellungen die Sie hier sehen, resultieren in dem folgenden Frontend.
 
 
 
@@ -44,31 +44,29 @@ Vorschau mit Widget.
 
 
 
-Die Buttons und Hintergrundfarben die Sie in der Administration einstellen, kommen direkt im Frontend an. Sie können ebenfalls die Links Impressum und Datenschutzerklärung optisch anpassen.
+Die Buttons und Hintergrundfarben die Sie in der Administration einstellen, kommen direkt im Frontend an. Sie können ebenfalls die Links „Impressum“ und „Datenschutzerklärung“ optisch anpassen.
 
 
 
 ## Buttons & Einstellungen
 
-Weiterhin gibt es die folgenden Buttons:
+Weiterhin gibt es die folgenden Einstellungsmöglichkeiten:
 
 ### Position
 
-Hier positionieren Sie das Overlay im Frontend, Sie können folgende Einstellungen wählen:
+Hier positionieren Sie den Cookie-Banner auf der Website. Dabei können Sie folgende Positionen wählen:
 
-* links
-* rechts
+* mittig
 * oben
 * unten
-* mittig
+* unten links
+* unten rechts
 
 ### Auswahltyp
 
-Sie können Häkchen oder Schalter definieren für die Ansicht in den Kategorien und einzelnen Einbindungen.
+Sie können auswählen, ob die Einstellungen im Banner für Kategorien und einzelnen Einbindungen mit Häkchen oder Schaltern dargestellt werden:
 
 #### Häkchen
-
-
 
 ![screenshot-2020.09.29-13_53_33-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_53_33-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
@@ -76,15 +74,14 @@ Sie können Häkchen oder Schalter definieren für die Ansicht in den Kategorien
 
 ![screenshot-2020.09.29-13_54_35-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_54_35-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Die Farben können Sie natürlich über die individuellen CSS Einstellungen anpassen.
+Die Farben können Sie natürlich über die individuellen CSS-Einstellungen anpassen.
 
 ### Kategorien im Hauptfenster anzeigen
 
 Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
 
-- Eine neue Schaltfläche "Speichern" erscheint neben "Alle akzeptieren" und "Ablehnen". (falls letztere aktiv ist)
-
-- Um mit dem Platz des Widgets zurechtzukommen, wird die Schaltfläche "Einstellungen" entfernt und durch einen einfachen Textlink unter den übrigen Schaltflächen ersetzt.
+* Eine neue Schaltfläche "Speichern" erscheint neben "Alle akzeptieren" und "Ablehnen". (falls letztere aktiv ist)
+* Um mit dem Platz des Widgets zurechtzukommen, wird die Schaltfläche "Einstellungen" entfernt und durch einen einfachen Textlink unter den übrigen Schaltflächen ersetzt.
 
   
 
@@ -92,7 +89,7 @@ Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
 
 ### Blockierend
 
-Blockierend bedeutet dass wie auf dem Screenshot zu sehen ist die Seite im Hintergrund blockiert ist und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
+Blockierend bedeutet, dass – wie auf dem Screenshot zu sehen ist – die Seite im Hintergrund abgedunkelt und blockiert wird und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
 
 ### Einstellungsicon anzeigen
 
