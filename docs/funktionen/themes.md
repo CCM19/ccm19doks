@@ -152,67 +152,71 @@ Mit dieser Einstellung wird im Kategorien-Fenster ein zusätzlicher "Alles Akzep
 
 ![screenshot-1641902729730](../assets/screenshot-1641902729730.jpg)
 
-Wenn Sie hier das Häkchen setzen wird im 2. Layer eine entsprechende Auswahl angeboten mit der ein Besucher alle Einbindungen auf einmal aktivieren/deaktivieren kann.
+Wenn Sie hier das Häkchen setzen, wird eine entsprechende Auswahl angeboten, mit der ein Besucher alle Einbindungen auf einmal aktivieren/deaktivieren kann.
 
 ### Extra-Footer mit Links zu Impressum & Co.
 
 ![screenshot-1641902822676](../assets/screenshot-1641902822676.jpg)
 
-Ist dieser Haken gesetzt, wird auch im 2. Layer eine Fußzeile mit Links zu Impressum und Datenschutz & Co. eingeblendet werden.
+Ist dieser Haken gesetzt, wird auch in der 2. Ebene eine Fußzeile mit Links zu Impressum und Datenschutz & Co. eingeblendet.
 
 Standardmäßig nicht aktiv.
 
 ### Logo des Seitenbetreibers
 
-Hier laden Sie Ihr Logo hoch das im Frontend - also Ihre Webseite - im Overlay angezeigt wird. Im obigen Screenshot sehen Sie dort das Logo von ccm19 - das können Sie gegen Ihres tauschen.
+Hier können Sie ein Logo für den Cookie-Banner hochladen. Dieses wird im Cookie-Banner oberhalb des Textes angezeigt wird. Standardmäßig wird kein Logo angezeigt.
+
+Wenn Sie schon ein Logo hochgeladen haben und wieder löschen möchten, klicken Sie auf den Pfeil rechts neben „Datei auswählen“, dann auf „Bild zurücksetzen“ und schließlich auf Speichern.
 
 ### Logo anzeigen
 
-Damit können Sie einstellen ob das Logo im Frontend im Overlay angezeigt werden soll.
+Damit können Sie einstellen, ob das Logo im Cookie-Banner angezeigt werden soll.
 
-### Powerd By CCM19 entfernen
+### Powered By CCM19 entfernen
 
-Hier geht es um den Link im Frontend Overlay, der rechts unten steht. Dies ist ein Link der auf die CCM19 Seite verlinkt. Dieser kann durch setzen dieses Hakens entfernt werden. Allerdings ist dies nur möglich wenn vorher eine Whitelabel Lizenz für diese Installation erworben wurde.
+Im Cookie-Banner wird standardmäßig unten rechts mit dem Text „Powered by CCM19“ auf die Website von CCM19 verlinkt.
+Dieser Link kann durch setzen dieses Hakens entfernt werden.
+Allerdings ist dies nur möglich wenn vorher eine Whitelabel-Lizenz für diese Installation erworben wurde.
 
 ### Farben
 
-Hier stellen Sie für die verschiedenen Buttons und Hintergründe im Frontend die Farben ein - achten Sie hier darauf dass auch Rahmen teilweise davon abhängen, wenn Sie einen weißen Rahmen auf weißem Hintergrund setzen mit weißer Schrift sehen Sie natürlich nichts mehr. Am besten kontrollieren Sie jede Änderung einmal im Frontend indem Sie das Overlay neu aufrufen!
+Hier stellen Sie für die verschiedenen Buttons und Hintergründe im Frontend die Farben ein – Achten Sie hier darauf dass auch Rahmen teilweise davon abhängen, wenn Sie einen weißen Rahmen auf weißem Hintergrund setzen mit weißer Schrift sehen Sie natürlich nichts mehr. Am besten kontrollieren Sie jede Änderung einmal im Frontend indem Sie das Overlay neu aufrufen!
 
-Bitte beachten Sie dass die Einträge für die Farben auch bestimmten Mindeskontrastanforderungen genügen müssen um einen gewisses Maß an Barrierefreiheit zu erreichen.
+Bitte beachten Sie dass der Kontrast für die Farben auch bestimmten Mindestanforderungen genügen sollte, um einen gewisses Maß an Barrierefreiheit zu erreichen.
+Um dabei zu helfen, wird rechts neben den Farbeinstellungen das Kontrastverhältnis zwischen Text und Hintergrund angezeigt.
 
 ![screenshot-1641902924696](../assets/screenshot-1641902924696.jpg)
 
-Das der Kontrast hoch genug ist wird neben den Farbbereichen dargestellt, eine Maß von 5:1 sollte mindestens erreicht sein. Ist die Zahl rot, ist der Kontrast zu niedrig.
+Dass der Kontrast hoch genug ist, wird farblich dargestellt. Für die Schaltflächen sollte beispielsweise ein Maß von 5:1 mindestens erreicht sein. Ist die Zahl rot, ist der Kontrast zu niedrig.
 
-Beachten Sie bitte dass diese Bereiche zwingend grün sein müssen wenn Sie TCF / IAB nutzen.
+Beachten Sie bitte dass die Kontrastanzeiger zwingend grün sein müssen wenn Sie TCF / IAB nutzen.
 
 ### CSS
 
-Hier können Sie komplett individuelles CSS eintragen - für die einzelnen Elemente schauen Sie bitte in den Seiteninspektor Ihres Browsers. Im Zweifel müssen Sie Einstellungen per “!important” überschreiben - **Beispiel:**
+Hier können Sie komplett individuelles CSS eintragen – für die einzelnen Elemente schauen Sie bitte in den Seiteninspektor Ihres Browsers. Im Zweifel müssen Sie Einstellungen per `!important` überschreiben – **Beispiel:**
 
-``` css
-.ccm-root button  
-{ 
+```css
+.ccm-root button {
     border:1px solid #c2bcbc; 
-} 
-.ccm-control-panel--purpose > input[type="checkbox"] + label 
-{ 
+}
+.ccm-control-panel--purpose > input[type="checkbox"] + label {
 	color:#ccc;
 } 
-.ccm-modal--footer 
-{ 
+.ccm-modal--footer {
     background-color:#26282f; 
 }       
  
 ```
 
-### Individuelles CSS Iframeblocker
+### Individuelles CSS Iframe-Blocker
 
-Hier können Sie für den iframe Blocker individuelle CSS Anweisungen vergeben, spezielle Hintergrundbilder usw. Man kann die geblockte Domain als Klasse vergeben, um dann gezielter CSS definieren zu können. 
+Hier können Sie für den Iframe-Blocker individuelle CSS-Anweisungen vergeben, z.B. für spezielle Hintergrundbilder.
+Um das Setzen von gezieltem CSS zu vereinfachen, wird die blockierte Domain als CSS-Klasse auf dem HTML-Element gesetzt.
+
 Beispiel:
-\- Blockiert wird ``https://www.google.com/maps/…``
-\- Im Iframe erhält das HTML-Element die Klasse z. B. wie folgt: ``domain--www-google-com``
-\- Mögliches CSS
+- Blockiert wird ``https://www.google.com/maps/…``
+- Im Iframe erhält das HTML-Element die Klasse wie folgt: ``domain--www-google-com``
+- Mögliches CSS:
 
 ~~~css
 ```
