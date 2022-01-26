@@ -24,6 +24,6 @@ Nun können Sie als Möglichkeit für jede Domain entweder eine Domain überschr
 
 Wenn Sie das Plugin in einer Domain verwenden, haben Sie jetzt die Möglichkeit, einzelne Teile einer Domain zu exportieren und wieder zu importieren. Achten Sie aber auf die Info-Buttons für einzelne Punkte, da diese wichtige Informationen über das Verhalten könnten.
 
-## Anmerkungen:
+## Anmerkungen
 
 Sie haben die Möglichkeit, eine Export-Datei mit mehreren enthaltenen Domains auch im Import der Ansicht in einer einzelnen Domain zu verwenden, jedoch kann dort nur die aktuell aktive Domain überschrieben werden. Genauso ist es auch möglich, die Datei aus der Ansicht einer einzelnen Domain genauso anders-herum zu verwenden, selbst wenn nicht umbedingt alle Daten in diesem Export enthalten sind, werden die Daten verwendet die sich ind er Datei befinden.
