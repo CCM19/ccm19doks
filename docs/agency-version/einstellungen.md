@@ -1,20 +1,16 @@
 # Whitelabel Einstellungen
 
-Unter Einstellungen steht Ihnen in der Standard Agency Version die Möglichkeit zur Verfügung das Logo in der Administration oben links auszutauschen.
+Unter Einstellungen steht Ihnen in der Standard Agency Version die Möglichkeit zur Verfügung verschiedene Einstellungen durchzuführen.
 
-![screenshot-2020.10.01-14_16_53-1601554613205](../assets/screenshot-2020.10.01-14_16_53-1601554613205.jpg)
+Alle Agentur Versionen können die folgenden Einstellungen ändern.
+
+![screenshot-1643211732084](../assets/screenshot-1643211732084.jpg)
+
+Das sind die Standard Whitelabel Links im Fuß der Widgets Ihrer Kunden. So können Sie von dort aus immer auf Ihre Seite verlinken lassen oder es komplett ausblenden. Das ist für jeden Ihrer Kunden möglich.
+
+**Es geht dabei um diesen Bereich.**
 
 
-
-## Agency Whitelabel Version
-
-In der Whitelabel Version stehen Ihnen an dieser Stelle wesentlich mehr Funktionen zur Verfügung, Sie können mit den verfügbaren Funktionen die Optik sowohl des Frontends als auch des Backends komplett an Ihre Ideen und CI anpassen.
-
-
-
-## Powered By Text im Frontend Widget
-
-Den Powered By Text können Sie mit Hilfe dieses Bereiches an Ihr Unternehmen anpassen. 
 
 
 
@@ -22,47 +18,58 @@ Den Powered By Text können Sie mit Hilfe dieses Bereiches an Ihr Unternehmen an
 
 
 
-Den Text können Sie hier bearbeiten und an Ihr Unternehmen anpassen.
+## Agency Whitelabel Version
 
-![screenshot-2020.10.01-14_19_26-1601554766322](../assets/screenshot-2020.10.01-14_19_26-1601554766322.jpg)
+In der Whitelabel Version stehen Ihnen an dieser Stelle wesentlich mehr Funktionen zur Verfügung, Sie können mit den verfügbaren Funktionen die Optik sowohl des Frontends als auch des Backends komplett an Ihre Ideen und CI anpassen.
 
-## Layout der Administration 
+![screenshot-1643211611135](../assets/screenshot-1643211611135.jpg)
 
-Sie können das Layout der Administration komplett an Ihre Anforderungen anpassen. Jedes Element kann per CSS angefasst und gestylt werden. So ist ein vollständig eigenes Layout möglich - ganz einfach durch ein paar Einträge in dem folgenden Feld.
+### Login Hintergrundbild
 
-![screenshot-2020.10.01-14_25_42-1601555142524](../assets/screenshot-2020.10.01-14_25_42-1601555142524.jpg)
+Sie können das Hintergrundbild Ihrer Installation ändern indem Sie dort ein Bild hochladen. Auch die Credentials / Copyright Hinweise lassen sich dynamisch im rechten Bereich ändern.
 
-Allein diese beiden Einträge verändern das Layout der Adminstration schon stark, Hier sind der Umsetzung optisch nur die Grenzen gesetzt die CSS übersteigen. Beispiel mit Auswirkung der obigen Einträge, links mit Ergänzung, rechts Standard.
+**Headline Farbe**
+
+Das ist die Farbe des Textes oberhalb des Loginbereiches
+
+**Quellenlink**
+
+Woher das Foto stammt - z.B. Unsplash
+
+**Name des Fotografen**
+
+Detaillierte Quellenangabe
+
+**Portal Name**
+
+Von welchem Bilderportal stammt es.
+
+**Portal URL**
+
+Die genaue URL des Portals.
+
+**Farben**
+
+Hier können Sie Linkfarbe, Transparenz und Hintergrundfarbe des Linkbereiches ändern.
+
+### Branding Logos
+
+Sie können in dem Bereich eigene Logos hochladen sowohl für das Backend als auch für die Loginmaske.
+
+## Dokumentation verlinken
+
+![screenshot-1643212188802](../assets/screenshot-1643212188802.jpg)
 
 
 
-![whitelabellayout](../assets/whitelabellayout.png)
-
-Das Layout in dieser Form wird natürlich auch direkt für Ihre Kunden ausgespielt.
+Hier kann man nun auch die Dokumentation auf eine eigene Installation verlinken lassen, so macht die Nutzung des Github Repos auch wirklich Sinn. Das läßt sich dann klonen und daraus dann eine eigene Doku Installation realisieren die dann auch direkt mit der Oberfläche verbunden ist.
 
 
 
-## Whitelabel Texte
+Zusätzlich kann man das Hilfe Icon ausblenden so man denn möchte. Damit es da nicht zu uns verlinkt falls man keine WL Doku hat.
 
-Alle Texte und Ausgaben können in der Whitelabel Version an Ihre Vorgaben angepasst werden. Klicken Sie dafür auf den Reiter Whitelabel Content / Inhalt
+### Reset auf Default
 
-![screenshot-2020.10.01-14_35_34-1601555734668](../assets/screenshot-2020.10.01-14_35_34-1601555734668.jpg)
+![screenshot-1643212457490](../assets/screenshot-1643212457490.jpg)
 
-
-
-Nach dem Klick kommen Sie in folgende Maske
-
-### Inhalte bearbeiten
-
-Hier sehen Sie die Auflistung aller Spracheinträge in der Administration, diese können Sie entweder einzeln anpassen oder "on block" mit der Suchen und Ersetzen Funktion. Falls Sie sich einmal dabei total verhauen, im Verzeichnis `/messages` werden Sicherung von der jeweiligen Vorversion gespeichert. Zur Not können Sie also wieder zurückspringen indem Sie die Dateien umkopieren.
-
-
-
-![screenshot-2020.10.01-14_47_49-1601556469822](../assets/screenshot-2020.10.01-14_47_49-1601556469822.jpg)
-
-
-
-> Auf diese Weise können Sie z.B. auch den Namen "CCM19" gegen Ihre Bezeichnun ersetzen. Ebenfalls den Namen unseres Unternehmens im Fuß der Administration -  das kann **alles** angepasst werden.
-
-
-
+Der rote Reset Button setzt alle Einstellungen wieder auf Standard zurück und löscht alle was da drin geändert wurde

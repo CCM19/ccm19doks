@@ -126,5 +126,9 @@ nav:
         - agency-version/kunden-api.md
         - agency-version/einbettungsvorlagen.md
         - agency-version/themes.md
-        - agency-version/einstellungen.md
         - agency-version/email.md
+      - Whitelabel Einstellungen:
+        - agency-version/einstellungen.md
+        - agency-version/einstellungen_layout.md
+        - agency-version/einstellungen_content.md
+
