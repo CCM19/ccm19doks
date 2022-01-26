@@ -89,67 +89,76 @@ Diese Option platziert alle Kategorien im Hauptfenster zur Schnellauswahl.
 
 ### Blockierend
 
-Blockierend bedeutet, dass – wie auf dem Screenshot zu sehen ist – die Seite im Hintergrund abgedunkelt und blockiert wird und erst wenn sich ein Besucher definitiv entschieden hat ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht wird er auf die Seite gelassen.
+Blockierend bedeutet, dass – wie auf dem Screenshot zu sehen ist – die Seite im Hintergrund abgedunkelt und blockiert wird. Erst wenn sich ein Besucher definitiv entschieden hat, ob er die [Cookies](https://www.ccm19.de/glossar/13-Cookies.html#13) akzeptiert oder nicht, wird er auf die Seite gelassen.
 
 ### Einstellungsicon anzeigen
 
-Wenn dieser Haken gesetzt ist wird nach dem Consent über die Seite ein Einstellungsicon per Javascript gesetzt. Auf diese Weise kann der von der DSGVO geforderter Widerruf einfachst möglich gesetzt werden. Das Icon wird standardmäßig links unten in die Ecke platziert.
+Wenn dieser Haken gesetzt ist, wird nach dem Bestätigen des Cookie-Banners ein Einstellungsicon per Javascript auf der Website angezeigt. Auf diese Weise kann die von der DSGVO und dem TTDSG geforderte Widerrufsmöglichkeit einfach und ohne weitere Eingriffe in die Seite bereitgestellt werden. Das Icon wird standardmäßig in der Ecke links unten platziert.
 
 ![screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-### Einstellungsicon öffnet
+### Einstellungsicon öffnet…
 
-Hier stellen Sie ein welches Fenster das Icon öffnen soll, den 1. oder den 2. Layer des Widgets, also die generelle Startansicht oder die Detailansicht mit der entsprechenden Auswahl.
+Hier stellen Sie ein, welches Fenster ein Klick auf das Einstellungsicon öffnen soll; den 1. oder den 2. Layer des Widgets, also die generelle Startansicht oder die Detailansicht mit der entsprechenden Auswahl.
 
-### Do not Track Respekt
+### „Do not Track“ respektieren
 
-Wenn diese Einstellung angehakt wird - dann wird automatisch die Do not Track Einstellung im Browser respektiert und umgesetzt - d.h. es werden keine Tracking Cookies gesetzt, nur technisch notwendige Elemente werden geladen.
+Wenn diese Einstellung aktiviert ist, dann wird automatisch die Einstellung „Do not Track“ (DNT) im Browser respektiert und umgesetzt – d.h. es wird kein Cookie-Banner angezeigt, sondern direkt nur technisch notwendige Elemente geladen, wenn der Besucher DNT in seinem Browser aktiviert hat.
 
-Allerdings gilt zu beachten dass diese Einstellung in den meisten Browser normalerweise deaktiviert ist.
+Allerdings gilt zu beachten, dass diese Einstellung in den meisten Browser normalerweise deaktiviert ist und von einigen Browsern bereits als veraltet betrachtet wird.
 
 ### Nur in der EU anzeigen
 
-Mit dieser Einstellung können Sie festlegen dass der Cookie Hinweis nur Besuchern aus der EU angezeigt wird. Die Auflösung erfolgt anhand der verwendeten IP des Besuchers und kann daher nicht 100%ig genau sein. Bei Besuchern aus anderen Ländern werden alle Cookies aktiviert, außer wenn der Besucher „Do Not Track“ signalisiert und „Do Not Track respektieren“ aktiviert wurde.
+Mit dieser Einstellung können Sie festlegen dass der Cookie-Hinweis nur Besuchern aus der EU angezeigt wird. Die Auflösung erfolgt anhand der verwendeten IP des Besuchers und kann daher nicht 100%ig genau sein. Bei Besuchern aus anderen Ländern werden alle Cookies aktiviert, außer wenn der Besucher „Do Not Track“ signalisiert und „Do Not Track respektieren“ aktiviert wurde.
 
 Dieses Produkt enthält GeoLite2-Daten von MaxMind, verfügbar auf [https://www.maxmind.com](https://5f3c395.ccm19.de/app/public/themes/&guot;https://www.maxmind.com&guot;).
 
 ### Manipulationsschutz
 
-Verhindert simulierte Klicks auf die Akzeptieren-Buttons, um die Cookie-Auswahl des Nutzers zu schützen. **Deaktivieren Sie diese Funktion nicht, wenn Sie sich nicht sicher sind, dass es unbedingt notwendig ist. Dies könnte Ihre rechtliche Position beim Beweisen, dass Consent erteilt wurde, schwächen.**
+Diese Einstellung verhindert simulierte Klicks auf die Akzeptieren-Buttons, um die Cookie-Auswahl des Nutzers zu schützen und damit Ihre rechtliche Position bei der Abgabe des Consents zu stärken.
+
+Leider können einige Scripte wie "fastclick", die in die Verarbeitung von Fingerberührungen und Mausklicks eingreifen, diesen Schutz auslösen. Falls Sie ein solches Script verwenden, prüfen Sie bitte, ob Sie es wirklich benötigen und ob der Cookie-Dialog trotzdem in den üblichen Mobil-Browsern benutzbar ist. Ansonsten kann es notwendig sein den Manipulationsschutz abzuschalten.
 
 
+**Deaktivieren Sie diese Funktion nicht, wenn Sie sich nicht sicher sind, dass es unbedingt notwendig ist. Dies könnte Ihre rechtliche Position beim Beweisen, dass Consent erteilt wurde, schwächen.**
 
 ## Hauptfenster Schaltflächen
 
-Nach TTDSG und DSGVO braucht es in einem Consent Widget eine gleichwertige Möglichkeit die Cookies abzulehnen oder abzubrechen wie die Cookies anzunehmen.
+Hier können Sie die Reihenfolge und Auswahl der Schaltflächen im Hauptfenster des Cookie-Banners festlegen.
 
-Daher wird hier überprüft ob mind. diese 2 Buttons aktiv sind und auch der Ablehnen Button aktiviert ist.
+Zusätzlich kann mit der Einstellung „Schließen-Button anzeigen“ ein ✖ in der oberen rechten Ecke des Banners angezeigt werden.
+Ein Klick darauf schließt den Cookie-Dialog vorübergehend bis der Browser-Tab geschlossen wird und es werden nur technisch notwendige Cookies geladen.
 
-Mit den Einstellungen definieren Sie welche Buttons an welche Position kommen.
+Hinweis:
 
+Nach TTDSG und DSGVO braucht es in einem Consent-Widget eine gleichwertige Möglichkeit die Cookies abzulehnen oder abzubrechen wie die Cookies anzunehmen.
+Daher wird automatisch sichergestellt, dass der Button „Einstellungen“ immer aktiv ist, und der Ablehnen-Button aktiv ist, sobald der Alles-Annehmen-Button aktiviert wurde.
 
+Für den Ausnahmefall, dass Sie die relevanten Vorschriften für ihre Zielmärkte auch ohne einen Ablehnen-Button erfüllen können, lässt sich letztere Sicherheitsfunktion in den „Developer-Einstellungen“ abschalten.
+
+## Hauptfenster Kategorien
+
+Hier können Sie die Funktionalität im Kategorien-Fenster (2. Ebene) des Cookie-Banners festlegen.
 
 ### "Alle akzeptieren"-Button anzeigen im Fenster Kategorien
 
-Mit dieser Einstellung wird im Kategorien Fenster der "Alles Akzeptieren" Button zusätzlich angezeigt.
+Mit dieser Einstellung wird im Kategorien-Fenster ein zusätzlicher "Alles Akzeptieren"-Button angezeigt.
 
 ![screenshot-2020.09.29-14_03_37-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_03_37-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-
-
-### Alles aus/abwählen Buttons anzeigen
+### Alle aus/abwählen-Buttons anzeigen
 
 ![screenshot-1641902729730](../assets/screenshot-1641902729730.jpg)
 
-Wenn Sie hier das Häkchen setzen wird im 2. Layer eine entsprechende Auswahl angeboten. Der Haken ist standardmäßig nicht aktiv.
+Wenn Sie hier das Häkchen setzen wird im 2. Layer eine entsprechende Auswahl angeboten mit der ein Besucher alle Einbindungen auf einmal aktivieren/deaktivieren kann.
 
-### Extra Footer mit Links zu Impressum & Co.
+### Extra-Footer mit Links zu Impressum & Co.
 
 ![screenshot-1641902822676](../assets/screenshot-1641902822676.jpg)
 
-Ist dieser Haken gesetzt, wird auch im 2. Layer ein weitere Bereich eingeblendet wo die Links zu Impressum und Datenschutz & Co. eingeblendet werden.
+Ist dieser Haken gesetzt, wird auch im 2. Layer eine Fußzeile mit Links zu Impressum und Datenschutz & Co. eingeblendet werden.
 
 Standardmäßig nicht aktiv.
 
