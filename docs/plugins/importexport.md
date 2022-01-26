@@ -22,4 +22,8 @@ Nun können Sie als Möglichkeit für jede Domain entweder eine Domain überschr
 
 ![Domain](../assets/imex/übersicht_single.png)
 
-Wenn Sie das Plugin in einer Domain verwenden, haben Sie nun die Möglichkeit, einzelne Teile einer DOmain zu exportieren und wieder zu importieren
+Wenn Sie das Plugin in einer Domain verwenden, haben Sie nun die Möglichkeit, einzelne Teile einer Domain zu exportieren und wieder zu importieren. Achten Sie aber auf die kleinen Info-Buttons für einzelene Daten, da diese wichtige Infos für den Export und den Import enthalten könnten.
+
+## Anmerkungen:
+
+Sie haben die Möglichkeit, eine Export-Datei mit mehreren enthaltenen Domains auch im Import der Ansicht in einer einzelnen Domain zu verwenden, jedoch kann dort nur die aktuell aktive Domain überschrieben werden. Genau ist es auch möglich, die Datei aus der Ansicht einer einzelnen Domain genauso anders-herum zu verwenden.
