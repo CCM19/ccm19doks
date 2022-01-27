@@ -1,6 +1,6 @@
 # Userverwaltung
 
-In jedem Account können Unterbenutzer und Untergruppen erstellt und verwaltet werden. Sie können User erstellen und bearbeiten die nur auf Ihren Account Zugriff haben **und** z.B. nur auf eine Domain.
+In jedem Account ab Business Tarif können Unterbenutzer und Untergruppen erstellt und verwaltet werden. Sie können User erstellen und bearbeiten die nur auf Ihren Account Zugriff haben **und** z.B. nur auf eine Domain.
 
 ![screenshot-1641849935948](../assets/screenshot-1641849935948.jpg)
 
