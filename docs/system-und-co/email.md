@@ -4,8 +4,8 @@ CCM19 kann aus sich heraus E-Mails versenden. Das sind immer Statusmails, die an
 
 ## Mails gehen raus bei
 
-+ Update durchgeführt
-+ Limits erreicht
++ der Durchführung eines Updates.
++ Erreichen eines Schwellenwertes zwischen 80 und 99 % (einstellungsabhängig). In unserer Cloud-Version liegen die Schwellen bei 80 und 95%.
 
 ## Konfiguration des Mail Versands
 
