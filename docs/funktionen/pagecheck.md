@@ -2,7 +2,7 @@
 
 The Page Check helps you to find or control external scripts, cookies and other external content. The tables show you if cookies exist that you don't control or if scripts are running outside of CCM19's control.
 
-It is important to find this data, because in the course of time scripts are integrated into parts of the site from time to time and are forgotten after some time. Who documents something like that.
+It is important to find this data, because in the course of time scripts are integrated in parts of the site from time to time and are forgotten after some time. Who documents something like that.
 
 However, the scanner also finds so-called user scripts and cookies that are brought in from other sites. Browsers sometimes do not behave consistently here. The cause cannot be explained from our side, the browser manufacturers would have to take a closer look.
 

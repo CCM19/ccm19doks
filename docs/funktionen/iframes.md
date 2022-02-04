@@ -10,7 +10,7 @@ Use this function to prevent loading external resources embedded via an iframe c
 
 ## Enable iframe blocking
 
-With the hook you activate the blocking of IFrames - probably obviously...
+With the check mark you enable the blocking of IFrames - probably obviously...
 
 ## Remember consent per domain
 
@@ -20,7 +20,7 @@ If this hook is set CCM19 remembers for which iframes from which page a Consent 
 
 ### Iframe exceptions
 
-There are different variants here, if you don't set anything here everything will always be blocked by default.
+There are different variants here, if you do not set anything here, everything will always be blocked by default.
 
 ### Whitelist mode
 

@@ -5,7 +5,7 @@ With this plugin you can additionally secure the login of your account by still 
 ![Second login dialog after entering the password](../assets/2fa/Screenshot-2FA-Login.jpg)
 
 The plugin must be activated in the on-premise editions in the plugin management by the administrator and enabled for users.
-In the Cloud plans, the plugin will be available during January 2022.
+In the cloud plans, the plugin will be available during January 2022.
 
 ## Enable functionality
 
@@ -52,7 +52,7 @@ After that, you will need a current login code from your app for each login in C
 
 Log in to CCM19 and open the "Account Settings" via the user menu in the upper right corner.
 
-There, click "Disable 2-factor authentication with a smartphone app" at the bottom.
+There, click on "Disable 2-factor authentication with a smartphone app" at the bottom.
 
 ![2FA disable dialog in CCM19 backend](../assets/2fa/Screenshot-2FA-Disable.jpg)
 

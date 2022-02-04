@@ -1,6 +1,6 @@
 # Themes
 
-Under the menu item Themes you can create new system-wide themes and play them out for all customers. After that, these themes are available in all customer accounts.
+Under the menu item Themes you can create new system-wide themes and play them out for all customers. Afterwards, these themes are available in all customer accounts.
 
 Create or edit the desired theme and then distribute it to all your users using the blue "Distribute Theme" button.
 

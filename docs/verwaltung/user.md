@@ -1,6 +1,6 @@
 # User management
 
-Sub-users and sub-groups can be created and managed in each account. You can create and edit users that have access only to your account **and** e.g. only to a domain.
+In every account from business tariff on, sub-users and sub-groups can be created and managed. You can create and edit users that only have access to your account **and** e.g. only to a domain.
 
 ![screenshot-1641849935948](../assets/screenshot-1641849935948.jpg)
 

@@ -45,23 +45,23 @@ markdown_extensions:
 nav:
   - "Home": index.md
   - "Overview / administration":
-      - "First Steps":
-          - "Registration": erste_schritte/registrierung.md
-          - erste_schritte/login-und-passwoerter.md
-      - Administration:
-          - verwaltung/domainverwaltung.md
-          - verwaltung/tarife.md
-          - verwaltung/theme-verwaltung.md
-          - verwaltung/standardtexte.md
-          - verwaltung/kontoeinstellungen.md
-          - verwaltung/domainapi.md
-      - "User & groups":
-          - verwaltung/user.md
-          - verwaltung/gruppen.md
-      - "Downloadversion":
-          - erste_schritte/installation.md
-          - verwaltung/lizenzverwaltung.md
-          - "Upgrade gen. 2": erste_schritte/upgrade_g2.md
+    - "First Steps":
+        - "Registration": erste_schritte/registrierung.md
+        - erste_schritte/login-und-passwoerter.md
+    - Administration:
+        - verwaltung/domainverwaltung.md
+        - verwaltung/tarife.md
+        - verwaltung/theme-verwaltung.md
+        - verwaltung/standardtexte.md
+        - verwaltung/kontoeinstellungen.md
+        - verwaltung/domainapi.md
+    - "User & groups":
+        - verwaltung/user.md
+        - verwaltung/gruppen.md
+    - "Downloadversion":
+        - erste_schritte/installation.md
+        - verwaltung/lizenzverwaltung.md
+        - "Upgrade gen. 2": erste_schritte/upgrade_g2.md
   - Cookies & Co. einrichten:
       - "Onboarding":
           - "Onboarding road": erste_schritte/onboarding-complete.md
@@ -91,10 +91,12 @@ nav:
           - system-und-co/update.md
           - system-und-co/email.md
           - logs/system-protokoll.md
-  - Frontend / integrations:
+  - Frontend / Integrations:
       - "Frontend / website":
           - frontend/frontend.md
-      - "CMS / Shop integration":
+          - frontend/frontend-einbindung.md
+          - frontend/frontend-einbindung3.md
+      - "CMS / Shop integrations":
           - integrationen/ccm19-standard.md
           - integrationen/ccm19-shopware.md
           - integrationen/ccm19-shopify.md
@@ -106,23 +108,26 @@ nav:
           - api/javascript-apis.md
           - api/google-tag-manager.md
           - api/general_api.md
-      - "Technic & Server":
+      - "Technics & Server":
           - api/technik.md
-  - Plugins:
-      - "Plugins":
-          - plugins/plugins.md
-          - plugins/erweiterte_statistik.md
-          - plugins/abtests.md
-          - plugins/importexport.md
-          - plugins/2fa.md
-      - Plugins programming:
-          - plugins/programmieren/plugins_programmieren.md
-  - Enterprise / Agency Version:
-      - Enterprise Functions:
-          - agency-version/agency.md
-          - agency-version/kunden.md
-          - agency-version/kunden-api.md
-          - agency-version/einbettungsvorlagen.md
-          - agency-version/themes.md
-          - agency-version/einstellungen.md
-          - agency-version/email.md
+      - Plugins:
+        - "Plugins":
+            - plugins/plugins.md
+            - plugins/erweiterte_statistik.md
+            - plugins/abtests.md
+            - plugins/importexport.md
+            - plugins/2fa.md
+        - Plugins programming:
+            - plugins/programmieren/plugins_programmieren.md
+      - Enterprise / Agency Version:
+         - Enterprise functions:
+            - agency-version/agency.md
+            - agency-version/kunden.md
+            - agency-version/kunden-api.md
+            - agency-version/einbettungsvorlagen.md
+            - agency-version/themes.md
+            - agency-version/email.md
+        - Whitelabel Settings:
+            - agency-version/einstellungen.md
+            - agency-version/einstellungen_layout.md
+            - agency-version/einstellungen_content.md

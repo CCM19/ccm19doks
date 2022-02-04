@@ -87,7 +87,7 @@ If you edit a customer record you will see some additional information in the ca
 
 
 
-The actual number of views is shown here and a button to reset the counter for the current month.
+It shows here the actual number of views and a button to reset the counter for the current month.
 
 
 

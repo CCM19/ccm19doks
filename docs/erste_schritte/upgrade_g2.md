@@ -4,7 +4,7 @@ If you are using a version purchased after 10/13/2020 this does not affect you. 
 
 With the release of version 10/13/2020, the CCM19 Cookie Consent Tool has been rebuilt to display and process embeds instead of using "cookies only" 
 
-&gt; The old Generation 1 variant will still be maintained at least until the end of 03.2021, but will usually no longer receive new features but only bug fixes.
+&gt; The old Generation 1 variant will still be maintained at least until the end of 03.2021, but will generally no longer receive new features but only bug fixes.
 
 In the old Consent mask you could only confirm or reject categories, with the new version you can now not only check off the categories, but also the individual bindings 
 

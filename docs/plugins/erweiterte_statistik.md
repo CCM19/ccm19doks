@@ -10,7 +10,7 @@ Here you can see the data of a sample page from one of our many customer sites t
 
 ## Use of the mask
 
-At the top left you can select whether the data should be displayed absolutely - i.e. the pure numbers or as a percentage.
+On the top left you can select whether the data should be displayed absolutely - i.e. the pure numbers or as a percentage.
 
 The percentage values are available but for the past but only for some short periods because very long only the approvals were logged, but no insertions. They were only counted for the respective month for the accounting and then discarded 
 
@@ -26,11 +26,11 @@ In principle it is now so that the number of insertions is calculated from all i
 
 ## Please note
 
-The number of insertions is only a subset of the number of uses of CCM19. The script runs on **every** page request because it always has to check if there is a consent or not. Only if there is no consent, the mask is output and the number of insertions above is counted.
+The number of insertions is only a subset of the number of uses of CCM19. The script runs on **every** page request because it always has to check if there is a consent or not. Only if there is no consent, the mask will be output and the above number of insertions will be counted.
 
 ## What do the numbers mean?
 
-- **Calls:** Number of calls of the CCM19 script on the server. Certain calls, for example from bots, may be excluded from counting as "calls" so that they do not burden the quota of page views in the tariffs.
+- **Calls:** Number of calls of the CCM19 script on the server. Certain calls, for example from bots, may be excluded from being counted as "calls" so that they do not burden the quota of page views in the tariffs.
 - **Inserts:** The number of times the cookie banner widget was called with the widget displayed in a visitor's browser.
 - **All Accepted:** Number of clicks on the "Agree" button in the widget.
 - **Rejected:** Number of clicks on the "Reject Cookies" button in the widget.

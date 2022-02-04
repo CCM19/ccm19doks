@@ -8,7 +8,7 @@ The domain dashboard. Here you land directly after you have selected a domain in
 
 ## Quicksetup
 
-If you click the link, you will be taken directly back to the onboarding for this domain. You can run through this as often as you like, but old data will always be overwritten.
+If you click the link, you will be taken directly back to the onboarding for this domain, you can run through this as often as you like, but old data will always be overwritten.
 
 ## Include CCM19 in your page
 

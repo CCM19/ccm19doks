@@ -8,7 +8,7 @@ For each of these entries, the cookies and storage elements used are listed.
 
 For each entry, you can add and adjust the legally required texts here 
 
-In the background runs a database from CCM19 which is queried based on the cookies and storage elements used 
+In the background runs a database of CCM19 which is queried by the used cookies and storage elements 
 
 Furthermore, a screenshot of the page is created for your control that actually the correct page was scanned.
 
@@ -41,7 +41,7 @@ Here you activate the entry so that it can also be checked off in the frontend
 
 ### Block scripts.
 
-Here you can block scripts that are embedded in the source code of your page by CCM19. Use e.g. Google Analytics:
+Here you can block scripts that are included in the source code of your page by CCM19. Use e.g. Google Analytics:
 
 ``javascript
 <!-- Global site tag (gtag.js) - Google Analytics -->

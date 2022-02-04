@@ -3,7 +3,7 @@
 Information about your customer API can be found in the Admin Dashboard under the Customer API menu item. You can perform the following actions using the Customer API.
 
 * Create customers
-* Read out customer data
+* Read customer data
 * Edit / update customer data
 * Delete customer
 * Read all customerIds with domain data for statistical data
@@ -21,7 +21,7 @@ For each POST and PUT request, set the HTTP `Content-Type` header to `applicatio
 
 The real API keys are of course much more complex ;-) 
 
-&gt; **Always keep your API key secret. If the key is compromised, you can change it here; after that you will need to update all your apps.**
+&gt; **Always keep your API key secret. If the key is compromised, you can change it here; then you need to update all your apps.**
 
 
 

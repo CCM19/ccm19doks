@@ -4,7 +4,7 @@ To install our Cookie Consent Manager for your TYPO3 site, simply follow the ste
 
 ## Select Dashboard in CCM19
 
-After the successful installation of CCM19 on your server or setup you will get a javascript code.
+After successful installation of CCM19 on your server or setup you will get a javascript code.
 
 ![CCM19 Backend Screen](../assets/10-01.png)
 

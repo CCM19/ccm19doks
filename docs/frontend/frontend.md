@@ -66,7 +66,7 @@ Cancel takes you back to the previous screen.
 
 The individual categories can also get additional texts, you can maintain these in the administration, example see in the following screenshot.
 
-![screenshot-2020.09.30-20_21_46-BGH conform Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - multidomain](../assets/screenshot-2020.09.30-20_21_46-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-20_21_46-BGH compliant Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - multidomain capable](../assets/screenshot-2020.09.30-20_21_46-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
 
 
 
@@ -96,7 +96,7 @@ CCM19 offers the visitors an easy way to revoke or change the Consent at any tim
 
 ## Open configuration box again via link
 
-You would like to give your visitors the possibility to change their mind later on and, for example, not to allow analytics cookies after all? Simply insert the following HTML snippet:
+You would like to give your visitors the possibility to change their mind later on and, for example, not allow analytics cookies after all? Simply insert the following HTML snippet:
 
 ``` html
 <a href="#" onclick="CCM.openWidget();return false;">Open configuration box

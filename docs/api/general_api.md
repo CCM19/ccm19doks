@@ -64,7 +64,7 @@ The domId is the most important information - you can use it to get more informa
 
 ## Get all consents from the log
 
-Use the following API endpoint to fetch all consents from the current log data block. Already archived log entries will not be taken into account. Please replace `{domainId}` in the url with a domain ID from the above query.
+Use the following API endpoint to fetch all consents from the current log data block. Log entries that have already been archived will not be included in this process. Please replace `{domainId}` in the url with a domain ID from the above query.
 
 ``url
 GET /api/domains/{domainId}/consents

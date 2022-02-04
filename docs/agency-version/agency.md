@@ -16,7 +16,7 @@ With the Agency version you also have the possibility to connect CCM19 to your c
 
 ## Enterprise / Agency Dashboard
 
-The dashboard provides some basic information about the usage of the Agency version. For example how many customers are in the database and how many domains are used. You can also see a small graph showing the usage of your CCM19 instance in the current month.
+The dashboard provides some basic information about the usage of the Agency version. For example how many customers are in the database and how many domains are used. You can also see a small graph that shows the usage of your CCM19 instance in the current month.
 
 ![screenshot-1641982525189](../assets/screenshot-1641982525189.jpg)
 

@@ -117,7 +117,7 @@ The name in the browser - e.g. _ga for a Google Analytics cookie
 
 ##### dyn.
 
-This determines whether it is a dynamic variable - e.g. _g* blocks all cookies that begin with _g, i.e. _ga, _gid, etc.
+This determines whether it is a dynamic variable - e.g. _g* blocks all cookies that start with _g, i.e. _ga, _gid, etc.
 
 ##### memory type
 
@@ -151,7 +151,7 @@ Since the system knows the page and has scanned it in the previous step, it also
 
 
 
-Please adjust the data if necessary, so that the correct links are in there. Then click on the green button to go to the next step.
+Please adjust the data if necessary, so that the correct links are in there. Then click the green button to go to the next step.
 
 ## Onboarding - Step 4
 

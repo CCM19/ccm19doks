@@ -28,7 +28,7 @@ Some events in CCM19 are mapped to CustomEvents on the `window` object and `wind
 
 | Event | detail property | Description |
 | :------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| ccm19WidgetClosed | null | Fired when the last visible CCM19 widget element is closed. This may be a result of a click on a save button which causes the widget to be closed. |
+| ccm19WidgetClosed | null | Fired when the last visible CCM19 widget element is closed. This can be a result of a click on a save button which leads to closing the widget. |
 | ccm19WidgetLoaded | null | Will be triggered as soon as CCM19 has finished initializing.     |
-| ccm19CookieAccepted | {<br /> _name_: `string`,<br /> _code_: `string`,<br /> _purpose_: `string`,<br /> _mandatory_: `boolean`,<br />} | A cookie was accepted by the user. This event is triggered for each cookie listed in the accepted purposes.These events occur when the visitor gives consent and are repeated for each subsequent page visit when the page is loaded. <br /><br /> __Veraltet: Please change to `ccm19EmbeddingAccepted` __ |
+| ccm19CookieAccepted | {<br /> _name_: `string`,<br /> _code_: `string`,<br /> _purpose_: `string`,<br /> _mandatory_: `boolean`,<br />} | A cookie was accepted by the user. This event is triggered for each cookie listed in the accepted purposes.These events occur when the visitor gives consent and are repeated on each subsequent page visit when the page is loaded. <br /><br /> __Veraltet: Please change to `ccm19EmbeddingAccepted` __ |
 | ccm19EmbeddingAccepted | {<br /> _name_: `string`,<br /> _code_: `string`,<br /> _purpose_: `string`,<br /> _mandatory_: `boolean`,<br />} | An embedding was accepted by the user. These events occur when the visitor consents and are repeated for each page load. <br /><br /> (as of version 2020.10.28) |

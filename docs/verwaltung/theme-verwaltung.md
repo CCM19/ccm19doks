@@ -8,13 +8,13 @@ However, it only makes sense to use it if you want to create and manage your own
 
 ## Theme management
 
-Here you see the mask for the administration of the themes. By default there are none predefined because for each domain there are already plenty of templates.
+Here you see the mask for the administration of the themes. By default there are none predefined because there are already plenty of templates for each domain.
 
 ![screenshot-1641832792629](../assets/screenshot-1641832792629.jpg)
 
 ### Create theme
 
-Clicking on the button leads to the following mask.
+Clicking the button leads to the following mask.
 
 ![screenshot-1641834371507 (1)](../assets/screenshot-1641834371507%20(1).jpg)
 

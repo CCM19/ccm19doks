@@ -10,5 +10,5 @@ Since the system knows the page and has scanned it in the previous step, it also
 
 
 
-Please adjust the data if necessary, so that the correct links are in there. Then click on the green button to go to the next step.
+Please adjust the data if necessary, so that the correct links are in there. Then click the green button to go to the next step.
 

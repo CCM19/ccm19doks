@@ -2,7 +2,7 @@
 
 Since the Tag Manager acts as a container through which scripts can be included in the website, the scripts do not appear directly in the source code. Accordingly, it is never possible to remove the scripts from the page and re-integrate them at the cookie.
 
-To block scripts that are loaded via the Tag Manager, ideally only the "Block embeddings that contain the following text" feature is used. However, for the blocking of the scripts to work, it must be ensured that the CCM19 code precedes the tag manager code in the source code.
+To block scripts that are loaded via the Tag Manager, ideally only the "Block embeddings that contain the following text" feature is used. However, for the blocking of the scripts to work, it must be ensured that the CCM19 code comes before the tag manager code in the source code.
 
 First of all, we would like to point out that we do not recommend the use of the Google Tag Manager, because in most cases a cookie must be set for it to work, which is technically not really necessary, but must be defined as such.
 

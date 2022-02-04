@@ -1,6 +1,6 @@
 # Placeholder
 
-You can use the placeholders to automatically insert recurring texts. For example, it is worthwhile to create the company name or your own privacy page here, so that you can easily insert them into the individual cookies and change them if necessary when the URL changes.
+You can use the placeholders to automatically insert recurring texts. For example, it is worthwhile to create the company name or your own data protection page here, so that you can easily insert these into the individual cookies and change them if necessary when the URL changes.
 
 ![screenshot-1641905533609](../assets/screenshot-1641905533609.jpg)
 
@@ -15,6 +15,6 @@ In the **Replacement text** column, enter the corresponding value with which the
 | Placeholder | Replacement text examples |
 | :------------------ | :---------------------------------------------- |
 | {company_data_protection} | https://www.ccm19.de/datenschutzerklaerung.html |
-| {FIRMA}             | CCM19 |
+| {COMPANY}             | CCM19 |
 | {Company_Imprint} | https://www.ccm19.de/impressum.html |
 | {Company_Location} | Bonn |

@@ -39,7 +39,7 @@ For each entry also Consent Details are stored. So whether in the individual cat
 
 ## Use Consent Protocol for requests
 
-If you get a request regarding DSGVO whether you can prove the consent, the requester must tell you his ID. You can then search for this ID using the search mask.
+If you receive a request regarding DSGVO whether you can prove the consent, the requester must tell you his ID. You can then search for this ID using the search mask.
 
 He will find this ID in the Consent mask at the following position. To do this, he must open the Consent mask, click on Settings (if not already open), then on the question mark next to one of the categories.
 

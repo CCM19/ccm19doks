@@ -58,7 +58,7 @@ CCM19 is fully compatible with the caching module mod_cache. Additionally it is 
 
 ### nginx
 
-If your webserver uses **nginx**, you may need to make some adjustments to your server configuration to make CCM19 run satisfactorily after you have completed the first step of the installation.
+If your web server uses **nginx**, you may need to make some adjustments to your server configuration to make CCM19 run satisfactorily after you have completed the first step of the installation.
 
 First find out the path to the configuration file of the nginx server for your (sub)domain (usually /etc/nginx/nginx.conf or /etc/nginx/conf.d/*domainname*.conf) and the socket path for the installed PHP FPM module (often unix:/run/php/php7.2-fpm.sock or similar) from your provider or server administrator.
 

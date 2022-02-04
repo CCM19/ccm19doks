@@ -1,20 +1,16 @@
 # Whitelabel settings
 
-Under Settings in the Standard Agency Version you have the possibility to change the logo in the administration on the top left.
+Under Settings in the Standard Agency Version you have the possibility to make different settings.
 
-![screenshot-2020.10.01-14_16_53-1601554613205](../assets/screenshot-2020.10.01-14_16_53-1601554613205.jpg)
+All agency versions can change the following settings.
+
+![screenshot-1643211732084](../assets/screenshot-1643211732084.jpg)
+
+These are the default whitelabel links in the footer of your clients' widgets. So you can always have it link to your site from there or hide it completely. This is possible for each of your customers.
+
+**It is about this area
 
 
-
-## Agency Whitelabel Version
-
-In the Whitelabel version you have much more functions available at this point, you can completely customize the look of both the frontend and the backend to your ideas and CI with the available functions.
-
-
-
-## Powered By Text in Frontend Widget
-
-You can customize the Powered By Text to your business using this section 
 
 
 
@@ -22,47 +18,58 @@ You can customize the Powered By Text to your business using this section
 
 
 
-You can edit the text here and adapt it to your company.
+## Agency Whitelabel Version
 
-![screenshot-2020.10.01-14_19_26-1601554766322](../assets/screenshot-2020.10.01-14_19_26-1601554766322.jpg)
+In the Whitelabel Version you have much more functions available at this point, you can completely customize the look of both the frontend and the backend to your ideas and CI with the available functions.
 
-## Administration layout 
+![screenshot-1643211611135](../assets/screenshot-1643211611135.jpg)
 
-You can completely customize the layout of the administration to your needs. Each element can be touched and styled by CSS. So a completely own layout is possible - simply by a few entries in the following field.
+### Login background image
 
-![screenshot-2020.10.01-14_25_42-1601555142524](../assets/screenshot-2020.10.01-14_25_42-1601555142524.jpg)
+You can change the background image of your installation by uploading an image there. Also the credentials / copyright notices can be changed dynamically in the right pane.
 
-Alone these two entries change the layout of the Adminstration already strongly, Here are the conversion optically only the borders set the CSS exceed. Example with effect of the above entries, left with addition, right standard.
+**Headline Color**
+
+This is the color of the text above the login area
+
+**Source link**
+
+Where the photo is from - e.g. Unsplash
+
+**Photographer's name**
+
+Detailed source information
+
+**Portal name**
+
+From which image portal does it originate.
+
+**Portal URL**
+
+The exact URL of the portal.
+
+**Colors**
+
+Here you can change link color, transparency and background color of the link area.
+
+### Branding logos
+
+You can upload your own logos in this area for both the backend and the login screen.
+
+## Link documentation
+
+![screenshot-1643212188802](../assets/screenshot-1643212188802.jpg)
 
 
 
-![whitelabellayout](../assets/whitelabellayout.png)
-
-The layout in this form is of course also played out directly for your customers.
+Here you can also link the documentation to your own installation, so the use of the Github repo really makes sense. This can then be cloned and then realize a separate documentation installation which is then also directly linked to the interface.
 
 
 
-## Whitelabel texts
+Additionally you can hide the help icon if you want. So that it does not link to us if you have no WL documentation.
 
-All texts and outputs can be customized to your specifications in the whitelabel version. To do this, click on the tab Whitelabel Content / Content
+### Reset to default
 
-![screenshot-2020.10.01-14_35_34-1601555734668](../assets/screenshot-2020.10.01-14_35_34-1601555734668.jpg)
+![screenshot-1643212457490](../assets/screenshot-1643212457490.jpg)
 
-
-
-After the click you will get to the following mask
-
-### Edit contents
-
-Here you see the list of all language entries in the administration, you can either adjust them individually or "on block" with the search and replace function. If you make a complete mistake, the directory `/messages` contains backups from the previous version. So in case of need you can jump back by copying the files.
-
-
-
-![screenshot-2020.10.01-14_47_49-1601556469822](../assets/screenshot-2020.10.01-14_47_49-1601556469822.jpg)
-
-
-
-&gt; This way you can also replace e.g. the name "CCM19" with your name. Also the name of our company in the footer of the administration - this can be customized **all**.
-
-
-
+The red reset button resets all settings back to default and deletes everything that was changed in there

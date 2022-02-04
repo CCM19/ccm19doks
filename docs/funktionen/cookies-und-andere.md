@@ -1,6 +1,6 @@
 # Cookies &amp; Embeddings
 
-With CCM19, you can give your visitors the ability to decide for themselves what data is collected about them.
+With CCM19 you can give your visitors the opportunity to decide for themselves what data is collected about them.
 
 For this to work, all relevant data must be available in CCM19 and the bindings must be tested. Even if CCM19 can do a lot of automatic tests - it is always up to the operator to check all functions.
 

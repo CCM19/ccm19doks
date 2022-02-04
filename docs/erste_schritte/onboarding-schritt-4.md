@@ -1,6 +1,6 @@
 # Onboarding - Step 4
 
-Here you define the placeholder texts for your page - the most important are the following you can also see in the screenshot below:
+Here you define the placeholder texts for your page - the most important ones are the following which you can also see in the screenshot below:
 
 * **{Company}** -&gt; Enter the name of your company here.
 * **{Company_Privacy}** -&gt; Enter the link to your privacy policy here.
