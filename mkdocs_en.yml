@@ -46,6 +46,7 @@ nav:
   - "Home": index.md
   - "Overview / administration":
 <<<<<<< HEAD
+<<<<<<< HEAD
     - "First Steps":
         - "Registration": erste_schritte/registrierung.md
         - erste_schritte/login-und-passwoerter.md
@@ -65,6 +66,9 @@ nav:
         - "Upgrade gen. 2": erste_schritte/upgrade_g2.md
 =======
       - "First Steps":
+=======
+      - "FIrst Steps":
+>>>>>>> parent of 1645c8c... Dokumentation automatisch aus lokalen Commits erweitert
           - "Registration": erste_schritte/registrierung.md
           - erste_schritte/login-und-passwoerter.md
       - Administration:
