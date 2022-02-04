@@ -45,7 +45,7 @@ markdown_extensions:
 nav:
   - "Home": index.md
   - "Overview / administration":
-      - "FIrst Steps":
+      - "First Steps":
           - "Registration": erste_schritte/registrierung.md
           - erste_schritte/login-und-passwoerter.md
       - Administration:
