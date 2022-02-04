@@ -1,6 +1,10 @@
 # User management
 
+<<<<<<< HEAD
 In every account from business tariff on, sub-users and sub-groups can be created and managed. You can create and edit users that only have access to your account **and** e.g. only to a domain.
+=======
+In jedem Account ab Business Tarif können Unterbenutzer und Untergruppen erstellt und verwaltet werden. Sie können User erstellen und bearbeiten die nur auf Ihren Account Zugriff haben **und** z.B. nur auf eine Domain.
+>>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
 
 ![screenshot-1641849935948](../assets/screenshot-1641849935948.jpg)
 

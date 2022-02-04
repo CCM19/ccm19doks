@@ -76,6 +76,7 @@
 }
 .md-typeset table:not([class]) th {
 	background-color:#3a3c43 !important;
+	color:#fff !important;
 }
 body {
 	font-family: "Roboto",sans-serif;

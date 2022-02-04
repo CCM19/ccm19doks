@@ -4,8 +4,13 @@ CCM19 can send e-mails from itself. These are always status emails that go to th
 
 ## Mails go out at
 
+<<<<<<< HEAD
 + the execution of an update.
 + Reaching a threshold between 80% and 99% (settings dependent). In our cloud version, the thresholds are 80 and 95%.
+=======
++ der Durchführung eines Updates.
++ Erreichen eines Schwellenwertes zwischen 80 und 99 % (einstellungsabhängig). In unserer Cloud-Version liegen die Schwellen bei 80 und 95%.
+>>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
 
 ## Configuration of the mail dispatch
 

@@ -12,7 +12,27 @@ The certified cookie banner and script / tag management solution from a single s
 
 ## Sources of this documentation
 
+<<<<<<< HEAD
 This documentation explains all areas of CCM19 and is constantly being expanded. You can find the sources of the documentation on Github here:  [https://github.com/CCM19/ccm19doks/](https://github.com/CCM19/ccm19doks/)
+=======
+Diese Dokumentation erklärt alle Bereiche des CCM19 und wird ständig erweitert. Die Quellen der Dokumentation finden Sie auf Github hier:  [https://github.com/CCM19/ccm19doks/](https://github.com/CCM19/ccm19doks/)
+
+Sie können also jederzeit Fehler korrigieren und Ergänzungen zur Dokumentation hinzufügen, das einzige was Sie brauchen ist ein Github Account.
+
+
+
+## Inhaltsverzeichnis
+
+* [Übersicht / Verwaltung](erste_schritte/registrierung/) 
+
+* [Cookies & Co. einrichten](/erste_schritte/onboarding-complete/) für Ihre Domains
+
+* [Frontend / Integration](/frontend/frontend/) - wie und wo Sie CCM19 einbinden
+
+* [Plugins](/plugins/plugins/) - alles rund um Plugins, welche es gibt, was sie tun, wie man sie baut
+
+* [Enterprise / Agency Version](/agency-version/agency/) - was sie so speziell macht
+>>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
 
 So you can add errors and additions to the documentation at any time, the only thing you need is a Github account.
 
@@ -28,5 +48,8 @@ So you can add errors and additions to the documentation at any time, the only t
 
 * [Plugins](/en/plugins/plugins/) - everything about plugins, which ones are available, what they do, how to build them
 
+<<<<<<< HEAD
 * [Enterprise / Agency Version](/en/agency-version/agency/) - what makes it so special
 
+=======
+>>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
