@@ -1,33 +1,33 @@
-# Plugins in CCM19
+# Plugins im CCM19
 
-Plugins extend the basic functions of the CCM19 Cookie Consent Manager with arbitrary functions 
+Plugins erweitern die Grundfunktionen des CCM19 Cookie Consent Manager um beliebige Funktionen. 
 
-## Why should this be necessary at all? 
+## Warum sollte das überhaupt notwendig sein? 
 
-1. There are always functions that are desired by some, but many do not need. So that we do not continue to plaster the basic functions of the CCM19 tool with functions that only some customers need, we have created a possibility for this.
-2. As a result of the Privacy Shields ruling and in the context of the DSGVO it is often not possible to realize arbitrary data or integration into the own website or store. With the help of CCM19 at least basic functions of external service providers can be restored, and that even DSGVO compliant.
+1. Es gibt immer wieder Funktionen die von einigen gewünscht werden, viele aber nicht brauchen. Damit wir die Grundfunktionen des CCM19 Tools nicht immer weiter zupflastern mit Funktionen die immer nur einige Kunden brauchen, haben wir hierfür einen Möglichkeit geschafften.
+2. In der Folge des Privacy Shields Urteils und im Rahmen der DSGVO ist es oft nicht möglich beliebige Daten oder Einbindungen in die eigene Webseite oder Shop zu realisieren. Mit Hilfe von CCM19 können zumindest grundlegende Funktionen externer Dienstleister wieder hergestellt werden, und das auch noch DSGVO konform.
 
-## Where can I find the plugins
+## Wo finde ich die Plugins
 
-Available plugins can be found in the administration under the tab "Plugin Manager", there you will find a listing in 2 tabs 
+Verfügbare Plugins finden Sie in der Administration unter dem Reiter "Plugin Manager", dort finden Sie eine Auflistung in 2 Reitern. 
 
 
 
-## Installed plugins
+## Installierte Plugins
 
-Here you can find the list of installed plugins as shown in the screenshot.
+Hier finden Sie die Auflistung der installierten Plugins wie im Screenshot zu sehen.
 
 ![screenshot-1615194415065-065](../assets/screenshot-1615194415065-065.jpg)
 
-The click on Settings opens the following mask
+Der Klick auf Settings öffnet folgende Maske
 
 ![screenshot-1615194545673-673](../assets/screenshot-1615194545673-673.jpg)
 
-You can activate the plugin directly for all accounts. In the download version the check mark is always set - because there is only one user.
+Sie können das Plugin direkt für alle Accounts aktivieren. In der Downloadversion ist der Haken immer gesetzt - da es nur einen Benutzer gibt.
 
-With the setting "Accounts / customers can and must activate the plugins themselves" you pass the responsibility for the use to your customers. This function is not active in the OnPremise version - since there is only 1 user.
+Mit der Einstellung "Accounts / Kunden können und müßen die Plugins selber aktivieren" übergeben Sie die Verwantwortung für die Nutzung an Ihre Kunden. Diese Funktion ist in der OnPremise Version nicht aktiv - da es nur 1 Nutzer gibt.
 
-**Available plugins can be found in the menu on the left.**
+**Verfügbare Plugins finden Sie links im Menü.**
 
 
 

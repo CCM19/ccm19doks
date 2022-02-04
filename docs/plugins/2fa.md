@@ -1,70 +1,70 @@
-# 2-factor authentication
+# 2-Faktor-Authentifizierung
 
-With this plugin you can additionally secure the login of your account by still requesting a changing login code after the password request, which is generated on your smartphone or tablet. Only the new login with expired session in a browser window, in which the CCM19 backend is still open, is excluded from the code entry.
+Mit diesem Plugin können Sie die Anmeldung Ihres Accounts zusätzlich absichern, indem nach der Passwortabfrage noch ein wechselnder Anmeldecode abgefragt wird, der auf Ihrem Smartphone oder Tablet generiert wird. Nur die erneute Anmeldung bei abgelaufener Session in einem Browserfenster, in dem das CCM19-Backend noch geöffnet ist, ist von der Codeeingabe ausgenommen.
 
-![Second login dialog after entering the password](../assets/2fa/Screenshot-2FA-Login.jpg)
+![Zweiter Login-Dialog nach Eingabe des Passworts](../assets/2fa/Screenshot-2FA-Login.jpg)
 
-The plugin must be activated in the on-premise editions in the plugin management by the administrator and enabled for users.
-In the cloud plans, the plugin will be available during January 2022.
+Das Plugin muss in den On-Premise-Editionen in der Plugin-Verwaltung vom Administrator aktiviert und für Benutzer freigeschaltet werden.
+In den Cloud-Tarifen wird das Plugin im Laufe des Januars 2022 verfügbar sein.
 
-## Enable functionality
+## Funktionalität aktivieren
 
-Log in to CCM19 and open the "Account Settings" from the user menu in the top right corner.
+Melden Sie sich in CCM19 an und öffnen Sie die „Kontoeinstellungen“ über das Benutzermenü oben rechts.
 
-There, click on "Enable 2-factor authentication with a smartphone app" at the bottom.
-If this button is missing, the plugin is not active or not yet enabled for you.
+Klicken Sie dort unten auf „2-Faktor-Authentifizierung mit einer Smartphone-App aktivieren“.
+Fehlt dieser Button, ist das Plugin nicht aktiv oder noch nicht für Sie freigeschaltet.
 
-!["Account settings" in CCM19 backend](../assets/2fa/Screenshot-Account.jpg)
+!["Kontoeinstellungen" im CCM19-Backend](../assets/2fa/Screenshot-Account.jpg)
 
-After you have clicked on the button, a configuration area opens with a randomly
-generated key and a QR code.
+Nachdem Sie auf den Button geklickt haben, öffnet sich ein Konfigurationsbereich mit einem zufällig
+generierten Schlüssel und einem QR-Code.
 
-![2FA dialog in the CCM19 backend](../assets/2fa/Screenshot-2FA-Settings.jpg)
+![2FA-Dialog im CCM19-Backend](../assets/2fa/Screenshot-2FA-Settings.jpg)
 
-Install an authentication app on your smartphone if you don't already have one.
-A selection of supported apps is linked in the introduction text of the form.
+Installieren Sie eine Authentifizierungs-App auf Ihrem Smartphone, sofern noch nicht vorhanden.
+Im Einleitungstext des Formulars ist eine Auswahl von unterstützten Apps verlinkt.
 
-In the following, the process is demonstrated using the app "Aegis Authenticator" (available in the Google Play Store and the FDroid Store).
-The process is largely comparable in other apps.
+Im folgenden wird der Ablauf anhand der App „Aegis Authenticator“ (verfügbar im Google Play Store und dem FDroid Store) demonstriert.
+Der Ablauf ist in anderen Apps weitgehend vergleichbar.
 
-Open the authentication app on your smartphone and scan the QR code.
-If you have opened the CCM19 backend directly on your smartphone, double-tap the QR code instead.
+Öffnen Sie die Authentifizierungs-App auf Ihrem Smartphone und scannen Sie den QR-Code.
+Falls Sie das CCM19-Backend direkt auf Ihrem Smartphone geöffnet haben, tippen Sie stattdessen doppelt auf den QR-Code.
 
-![Process in the app 'Aegis Authenticator'](../assets/2fa/Screenshot-App-Add.png)
+![Ablauf in der App 'Aegis Authenticator'](../assets/2fa/Screenshot-App-Add.png)
 
-The app should automatically import the necessary parameters by scanning the code.
-If that doesn't work, you can also transfer the data manually from the left pane next to the QR code.
+Die App sollte durch das Scannen des Codes die notwenigen Parameter automatisch importieren.
+Sollte das nicht funktionieren, können Sie die Daten auch manuell aus dem linken Bereich neben dem QR-Code übertragen.
 
-Finally, press "Save." You should now see a 6-digit code that changes every 30 seconds.
+Drücken Sie schließlich auf "Speichern". Sie sollten jetzt einen 6-stelligen Code sehen, der sich alle 30 Sekunden ändert.
 
-![App: A code was generated and changes every 30 seconds](../assets/2fa/Screenshot_1642005762.png)
+![App: Ein Code wurde generiert und ändert sich alle 30 Sekunden](../assets/2fa/Screenshot_1642005762.png)
 
-Type the generated code in the "Login code" field and then click "Activate".
-You have about 30 seconds to click the button after the code has changed in the app.
+Tippen Sie den generierten Code in das Feld „Anmeldecode“ und klicken Sie dann auf „Aktivieren“.
+Für das Klicken auf den Button haben Sie noch ca. 30 Sekunden Zeit nachdem der Code in der App gewechselt hat.
 
-![2FA dialog in the CCM19 backend with entered login code](../assets/2fa/Screenshot-2FA-Settings-2.jpg)
+![2FA-Dialog im CCM19-Backend mit eingetragenem Anmeldecode](../assets/2fa/Screenshot-2FA-Settings-2.jpg)
 
-If everything worked, you will see a message "2-factor authentication successfully enabled."
+Wenn alles geklappt hat, erscheint ein Hinweis „2-Faktor-Authentifizierung erfolgreich aktiviert.“
 
-After that, you will need a current login code from your app for each login in CCM19.
+Danach benötigen Sie für jede Anmeldung in CCM19 einen aktuellen Anmeldecode aus Ihrer App.
 
-## Disable functionality
+## Funktionalität deaktivieren
 
-Log in to CCM19 and open the "Account Settings" via the user menu in the upper right corner.
+Melden Sie sich in CCM19 an und öffnen Sie die „Kontoeinstellungen“ über das Benutzermenü oben rechts.
 
-There, click on "Disable 2-factor authentication with a smartphone app" at the bottom.
+Klicken Sie dort unten auf „2-Faktor-Authentifizierung mit einer Smartphone-App deaktivieren“.
 
-![2FA disable dialog in CCM19 backend](../assets/2fa/Screenshot-2FA-Disable.jpg)
+![2FA-Deaktivierungs-Dialog im CCM19-Backend](../assets/2fa/Screenshot-2FA-Disable.jpg)
 
-Enter a current login code from your app and then click "Disable".
+Geben Sie einen aktuellen Anmeldecode aus Ihrer App ein und klicken Sie danach auf „Deaktivieren“.
 
-If everything worked, you will see a message "2-factor authentication successfully disabled."
-and you no longer need a login code to log in to CCM19.
+Wenn alles geklappt hat, erscheint ein Hinweis „2-Faktor-Authentifizierung erfolgreich deaktiviert.“
+und Sie benötigen keinen Anmeldecode mehr um sich in CCM19 anzumelden.
 
-## What can I do if I no longer have access to the app?
+## Was kann ich tun, wenn ich keinen Zugriff mehr auf die App habe?
 
-If you can no longer create login codes, use the "Forgot your password?" feature
-in the login window of CCM19.
+Falls Sie keine Anmeldecodes mehr erstellen können, nutzen Sie die „Passwort vergessen?“-Funktion
+im Anmeldefenster von CCM19.
 
-You will then receive an email. Follow the instructions in the mail to set a new password
-new password. The new password also resets the 2-factor authentication.
+Sie erhalten daraufhin eine E-Mail. Befolgen Sie die Anleitung in der Mail, um ein neues Passwort
+zu setzen. Mit dem neuen Passwort wird auch die 2-Faktor-Authentizifizerung zurückgesetzt.

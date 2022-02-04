@@ -1,84 +1,84 @@
-# Customers API
+# Kunden API
 
-Information about your customer API can be found in the Admin Dashboard under the Customer API menu item. You can perform the following actions using the Customer API.
+Informationen zu Ihrer Kunden API finden Sie im Admin Dashboard unter dem Menüpunkt Kunden-API. Mit Hilfe der Kunden API können Sie folgende Aktionen durchführen.
 
-* Create customers
-* Read customer data
-* Edit / update customer data
-* Delete customer
-* Read all customerIds with domain data for statistical data
-* Search for a customer ID with a string
+* Kunden erstellen
+* Kundendaten auslesen
+* Kundendaten bearbeiten / aktualisieren
+* Kunde löschen
+* Alle KundenIds mit Domaindaten für Statistische Daten auslesen
+* Mit einem String nach einer KundenID suchen
 
-Of course, all these actions can be performed only if there is an appropriate authorization.
+Natürlich können alle diese Aktionen nur durchgeführt werden wenn eine entsprechende Autorisierung vorliegt.
 
-## Connect to the API
+## Verbindung zur API herstellen
 
-To successfully process an API request, append the API key to **any request** by adding the GET parameter `apiKey` and setting the key as a value.
+Um eine API-Anfrage erfolgreich zu verarbeiten, hängen Sie den API-Schlüssel an **jede Anfrage** an, indem Sie den GET-Parameter `apiKey` hinzufügen und den Schlüssel als Wert festlegen.
 
-For each POST and PUT request, set the HTTP `Content-Type` header to `application/json`; that is, for each request that contains a message body. Encode the payload to be sent accordingly.
+Setzen Sie für jede POST- und PUT-Anfrage den HTTP-Header `Content-Type` auf `application/json`; d.h. für jede Anfrage, die einen Nachrichtenkörper enthält. Kodieren Sie den zu sendenden Payload entsprechend.
 
 ![screenshot-2020.10.01-13_53_19-1601553199653](../assets/screenshot-2020.10.01-13_53_19-1601553199653.jpg)
 
-The real API keys are of course much more complex ;-) 
+Die echten API Schlüssel sind natürlich wesentlich komplexer ;-) 
 
-&gt; **Always keep your API key secret. If the key is compromised, you can change it here; then you need to update all your apps.**
-
-
-
-## Use Hawk HTTP authentication
-
-If you enable this option, a signed request can be verified. However, you must implement the client side for this authentication method yourself and integrate it into your applications.
-
-Use the shared secret to sign your requests. To do this, you must derive a key from the shared secret using the `PBKDF2` algorithm 
+> **Halten Sie Ihren API-Schlüssel immer geheim. Wenn der Schlüssel kompromittiert ist, können Sie ihn hier ändern; danach müssen Sie all Ihre Apps aktualisieren.**
 
 
 
-## Use Hawk HTTP authentication
+## Hawk HTTP-Authentifizierung verwenden
 
-If you enable this option, a signed request can be verified. However, you must implement the client side for this authentication method yourself and integrate it into your applications.
+Wenn Sie diese Option aktivieren, kann eine signierte Anfrage verifiziert werden. Die Clientseite für diese Authentifizierungsmethode müssen sie jedoch selbst implementieren und in Ihre Anwendungen integrieren.
 
-Use the shared secret to sign your requests. To do this, you must derive a key from the shared secret using the `PBKDF2` algorithm 
+Verwenden Sie das Shared Secret, um Ihre Anfragen zu signieren. Dazu müssen Sie mithilfe des `PBKDF2`-Algorithmus einen Schlüssel aus dem Shared Secret ableiten. 
 
-&gt; This function is optional. Use this option to enable partial cryptographic verification of your requests.
 
-See the following resources to sign your requests correctly.
 
-- [Hawk - A PHP Implementation](https://github.com/dflydev/dflydev-hawk#building-a-client)
-- [hash_pbkdf2 - Generate a PBKDF2 key derivation of a supplied password](https://www.php.net/manual/en/function.hash-pbkdf2.php)
+## Hawk HTTP-Authentifizierung verwenden
+
+Wenn Sie diese Option aktivieren, kann eine signierte Anfrage verifiziert werden. Die Clientseite für diese Authentifizierungsmethode müssen sie jedoch selbst implementieren und in Ihre Anwendungen integrieren.
+
+Verwenden Sie das Shared Secret, um Ihre Anfragen zu signieren. Dazu müssen Sie mithilfe des `PBKDF2`-Algorithmus einen Schlüssel aus dem Shared Secret ableiten. 
+
+> Diese Funktion ist optional. Verwenden Sie diese Option, um eine teilweise kryptografische Verifizierung Ihrer Anfragen zu ermöglichen.
+
+Sehen Sie sich folgende Ressourcen an, um Ihre Anfragen korrekt zu signieren.
+
+- [Hawk — A PHP Implementation](https://github.com/dflydev/dflydev-hawk#building-a-client)
+- [hash_pbkdf2 — Generate a PBKDF2 key derivation of a supplied password](https://www.php.net/manual/en/function.hash-pbkdf2.php)
 
 ![screenshot-2020.10.01-14_02_14-1601553734725](../assets/screenshot-2020.10.01-14_02_14-1601553734725.jpg)
 
 
 
-# API endpoints
+# API Endpunkte
 
-There are a total of 4 different API endpoints you can use, in detail these are:
+Es gibt insgesamt 4 verschieden API Endpunkte die Sie nutzen können, im einzelnen sind das:
 
-## Create customers
+## Kunden erstellen
 
 **URL** `http://localhost/ccm19/cookie-consent-management/www/public/hosting/api/client`
 
-**Method** `POST`
+**Methode** `POST`
 
-**Message body**
+**Nachrichtenkörper**
 
-- `username`: *string
-- `password`: *string* - The client's password in plain text
-- `passwordHash`: *string* - **[optional]** A precomputed password hash (bcrypt: *$2y$*); `password` has priority
-- `active`: *bool* - **[optional]** *(default: false)* Indicates whether the client can log in.
-- `firstName`: *string* - **[optional]**
-- `lastName`: *string* - **[optional]**
+- `username`: *string*
+- `password`: *string* – Das Passwort des Kunden in Klartext
+- `passwordHash`: *string* – **[optional]** Ein vorberechneter Passwort-Hash (bcrypt: *$2y$*); `password` hat Vorrang
+- `active`: *bool* – **[optional]** *(Standardwert: false)* Gibt an, ob sich der Kunde einloggen kann.
+- `firstName`: *string* – **[optional]**
+- `lastName`: *string* – **[optional]**
 - `emailAddress`: *string*
-- `company`: *string* - **[optional]**
-- `domainMaxCount`: *int* - **[optional]** *(default value: 0)* Maximum number of domains a customer can manage in his account; -1 is unlimited
-- `whitelabelMaxCount`: *int* - **[optional]** *(default value: 0)* Maximum number of whitelabel licenses available to a customer; -1 is unlimited
-- `widgetDisplayMaxCount`: *int* - **[optional]** *(default: 0)* Specifies how many times the CCM19 widget is loaded in the frontend per month; -1 is unlimited
+- `company`: *string* – **[optional]**
+- `domainMaxCount`: *int* – **[optional]** *(Standardwert: 0)* Maximale Anzahl an Domains, die ein Kunde in seinem Account verwalten kann; -1 ist unbegrenzt
+- `whitelabelMaxCount`: *int* – **[optional]** *(Standardwert: 0)* Maximale Anzahl an Whitelabel-Lizenzen, die einem Kunden zur Verfügung stehen; -1 ist unbegrenzt
+- `widgetDisplayMaxCount`: *int* – **[optional]** *(Standardwert: 0)* Legt fest, wie häufig das CCM19-Widget im Frontend pro Monat geladen wird; -1 ist unbegrenzt
 
 
 
-**Response (HTTP status codes)**
+**Antwort (HTTP Status-Codes)**
 
-* 201- Customer was successfully created.
+* 201– Kunde wurde erfolgreich erstellt.
   * `id`: *string*
   * `username`: *string*
   * `active`: *bool*
@@ -90,26 +90,26 @@ There are a total of 4 different API endpoints you can use, in detail these are:
   * `whitelabelMaxCount`: *int*
   * `widgetDisplayMaxCount`: *int*
 
-- `400` - username or password is empty.
-- `400` - username is already in use.
-- `400` - email address is empty or invalid.
+- `400` – Benutzername oder Passwort ist leer.
+- `400` – Benutzername wird bereits verwendet.
+- `400` – E-Mail-Adresse ist leer oder ungültig.
 
 
 
-## Read customers
+## Kunden auslesen
 
 **URL** `http://localhost/ccm19/cookie-consent-management/www/public/hosting/api/client/~CLIENT_ID~`
 
-**method** `GET`
+**Methode** `GET`
 
-**Query parameter**
+**Query-Parameter**
 
-- `~CLIENT_ID~`: *string* The ID of the CCM19 customer account.
+- `~CLIENT_ID~`: *string* Die ID des CCM19-Kundenaccounts.
 
-**Response (HTTP status codes)**
+**Antwort (HTTP Status-Codes)**
 
-* 200 - Success!
-  * `id`: *string
+* 200 – Success!
+  * `id`: *string*
   * `username`: *string*
   * `active`: *bool*
   * `firstName`: *string*
@@ -122,36 +122,36 @@ There are a total of 4 different API endpoints you can use, in detail these are:
   * `whitelabelMaxCount`: *int*
   * `widgetDisplayCount`: *int*
   * `widgetDisplayMaxCount`: *int*
-* `404` - customer not found.
+* `404` – Kunden nicht gefunden.
 
 
 
-## Update customers
+## Kunden aktualisieren
 
 URL `http://localhost/ccm19/cookie-consent-management/www/public/hosting/api/client/~CLIENT_ID~`
 
-Method `PUT`
+Methode `PUT`
 
-Query parameter
+Query-Parameter
 
-- `~CLIENT_ID~`: *string* The ID of the CCM19 customer account.
+- `~CLIENT_ID~`: *string* Die ID des CCM19-Kundenaccounts.
 
-Message body
+Nachrichtenkörper
 
-- `password`: *string* - **[optional]** The password of the customer in plain text
-- `passwordHash`: *string* - **[optional]** A precomputed password hash (bcrypt: *$2y$*); `password` has priority
-- `active`: *bool* - **[optional]** Indicates whether the client can log in.
-- `firstName`: *string* - **[optional]**
-- `lastName`: *string* - **[optional]**
-- `emailAddress`: *string* - **[optional]**
-- `company`: *string* - **[optional]**
-- `domainMaxCount`: *int* - **[optional]** Maximum number of domains a customer can manage in his account; -1 is unlimited
-- `whitelabelMaxCount`: *int* - **[optional]** Maximum number of whitelabel licenses available to a customer; -1 is unlimited
-- `widgetDisplayMaxCount`: *int* - **[optional]** Sets how many times the CCM19 widget is loaded in the frontend per month; -1 is unlimited
+- `password`: *string* – **[optional]** Das Passwort des Kunden in Klartext
+- `passwordHash`: *string* – **[optional]** Ein vorberechneter Passwort-Hash (bcrypt: *$2y$*); `password` hat Vorrang
+- `active`: *bool* – **[optional]** Gibt an, ob sich der Kunde einloggen kann.
+- `firstName`: *string* – **[optional]**
+- `lastName`: *string* – **[optional]**
+- `emailAddress`: *string* – **[optional]**
+- `company`: *string* – **[optional]**
+- `domainMaxCount`: *int* – **[optional]** Maximale Anzahl an Domains, die ein Kunde in seinem Account verwalten kann; -1 ist unbegrenzt
+- `whitelabelMaxCount`: *int* – **[optional]** Maximale Anzahl an Whitelabel-Lizenzen, die einem Kunden zur Verfügung stehen; -1 ist unbegrenzt
+- `widgetDisplayMaxCount`: *int* – **[optional]** Legt fest, wie häufig das CCM19-Widget im Frontend pro Monat geladen wird; -1 ist unbegrenzt
 
-Response (HTTP status codes) 
+Antwort (HTTP Status-Codes) 
 
-* 200 - Customer was successfully updated.
+* 200 – Kunde wurde erfolgreich aktualisiert.
   * `id`: *string*
   * `username`: *string*
   * `active`: *bool*
@@ -162,12 +162,12 @@ Response (HTTP status codes)
   * `domainMaxCount`: *int*
   * `whitelabelMaxCount`: *int*
   * `widgetDisplayMaxCount`: *int*
-* `400` - Email address is empty or invalid.
-* `404` - customer not found.
+* `400` – E-Mail-Adresse ist leer oder ungültig.
+* `404` – Kunden nicht gefunden.
 
 
 
-## Delete customer
+## Kunden löschen
 
 ```
 DELETE
@@ -175,20 +175,20 @@ DELETE
 
 **URL** `http://localhost/ccm19/cookie-consent-management/www/public/hosting/api/client/~CLIENT_ID~`
 
-Method `DELETE`
+Methode `DELETE`
 
-**Query parameter**
+**Query-Parameter**
 
-- `~CLIENT_ID~`: *string* The ID of the CCM19 customer account.
+- `~CLIENT_ID~`: *string* Die ID des CCM19-Kundenaccounts.
 
-**Response (HTTP status codes)**
+**Antwort (HTTP Status-Codes)**
 
-- `204` - customer was successfully deleted.
-- `404` - customer not found.
+- `204` – Kunde wurde erfolgreich gelöscht.
+- `404` – Kunden nicht gefunden.
 
 
 
-## Read all customer Ids with domain data for statistical data
+## Alle KundenIds mit Domaindaten für Statistische Daten auslesen
 
 ```
 GET
@@ -196,9 +196,9 @@ GET
 
 URL `http://ccm19.localhost/hosting/api/client_all`
 
-Method `GET`
+Methode `GET`
 
-Response (HTTP status codes)
+Antwort (HTTP Status-Codes)
 
 - ```
   201
@@ -206,7 +206,7 @@ Response (HTTP status codes)
 
    
 
-  - Success!
+  – Success!
 
   - `userId`: *string*
 
@@ -217,11 +217,11 @@ Response (HTTP status codes)
   - - `domName`: *string*
     - `count`: *int*
 
-- `404` - No data found
+- `404` – Keine Daten gefunden
 
 
 
-## Search for a customer ID with a string
+## Mit einem String nach einer KundenID suchen
 
 ```
 GET
@@ -229,13 +229,13 @@ GET
 
 URL `http://ccm19.localhost/hosting/api/clientgetid/~SEARCH_TERM~`
 
-Method `GET`
+Methode `GET`
 
-Query parameter
+Query-Parameter
 
-- `~SEARCH_TERM~`: *string* - username, email address
+- `~SEARCH_TERM~`: *string* – Benutzername, E-Mail-Adresse
 
-Response (HTTP status codes)
+Antwort (HTTP Status-Codes)
 
 - ```
   200
@@ -243,11 +243,11 @@ Response (HTTP status codes)
 
    
 
-  - Success!
+  – Success!
 
   - `id`: *string*
 
-- `404` - No data found
+- `404` – Keine Daten gefunden
 
 
 

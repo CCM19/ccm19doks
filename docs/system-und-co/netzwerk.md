@@ -1,35 +1,35 @@
-# Network / Proxy settings
+# Netzwerk / Proxy Einstellungen
 
-These special settings are used only very rarely. CCM19 is built in such a way that it usually gets along with the normal settings of the providers without any problems.
+Diese speziellen Einstellungen kommen nur sehr selten zum Einsatz. CCM19 ist so aufgebaut dass es in der Regel mit den normalen Einstellungen der Provider problemlos zurecht kommt.
 
 
 
-## Force HTTPS connection
+## HTTPS-Verbindung erzwingen
 
 ![screenshot-1641916579202](../assets/screenshot-1641916579202-16419166440123.jpg)
 
-Use this option if the application is behind a load balancer or similar environment where, for example, SSL offloading takes place. If certain headers are not forwarded, an HTTPS connection may not be automatically detected, and therefore frontend resources may be incorrectly requested over an unsecured connection 
+Verwenden Sie diese Option, wenn sich die Anwendung hinter einem Load-Balancer oder ähnlicher Umgebung befindet, in der z.B. SSL-Offloading stattfindet. Wenn bestimmte Header nicht weitergeleitet werden, wird eine HTTPS-Verbindung u.U. nicht automatisch erkannt, weshalb Frontend-Ressourcen fälschlicherweise über eine ungesicherte Verbindung angefordert werden können. 
 
-So if you have problems with SSL functions, this is your first port of call.
+Bei Problemen mit SSL Funktionen ist das also Ihre erste Anlaufstelle.
 
-## Maximum session inactivity time
+## Maximale Sitzungs-Inaktivitätszeit
 
-With this setting you can define the maximum waiting time after which inactive backend users are automatically logged out. Set to '0' for unlimited. The session lifetime can still be limited by other factors that are not under the control of CCM19.
+Mit dieser Einstellung können Sie die maximale Wartezeit festlegen, ab der inaktive Backend-Nutzer automatisch abgemeldet werden. Auf `0` setzen für unlimitiert. Die Sitzungslebenszeit kann noch durch andere Faktoren eingeschränkt werden, die nicht unter der Kontrolle von CCM19 stehen.
 
 
 
-## Proxy settings
+## Proxy Einstellungen
 
-Use this option **only** if connections from this server must be routed through a proprietary proxy. Use `*server*:*port*` or `http://*server*:*port*` for HTTP proxies, `https://*server*:*port*` for HTTPS, `socks4://*server*:*port*` for SOCKS 4 and `socks5://*server*:*port*` for SOCKS 5 proxies.
+Verwenden Sie diese Option **nur**, wenn Verbindungen von diesem Server aus durch einen firmeneigenen Proxy geleitet werden müssen. Nutzen Sie `*server*:*port*` oder `http://*server*:*port*` für HTTP-Proxies, `https://*server*:*port*` für HTTPS-, `socks4://*server*:*port*` für SOCKS 4- und `socks5://*server*:*port*` für SOCKS 5-Proxies.
 
 ![screenshot-1641916726158](../assets/screenshot-1641916726158.jpg)
 
 
 
-## Call counter exceptions
+## Aufrufzähler-Ausnahmen
 
-Here you can exclude IP addresses and `user agent` strings from the call count. This can be used to prevent search engine bots and local users from increasing the call counter and thus being counted at rate limits.
+Hier können Sie IP-Adressen und `User-Agent`-Strings von der Aufrufzählung ausnehmen. Dies kann verwendet werden, damit Suchmaschinen-Bots und lokale Benutzer der Aufrufzähler nicht erhöhen und damit zu Tarif-Limitierungen gezählt werden.
 
-This function is set globally for all users in the cloud version.
+Diese Funktion wird in der Cloud Version global für alle User gesetzt.
 
 ![screenshot-1641916764936](../assets/screenshot-1641916764936.jpg)

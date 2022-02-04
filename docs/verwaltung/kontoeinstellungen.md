@@ -1,6 +1,6 @@
-# Account settings
+# Kontoeinstellungen
 
-In the account settings you can change your email address, first name, last name and company name as well as create a new password 
+In den Kontoeinstellungen können Sie Ihre E-Mail Adresse, Vor-, Nach- und Firmen-Namen ändern sowie ein neues Passwort anlegen. 
 
 
 
@@ -8,4 +8,4 @@ In the account settings you can change your email address, first name, last name
 
 
 
-Most important are username, email address and password - all other data is currently purely cosmetic.
+Wichtig sind vor allem Benutzername, E-Mail Adresse und Passwort - alle anderen Daten sind derzeit rein kosmetischer Natur.

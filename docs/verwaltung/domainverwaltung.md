@@ -1,55 +1,55 @@
-# Domain management
+# Domainverwaltung
 
-You can reach the domain administration by clicking on your name in the upper right corner and then on the item "Domain administration". In the domain administration you can create, edit and delete your domains as well as activate or deactivate the whitelabel function 
+Die Domainverwaltung erreichen Sie über Ihren Namen oben rechts und dann den Punkt "Domainverwaltung". In der Domainverwaltung können Sie Ihre Domains anlegen, bearbeiten und löschen sowie die Whitelabel-Funktion aktivieren oder deaktivieren. 
 
-You can also see an overview of how many calls are available to you and how many calls have already been used up. Also the number of domains and the number of whitelabel licenses.
+Außerdem sehen Sie einen Überblick darüber, wie viele Aufrufe (Calls) Ihnen zur Verfügung stehen und wie viele Aufrufe bereits verbraucht sind. Ebenso die Anzahl der Domains und die Anzahl der Whitelabel Lizenzen.
 
-In the area next to it, your current tariff is displayed - here the Free tariff. By clicking on the button "To the tariff overview" you can book a tariff directly from there. You can also activate the sliding tariffs, but you must have booked at least a Starter tariff.
+Im Bereich daneben wird Ihnen Ihr aktueller Tarif angezeigt - hier der Free Tarif. Mit Klick auf den Button "Zur Tarifübersicht" können Sie von dort aus einen Tarif direkt buchen. Außerdem können Sie die Gleit Tarife aktivieren, allerdings müssen Sie dazu mindestens einen Starter Tarif gebucht haben.
 
 
 
-## Overview of calls &amp; Co.
+## Überblick über Aufrufe & Co.
 
 ![screenshot-1641831206265](../assets/screenshot-1641831206265.jpg)
 
-You can see here how many domains you are already using from the available ones, how many whitelabel licenses you are using and how many Cookie Manager calls have already been made this month.
+Sie sehen hier wieviele Domains Sie von der verfügbaren schon nutzen, wieviel Whitelabel Lizenzen Sie nutzen und wieviel Cookie Manager Aufrufe diesen Monat schon erfolgt sind.
 
-The data for the calls are reset every month on 01.
+Die Daten für die Aufrufe werden jeden Monat zum 01. zurückgesetzt.
 
-## Create and edit domains
+## Domains erstellen und bearbeiten
 
 ![screenshot-1641831438905](../assets/screenshot-1641831438905.jpg)
 
-In the list you can see all domains you are currently managing. A click on the name of the domain or on the blue button at the very end with the star will lead you to the administration of just this domain.
+In der Liste sehen Sie alle Domains die Sie derzeit verwalten. Ein Klick auf den Namen der Domain oder auf den blauen Button ganz am Ende mit dem Stern führen Sie zur Verwaltung eben dieser Domain.
 
-The table also shows whether the domain is active - i.e. in use, or not. It also shows if the domain is used as a whitelabel, how many views have been used this month and which theme is currently used.
+In der Tabelle wird auch angezeigt ob die Domain aktiv ist - also genutzt wird, oder nicht. Ebenfalls wird angezeigt ob die jeweilige Domain als Whitelabel genutzt wird, wieviele Aufrufe diesen Monat schon verbraucht wurden und welches Theme derzeit genutzt wird.
 
-With the **blue button** you jump into the administration of the domain and 
+Mit dem **blauen Button** springen Sie in die Verwaltung der Domain und 
 
-### Edit entry
+### Eintrag bearbeiten
 
-With a click on the green symbol you get back to the settings mask where you can change the data for the domain again.
+Mit Klick auf das grüne Symbold kommen Sie wieder in die Einstellungsmaske wo Sie die Daten für die Domain wieder ändern können.
 
 ![screenshot-1641831519920](../assets/screenshot-1641831519920.jpg)
 
 
 
-### Copy domain entry
+### Domaineintrag kopieren
 
-With the **Copy icon** you can copy an entry completely with all settings.
+Mit dem **Copy Symbol** können Sie einen Eintrag komplett kopieren mit allen Einstellungen.
 
 
 
-### Delete domain entry
+### Domaineintrag löschen
 
-Use the red button to delete the domain entry completely - after previous query.
+Mit dem roten Button löschen Sie den Domaineintrag komplett - nach vorheriger Abfrage.
 
 ![screenshot-2020.09.30-15_22_59-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-15_22_59-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-## Collection actions
+## Sammelaktionen
 
 ![screenshot-1641831704361](../assets/screenshot-1641831704361.jpg)
 
-You have to be careful with the two buttons. The first one deletes all PageCheck entries all domains, so everything you found in Pagecheck. PageCheck checks your domains regularly for new cookies and other entries.
+Mit den beiden Buttons müssen Sie vorsichtig umgehen. Der erste löscht alle PageCheck Einträge alle Domains, also alles was Sie im Pagecheck gefunden haben. Der PageCheck überprüft Ihre Domains regelmäßig auf neue Cookies und andere Einträge.
 
-The 2nd button deletes all inactive domains. These are then irretrievably lost. A backup is not done at this point, so you better be sure what you are doing :-).
+Der 2. Button löscht alle inaktiven Domains. Diese sind dann unwiederbringlich verloren. Ein Backup erfolgt an dieser Stelle nicht, also seien Sie besser sicher was Sie tun :-).

@@ -1,6 +1,6 @@
-# Block iframes
+# Iframes blockieren
 
-Use this function to prevent loading external resources embedded via an iframe container. This automatically prevents unwanted cookies from being set. The user can agree to load the content with the dialog that appears instead.
+Verwenden Sie diese Funktion, um zu verhindern, dass externe Ressourcen geladen werden, die über einen Iframe-Container eingebettet sind. Auf diese Weise wird das Setzen unerwünschter Cookies automatisch verhindert. Der Benutzer kann mit dem stattdessen angezeigten Dialog dem Laden des Inhalts zustimmen.
 
 ![screenshot-1641906162637](../assets/screenshot-1641906162637.jpg)
 
@@ -8,34 +8,34 @@ Use this function to prevent loading external resources embedded via an iframe c
 
 
 
-## Enable iframe blocking
+## Iframe Blockierung aktivieren
 
-With the check mark you enable the blocking of IFrames - probably obviously...
+Mit dem Haken aktivieren Sie die Blockierung der IFrames - vermutlich offensichtlich...
 
-## Remember consent per domain
+## Einwilligung pro Domain merken
 
-If this hook is set CCM19 remembers for which iframes from which page a Consent was already set. If e.g. a Youtube video was confirmed once by Consent, all further Youtube videos without Consent are faded in, since the user agreed to the use already once 
+Ist dieser Haken gesetzt merkt sich CCM19 für welche iframes von welcher Seite bereits ein Consent gesetzt wurde. Wenn z.B. einmal ein Youtube Video per Consent bestätigt wurde, werden alle weiteren Youtube Videos ohne Consent eingeblendet, da der Benutzer der Nutzung ja schon einmal zugestimmt hat. 
 
-&gt; Whether this is compliant with the GDPR can not be said at this time, we currently assess it positively, but of course the decision remains with you.
+> Ob das DSGVO konform ist kann man derzeit nicht sagen, wir schätzen das derzeit positiv ein, allerdings bleibt die Entscheidung natürlich bei Ihnen.
 
-### Iframe exceptions
+### Iframe Ausnahmen
 
-There are different variants here, if you do not set anything here, everything will always be blocked by default.
+Hier gibt es verschiedene Varianten, wenn Sie hier nichts einstellen wird standardmäßig alles immer blockiert.
 
-### Whitelist mode
+### Whitelist Modus
 
-If you select this option, all iframes that are not in the filter list will be blocked. If you enter e.g. youtube, only the iframe from youtube will not be blocked, but all others. (However, we do not recommend this procedure for Youtube) 
+Wenn Sie diese Auswahl treffen werden alle Iframes blockiert die nicht in der Filterliste drin stehen. Tragen Sie dort z.B. youtube ein, wird nur das iframe von Youtube nicht geblockt, wohl aber alle anderen. (Dieses Vorgehen empfehlen wir jedoch gerade für Youtube nicht!) 
 
-### Blacklist mode
+### Blacklist Modus
 
-In this variant no iframes are blocked, unless they are in the list here. If you now enter youtube there, only the iframes of youtube will be blocked, but not all others.
+In dieser Variante werden keine iframes blockiert, es sei denn sie stehen hier in der Liste. Tragen Sie dort nun youtube ein, werden nur die Iframes von Youtube blockiert, nicht aber alle anderen.
 
 ## Filter
 
-Write one expression per line 
+Schreiben Sie einen Ausdruck pro Zeile. 
 
-### Thumbnails
+### Vorschaubilder
 
-When embedding from the big video portals like Youtube or Vimeo, screenshots of the videos are displayed as a blocking image on the page, so that it is easier to see what exactly is happening in the video. The shot provided by the portals is taken.
+Bei Einbettungen von den großen Videoportalen wie Youtube oder Vimeo werden Screenshots der Videos als Sperrbild auf der Seite ausgegeben, so dass besser ersichtlich ist was genau im Video passiert. Es wird dabei der von den Portalen bereit gestellte Shot genommem.
 
-The images are cached on the page so that they do not have to be retrieved every time the page is called up. The cache expires after 8 days. If you want to clear the cache earlier, just click the "Clear thumbnail cache" button.
+Die Bilder werden auf der Seite gechached damit sie nicht bei jedem Seitenaufruf neu abgerufen werden müssen. Der Cache läuft nach 8 Tagen aus. Wollen Sie den Cache früher leeren, klicken Sie einfach auf den Button "Vorschaubild-Cache leeren".

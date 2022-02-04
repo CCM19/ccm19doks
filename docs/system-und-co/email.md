@@ -1,41 +1,36 @@
-# Email settings
+# E-Mail-Einstellungen
 
-CCM19 can send e-mails from itself. These are always status emails that go to the operator and inform about various status changes.
+CCM19 kann aus sich heraus E-Mails versenden. Das sind immer Statusmails, die an den Betreiber gehen und über diverse Statusänderungen informieren.
 
-## Mails go out at
+## Mails gehen raus bei
 
-<<<<<<< HEAD
-+ the execution of an update.
-+ Reaching a threshold between 80% and 99% (settings dependent). In our cloud version, the thresholds are 80 and 95%.
-=======
 + der Durchführung eines Updates.
 + Erreichen eines Schwellenwertes zwischen 80 und 99 % (einstellungsabhängig). In unserer Cloud-Version liegen die Schwellen bei 80 und 95%.
->>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
 
-## Configuration of the mail dispatch
+## Konfiguration des Mail Versands
 
 ![screenshot-2020.09.30-14_41_14-CCM19 - Cookie Consent Management Software (1)](../assets/screenshot-2020.09.30-14_41_14-CCM19%20-%20Cookie%20Consent%20Management%20Software%20(1).jpg)
 
-As you can see on the screenshot, you can enter the typical data of a shipping address here. The following functions are available as shipping methods.
+Wie auf dem Screenshot zu sehen ist, können Sie hier die typischen Daten einer Versendeadresse eintragen. Als Versandmethoden stehen folgende Funktionen zur Verfügung.
 
-+ sendmail (no access data required)
-+ SMTP send (access data required)
++ sendmail (keine Zugangsdaten erforderlich)
++ SMTP-Versand (Zugangsdaten erforderlich)
 
 
 
-## Test dispatch
+## Testversand
 
 ![screenshot-2020.09.30-14_44_26-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_44_26-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-With the button Send test email you can enter an email address there and send a test email to this address. This way you can check if everything works.
+Mit dem Button Test-E-Mail versenden können Sie dort eine E-Mail Adresse eintragen und eine Testmail an diese Adresse schicken. Damit überprüfen Sie ob alles funktioniert.
 
 
 
-## Configuration SMTP send
+## Konfiguration SMTP-Versand
 
 ![screenshot-2020.09.30-14_41_14-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_41_14-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-To be able to send SMTP correctly you have to enter your connection data here. With the button "Autoconfiguration" CCM19 tries to determine the necessary data like server, format etc. by itself.
+Um den SMTP Versand korrekt durchführen zu können müssen Sie Ihre Verbindungsdaten hier eintragen. Mit dem Button "Autokonfiguration" versucht CCM19 die notwendigen Daten wie Server, Format usw. selber zu ermitteln.
 
-It is recommended to use this function. Normally only the password has to be entered.
+Es ist zu empfehlen diese Funktion zu nutzen. In der Regel muss dann nur noch das Passwort eingetragen werden.
 

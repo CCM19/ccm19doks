@@ -1,6 +1,6 @@
 # Dashboard
 
-The domain dashboard. Here you land directly after you have selected a domain in the Domain Manager. In this dashboard some basic functions are listed.
+Das Domaindashboar. Hier landen Sie direkt nachdem Sie eine Domain ausgewählt haben im Domain Manager. In diesem Dashboard sind einige Grundfunktionen aufgeführt.
 
 
 ![screenshot-1641854392504](../assets/screenshot-1641854392504.jpg)
@@ -8,41 +8,41 @@ The domain dashboard. Here you land directly after you have selected a domain in
 
 ## Quicksetup
 
-If you click the link, you will be taken directly back to the onboarding for this domain, you can run through this as often as you like, but old data will always be overwritten.
+Wenn Sie den Link klicken landen Sie direkt wieder im Onboarding zu dieser Domain, dieses können Sie beliebig oft durchlaufen, allerdings werden alte Daten dabei immer wieder überschrieben.
 
-## Include CCM19 in your page
+## CCM19 in Ihre Seite einbinden
 
-The most important point at this point - here you will find the HTML snippet that you need to establish the connection between your site and CCM19.
+Der wichtigeste Punkt an diesers Stelle - hier finden Sie das HTML Schnipsel dass Sie brauchen um die Verbindung zwischen Ihrer Seite und CCM19 herzustellen.
 
-Copy the entry that is listed there - as you can see here for example.
+Kopieren Sie den Eintrag der dort gelistet ist - wie hier z.B. zu sehen.
 
 ![screenshot-1641854392504 (1)](../assets/screenshot-1641854392504%20(1).jpg)
 
-Of course you should use the entry from the interface and not the one here from the documentation :-)
+Sie sollten natürlich den Eintrag aus der Oberfläche nutzen und nicht den hier aus der Dokumentation :-)
 
-In the mask you can select in which language the mask should be displayed, generally it is also possible that the mask reads the language of the visitor from the browser **and** there is the possibility to select the language in the frontend widget.
+In der Maske können Sie auswählen in welcher Sprache die Maske dargestellt werden soll, generell ist es auch möglich dass die Maske die Sprache des Besuchers aus dem Browser ausliest **und** es gibt die Möglichkeit die Sprache im Frontend Widget auszuwählen.
 
 
-## Open configuration box again via link
+## Konfigurationsbox erneut öffnen per Link
 
-You would like to give your visitors the possibility to change their mind later on and not allow analysis cookies after all? Simply insert the following HTML snippet:
+Sie möchten Ihren Besuchern die Möglichkeit geben, sich nachträglich noch umzuentscheiden und z.B. doch keine Analyse-Cookies zuzulassen? Fügen Sie einfach folgendes HTML Snippet ein:
 
 ``` html
-<a href="#" onclick="CCM.openWidget();return false;">Open configuration box
-</a>```
+<a href="#" onclick="CCM.openWidget();return false;">Konfigurationsbox öffnen</a>
+```
 
-Thus, when clicking on this link, the configuration pop-up is opened again for the visitor.
+Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den Besucher geöffnet.
 
-Alternatively, if you cannot insert Javascript links, you can use the following target in a link: **#CCM.openWidget**.
+Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: **#CCM.openWidget**.
 
-``html
-<a href="#CCM.openWidget">Open configuration box
-</a>```
+```html
+<a href="#CCM.openWidget">Konfigurationsbox öffnen</a>
+```
 
-## Statistics
+## Statistik
 
-In the small statistic you get an overview about the usage of the CCM19 widget on the selected domain. It shows how often the widget was shown, how often the script was called and some more.
+In der kleinen Statistik bekommt man eine Übersicht über die Nutzung des CCM19 Widgets auf der ausgewählten Domain. Es wird angezeigt wie oft das Widget eingeblendet wurde, wie oft das Skript abgerufen wurde und einiges mehr.
 
-## Cookie used
+## Verwendete Cookie
 
-The short list of cookies and bindings gives you a small overview about the used data on your site.
+Die kurze Liste der Cookies und Einbindungen gibt Ihnen eine kleine Übersicht über die verwendetet Daten auf Ihrer Seite.

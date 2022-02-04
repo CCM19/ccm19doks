@@ -1,43 +1,43 @@
-# CCM19 Upgrade to Generation 2
+# CCM19 Upgrade auf Generation 2
 
-If you are using a version purchased after 10/13/2020 this does not affect you. For all others:
+Wenn Sie eine Version nutzen die nach dem 13.10.2020 gekauft wurde betrifft Sie das nicht. Für alle anderen:
 
-With the release of version 10/13/2020, the CCM19 Cookie Consent Tool has been rebuilt to display and process embeds instead of using "cookies only" 
+Mit dem Release der Version 13.10.2020 wurde das CCM19 Cookie Consent Tool auf die Darstellung und Verarbeitung von Einbindungen statt der Nutzung von "nur" Cookies umgebaut. 
 
-&gt; The old Generation 1 variant will still be maintained at least until the end of 03.2021, but will generally no longer receive new features but only bug fixes.
+> Die alte Variante Generation 1 wird noch mindestens bis Ende 03.2021 gepflegt, erhält aber in der Regel keine neuen Funktionen mehr sondern nur noch Bugfixes.
 
-In the old Consent mask you could only confirm or reject categories, with the new version you can now not only check off the categories, but also the individual bindings 
+In der alten Consentmaske konnte man nur Kategorien bestätigen oder ablehnen, mit der neuen Version kann man nun nicht nur die Kategorien abhaken, sondern auch die einzelnen Einbindungen. 
 
-&gt; Google Analytics is a good example. Previously you had to enter each cookie separately, now it is enough to select an entry Google Analytics from the database and then all cookies and elements are directly created with. Visitors can then choose whether they want to use Google Analytics or not.
+> Google Analytics ist ein gutes Beispiel. Musste man vorher jedes Cookie extra eintragen, reicht es nun einen Eintrag Google Analytics aus der Datenbank auszuwählen und dann sind direkt alle Cookies und Elemente mit angelegt. Dies Besucher können dann wählen ob sie Google Analytics nutzen wollen oder nicht.
 
-If you have been using an old version of Generation 1, you can manually upgrade to Generation 2. An automatic upgrade is unfortunately not possible, because we do not know all cookies and contexts.
+Wenn Sie bisher eine alte Version der Generation 1 benutzt haben, dann können Sie ein manuelles Upgrade auf die Generation 2 durchführen. Ein automatisches Upgrade ist leider nicht möglich, da wir nicht alle Cookies und Zusammenhänge kennen.
 
-&gt; But don't worry - the upgrade is actually quite simple to do and usually takes about 5 minutes
+> Aber keine Angst - das Upgrade ist eigentlich recht simpel zu machen und dauert in der Regel ca. 5 Minuten
 
 
 
-## Perform upgrade
+## Upgrade durchführen
 
-There are 2 ways to perform the upgrade.
+Um das Upgrade durchzuführen gibt es 2 Wege.
 
-1. Conversion of the software by selection, then the entries must be created again manually
-2. Upgrade by advanced onboarding - then almost everything can be done automatically.
+1. Umstellung der Software per Auswahl, dann müssen die Einträge neu manuel angelegt werden
+2. Upgrade per erweitertem Onboarding - dann kann fast alles automatisch erfolgen.
 
-### 1. conversion per selection
+### 1. Umstellung per Auswahl
 
-To perform the changeover manually, go to the menu item Frontend Behavior in the left menu. There you will find the new following entry. First uncheck the red marked checkbox and read exactly what it says ;-).
+Um die Umstellung manuell durchzuführen, gehen Sie zum Menüpunkte Frontend Verhalten links im Menü. Dort finden Sie nun den neuen folgenden Eintrag. Haken Sie zuerst den rot markierten Haken ab und lesen Sie genau was dort steht ;-).
 
 ![screenshot-2020.10.13-16_13_17-1602598397786](../assets/screenshot-2020.10.13-16_13_17-1602598397786.jpg)
 
-You can then change the select field from Cookie (deprecated) to Embeddings. Once you have done that, the Cookies menu item will be replaced by the Embeddings and Cookies menu item and a new screen will be available.
+Anschließend können Sie das Selectfeld von Cookie (veraltet) auf Embeddings umstellen. Sobald Sie das gemacht haben, wird der Menüpunkt Cookies durch den Menüpunkt "Einbindungen und Cookies" ersetzt und es steht eine neue Maske zur Verfügung.
 
-At the same time, the mask for the Consent will also be changed in the frontend. You can now create the new embeddings under this menu item, [this is explained here](../functions/cookies-and-others.md) 
+Gleichzeitig wird im Frontend die Maske für den Consent ebenfalls umgestellt. Die neuen Embeddings können Sie nun unter diesem Menüpunkt erstellen, [das wird hier erklärt](../funktionen/cookies-und-andere.md). 
 
 
 
-### 2. conversion via extended onboarding
+### 2. Umstellung via erweitertem Onboarding
 
-The changeover via extended onboarding can be reached via the old menu item Cookies. For this to work, you should not yet perform the changeover under 1.
+Die Umstellung über das erweiterte Onboarding erreichen  Sie über den alten Menüpunkt Cookies. Damit das funktioniert sollten Sie die Umstellung unter 1 noch nicht durchführen.
 
 
 
@@ -45,13 +45,13 @@ The changeover via extended onboarding can be reached via the old menu item Cook
 
 
 
-To do this, click on the link "Click here to upgrade." You will then be taken to the already familiar screen from Onboarding.
+Klicken Sie dafür auf den Link "Klicken Sie hier um das Upgrade durchzuführen." Sie gelangen dann in die schon bekannte Maske aus dem Onboarding.
 
 ![screenshot-2020.10.13-16_23_15-1602598995503](../assets/screenshot-2020.10.13-16_23_15-1602598995503.jpg)
 
-In the download version, the currently used page url must now be entered, in our cloud version this is not necessary, here the domain is then already known with the selection. Then follow the instructions on the screen, after the scan you come to the usual mask and the procedure that [is already described here](onboarding-step-1.md) 
+Bei der Downloadversion muss nun die aktuell verwendete Seitenurl eingetragen werden, in unserer Cloud Version ist das nicht notwendig, hier ist die die Domain dann schon mit der Auswahl bekannt. Folgen Sie dann den Anweisungen auf dem Bildschirm, nach dem Scan kommen Sie zur gewohnten Maske und dem Ablauf der [bereits hier beschrieben ist](onboarding-schritt-1.md). 
 
-&gt; When you are through with the onboarding procedure you will end up in the listing of embeddings which you can then edit again.  [As described here](../functions/cookies-and-others.md).
+> Wenn Sie mit dem Onboarding Ablauf durch sind landen Sie in der Auflistung der Embeddings die Sie dann wieder bearbeiten können.  [So wie hier beschrieben](../funktionen/cookies-und-andere.md).
 
  
 

@@ -1,17 +1,17 @@
-# API Key for General Api
+# API Key für General Api
 
-The Api Key for the domain-specific General / Domain Api can be found in the Domain ApiKey menu.
+Den Api Key für die domainspezifische General / Domain Api finden Sie in dem Menü Domain ApiKey.
 
 ## API Key 
 
-The Api Key itself can be found in the mask below. With the button "Create new Api Key" the key is set and appears directly in the mask.
+Der Api Key selber finden Sie in der unten stehenden Maske. Mit dem Button "Neuen Api Key erstellen" wird der Key neu gesetzt und erscheint dann direkt in der Maske.
 
-Please note that in this step, existing queries may no longer work because the old key is no longer valid.
+Beachten Sie bitte das bei diesem Schritt evtl. vorhandene Abfragen nicht mehr funktionieren da der alte Key nicht mehr valide ist.
 
 ![screenshot-2020.12.17-13_59_55-1608209995197](../assets/screenshot-2020.12.17-13_59_55-1608209995197.jpg)
 
 
 
-## Use API Key
+## API Key benutzen
 
-How to use the key and what for can be found here: [general_api usage](general_api.md) 
+Wie Sie den Key benutzen und wozu erfahren Sie hier: [general_api Nutzung](general_api.md) 

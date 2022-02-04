@@ -1,59 +1,59 @@
-# Cookies &amp; Embeddings
+# Cookies & Einbindungen
 
-With CCM19 you can give your visitors the opportunity to decide for themselves what data is collected about them.
+Mit CCM19 können Sie Ihren Besuchern die Möglichkeit geben, selber zu entscheiden welche Daten über die Besucher erhoben werden.
 
-For this to work, all relevant data must be available in CCM19 and the bindings must be tested. Even if CCM19 can do a lot of automatic tests - it is always up to the operator to check all functions.
+Damit dies funktioniert müssen alle relevanten Daten im CCM19 zur Verfügung stehen und die Einbindungen müssen getestet werden. Auch wenn CCM19 viel übernehmen kann an automatischen Tests - bleibt es doch immer dem Betreiber überlassen sämtliche Funktionen zu überprüfen.
 
-You can find an overview of existing bindings under the menu item "Bindings &amp; Cookies".
+Eine Übersicht über vorhandene Einbindungen finden Sie unter dem Menüpunkt "Einbindungen & Cookies".
 
-## Overview about the existing bindings
+## Übersicht über die vorhandenen Einbindungen
 
 ![screenshot-2020.09.29-16_01_49-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_01_49-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Here you can see listed which embeds are used on your site. You can see at a glance which bindings are active, what they are called and who they are from.
+Hier sehen Sie aufgelistet welche Einbindungen auf Ihrer Seite verwendet werden. Sie erkennen auf einen Blick welche Einbindungen aktiv sind, wie sie heißen und von wem diese sind.
 
-Click on the green icon to enter the edit mode, click on the red trash can to delete an entry.
+Mit dem Klick auf das grüne Symbol kommen Sie in den Editiermodus, der Klick auf den roten Papierkorb löscht nach Nachfrage einen Eintrag.
 
-The button "Create new entry" leads you to the creation mask. Usually the blue button "Select entry from database" makes more sense. Here your CCM19 instance connects to our central database and lists the available entries.
+Der Button "Neuen Eintrag erstellen" führt Sie zur Erstellungsmaske. Sinnvoller ist in der Regel der blaue Button "Eintrag aus Datenbank auswählen". Hier verbindet sich Ihre CCM19 Instanz mit unserer zentralen Datenbank und listet Ihnen die verfügbaren Einträge auf.
 
-## Available bindings
+## Verfügbare Einbindungen
 
 ![screenshot-2020.09.29-16_05_01-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_05_01-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-Here you see listed the entries from our database that are available to you. Click on the green button Apply to transfer the data into the edit mask.
+Hier sehen Sie aufgelistet die Einträge aus unserer Datenbank die Ihnen zur Verfügung stehen. Klicken Sie auf den grünen Button übernehmen um die Daten in die Bearbeitungsmaske zu übernehmen.
 
-Sometimes an adjustment to your company or website is necessary, you should check this so that everything is legally on the safe side.
+Mitunter ist noch eine Anpassung an Ihr Unternehmen oder Webseite notwendig, dies sollten Sie überprüfen damit auch rechtlich alles auf der sicheren Seite ist.
 
-## Edit mask of the embeddings
+## Bearbeitungsmaske der Einbindungen
 
 ![screenshot-1641903648518](../assets/screenshot-1641903648518.jpg)
 
-In the edit mask you can enter the following:
+In der Bearbeitungsmaske können Sie folgendes eintragen:
 
-### Name of the integration / inclusion
+### Name der Integration / Einbindung
 
-The name of the integration - this can be Matomo, for example. You should use a meaningful name here.
+Der Name der Einbindung - das kann z.B. Matomo sein. Hier sollten Sie einen aussagekräftigen Namen nutzen.
 
-### Purpose
+### Zweck
 
-Here the categories already mentioned above appear again. You can assign any entry to any category. Please note, however, that you must observe the legal framework. Facebook Pixel, for example, will hardly be categorized under technically necessary. For an exact legal classification you should consult a lawyer in any case.
+Hier tauchen wieder die schon oben genannten Kategorien auf. Sie können damit jeden Eintrag jeder beliebigen Kategorie zuweisen. Beachten Sie bitte aber dass Sie die rechtlichen Rahmenbedingungen beachten. Facebook Pixel z.B. wird sicher kaum unter technisch notwendig korrekt einsortiert sein. Für eine genaue rechtliche Einordnung sollten Sie auf jeden Fall einen Anwalt konsultieren.
 
-### Activate
+### Aktivieren
 
-Here you activate the entry so that it can also be checked off in the frontend
+Hiermit aktivieren Sie den Eintrag, so dass er auch im Frontend abgehakt werden kann
 
-### Source code of the integration
+### Quellcode der Einbindung
 
-In the source code of the embedding you have to insert the code by which the embedding is generated. In our example, this would be Matomo. \*\*If you insert a code, it must be unique and must not be entered in any other cookie. \*\*
+Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einbindung generiert wird. In unserem Beispiel wäre dies der Matomo. \*\*Wenn Sie einen Code einfügen, muss dieser einmalig sein und darf in keinem anderen Cookie eingetragen werden. \*\*
 
-&gt; **In addition, it must be removed from the direct web page text, otherwise you would include the code twice. This leads to technical problems!**
+> **Außerdem muss er aus dem direkten Webseitentext entfernt werden, da Sie den Code ansonsten doppelt einbinden würden. Das führt zu technischen Problemen!**
 
-#### Example Matomo
+#### Beispiel Matomo
 
-``html
+```html
 <!-- Matomo / voll anonymisiert, Daten verbleiben auf Firmeneigenen Servern -->
  <script type="text/javascript">
-    var _paq = window._paq || [];
+    var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
     _paq.push(["setCookieDomain", "*.www.xy.de"]);
@@ -61,133 +61,133 @@ In the source code of the embedding you have to insert the code by which the emb
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-        var u="//analytics.xy.com/";
+        var u="//analytics.xy.de/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
         _paq.push(['setSiteId', '1']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
- </script>
+  </script>
 <!-- End Matomo Code -->
 ```
 
-### Provider
+### Anbieter
 
-The provider - here you must enter the company name of the provider offering the script. In our case it would be your company. You can also enter the complete address of the company here.
+Der Anbieter - hier muss der Firmenname des Anbieters rein der das Skript anbietet. In unserem Fall wäre es Ihr Unternehmen. Tragen Sie hier auch gerne direkt die komplette Adresse des Unternehmens ein.
 
-### Block scripts
+### Skripte blockieren
 
-Here you can block scripts that are embedded in the source code of your page by CCM19. If you use e.g. Matomo: Then enter in the field e.g. "matomo" - then every Javascript on your page will be blocked that contains these characters (string) and the script will not be executed as long as no consent was given.
+Hier können Sie Skripte die im Quelltext Ihrer Seite eingebunden sind durch CCM19 blockieren. Nutzen Sie z.B. Matomo: Dann tragen Sie in dem Feld z.B. "matomo" ein - damit wird dann auf Ihrer Seite jedes Javascript geblockt dass diese Zeichen (String) enthält und das Skript wird nicht ausgeführt solange kein Consent gegeben wurde.
 
-This way you don't have to rebuild your page.
+Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
-&gt; But please note the following:
-&gt
-&gt; The browser manufacturers are always trying to load all content as fast as possible, so it can happen that despite the correct blocking a browser loads a file anyway, the loading process was triggered faster than it can be blocked by CCM19. This is a matter of milliseconds. No cookie manager in the world can stop this process, because it is **not** possible to interfere with the internal processes of the browser.
-&gt
-&gt; If you want to be on the safe side, you have to integrate the scripts via the mask "Source code of the integration" into the page after successful consent and rebuild your page.
+> Beachten Sie aber bitte folgendes:
+>
+> Die Browserhersteller sind immer bemüht alle Inhalte möglichst schnell zu laden, daher kann es vorkommen dass trotz des korrekten Blockierens ein Browser eine Datei trotzdem lädt, der der Ladeprozess schneller angestoßen wurde als er von CCM19 blockiert werden kann. Da geht es um Millisekunden. Diesen Prozess kann kein Cookie Manager der Welt unterbinden da hier in interne Prozesse des Browsers **nicht** eingegriffen werden kann.
+>
+> Wenn Sie hier auf Nummer sicher gehen wollen müssen Sie die Skripte über die Maske "Quellcode der Einbindung" in die Seite einbauen lassen nach erfolgtem Consent und Ihre Seite umbauen.
 
-### Script loader
+### Script-Loader
 
-If you use the function "Block scripts that contain the following text", your scripts can stay on the website and CCM19 will block them while building the page. However, all current browsers load these resources before CCM19 intervenes, despite correct integration, because they are loaded by automatic preloading by the browsers. Neither CCM19 nor other tools can prevent this, as the download of the resources starts before the execution of scripts by browsers begins.
+Nutzen Sie die Funktion „Skripte blockieren, die folgenden Text enthalten“, können Ihre Skripte auf der Website bleiben und CCM19 blockiert diese beim Aufbau der Seite. Allerdings laden alle aktuellen Browser diese Ressourcen trotz korrekter Integration vor dem Eingreifen von CCM19, da diese durch automatisches Preloading durch die Browser geladen werden. Weder CCM19 noch andere Tools können dies verhindern, da der Download der Ressourcen startet, bevor die Ausführung von Skripten durch Browser beginnt.
 
-To prevent this after all, you can assign our CCM19-specific value for the `type` attribute to your scripts. By this adjustment, a browser will now no longer recognize the corresponding script as Javascript code to be executed and will refrain from processing it at first.
+Um dies nun doch zu verhindern, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
 
-CCM19 is able to process scripts of this type and releases the script for loading, provided that according to your CCM19 configuration nothing speaks against it.
+CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
 
-**Our type attribute looks like this: `type="text/x-ccm-loader"`**
+**Unser Typ-Attribut sieht so aus: `type="text/x-ccm-loader"`**
 
-Use this value for each `script` tag on your page that should be blocked or unblocked and reloaded according to this function. For example, it will look like this:
-`html
+Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
+```html
 <script src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
-#### Group for the script loader
+#### Gruppe für den Script-Loader
 
-If you have manually equipped your scripts on the website with our type attribute `type="text/x-ccm-loader"`, you can use this function to group these scripts and block them uniformly.
+Haben Sie Ihre Skripte auf der Website mit unserem Typ-Attribut `type="text/x-ccm-loader"` manuell ausgestattet, können Sie mit dieser Funktion diese Skripte gruppieren und einheitlich blockieren.
 
-You define the group name per inclusion yourself and add this to the corresponding script as well. The group name always consists of the following part: `data-ccm-loader-group="example_name"`.
+Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfalls dem entsprechenden Skript hinzu. Die Gruppenbezeichnung besteht immer aus folgendem Teil: `data-ccm-loader-group="beispiel_bezeichnung"`.
 
-Together with the `type` attribute it then looks like this:
-`html
+Zusammen mit dem `type`-Attribut sieht es dann so aus:
+```html
 <script src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 
-Enter the group name in the relevant inclusion under the item "Group for the script loader" to link the inclusion with the marked scripts of your website.
+Tragen Sie den Gruppennamen in der relevanten Einbindung unter dem Punkt "Gruppe für den Script-Loader" ein, um die Einbindung mit den markierten Skripten Ihrer Webseite zu verknüpfen.
 
-As soon as a page visitor allows such an inclusion, the grouped scripts will be reloaded.
+Sobald ein Seitenbesucher eine solche Einbindung zulässt, werden die gruppierten Skripte nachgeladen.
 
-### Enable iframes
+### Iframes freischalten
 
-&gt; For enabling via embeddings to work, you must enable the IFrame blocker via the **Iframes &gt; Enable Iframe Blocking** item.
+> Damit die Freischaltung über die Embeddings funktioniert, müssen Sie den IFrame-Blocker über den Punkt **Iframes > Iframe-Blockierung aktivieren** aktivieren.
 
-Recently it is possible to enable iframes (e.g. from Youtube, Google Maps and Co.) via the cookie banner.
+Seit Kurzem ist es möglich, Iframes (z.B. von Youtube, Google Maps und Co.) über den Cookie-Banner freizuschalten.
 
-To enable iframes via the cookie banner, enter strings that appear in the IFrame in the "Block iframes containing the following text" field.
+Um Iframes über den Cookiebanner freischalten zu können, tragen Sie in das Feld "Iframes blockieren, die folgenden Text enthalten" Zeichenketten ein, die im IFrame vorkommen.
 
-For example, for a Youtube iFrame, the string would be "youtube.com"
+Für einen Youtube-iFrame wäre die Zeichenkette zum Beispiel "youtube.com"
 
-For a Google Maps iFrame, the string would be, for example, "maps.google.com"
+Für einen Google Maps-iFrame wäre die Zeichenkette zum Beispiel "maps.google.com"
 
-Accepting the category will automatically unlock all corresponding IFrames.
+Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames freigeschaltet.
 
-**Please continue to observe the legal regulations regarding IFrames and the correct categorization
+**Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
 
-## Entries per language
+## Einträge je Sprache
 
 ![screenshot-2020.10.29-13_10_37-1603973437002](../assets/screenshot-2020.10.29-13_10_37-1603973437002.jpg)
 
-For each language used, the following language-dependent content can still be created.
+Für jede verwendete Sprache können die folgenden sprachabhängigen Inhalte noch erstellt werden.
 
-### Description
+### Beschreibung
 
-In the description, enter the task of the inclusion. Why is it set? What does this integration do?
+Bei der Beschreibung tragen Sie die Aufgabe der Einbindung ein. Wieso wird diese gesetzt? Was macht diese Einbindung?
 
-### Privacy link
+### Datenschutz-Link
 
-This is where the link to the provider's privacy policy belongs. You can usually find this when you go to the provider's website.
+Hier gehört der Link zu den Datenschutzbestimmungen des Anbieters hinein. Diesen finden Sie in der Regel wenn Sie auf die Webseite des Anbieters gehen.
 
-### What data is collected?
+### Welche Daten werden gesammelt?
 
-What data is collected exactly? Only the IP? Or also click data, browser data, logins, behavior, etc.? Find out exactly from the provider of the script and enter as precisely as possible what happens to the data. This is the only way to get informed consent from your visitors.
+Welche Daten werden ganz genau gesammelt? Nur die IP? Oder auch Klickdaten, Daten des Browsers, Logins, Verhalten uvm? Informieren Sie sich genau bei dem Anbieter des Skriptes und tragen Sie möglichst genau ein was mit den Daten passiert. Nur so ist eine informierte Einwilligung Ihrer Besucher möglich.
 
-### For what purpose is the data collected?
+### Zu welchem Zweck werden die Daten gesammelt?
 
-Why are you collecting this data? What do you want to do with it? Conversion optimization? Improve user experience? Or just implement a shopping cart function?
+Warum sammeln Sie diese Daten? Was wollen Sie damit machen? Conversionoptimierung? Nutzererfahrung verbessern? Oder nur eine Warenkorb Funktion realisieren?
 
-### Legal basis
+### Rechtliche Grundlage
 
-Here you define the legal basis on the basis of which you want to make this integration. In the case of tracking scripts, usually only "consent, Art. 6 para. 1 lit. a DSGVO" applies - consent of the visitor through an informed decision. So purely voluntary.
+Hier definieren Sie die rechtliche Grundlage aufgrund dessen Sie diese Einbindung vornehmen wollen. Bei Tracking Skripten greift in der Regel nur "Einwilligung, Art. 6 Abs. 1 lit. a DSGVO" - Einwilligung des Besuchers durch eine informierte Entscheidung. Also rein freiwillig.
 
-### Place of processing
+### Ort der Verarbeitung
 
-Where the data is processed. Here is not only the address of your office but also where is the server located? Please also consider that you are currently not allowed to transfer data to unsafe third countries. Providers who export data to the USA are currently legally probably not possible (as of 29.09.2020).
+Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büros sondern auch wo steht der Server? Berücksichtigen Sie bitte auch das Sie derzeit keine Daten in unsichere Drittländern übertragen dürfen. Anbieter die Daten in die USA exportieren sind derzeit rechtlich vermutlich nicht möglich (Stand 29.09.2020).
 
-## List of cookies and storage elements
+## Liste der Cookies und Storage Elemente
 
 ![screenshot-2020.10.29-13_11_42-1603973502795](../assets/screenshot-2020.10.29-13_11_42-1603973502795.jpg)
 
-Here are all cookies and storage elements listed that the script sets. You can add more elements by hand, because the automatic scan cannot always find all data. E.g. the scanner cannot find data for a logged in state. Also, the database hand-maintained by CCM19 may not be complete - always check the data carefully.
+Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand. Auch die von CCM19 handgepflegte Datenbank muss nicht vollständig sein - überprüfen Sie die Daten immer genau.
 
 #### Name
 
-The name in the browser - e.g. _ga for a Google Analytics cookie or _pk_id.\* for Matomo - the \* is a placeholder.
+Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie oder _pk_id.\* für Matomo - das \* ist ein Platzhalter.
 
 #### dyn.
 
-This determines if it is a dynamic variable - e.g. _pk_id.\* will block all cokies that start with _pk_id. i.e. _pk_id.123 etc.
+Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _pk_id.\* alle Cokies geblockt die mit _pk_id. anfangen, also _pk_id.123 usw.
 
-#### Memory type
+#### Speichertyp
 
-How the data is stored in your browser.
+Wie werden die Daten in Ihrem Browser gespeichert.
 
 #### Livetime / Expires
 
-When does the memory entry expire automatically.
+Wann läuft der Speichereintrag automatisch aus.
 
-#### Value
+#### Wert
 
-What value does the cookie transport - usually it is cryptic data that is stored here.
+Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
 
 
 
@@ -195,30 +195,30 @@ What value does the cookie transport - usually it is cryptic data that is stored
 
 ![screenshot-1641904109779](../assets/screenshot-1641904109779.jpg)
 
-Beta because it still has beta status at Google - not at CCM19. Google Consent Mode is a new functionality for websites that use Google Tag Manager to include Google services like Google Ads, Floodlight or Google Analytics.
+Beta deswegen weil er bei Google noch Beta Status hat - nicht bei CCM19. Google Consent Mode ist eine neue Funktionalität für Webseiten, die den Google Tag Manager verwenden, um Google-Dienste wie Google Ads, Floodlight oder Google Analytics einzubinden.
 
-If you use Google Tag Manager, please select which consent types for Google should be implied with this inclusion.
+Falls Sie den Google Tag Manager verwenden, wählen Sie bitte aus, welche Zustimmungs-Arten für Google mit dieser Einbindung impliziert werden sollen.
 
-For more information on Google's Google Consent Mode (beta), please see here: [https://support.google.com/analytics/answer/9976101?hl=de](https://support.google.com/analytics/answer/9976101?hl=de)
+Weitere Informationen zum Google Consent Mode (beta) von Google finden Sie hier: [https://support.google.com/analytics/answer/9976101?hl=de](https://support.google.com/analytics/answer/9976101?hl=de)
 
-## Exclude urls
+## Urls ausschließen
 
 ![screenshot-1641904161415](../assets/screenshot-1641904161415.jpg)
 
-Do NOT play out the embedding on these pages, this means that the currently selected embedding will not activate the embedding in tag manager mode resp. will not release it in block mode 
+Auf diesen Seiten die Einbindung NICHT ausspielen, das bedeutet dass die aktuell ausgewählte Einbindung im Tag Manager Modus die Einbindung nicht aktiviert resp. im Blockmodus diese nicht freigibt. 
 
-This can make sense under different circumstances 
+Dies kann unter verschiedenen Umständen Sinn machen. 
 
-Enter one URL per line. At the end you can use a * as a placeholder. Without placeholder the URL will be compared exactly! So please enter only complete and valid URLs.
+Tragen Sie eine URL pro Zeile ein. Am Ende können Sie ein * als Platzhalter verwenden. Ohne Platzhalter wird die URL exakt verglichen! Tragen Sie also bitte nur vollständige und gültige URLs ein.
 
-Example: https://www.ccm19.de/data.html* affects
+Beispiel: https://www.ccm19.de/data.html* wirkt sich aus auf
 
 - https://www.ccm19.de/data.html
 - https://www.ccm19.de/data.htmlx
 - https://www.ccm19.de/data.html?var1=test
 
-... and so on.
+… und so weiter.
 
-## Save
+## Speichern
 
-With a click on the Save button the data will be transferred to the CCM19 administration of your page and will be directly available for the frontend widget.Set cookies of your own page manually
+Mit Klick auf den Button Speichern werden die Daten in die CCM19 Administration Ihrer Seite übernommen und stehen dann direkt für das Frontend Widget zur Verfügung.Cookies der eigenen Seite manuell bestimmen

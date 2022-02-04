@@ -1,30 +1,30 @@
-# Base / Standard Integration
+# Basis / Standard Integration
 
-The question that naturally arises: how do I link my website / online store with CCM19 or how do I get the banner on my page?
+DIe Frage die sich natürlich stellt: wie verknüpfe ich meine Webseite / Onlineshop mit CCM19 bzw. wie bekomme ich das Banner auf meine Seite?
 
-The solution is actually very simple, you just have to integrate a small piece of HTML code that the CCM19 system delivers ready to use into your page.
+Die Lösung ist eigentlich sehr simpel, Sie müssen lediglich einen kleines Stück HTML Code dass das CCM19 System Ihnen fertig liefert in Ihre Seite integrieren.
 
-You can find the snippet in the dashboard of your CCM19 installation - always suitable for the respective domain.
+Den Schnipsel finden Sie im Dashboard Ihrer CCM19 Installation - passend immer für die jeweilige Domain.
 
-Most CMS / Shop systems have a ready to use interface for this kind of integration, so you can do it easily. A number of systems are listed in the menu on the left.
+DIe meisten CMS / Shop Systeme haben eine fertig Oberfläche für diese Art von Integration, so dass man das darüber einfach abwickeln kann. Eine Reihe von Systemen sind im Menü links aufgelistet.
 
 ## Dashboard in CCM19 
 
-in your dashboard you will find the following area.
+in Ihrem Dashboard finden Sie den folgenden Bereich.
 
 ![screenshot-1641937799871](../assets/screenshot-1641937799871.jpg)
 
-If you want to use a special language, you can select it with the Language select field 
+Wenn Sie eine spezielle Sprache verwenden wollen, können SIe diese mit dem Selectfeld Sprache auswählen. 
 
-In addition, you can specify a theme that should be called, different from the default theme.
+Zusätzlich können Sie ein Theme bestimmen dass aufgerufen werden soll, abweichend vom Standardtheme.
 
-The finished snippet is marked with the red arrow.
+Der fertige Schnipsel ist mit dem roten Pfeil markiert.
 
-## Embed code
+## Einbindungscode
 
-The embed code can look like this, for example.
+Der Einbindungscode kann z.B. so aussehen.
 
-`` html
+``` html
 <script src="http://CCM19ServerUrl/app.js?apiKey=1234&amp;domain=1234&amp;lang=de_DE" 
 referrerpolicy="origin">
     </script>
@@ -32,9 +32,9 @@ referrerpolicy="origin">
 
 
 
-## Example integration
+## Beispielintegration
 
-Copy this code and paste it on your page as high as possible in the header of the page, preferably right after the first <head>element
+Diesen Code kopieren Sie und binden in auf Ihrer Seite möglichst weit oben im Kopf der Seite ein, am besten direkt nach dem ersten <head> Element
 
 ``` html
 <html>
@@ -44,12 +44,11 @@ Copy this code and paste it on your page as high as possible in the header of th
  </head>
  <body>
  </body>
-<html>   
+<html>    
 ```
 
 
 
-After this pattern, all other integrations in all possible CMS / store systems run. Depending on the system used, it is a little more complex or easier to accommodate this snippet.
+Nach diesem Muste laufen auch alle anderen Integrationen in allen möglichen CMS / Shop Systemen ab. Je nach verwendetem System ist es etwas komplexer oder einfacher diesen Schnipsel unterzubringen.
 
-Most CMS / Shop systems have a ready interface for these things, so that you can easily integrate it
-</html></html></head> 
+DIe meisten CMS / Shop Systeme haben eine fertig Oberfläche für diese Dinge, so dass man das darüber einfach integrieren kann

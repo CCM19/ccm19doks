@@ -1,26 +1,26 @@
-# Embedding templates
+# Einbettungsvorlagen
 
-The embedding templates are nothing more than a separate database for cookies / scripts etc. You can set and maintain data here in addition to the data that comes from the CCM19 database.
+Die Einbettungsvorlagen sind nichts anderes als eine eigene Datenbank für Cookies / Skripte usw. Sie können hier Daten einstellen und pflegen zusätzlich zu den Daten die aus der CCM19 Datenbank kommen.
 
-Here you can also create your own entries that are only available to your customers or in your company, or take existing entries from the CCM19 database and add to them.
+Hier können Sie auch eigene Einträge erstellen die nur Ihren Kunden oder in Ihrem Unternehmen zur Verfügung stehen, oder bestehende Einträge aus der CCM19 Datenbank übernehmen und ergänzen.
 
 ![screenshot-1641985247773](../assets/screenshot-1641985247773.jpg)
 
-## Settings
+## Einstellungen
 
-If you check the box here your customers / clients will additionally be offered the CCM19 database of cookies / embeddings for use. This is also the recommended default state.
+Wenn Sie den Haken hier setzen wird Ihren Kunden / Mandanten zusätzlich die CCM19 Datenbank der Cookies / Embeddings für die Nutzung angeboten. Das ist auch der empfohlene Grundzustand.
 
-In addition, you can also specify here for which **languages** you want to provide these templates.
+Zusätzlich können Sie hier auch festlegen für welche **Sprachen** Sie diese Vorlagen bereit stellen wollen.
 
-## Create / edit entry
+## Eintrag erstellen / bearbeiten
 
-You can easily take over a new entry from the CCM19 database, just click on the blue button.
+Sie können einen neuen Eintrag einfach aus der CCM19 Datenbank übernehmen, klicken Sie dafür auf den blauen Button.
 
 ![screenshot-1641985526514](../assets/screenshot-1641985526514.jpg)
 
-From here you can take over an entry directly, it is then available in your database and you can edit the entry there.
+Hieraus können Sie dann einen Eintrag direkt übernehmen, er steht dann in Ihrer Datenbank zur Verfügung und Sie können den Eintrag dort bearbeiten.
 
-The editing is done in the same way as described in the section [Embedding](/functions/cookies-and-others/).
+Die Bearbeitung erfolgt genauso wie im Bereich [Embedding](/funktionen/cookies-und-andere/) beschrieben.
 
 ![screenshot-1641987916812](../assets/screenshot-1641987916812.jpg)
 

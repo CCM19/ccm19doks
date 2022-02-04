@@ -1,6 +1,6 @@
-# The license management
+# Die Lizenzverwaltung
 
-In the license administration (via the user name in the upper right corner &gt; License administration) you can exchange your license key (for example when activating a whitelabel license.) and activate the whitelabel version.
+In der Lizenzverwaltung (über den Benutzernamen oben rechts > Lizenzverwaltung) können Sie Ihren Lizenzkey tauschen (zum Beispiel beim Freischalten einer Whitelabel-Lizenz.) und die Whitelabel-Version aktivieren.
 
 
 
@@ -8,9 +8,9 @@ In the license administration (via the user name in the upper right corner &gt; 
 
 
 
-With each license you can activate different number of installations.
+Mit jeder Lizenz können Sie unterschiedlich viele Installationen aktivieren.
 
 
 
-&gt; Only for Download, Agency or other OnPremise variants
+> Nur für Download, Agency oder andere OnPremise Varianten
 

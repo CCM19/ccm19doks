@@ -1,27 +1,27 @@
-# A/B tests
+# A/B Tests
 
-With this plugin you can run A/B tests with the widget in the frontend. In principle, this works so that you run 2 themes against each other and see which gives the best results.
+Mit diesem Plugin können Sie A/B Tests mit dem Widget im Frontend durchführen. Prinzipiell funktioniert das so, dass Sie 2 Themes gegeneinander laufen lassen und schauen welches die besten Ergebnisse liefert.
 
 ![screenshot-1641981076311](../assets/screenshot-1641981076311.jpg)
 
 
 
-## Create / edit test
+## Test erstellen / bearbeiten
 
-To create a new test click on the green button "Create", in the same only pre-filled mask you come if you click on the green pen in the listing to edit the settings of a test.
+Um einen neuen Test zu erstellen klicken Sie auf den grünen Button "Erstellen", in die gleiche nur vorausgefüllte Maske kommen Sie wenn Sie im Listing auf den grünen Stift klicken zur Bearbeitung der Einstellungen eines Tests.
 
 ![screenshot-1641981201536](../assets/screenshot-1641981201536.jpg)
 
-Here you can select which theme should be displayed in which frequency. So you can e.g. show a new theme to only a few visitors to test how well it works.
+Sie können hier auswählen welches Theme in welccher Frequenz angezeigt werden soll. So können Sie z.B. auch ein neues Theme erstmal nur wenigen Besuchern zeigen um zu testen wie gut das funktioniert.
 
-The proportional frequency is entered as a percentage in the corresponding fields "Frequency". Only if you set the hook "activate" the test is active. There can only be one active test at a time, if you check the box and another test is active the previous one will be deactivated.
+Die anteilige Frequenz wird prozentual in den entsprechenden Feldern "Frequenz" eingetragen. Erst wenn Sie den Haken "aktivieren" setzen ist der Test aktiv. Es kann immer nur einen aktiven Test geben, wenn Sie den Haken setzen und ein anderer Test ist aktiv wird der vorherige deaktiviert.
 
-You can see whether a test is active in the overview in the screenshot above.
+Ob ein Test aktiv ist sehen Sie in der Übersicht im Screenshot oben.
 
-## Evaluation
+## Auswertung
 
-If you click on the blue button with the curve in the overview, you will get to the evaluation of the test. Here the data of the two variants are displayed against each other. Due to the positive click rate, a winner is automatically displayed.
+Wenn Sie in der Übersicht auf den blauen Button mit der Kurve klicken kommen Sie zur Auswertung des Tests. Hier werden die Daten der beiden Varianten gegeneinander dargestellt. Aufgrund der postiviven Klickrate wird automatisiert ein Gewinner dargestellt.
 
-In the right column above the graph you can see the change history of the test, i.e. which changes were made to the two themes used and when.
+In der rechten Spalte über der Grafik sehen Sie den Änderungsverlauf des Test, also welche Änderungen wann an den beiden genutzten Themes durchgeführt wurden.
 
 ![screenshot-1641981460932](../assets/screenshot-1641981460932.jpg)

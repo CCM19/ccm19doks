@@ -1,23 +1,23 @@
 # Magento
 
-To install our Cookie Consent Manager for your Magento site, simply follow the steps below:
+Um unseren Cookie Consent Manager für Ihre Magento-Seite zu installieren, führen Sie einfach die folgenden Schritte aus:
 
-## Select Dashboard in CCM19
+## Dashboard in CCM19 anwählen
 
-   After successful installation of CCM19 on your server or setup, you will get a javascript code.
+   Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code.
 
    ![CCM19 Backend Screen](../assets/10-01.png)
 
 ## Magento Template
 
-Unfortunately, Magento doesn't have a good way to include CCM19's script far enough up the page header, which means you'll have to edit the template to do this.
+Leider gibt es bei Magento keine gute Möglichkeit, dass Script von CCM19 weit genug oben im Kopf der Seite einzubauen, wodurch Sie das Template hierfür bearbeiten müssen.
 
-In your Magento installation, edit the file ``/app/design/frontend/rwd/default/template/page/html/head.phtml` and add the Javascript from CCM19. (If the file is not there, use another theme than the default "rwd" theme)
+Bearbeiten Sie in Ihrer Magento Installation, die Datei ``/app/design/frontend/rwd/default/template/page/html/head.phtml` und tragen Sie das Javascript von CCM19 ein. (Sollte sich die Datei dort nicht finden, benutzen Sie ein anderes Teheme als das standardmäßife "rwd" Theme)
 
-![Edit Magento Head file](../assets/Magento/magento_01.png)
+![Magento Head Datei bearbeiten](../assets/Magento/magento_01.png)
 
-![Edit Magento Head file](../assets/Magento/magento_02.png)
+![Magento Head Datei bearbeiten](../assets/Magento/magento_02.png)
 
-Now just save this change and clear the cache of your Magento page.
+Nun speichern Sie diese Änderung einfach und leeren den Cache Ihrer Magento Seite.
 
-This completes the setup and CCM19 should now be active in your site.
+Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrer Seite aktiv sein.

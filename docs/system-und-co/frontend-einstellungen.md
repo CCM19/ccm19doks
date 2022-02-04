@@ -1,16 +1,16 @@
-# Front end behavior
+# Frontend Verhalten
 
-Here you can make a number of settings that affect the behavior in the frontend of the page that uses CCM19. The available settings are explained below.
+Hier können Sie eine Reihe von Einstellungen treffen die das Verhalten im Frontend der Seite beeinflussen die CCM19 nutzen. Die verfügbaren Einstellungen werden im folgenden erläutert.
 
-&gt; Check your site after every activation or change if e.g. essential functions like shopping cart, payment functions and all other desired functions are still working**!!!!
+> **Prüfen Sie Ihre Seite nach jeder Aktivierung oder Änderung auf Herz und Nieren ob z.B. auch essentielle Funktionen wie Warenkorb, Bezahlfunktionen und alle anderen gewünschten weiter funktionieren**!!!
 
 
 
-## Please confirm first
+## Bitte zuerst bestätigen
 
-**CCM19 is working very hard to cover all possible and impossible pitfalls** - with the sheer number of possible overlaps with other scripts or problems we unfortunately cannot guarantee that everything will work 100% after activation. Alone the combination possibilities of the scripts known to us with the respective setting possibilities goes into the billions.
+**CCM19 arbeitet sehr hart daran alle möglichen und unmöglichen Fallstricke abzudecken** - bei der schieren Anzahl an möglichen Überschneidungen mit anderen Skripten oder Problemen können wir leider nicht garantieren dass nach Aktivierung alles 100%ig funktioniert. Alleine die Kombinationsmöglichkeiten der uns bekannten Skripte mit den jeweiligen Einstellmöglichkeiten geht in die Milliarden.
 
-By checking this box you confirm that you have taken note of this and that the responsibility for the functioning lies solely with you or the operator of the respective site.
+Mit dem Betätigen dieses Hakens bestätigen Sie, dass Sie dies zur Kenntnis genommen haben und dass die Verantwortung für das Funktionieren alleine bei Ihnen oder dem Betreiber der jeweiligen Seite liegt.
 
 
 
@@ -18,29 +18,29 @@ By checking this box you confirm that you have taken note of this and that the r
 
 
 
-After activation, the screen will look like this and you can now make all the settings.
+Nach der Aktivierung sieht die Maske folgendermaßen aus und Sie können nun alle Einstellungen treffen.
 
 ![screenshot-1641905721923](../assets/screenshot-1641905721923.jpg)
 
 
 
-## Activate widget
+## Widget aktivieren
 
-If this item is **disabled**, the CCM19 module will **not** be displayed in the frontend and the corresponding stored scripts will **not** be executed. Data about unknown cookies and scripts will continue to be collected even if the widget is disabled 
+Ist dieser Punkt **deaktiviert**, wird das CCM19 Modul im Frontend **nicht** angezeigt und die entsprechend hinterlegten Scripte werden **nicht** ausgeführt. Daten zu unbekannten Cookies und Scripten werden auch bei deaktiviertem Widget weitergesammelt. 
 
-This function can be used to install CCM19 on the website, then test everything and only when you have entered all cookies and scripts correctly to activate CCM19.
-
-
-
-## Activate Widget Cache
-
-The widget cache is enabled by default and always runs for 24h. The cache contributes significantly to the performance, without cache the widget takes much longer to build. Depending on the server and load, this can be a significant difference.
-
-Disable the hook only when you want to test something and do not forget to enable it again!
+Diese Funktion kann man nutzen um CCM19 auf der Webseite zu installieren, dann alles testen und erst wenn man alle Cookies und Skripte korrekt eingetragen hat CCM19 zu aktivieren.
 
 
 
-## Minify Javascript and CSS
+## Widget Cache aktivieren
 
-Minify Javascript and CSS code from CCM19 to speed up the page load of your websites. Disable this feature only to simplify troubleshooting in case of problems.
+Der Widget Cache ist standardmäßig aktiviert und läuft immer 24h. Der Cache trägt wesentlich zur Perfomance bei, ohne Cache dauert der Aufbau des Widgets deutlich länger. Je nach Server und Auslastung können das erhebliche Unterschiede sein.
+
+Deaktivieren Sie den Haken nur dann wenn Sie etwas testen wollen und vergessen Sie nicht ihn wieder zu aktivieren!
+
+
+
+## Javascript und CSS minifizieren
+
+Javascript- und CSS-Code von CCM19 minifizieren um den Seitenaufbau Ihrer Websiten zu beschleunigen. Deaktivieren Sie diese Funktion nur, um die Fehlersuche bei Problemen zu vereinfachen.
 

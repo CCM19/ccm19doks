@@ -1,36 +1,36 @@
-# Imprint
+# Impressum
 
-According to the GDPR, the imprint of a page - as well as the privacy policy - must be readable by the user before a consent. The visitor may not be forced to make a consent before he has seen this data.
+Laut DSGVO muss das Impressum einer Seite - ebenso wie die Datenschutzbestimmungen - noch vor einem Consent vom Benutzer lesbar sein. Der Besucher darf nicht gezwungen werden einen Consent zu machen bevor er diese Daten nicht gesehen hat.
 
-## Imprint as link
+## Impressum als Link
 
-You have the possibility to set the link to the imprint directly, for this you have to set the setting in the following mask as follows: "Link imprint".
+Sie haben die Möglichkeit den Link zum Impressum direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Impressum verlinken".
 
 ![screenshot-1641905169722](../assets/screenshot-1641905169722.jpg)
 
-Then you can enter the link to the imprint directly and it will be used like this in the frontend.
+Dann können Sie den Link zum Impressum direkt eingeben und er wird auch so im Frontend genutzt.
 
-### Show the widget on the page below
+### Zeige das Widget auf der unten angegebenen Seite an
 
-If you check this box, the widget will also be displayed on the imprint page. However, this does not make sense in most cases, because according to DSGVO, access to the imprint page must also be possible without a banner.
+Wenn Sie dieses Häkchen setzen wird das Widget auch auf der Impressumsseite angezeigt. Dies ist allerdings in den meisten Fällen nicht sinnvoll, da laut DSGVO der Zugang zu der Seite Impressum auch ohne Banner möglich sein muss.
 
-Therefore, the hook is not set by default **and** you should think carefully whether this should really be used if you want to activate the hook.
+Daher ist der Haken standardmäßig nicht gesezt **und** Sie sollten gut überlegen ob das auch wirklich so genutzt werden soll falls Sie den Haken aktivieren wollen.
 
-### Open in a new tab
+### In einem neuen Tab öffnen
 
-If the check mark is set, the links will open in a new window with target="_blank"
+Ist der Haken gesetzt öffnen sich die Links in einem neuen Fenster mit target="_blank"
 
-## Edit imprint
+## Impressum bearbeiten
 
-You can create and edit the imprint directly in the administration, on the following screenshot you can see the edit mask.
+Das Impressum können Sie in der Administration direkt erstellen und bearbeiten, auf dem folgenden Screenshot sehen Sie die Bearbeitungsmaske.
 
 ![screenshot-2020.09.30-12_55_46-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-12_55_46-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
 
 
-## Imprint in frontend
+## Impressum im Frontend
 
-To comply with the DSGVO CCM19 includes the possibility to make the imprint either directly accessible in the widget, as shown in the screenshot or to link it.
+Um der DSGVO genüge zu tun bindet CCM19 die Möglichkeit ein das Impressum entweder direkt im Widget erreichbar zu machen, wie auf dem Screenshot zu sehen oder zu verlinken.
 
 
 
@@ -38,11 +38,11 @@ To comply with the DSGVO CCM19 includes the possibility to make the imprint eith
 
 
 
-The link then opens a mask where the imprint of the page is output - as can be seen here.
+Der Link öffnet dann eine Maske wo das Impressum der Seite ausgeben wird - wie hier zu sehen ist.
 
-## Direct display of the imprint
+## Direkte Anzeige des Impressums
 
-![screenshot-2020.09.30-12_51_32-BGH conform Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-12_51_32-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
 
 
 

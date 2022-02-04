@@ -1,50 +1,50 @@
-# Frontend widgets
+# Frontend Widgets
 
-The frontend of CCM19 consists of the widgets you can see and operate and the functions in the source code that the script implements to realize the necessary functions. Below we will go through all the items and show all the windows that CCM19 creates.
-
-
-
-## Performance of the widgets
-
-The widget and all other data are minified, compressed and chached on the server side to achieve the best possible performance 
-
-Average loading time of our script is between 0.03 and 0.2 seconds per call.
-
-&gt; If you use a download version, the load time is determined by your server. In general, however, almost all servers ensure that a fast call is possible.
+Das Frontend von CCM19 besteht aus den Widgets die Sie sehen und bedienen können und den Funktionen im Quellcode die das Skript umsetzt, um die notwendigen Funktionen zu realisieren. Im Folgenden werden wir alle Punkte durchgehen und alle Fenster zeigen die das CCM19 erstellt.
 
 
 
-## Primary widget
+## Performance der Widgets
 
-This is the first widget your website visitors will see. Therefore, it is important that you adapt it to the look and feel of your website. How to do that you can read here: [Themes](../functions/themes.md) - basically all widgets can be completely customized and positioned:
+Das Widget und alle anderen Daten werden minifiziert, komprimiert und serverseitig gechached um einen bestmögliche Performance zu erreichen. 
 
-* Center
+Durchschnittliche Ladezeiten unseres Skriptes betragen zwischen 0,03 und 0,2 Sekunden pro Aufruf.
 
-* Left
+> Wenn Sie eine Download Version verwenden wird die Aufrufzeit durch Ihren Server wesentlich mitbestimmt. In der Regel ist aber auch bei fast allen Server gewährleistet dass ein schneller Aufruf möglich ist.
 
-* Right
 
-* Top
 
-* Bottom
+## Primäres Widget
+
+Dies ist das erste Widget was die Besucher Ihrer Webseite zu sehen bekommen. Daher ist es wichtig dass Sie es optimal an das Look & Feel Ihrer Webseite anpassen. Wie Sie das machen lesen Sie hier: [Themes](../funktionen/themes.md) - grundsätzlich lassen sich alle Widgets komplett individualisieren und positionieren:
+
+* Mittig
+
+* Links
+
+* Rechts
+
+* Oben
+
+* Unten
 
   
 
 ![screenshot-1641918855521](../assets/screenshot-1641918855521.jpg)
 
-Clicking "Accept" accepts all set scripts and cookies and closes the window immediately. The Consent is stored in the visitor's browser. Clicking on "Close" corresponds to a refusal and via information one gets to the further data in another widget.
+Der Klick auf "Akzeptieren" akzeptiert alle eingestellten Skripte und Cookies und schließt das Fenster sofort. Der Consent wird dabei im Browser der Besucher gespeichert. Der Klick auf "Schließen" entspricht einer Ablehnung und über Informationen kommt man zu den weiteren Daten in einem weiteren Widget.
 
-### Consent remains
+### Consent bleibt erhalten
 
-Consent is retained as long as the visitor does not delete the cookie or local storage data in his browser. The maximum duration is set here [Consent storage](../system-and-co/consent-storage.md).  If the page is called again, the mask will **not** be shown 
+Der Consent bleibt solange erhalten wie der Besucher die Cookie oder Local Storage Daten in seinem Browser nicht löscht. Die maximale Laufzeit stellen Sie hier [Consentspeicherung](../system-und-co/consent-speicherung.md) ein.  Bei einem weiteren Aufruf der Seite wird die Maske **nicht** mehr gezeigt. 
 
-You can also stop the runtime manually via the administration by lowering the cookie runtime or forcing a reset.
+Sie können die Laufzeit auch manuell beenden über die Administration indem Sie die Cookie Laufzeit absenken oder einen Reset erzwingen.
 
 
 
-## Settings / Information
+## Einstellungen / Informationen
 
-If the visitor clicks on the Settings button, he will reach the next screen where he can view, read and confirm the categories of bindings, scripts and cookies.
+Klickt der Besucher auf den Button Einstellungen erreicht er die nächste Maske wo er die Kategorien der Einbindungen, Skripte und Cookies anschauen, durchlesen und bestätigen kann.
 
 ![screenshot-1641919201131](../assets/screenshot-1641919201131.jpg)
 
@@ -52,41 +52,41 @@ If the visitor clicks on the Settings button, he will reach the next screen wher
 
 
 
-The category "Technically necessary" or "Technically necessary / Essential" is always checked and cannot be unchecked 
+Die Kategorie "Technisch notwendig" oder auch "Technisch notwendig / Essentiell" ist immer angehakt und kann nicht abgehakt werden. 
 
-Here are only described the integration and cookies that are indispensable for the functioning of the website. Since the new TTDSG applies, cookies or scripts can no longer be entered here according to §6 DSGVO - justified interest of the operator 
+Hier werden nur die Einbindungen und Cookies beschrieben die für das Funktionieren der Webseite unabdingbar sind. Seit dem das neue TTDSG gilt können Cookies oder Skripte hier nicht mehr nach §6 DSGVO - begründetes Interesse des Betreibers - eingetragen werden. 
 
-We would rather **not** go into the legal implications at this point. Here you can best ask the lawyer of your confidence.
+Auf die rechtlichen Implikationen wollen wir an dieser Stelle lieber **nicht** eingehen. Hier fragen Sie den am besten den Anwalt Ihres Vertrauens.
 
-The visitors can only set these hooks or not. If the visitors click on Save the state as it is displayed will be saved. If one clicks here on "Accept all" all categories with all embeddings in it are accepted.
+Die Besucher können nur diese Haken setzen oder nicht. Klicken die Besucher auf Speichern wird der Zustand wie er angezeigt wird, gespeichert. Klickt man hier auf "Alle Akzeptieren" werden alle Kategorien mit allen sich darin befindenden Einbindungen akzeptiert.
 
-Cancel takes you back to the previous screen.
+Abbrechen bringt einen zurück zur vorherigen Maske.
 
-### Information about the categories
+### Informationen zu den Kategorien
 
-The individual categories can also get additional texts, you can maintain these in the administration, example see in the following screenshot.
+Die einzelnen Kategorien können auch Zusatztexte bekommen, diese können Sie in der Administration pflegen, Beispiel siehe im folgenden Screenshot.
 
-![screenshot-2020.09.30-20_21_46-BGH compliant Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - multidomain capable](../assets/screenshot-2020.09.30-20_21_46-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-20_21_46-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-20_21_46-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
 
 
 
-## More information
+## Mehr Informationen
 
-If visitors want to read more information about each embedding they can click on the question mark and they will be taken to the following screen.
+Wenn Besucher mehr Informationen über die einzelnen Einbindungen lesen möchte dann können sie auf das Fragezeichen klicken und kommen dann in die folgende Maske.
 
 ![screenshot-1641919400638](../assets/screenshot-1641919400638.jpg)
 
 
 
-Here the visitors can now read all the elements used on the website in detail, what do the scripts do, what is stored where, who has access to it, etc. You can adjust these settings here:  [Embeddings &amp; Cookies](../functions/cookies-and-others.md) .#
+Hier können die Besucher nun alle Elemente die auf der Webseite verwendet im Detail nachlesen, was machen die Skripte, was wird wohin gespeichert, wer hat Zugriff darauf usw. Diese Einstellungen können Sie hier anpassen:  [Embeddings & Cookies](../funktionen/cookies-und-andere.md) .#
 
-In the left column you can see the embeddings sorted by categories, each entry can be clicked and the visitors will jump directly to the matching entry to get more information. The visitors can agree to each individual embedding or category by category.
+In der linken Spalte sehen Sie die Einbindungen sortiert nach Kategorien, jeder Eintrag kann angeklickt werden und die Besucher springen dann direkt zu dem passenden Eintrag um weitere Informationen zu bekommen. Die Besucher können jeder einzelnen Einbindung oder auch kategorieweise der Nutzung zustimmen.
 
 
 
-## Easy revocation or change - open configuration box
+## Einfacher Widerruf oder Änderung - Konfigurationsbox öffnen
 
-CCM19 offers the visitors an easy way to revoke or change the Consent at any time. As an operator you can simply show the icon below, a click on this icon opens the Consent mask again - so that your visitors can adjust their settings there again.
+CCM19 bietet den Besuchern eine einfache Möglichkeit den Consent jederzeit zu widerrufen oder anzupassen. Als Betreiben können Sie das unten stehende Icon einfach einblenden lassen, ein Klick auf dieses Icon öffnet wieder die Consent Maske - so dass Ihre Besucher dort wieder Ihre Einstellungen anpassen können.
 
 
 
@@ -94,42 +94,42 @@ CCM19 offers the visitors an easy way to revoke or change the Consent at any tim
 
 
 
-## Open configuration box again via link
+## Konfigurationsbox erneut öffnen per Link
 
-You would like to give your visitors the possibility to change their mind later on and, for example, not allow analytics cookies after all? Simply insert the following HTML snippet:
+Sie möchten Ihren Besuchern die Möglichkeit geben, sich nachträglich noch umzuentscheiden und z.B. doch keine Analyse-Cookies zuzulassen? Fügen Sie einfach folgendes HTML Snippet ein:
 
 ``` html
-<a href="#" onclick="CCM.openWidget();return false;">Open configuration box
-</a>```
+<a href="#" onclick="CCM.openWidget();return false;">Konfigurationsbox öffnen</a>
+```
 
-Thus, when clicking on this link, the configuration pop-up is opened again for the visitor.
+Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den Besucher geöffnet.
 
-Alternatively, if you cannot insert Javascript links, you can use the following target in a link: **#CCM.openWidget**.
+Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: **#CCM.openWidget**.
 
-``html
-<a href="#CCM.openWidget">Open configuration box
-</a>```
-
-
-
-## Further possibilities of control in the frontend
-
-More possibilities you can find here - [Javascript / programmatic control](../api/javascript-apis.md) 
+```html
+<a href="#CCM.openWidget">Konfigurationsbox öffnen</a>
+```
 
 
 
-## Imprint in frontend
+## Weitere Möglichkeiten der Steuerung im Frontend
 
-You can embed the imprint either by link or directly - how this works you can read here:  [edit imprint](../functions/imprint.md) . The mask in the frontend looks like this:
-
-![screenshot-2020.09.30-12_51_32-BGH conform Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+Weitere Möglichkeiten finden Sie hier -  [Javascript / programmatische Steuerung](../api/javascript-apis.md) 
 
 
 
-## Privacy in the frontend
+## Impressum im Frontend
 
-You can reach the privacy policy if you click on the link "Datenschutzerkläriung", you can edit the data here:  [edit privacy](../functions/privacy.md) 
+Das Impressum können Sie entweder per Link oder direkt einbinden - wie das funktioniert lesen Sie hier nach:  [Impressum bearbeiten](../funktionen/impressum.md) . Die Maske im Frontend sieht dann so aus:
+
+![screenshot-2020.09.30-12_51_32-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
 
 
 
-![screenshot-2020.09.30-13_03_09-BGH compliant cookie banner - Cookie Consent Manager - Cookie Consent Management Software - multi-tenant, multi-domain](../assets/screenshot-2020.09.30-13_03_09-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+## Datenschutz im Frontend
+
+Die Datenschutzerklärung erreichen Sie wenn Sie auf den Link "Datenschutzerkläriung" klicken, bearbeiten können Sie die Daten hier:  [Datenschutz bearbeiten](../funktionen/datenschutz.md) 
+
+
+
+![screenshot-2020.09.30-13_03_09-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-13_03_09-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)

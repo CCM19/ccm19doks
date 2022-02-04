@@ -1,14 +1,14 @@
-# Technique used
+# Verwendete Technik
 
-We rely on standards proven millions of times worldwide to implement CCM19. The foundation of the software is the PHP framework [Symfony©](https://symfony.com/), one of the most proven and secure frameworks available with over 600,000 developers worldwide.
+Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von CCM19. Die Grundlage der Software ist das PHP-Framework [Symfony©](https://symfony.com/), mit über 600.000 Entwicklern weltweit eines der bewährtesten und sichersten Frameworks, die zur Verfügung stehen.
 
-## Frontend widgets
+## Frontend-Widgets
 
-The frontend widgets are realized by pure javascript, without recourse to frameworks like jquery, vue, react or others to avoid possible incompatibilities as far as possible.
+Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks wie z.B. jquery, vue, react oder sonstige um mögliche Inkompatibilitäten so weit es möglich ist zu vermeiden.
 
-## Security
+## Sicherheit
 
-CCM19 makes intensive use of [Content Security Policy (CSP)](https://content-security-policy.com/) with regular following restrictions:
+CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-policy.com/) mit regulär folgenden Einschränkungen:
 
 ```
 Content-Security-Policy:
@@ -21,64 +21,64 @@ Content-Security-Policy:
 	form-action 'self'
 ```
 
-## storage without database
+## Speicherung ohne Datenbank
 
-All data is stored in JSON format locally in the secured area of CCM19. If you use the download variant you will find the data in the */var* directory of your installation.
+Alle Daten werden im JSON-Format lokal im gesicherten Bereich von CCM19 gespeichert. Wenn Sie die Downloadvariante nutzen finden Sie die Daten im Verzeichnis */var* Ihrer Installation.
 
-The storage and processing is so efficient that even several million calls per day can be handled without problems.
+Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen Aufrufe pro Tag problemlos gehändelt werden können.
 
-## Storage with database
+## Speicherung mit Datenbank
 
-CCM19 uses alternatively MongoDB from version 4, in this vairante all data is stored in the database.
+CCM19 nutzt alternativ MongoDB ab Version 4, in dieser Vairante werden alle Daten in der Datenbank gespeichert.
 
-## Beta phase
+## Beta-Phase
 
-Before the release we do several tests to find and correct typical bugs. Furthermore there is an extended beta phase where many customers participate and give us feedback before the final release.
+Vor der Veröffentlichung führen wir diverse Tests durch um typische Fehler zu finden und zu korrigieren. Weiterhin gibt es eine ausgedehnte Beta Phase an der viele Kunden teilnehmen und uns Feedback vor der endgültigen Veröffentlichung geben.
 
-## System requirements for download version
+## Systemvoraussetzungen für Download-Variante
 
-The self-service / download version of CCM19 only requires
+Die Self-Service / Download Version von CCM19 benötigt lediglich
 
-- Linux or another POSIX compatible operating system
-- PHP version 7.2 or higher
-- Apache httpd 2.2+ or nginx
-- And in case of using the database MongoDB version 4 or higher
+- Linux oder ein anderes POSIX-kompatibles Betriebssystem
+- PHP ab Version 7.2
+- Apache httpd 2.2+ oder nginx
+- Und im Falle der Nutzung der Datenbank MongoDB ab Version 4
 
 ### Apache httpd
 
-As a server we recommend a LAMP server - where the M for MySQL is not necessary, and is alternatively replaced by MongoDB.
+Als Server empfehlen wir einen LAMP-Server – wobei das M für MySQL nicht notwendig ist, und alternativ durch MongoDB ersetzt wird.
 
-When running with Apache httpd, the following modules are required:
+Beim Betrieb mit Apache httpd werden folgende Module benötigt:
 
 - mod_rewrite
 - mod_headers (optional)
 - mod_expires (optional)
 
-CCM19 is fully compatible with the caching module mod_cache. Additionally it is recommended to use performance optimization. How to do this, we refer to the countless tutorials that are available on other sites.
+CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel. Zusätzlich empfiehlt es sich auf Performance Optimierung zu setzen. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
 
 ### nginx
 
-If your web server uses **nginx**, you may need to make some adjustments to your server configuration to make CCM19 run satisfactorily after you have completed the first step of the installation.
+Sollte ihr Webserver **nginx** verwenden, sind unter Umständen Anpassungen an der Serverkonfiguration nötig, damit CCM19 zufriedenstellend läuft, nachdem Sie den ersten Schritt der Installation durchgeführt haben.
 
-First find out the path to the configuration file of the nginx server for your (sub)domain (usually /etc/nginx/nginx.conf or /etc/nginx/conf.d/*domainname*.conf) and the socket path for the installed PHP FPM module (often unix:/run/php/php7.2-fpm.sock or similar) from your provider or server administrator.
+Bringen Sie zunächst den Pfad zur Konfigurationsdatei des nginx-Servers für Ihre (Sub-)Domain (üblicherweise /etc/nginx/nginx.conf oder /etc/nginx/conf.d/*domainname*.conf) und den Socket-Pfad für das installierte PHP-FPM-Modul (häufig unix:/run/php/php7.2-fpm.sock o.ä.) bei Ihrem Provider oder Server-Administrator in Erfahrung.
 
-Furthermore, please note the absolute path to the public directory of the CCM19 installation and the desired URL path to ccm19 (e.g. /ccm19).
+Notieren Sie bitte weiterhin den absoluten Pfad zum public-Verzeichnis der CCM19-Installation und den gewünschten URL-Pfad zu ccm19 (z.B. /ccm19).
 
-The sample configuration file listed here can be found in the download package in the directory *www/examples/* - here ccm19 is installed in a subdirectory.
+Die hier aufgeführte Beispiel-Konfigurationsdatei finden Sie im Downloadpaket im Verzeichnis *www/examples/* - hier wird ccm19 in einem Unterverzeichnis installiert.
 
-Example:
+Beispiel:
 
 ```
-# Add the contents of this file to your nginx configuration inside a
-# server block if you want to run CCM19 in a subdirectory.
-# This requires the PHP FPM module with at least PHP 7.2.
+# Fügen Sie den Inhalt dieser Datei Ihrer nginx-Konfiguration innerhalb eines
+# server-Blocks hinzu, wenn Sie CCM19 in einem Unterverzeichnis betreiben wollen.
+# Dazu wird das PHP-FPM-Modul mit mindestens PHP 7.2 benötigt.
 #
-# You will need to make the following adjustments:
-# - replace "/ccm19" with the URL path where CCM19 should be accessible,
-# - replace "/path/to/ccm/public" with the path to the public directory in your
-# CCM19 installation (without / at the end!),
-# - replace "unix:/run/php/php7.2-fpm.sock" depending on your server # configuration with the socket path to your PHP
-# socket path to your PHP FPM module.
+# Sie müssen folgende Anpassungen vornehmen:
+# - "/ccm19" durch den URL-Pfad ersetzen unter dem CCM19 erreichbar sein soll,
+# - "/path/to/ccm/public" durch den Pfad zum public-Verzeichnis in Ihrer
+#   CCM19-Installation (ohne / am Ende!) ersetzen,
+# - "unix:/run/php/php7.2-fpm.sock" je nach Serverkonfiguration durch den
+#   Socket-Pfad zu Ihrem PHP-FPM-Modul ersetzen.
 
 	set $ccm19_urlpath /ccm19;
 	set $ccm19_realpath /path/to/ccm/public;
@@ -103,24 +103,24 @@ Example:
 		fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
 		fastcgi_param PATH_INFO $path_info;
 
-		fastcgi_param HTTP_PROXY "";
-		fastcgi_param QUERY_STRING $query_string;
-		fastcgi_param REQUEST_METHOD $request_method;
-		fastcgi_param CONTENT_TYPE $content_type;
-		fastcgi_param CONTENT_LENGTH $content_length;
-		fastcgi_param REQUEST_URI $request_uri;
-		fastcgi_param DOCUMENT_URI $document_uri;
-		fastcgi_param DOCUMENT_ROOT $document_root;
-		fastcgi_param SERVER_PROTOCOL $server_protocol;
-		fastcgi_param REQUEST_SCHEME $scheme;
-		fastcgi_param HTTPS $https if_not_empty;
-		fastcgi_param GATEWAY_INTERFACE CGI/1.1;
-		fastcgi_param SERVER_SOFTWARE nginx/$nginx_version;
-		fastcgi_param REMOTE_ADDR $remote_addr;
-		fastcgi_param REMOTE_PORT $remote_port;
-		fastcgi_param SERVER_ADDR $server_addr;
-		fastcgi_param SERVER_PORT $server_port;
-		fastcgi_param SERVER_NAME $server_name;
+		fastcgi_param HTTP_PROXY	"";
+		fastcgi_param QUERY_STRING	$query_string;
+		fastcgi_param REQUEST_METHOD	$request_method;
+		fastcgi_param CONTENT_TYPE	$content_type;
+		fastcgi_param CONTENT_LENGTH	$content_length;
+		fastcgi_param REQUEST_URI	$request_uri;
+		fastcgi_param DOCUMENT_URI	$document_uri;
+		fastcgi_param DOCUMENT_ROOT	$document_root;
+		fastcgi_param SERVER_PROTOCOL	$server_protocol;
+		fastcgi_param REQUEST_SCHEME	$scheme;
+		fastcgi_param HTTPS		$https if_not_empty;
+		fastcgi_param GATEWAY_INTERFACE	CGI/1.1;
+		fastcgi_param SERVER_SOFTWARE	nginx/$nginx_version;
+		fastcgi_param REMOTE_ADDR	$remote_addr;
+		fastcgi_param REMOTE_PORT	$remote_port;
+		fastcgi_param SERVER_ADDR	$server_addr;
+		fastcgi_param SERVER_PORT	$server_port;
+		fastcgi_param SERVER_NAME	$server_name;
 
 		fastcgi_pass unix:/run/php/php7.2-fpm.sock;
 	}

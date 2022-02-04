@@ -1,20 +1,20 @@
-# Placeholder
+# Platzhalter
 
-You can use the placeholders to automatically insert recurring texts. For example, it is worthwhile to create the company name or your own data protection page here, so that you can easily insert these into the individual cookies and change them if necessary when the URL changes.
+Über die Platzhalter können Sie immer wiederkehrende Texte automatisch einfügen lassen. Zum Beispiel lohnt es sich hier den Firmen-Namen oder die eigene Datenschutz-Seite anzulegen, um diese einfach in die einzelnen Cookies einzufügen und ggf. ändern zu können, wenn die URL sich ändert.
 
 ![screenshot-1641905533609](../assets/screenshot-1641905533609.jpg)
 
 
 
-To do this, write the phrase that is to be replaced in the **Placeholder** column. The placeholders must be enclosed in curly brackets {}.
+Schreiben Sie dazu in die Spalte **Platzhalter** die Phrase, die ersetzt werden soll. Die Platzhalter müssen hier zwingend in geschweifte Klammern gesetzt werden {}.
 
-In the **Replacement text** column, enter the corresponding value with which the placeholder is to be replaced.
+In der Spalte **Ersetzungstext** tragen Sie den entsprechenden Wert ein, durch den der Platzhalter ersetzt werden soll.
 
-### Example
+###  Beispiel
 
-| Placeholder | Replacement text examples |
+| Platzhalter         | Ersetzungstexts Beispiele                       |
 | :------------------ | :---------------------------------------------- |
-| {company_data_protection} | https://www.ccm19.de/datenschutzerklaerung.html |
-| {COMPANY}             | CCM19 |
-| {Company_Imprint} | https://www.ccm19.de/impressum.html |
-| {Company_Location} | Bonn |
+| {Firma_Datenschutz} | https://www.ccm19.de/datenschutzerklaerung.html |
+| {FIRMA}             | CCM19                                           |
+| {Firma_Impressum}   | https://www.ccm19.de/impressum.html             |
+| {Firma_Ort}         | Bonn                                            |

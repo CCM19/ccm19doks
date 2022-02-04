@@ -2,33 +2,33 @@
 title: Login
 ---
 
-# CCM19 Login &amp; Passwords
+# CCM19 Login & Passwörter
 
-When you start CCM19 - no matter with which version - you will see the login window first. Log in there with your account data. If you forgot your password, you can use the "forgot password" option 
+Wenn Sie CCM19 aufrufen - egal mit welcher Version - sehen Sie als erstes das Loginfenster. Loggen Sie sich dort mit ihren Accountdaten ein. Falls Sie Ihr Passwort vergessen haben, können Sie die “Passwort vergessen” Option nutzen. 
 
 ![screenshot-16_12_17](../assets/screenshot-16_12_17.png)
 
-In this window you will also get error messages in case something is wrong with the login, the license has expired or other problems.
+In diesem Fenster bekommen Sie auch Fehlermeldungen angezeigt falls etwas beim Login nicht mehr korrekt ist, die Lizenz abgelaufen ist oder andere Probleme bestehen.
 
-## Wallpaper
+## Hintergrundbild
 
-The background image changes in irregular intervals.
+Das Hintergrundbild wechselt in unregelmäßigen Abständen.
 
-## Password forgotten function with the download version
+## Passwort vergessen Funktion bei der Downloadversion
 
-With the download version the sending of the data only works if you have entered a working email address in the administration of CCM19. If you are completely locked out and a reinstallation is not possible, please contact the [CCM19 Support](https://www.ccm19.de/supportanfrage/).  
+Bei der Downloadversion funktioniert das zusenden der Daten nur, wenn Sie eine funktionierende E-Mail Adresse  in der Administration von CCM19 eingetragen haben. Falls Sie sich komplett ausgesperrt haben und eine Neuinstallation nicht möglich ist, wenden Sie sich hier an den [CCM19 Support](https://www.ccm19.de/supportanfrage/).  
 
-## License no longer valid
+## Lizenz nicht mehr gültig
 
-If you have deactivated your license or it is no longer valid for other reasons, you will get a notice when you log in. You can reactivate or extend the license at any time. Normally the access will be extended automatically for the booked period, you don't have to do anything then. If it does not work at all, please contact our support.
+Falls Sie Ihre Lizenz deaktiviert haben oder sie aus anderen Gründen nicht mehr gültig ist, bekommen Sie beim Login einen Hinweis angezeigt. Sie können die Lizenz jederzeit wieder aktivieren oder verlängern. Normalerweise verlängert sich der Zugang automatisch um die gebuchte Laufzeit, Sie müssen dann nichts machen. Falls es gar nicht klappt, wenden Sie sich bitte an unseren Support.
 
 
 
-## Successful login -&gt; Dashboard
+## Erfolgreicher Login -> Dashboard
 
-After successful login you will land in the dashboard of CCM19 - here you have the overview of all relevant functions. On the left side you will find all menu items with all areas that are available to you.
+Nach erfolgreichem Login landen Sie im Dashboard von CCM19 - hier haben Sie die Übersicht über alle relevanten Funktionen. Auf der linken Seite finden Sie alle Menüpunkte mit allen Bereichen die Ihnen zur Verfügung stehen.
 
 ![screenshot-1641828179204](../assets/screenshot-1641828179204.jpg)
 
-In the next step you should start with the [onboarding](onboarding-step-1.md).
+Im nächsten Schritt sollten Sie mit dem [Onboarding](onboarding-schritt-1.md) starten.
 

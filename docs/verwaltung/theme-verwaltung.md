@@ -1,27 +1,27 @@
-# Theme management
+# Themeverwaltung
 
-The account theme management provides you with a cross-domain possibility to prepare themes for all domains as templates or to change them for all of them at the same time.
+Die Account Theme Verwaltung stellt Ihnen eine domainübergreifende Möglichkeit zur Verfügung um Themes für alle Domains als Templates vorzubereiten oder auch für alle gleichzeitig zu ändern.
 
-However, it only makes sense to use it if you want to create and manage your own themes. Per domain in all accounts a number of contemporary templates are available that you can customize at any time.
+Allerdings ist auch nur dann die Nutzung sinnvoll wenn Sie vollständig eigene Themes erstellen und verwalten wollen. Pro Domain sind in allen Accounts eine Reihe von zeitgemäßen Vorlagen vorhanden die Sie jederzeit anpassen können.
 
 
 
-## Theme management
+## Theme Verwaltung
 
-Here you see the mask for the administration of the themes. By default there are none predefined because there are already plenty of templates for each domain.
+Hier sehen Sie die Maske für die Verwaltung der Themes. Es werden standardmäßig keine vorbelegt da für jede Domain schon reichlich Vorlagen vorhanden sind.
 
 ![screenshot-1641832792629](../assets/screenshot-1641832792629.jpg)
 
-### Create theme
+### Theme erstellen
 
-Clicking the button leads to the following mask.
+Der Klick auf den Button führt zur folgenden Maske.
 
 ![screenshot-1641834371507 (1)](../assets/screenshot-1641834371507%20(1).jpg)
 
-Here you can set all relevant settings regarding the themes. The details of the individual areas are explained in the Theme section in the Cookie &amp; Co, Administration.
+HIer können Sie alle relevanten Einstellungen bezgl. der Themes einstellen. Die Details zu den einzelnen Bereichen werden im Bereich Theme in der Cookie & Co, Verwaltung erklärt.
 
-### Distribute themes
+### Themes verteilen
 
-Clicking this button will distribute the theme or changes in existing themes to all domains 
+Der Klick auf diesen Button verteilt das Theme oder Änderungen in vorhanden Themes dann auf alle Domains. 
 
-**Please note that these changes will be live immediately
+**Bitte beachtenSie dass diese Änderungen dann sofort live sind.**

@@ -1,29 +1,29 @@
-# Accessibility
+# Barrierefreiheit
 
-Under the item accessibility you can optionally include a link to the topic accessibility which opens a separate window again.
+Unter dem Punkt Barrierefreiheit können Sie optional auch einen Link zum Thema Barrierefreiheit einbinden der wieder ein eigenes Fenster öffnet.
 
-## Edit accessibility
+## Barrierefreiheit bearbeiten
 
-You can enter and edit the accessibility data directly in the administration, on the following screenshot you can see the editing mask. In addition to the options in the imprint and privacy policy, you can optionally determine here whether the link should also appear in the mask. Please check the box **"Show in frontend widget "**
+Die Daten zur Barriefreiheie können Sie in der Administration direkt eintragen und bearbeiten, auf dem folgenden Screenshot sehen Sie die Bearbeitungsmaske. Zusätzlich zu den Optionen im Impressum und Datenschutzerklärung können Sie hier optional bestimmen ob der Link auch in der Maske erscheinen soll. Setzen Sie dafür bitte den Haken bei **"In Frontend-Widget anzeigen"**
 
 ![screenshot-2020.12.18-11_23_27-1608287007597](../assets/screenshot-2020.12.18-11_23_27-1608287007597.jpg)
 
 
 
-## Accessibility statement in the frontend
+## Barrierefreiheitserklärung im Frontend
 
-To meet your requirements CCM19 includes the possibility to make the accessibility statement either directly accessible in the widget, as shown in the screenshot, or to link it.
+Um Ihren Anforderungen genüge zu tun bindet CCM19 die Möglichkeit ein die Barrierefreiheiterklärung entweder direkt im Widget erreichbar zu machen, wie auf dem Screenshot zu sehen oder zu verlinken.
 
 ![screenshot-2020.12.18-11_29_55-1608287395009](../assets/screenshot-2020.12.18-11_29_55-1608287395009.jpg)
 
-The link will then open a screen where the accessibility statement of the page will be output.
+Der Link öffnet dann eine Maske wo die Barrierefreiheiterklärung der Seite ausgeben wird.
 
 
 
-## Accessibility declaration as link
+## Barrierefreiheitserklärung als Link
 
-You have the possibility to set the link to the accessibility declaration directly. To do so, you have to set the setting in the following mask as follows: "Accessibility declaration as link".
+Sie haben die Möglichkeit den Link zur Barrierefreiheitserklärung direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Barrierefreiheitserklärung als Link".
 
 ![screenshot-2020.12.18-11_32_06-1608287526025](../assets/screenshot-2020.12.18-11_32_06-1608287526025.jpg)
 
-Then you can enter the link to the accessibility statement directly and it will be used that way in the frontend.
+Dann können Sie den Link zum Barrierefreiheitserklärung direkt eingeben und er wird auch so im Frontend genutzt.

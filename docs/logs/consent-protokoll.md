@@ -1,27 +1,27 @@
-# Consent protocol
+# Consent Protokoll
 
-The consents of all visitors are clearly listed. By means of an ID, visitors can be clearly identified if they wish to receive information about their activated data **and** inform you of their own ID. Without this information, the data remains completely anonymous because the ID is a random number.
+Die Einwilligungen aller Besucher werden übersichtlich aufgelistet. Anhand einer ID sind Besucher eindeutig zu identifizieren, falls diese eine Auskunft über Ihre aktivierten Daten wünschen **und** Ihnen die eigene ID mitteilen. Ohne die Mitteilung bleiben diese Daten vollständig anonym da die ID eine Zufallszahl ist.
 
-The logging is mandatory according to DSGVO Art 7, para 1. Of course, these - as well as all other data - always remain under your control and are completely anonymized.
+Die Protokollierung ist laut DSGVO Art 7, Abs. 1 zwingend vorgegeben. Selbstverständlich bleiben diese - wie auch alle anderen Daten - immer unter Ihrer Kontrolle und sind vollständig anonymisiert.
 
 ![screenshot-2020.12.17-13_46_18-1608209178770](../assets/screenshot-2020.12.17-13_46_18-1608209178770-1608211161873.jpg)
 
-In the overview you can see how often the respective areas were checked. In the mask used in this example, only the two areas Essential and Analysis were offered - therefore, only there are ticks to be recorded.
+In der Übersicht sehen Sie wie oft die jeweiligen Bereiche angehakt wurden. In der in diesem Beispiel verwendeten Maske wurden nur die beiden Bereiche Essentiell und Analyse angeboten - daher sind auch nur dort Haken zu verzeichnen.
 
 ## Export
 
-With the Export button you can export the Consent data of the respective month by clicking on the button in .json format. An example entry looks like this - you can see here the ucid - with which your visitors can identify themselves.
+Mit dem Button Export können Sie die Consent Daten des jeweiligen Monats per Klick auf den Button im .json Format exportieren. Ein Beispiel Eintrag sieht so aus - sie erkennen hier die ucid - mit der sich Ihre Besucher identifizieren können.
 
-``json
+```json
 {
         "consent": true,
         "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
-        }, "timestamp": 1608208345,
+        "timestamp": 1608208345,
         "purposes": {
-            "41ba25c": "technically necessary"
+            "41ba25c": "Technisch notwendig"
         },
         "embeddings": {
-            "16bd7f0": "Papoo CMS Session Management"
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
         },
         "manipulationPrevention": true
     }
@@ -31,17 +31,17 @@ With the Export button you can export the Consent data of the respective month b
 
 ## Consent Details
 
-For each entry also Consent Details are stored. So whether in the individual categories also individual scripts / bindings were checked 
+Für jeden Eintrag werden auch Consent Details gespeichert. Also ob in den einzelnen Kategorien auch einzelne Skripte / Einbindungen angehakt wurden. 
 
 ![screenshot-2020.10.12-17_13_51-1602515631145](../assets/screenshot-2020.10.12-17_13_51-1602515631145.jpg)
 
 
 
-## Use Consent Protocol for requests
+## Consent Protokoll nutzen bei Anfragen
 
-If you receive a request regarding DSGVO whether you can prove the consent, the requester must tell you his ID. You can then search for this ID using the search mask.
+Wenn Sie eine Anfrage bekommen bzgl. DSGVO ob Sie den Consent nachweisen können muss der Anfrager Ihnen seine ID mitteilen. Nach dieser können Sie mit der Suchmaske dann suchen.
 
-He will find this ID in the Consent mask at the following position. To do this, he must open the Consent mask, click on Settings (if not already open), then on the question mark next to one of the categories.
+Diese ID findet er in der Consent Maske an der folgenden Stelle. Dazu muss er die Consent Maske öffnen, auf Einstellungen klicken (falls noch nicht offen), dort dann auf das Fragezeichen neben einer der Kategorien.
 
 
 
@@ -49,25 +49,25 @@ He will find this ID in the Consent mask at the following position. To do this, 
 
 
 
-## Alternative query of the ID
+## Alternative Abfrage der ID
 
-Alternatively, the ID can always be taken in the developer tools as shown in the screenshot. The data can be found in the Application tab - &gt; there left click on Local Storage and then select your own domain.
+Alternativ kann die ID auch immer in den Entwicklerwerkzeugen entnommen werden wie auf dem Screenshot zu sehen ist. Die Daten finden Sie im Reiter Application - > dort links auf Local Storage und dann die eigene Domain auswählen.
 
 ![screenshot-2020.09.29-17_10_36-nimbus-capture](../assets/screenshot-2020.09.29-17_10_36-nimbus-capture.jpg)
 
 
 
-# Storage duration Consent
+# Speicherdauer Consent
 
-Since the Consent is stored for 1 year, the data of the Consent is also stored for this time. After the expiration of this year plus 1 month grace period, the data is deleted. Thus, the DSGVO should also be satisfied at this point.
+Da der Consent für 1 Jahr gespeichert wird, werden die Daten des Consents auch für diese Zeit gespeichert. Nach dem Ablauf dieses Jahres plus 1 Monat Karrenzzeit werden die Daten gelöscht. Somit sollte auch an dieser Stelle der DSGVO genüge getan sein.
 
-## Archive log
+## Protokoll archivieren
 
-Here you can archive all previous log entries. Archived entries are no longer displayed in the Consent log, but are retained internally in compressed form. Archiving also occurs automatically as soon as the Consent log exceeds a certain size.
+Hier können Sie alle bisherigen Protokolleinträge archivieren. Archivierte Einträge werden im Consent-Protokoll nicht mehr angezeigt, werden aber intern in komprimierter Form erhalten. Eine Archivierung erfolgt auch automatisch, sobald das Consent-Protokoll eine gewisse Größe überschreitet.
 
 ![screenshot-2020.12.17-13_47_04-1608209224291](../assets/screenshot-2020.12.17-13_47_04-1608209224291.jpg)
 
-### Reset statistics
+### Statistiken zurücksetzen
 
-If selected, all statistics about insertions and accepted uses of this domain will also be reset once you archive the log. So the data will be archived from the listing here.
+Wenn ausgewählt, werden auch alle Statistiken über Einblendungen und akzeptierte Verwendungszwecke dieser Domain zurückgesetzt, sobald Sie das Protokoll archivieren. Die Daten werden also aus der Listung hier archiviert.
 

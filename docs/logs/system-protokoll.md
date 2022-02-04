@@ -1,30 +1,30 @@
-# System Log / Log
+# System Log / Protokoll
 
-In the system log errors, login attempts etc. are logged. So you can see what happened in your CCM19 system during your absence. If nothing special happens, so everything works normally, nothing is logged.
+Im Systemlog werden Fehler, Loginversuche uvm. mitgeloggt. So können Sie erkennen was in Ihrem CCM19 System während Ihrer Abwesenheit passiert ist. Wenn nichts besonderes passiert, also alles normal funktioniert, steht nichts dort drin.
 
-The log data can be evaluated per month by the month selection in the upper right corner. You can navigate through the single pages by using the pagination in the lower right corner.
+Die Logdaten können pro Monat ausgewertet werden durch die Monatsauswahl oben rechts. Durch die einzelnen Seiten können sie sich mit Hilfe der Paginierung unten rechts durchhangeln.
 
 
 
 ![screenshot-2020.09.30-14_09_28-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-14_09_28-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
 
-## What is logged?
+## Was wird geloggt?
 
-The following events are logged.
+Es werden folgende Ereignisse geloggt.
 
-### Info (blue button)
+### Infos (blauer Button)
 
-* Successful login of user X
-* A user theme was deployed
-* A user X has updated his user data
-* A user was created
-* A quota report was sent to User X
-* An update was performed
+* Erfolgreicher Login von User X
+* Ein Benutzer Theme wurde deployed
+* Ein User X hat seine Benutzerdaten aktualisiert
+* Ein Benutzer wurde angelegt
+* Ein Quota Report wurde an User X versendet
+* Ein Update wurde durchgeführt
 
 
 
-### Error messages (red button)
+### Fehlermeldungen (roter Button)
 
-* User could not log in
-* Mail could not be sent
-* Quto limit reached
+* User konnte sich nicht einloggen
+* Mail konnte nicht versendet werden
+* Quto Limit erreicht
