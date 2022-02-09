@@ -115,7 +115,7 @@ nav:
           - troubleshooting/einstellungsicon.md
           - troubleshooting/funktionsproblem.md
           - troubleshooting/iframes-blockieren.md
-          - troubleshooting/themesaenderungen.md
+          - troubleshooting/themeaenderungen.md
   - Plugins:
       - "Plugins":
         - plugins/plugins.md

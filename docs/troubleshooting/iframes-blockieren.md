@@ -1,6 +1,6 @@
-# **Youtube-Videos und andere Iframes werden auf meiner Seite nicht blockiert**
+# Youtube-Videos und andere Iframes werden auf meiner Seite nicht blockiert
 
-Youtube-Videos werden nicht automatisch blockiert, sondern erfordern den Einsatz unserer Iframe-Blockers. Dieser kann unter dem Menüpunkt „Iframes“ aktiviert werden.
+Youtube-Videos werden nicht automatisch blockiert, sondern erfordern den Einsatz unseres Iframe-Blockers. Dieser kann unter dem Menüpunkt „Iframes“ aktiviert werden.
 
 Sollten auch bei aktiviertem Iframe-Blocker Elemente nicht blockiert werden, hat dies vor allem zwei Ursachen:
 
