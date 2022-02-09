@@ -1,3 +1,5 @@
+# Eine Funktion auf meiner Webseite arbeitet nicht mehr korrekt, seit ich CCM19 einsetze
+
 Das Problem ist, dass CCM19 ein Skript blockiert, das nicht blockiert werden soll. Das kann mehrere Ursachen haben.
 
 1. Sie haben unter dem Menüpunkt „Developer-Einstellungen“ für die Blockierung von Skripten zu restriktive Einstellungen getroffen. Vor allem die Optionen, alle unbekannten Cookies zu löschen, neue Skripte oder Inline-Skripte zu blockieren, kann zu unerwünschtem Verhalten führen. Deaktivieren Sie die genannten Funktionen einmal und testen, ob der Fehler weiterhin auftritt.

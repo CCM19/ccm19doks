@@ -1,4 +1,4 @@
-**Meine Änderungen am Theme werden auf meiner Seite nicht angezeigt**
+# **Meine Änderungen am Theme werden auf meiner Seite nicht angezeigt**
 
 Sie haben Änderungen am Theme vorgenommen, die in der Vorschau, aber nicht auf Ihrer Webseite angezeigt werden? Das sind die häufigsten Gründe:
 

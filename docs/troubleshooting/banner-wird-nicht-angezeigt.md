@@ -1,4 +1,4 @@
-**Das Widget/Cookie-Banner wird auf meiner Seite nicht angezeigt**
+# **Das Widget/Cookie-Banner wird auf meiner Seite nicht angezeigt**
 
 Wenn das Banner trotz Einbindung des Codes in den <head>-Breich Ihrer Seite nicht angezeigt wird, kann das mehrere Gründe haben. In der Regel ist das Problem aber leicht zu beheben. Die häufigsten Ursachen sind die folgenden:
 
