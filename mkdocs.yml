@@ -109,7 +109,13 @@ nav:
           - api/google-tag-manager.md
           - api/general_api.md
       - "Technik & Server":
-          - api/technik.md
+          - api/technik.md-
+      - "Probleme & Lösungen":
+          - troubleshooting/banner-wird-nicht-angezeigt.md
+          - troubleshooting/einstellungsicon.md
+          - troubleshooting/funktionsproblem.md
+          - troubleshooting/iframes-blockieren.md
+          - troubleshooting/themesaenderungen.md
   - Plugins:
       - "Plugins":
         - plugins/plugins.md
