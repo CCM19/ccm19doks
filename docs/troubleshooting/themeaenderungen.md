@@ -6,4 +6,4 @@ Sie haben Änderungen am Theme vorgenommen, die in der Vorschau, aber nicht auf 
 
 2\. Sie haben ein accountweites Theme bearbeitet und möchten das Ergebnis auf einer Seite sehen, die auf dieses Theme zugreift. Damit Änderungen am Theme in allen zugeordneten Accounts zur Verfügung stehen, muss das Theme nach dem Speichern erst verteilt werden. Die Option finden Sie direkt über der Liste mit den accountweiten Themes:
 
-![accountweitethemesverteilen](../../assets/accountweitethemesverteilen.png)
+![accountweitethemesverteilen](../assets/accountweitethemesverteilen.png)
