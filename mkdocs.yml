@@ -110,12 +110,6 @@ nav:
           - api/general_api.md
       - "Technik & Server":
           - api/technik.md-
-      - "Probleme & Lösungen":
-          - troubleshooting/banner-wird-nicht-angezeigt.md
-          - troubleshooting/einstellungsicon.md
-          - troubleshooting/funktionsproblem.md
-          - troubleshooting/iframes-blockieren.md
-          - troubleshooting/themeaenderungen.md
   - Plugins:
       - "Plugins":
         - plugins/plugins.md
@@ -137,4 +131,9 @@ nav:
         - agency-version/einstellungen.md
         - agency-version/einstellungen_layout.md
         - agency-version/einstellungen_content.md
-
+  - "Probleme & Lösungen":
+      - troubleshooting/banner-wird-nicht-angezeigt.md
+      - troubleshooting/einstellungsicon.md
+      - troubleshooting/funktionsproblem.md
+      - troubleshooting/iframes-blockieren.md
+      - troubleshooting/themeaenderungen.md
