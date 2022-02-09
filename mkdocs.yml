@@ -132,8 +132,9 @@ nav:
         - agency-version/einstellungen_layout.md
         - agency-version/einstellungen_content.md
   - "Probleme & Lösungen":
-      - troubleshooting/banner-wird-nicht-angezeigt.md
-      - troubleshooting/einstellungsicon.md
-      - troubleshooting/funktionsproblem.md
-      - troubleshooting/iframes-blockieren.md
-      - troubleshooting/themeaenderungen.md
+      - "Probleme & Lösungen":
+        - troubleshooting/banner-wird-nicht-angezeigt.md
+        - troubleshooting/einstellungsicon.md
+        - troubleshooting/funktionsproblem.md
+        - troubleshooting/iframes-blockieren.md
+        - troubleshooting/themeaenderungen.md
