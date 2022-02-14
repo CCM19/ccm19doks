@@ -3,9 +3,7 @@
 Wenn Sie kein Entwickler sind, ändern Sie bitte nichts. Die besten Optionen sind so gewählt, dass sie sehr gut funktionieren. Dies sind sehr spezielle Einstellungen für Entwickler, ändern Sie nur, wenn Sie wirklich wissen, was UND warum Sie dies tun.
 **Einige dieser Einstellungen können Ihre Website unbenutzbar machen, testen Sie alles - immer.**
 
-![screenshot-1641908929026](../assets/screenshot-1641908929026.jpg)
-
-
+![screenshot-1644842063841](../assets/screenshot-1644842063841.jpg)
 
 ## Verwaltungsstruktur umstellen
 
@@ -26,6 +24,20 @@ Daher muss man diese Skripte oder iframes blocken bevor sie ausgeführt werden -
 **Denken Sie darüber nach, ob Sie jedes verwendete Cookie auf Ihrer Seite finden? Wenn Sie z.B. ein Shopping Card Cookie verwenden, das nicht in CCM19 gelistet ist, wird es blockiert -> KEINE VERKÄUFE!!!** 
 
 **Daher gilt hier TESTEN! TESTEN! TESTEN!**
+
+## Schaltfläche „Ablehnen“ bei „Alle akzeptieren“ erzwingen
+
+Die deutsche Datenschutzkonferenz sieht Cookie-Banner, die Ablehnen im Vergleich zum Akzeptieren erschweren als nicht-konform mit EU-Vorschriften an. Diese Einschätzung wird von vielen staatlichen Datenschutz Organisationen EU-weit geteilt. 
+
+Um Sie vor rechtlichen Folgen zu schützen, erzwingen wir die Schaltfläche „Ablehnen“ standardmäßig, sobald die Schaltfläche „Alle akzeptieren“ aktiv ist. Sie können diesen Schutz hier deaktivieren, falls Sie sich sicher sind, dass Sie alle relevanten Vorschriften auch ohne eine „Ablehnen“-Schaltfläche erfüllen.
+
+
+
+## Generelle Blocklist - immer blocken, ohne Ausnahme!
+
+Wenn Sie hier etwas eintragen werden alle Skripte die diesen String enthalten immer und überall geblockt, ohne dass die Benutzer der Seite die Möglichkeit haben das jeweilige Skipt zu entblocken.
+
+Schreiben Sie einen Ausdruck pro Zeile. Skripte, die eine dieser Zeichenketten enthalten, werden immer und ohne Ausnahme blockiert. Dies kann verwendet werden, um dynamische oder andere Skripte zu blockieren.
 
 
 
