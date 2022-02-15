@@ -109,7 +109,7 @@ nav:
           - api/google-tag-manager.md
           - api/general_api.md
       - "Technik & Server":
-          - api/technik.md-
+          - api/technik.md
   - Plugins:
       - "Plugins":
         - plugins/plugins.md
