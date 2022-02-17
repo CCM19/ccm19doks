@@ -39,6 +39,10 @@ Wenn Sie hier etwas eintragen werden alle Skripte die diesen String enthalten im
 
 Schreiben Sie einen Ausdruck pro Zeile. Skripte, die eine dieser Zeichenketten enthalten, werden immer und ohne Ausnahme blockiert. Dies kann verwendet werden, um dynamische oder andere Skripte zu blockieren.
 
+**Aber**
+
+Das betrifft natürlich nur Skripte die auf der Seite enhalten sind, Skripte die z.B. über Embeddings hinzugefügt werden, betrifft das natürlich nicht.
+
 
 
 ## Skripte blockieren
