@@ -5,7 +5,7 @@ Probleme & Lösungen
 
 Hier finden Sie eine Übersicht der häufigsten Probleme und Fragestellungen. Klicken Sie auf einen Beitrag um zu der Erläuterung oder Lösung der Problemstellung zu kommen.
 
-1. [Widget/Cookie-Banner wird nicht angezeigt](/troubleshooting/banner-wird-nicht-angezeigt/)
+1. [Widget/Cookie-Banner wird nicht angezeigt](/troubleshooting/banner-wird-nicht-angezeigt.md)
 2. [Das Einstellungsicon unten links stört mich, kann ich das ändern/entfernen?](/troubleshooting/einstellungsicon/)
 3. [Eine Funktion auf meiner Webseite arbeitet nicht mehr korrekt, seit ich CCM19 einsetze](/troubleshooting/funktionsproblem/)
 4. [Youtube-Videos und andere Iframes werden auf meiner Seite nicht blockiert](/troubleshooting/iframes-blockieren/)

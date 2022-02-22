@@ -132,7 +132,8 @@ nav:
         - agency-version/einstellungen_layout.md
         - agency-version/einstellungen_content.md
   - "Probleme & Lösungen":
-      - troubleshooting/probleme-und-loesungen.md
+      "Probleme & Lösungen":
+        - troubleshooting/probleme-und-loesungen.md
         - troubleshooting/banner-wird-nicht-angezeigt.md
         - troubleshooting/einstellungsicon.md
         - troubleshooting/funktionsproblem.md
