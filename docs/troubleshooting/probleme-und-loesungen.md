@@ -1,4 +1,4 @@
-# Probleme & Lösungen
+# Übersicht der Themen
 
 Hier finden Sie eine Übersicht der häufigsten Probleme und Fragestellungen. Klicken Sie auf einen Beitrag um zu der Erläuterung oder Lösung der Problemstellung zu kommen.
 
