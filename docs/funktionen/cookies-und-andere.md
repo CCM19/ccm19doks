@@ -133,6 +133,12 @@ Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames
 
 **Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
 
+### Automatische Aktualisierung
+
+Mit dieser Funktion wird die Einbindung fortlaufend durch die Datenbank aktuell gehalten. Gibt es dort Änderungen, werden diese auch mit Aktivierung dieser Funktion in der Einbindung umgesetzt. Die Daten werden 1x pro Tag abgeglichen, daher kann es etwas dauern, bis Sie Änderungen sehen können.
+
+**Achtung: Individuelle Änderungen von Ihnen werden mit dieser Funktion mit Daten aus der Datenbank überschrieben!**
+
 ## Einträge je Sprache
 
 ![screenshot-2020.10.29-13_10_37-1603973437002](../assets/screenshot-2020.10.29-13_10_37-1603973437002.jpg)

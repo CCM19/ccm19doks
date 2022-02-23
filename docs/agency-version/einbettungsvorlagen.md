@@ -24,3 +24,6 @@ Die Bearbeitung erfolgt genauso wie im Bereich [Embedding](/funktionen/cookies-u
 
 ![screenshot-1641987916812](../assets/screenshot-1641987916812.jpg)
 
+### Automatische Aktualisierung
+
+Diese Funktion wird ebenfalls im Bereich [Embedding](/funktionen/cookies-und-andere/) erklärt. 
