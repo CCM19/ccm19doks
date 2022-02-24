@@ -20,10 +20,10 @@ Sie können einen neuen Eintrag einfach aus der CCM19 Datenbank übernehmen, kli
 
 Hieraus können Sie dann einen Eintrag direkt übernehmen, er steht dann in Ihrer Datenbank zur Verfügung und Sie können den Eintrag dort bearbeiten.
 
-Die Bearbeitung erfolgt genauso wie im Bereich [Embedding](/funktionen/cookies-und-andere/) beschrieben.
+Die Bearbeitung erfolgt genauso wie im Bereich [Cookies & Einbindungen](/funktionen/cookies-und-andere/) beschrieben.
 
 ![screenshot-1641987916812](../assets/screenshot-1641987916812.jpg)
 
 ### Automatische Aktualisierung
 
-Diese Funktion wird ebenfalls im Bereich [Embedding](/funktionen/cookies-und-andere/) erklärt. 
+Diese Funktion wird grundlegend im Bereich [Cookies & Einbindungen](https://docs.ccm19.de/funktionen/cookies-und-andere/#automatische-aktualisierung) erklärt. Da man als Agentur ebenfalls eigene Vorlagen pflegen kann, wird für Agenturkunden doppelt geprüft. Zum einen, ob es Änderungen in den Vorlagen der Agenturversion gibt, und zum anderen, ob es Änderungen in unserer Datenbank gibt. Bei einer Verkettung (Datenbank → Vorlage →Embedding) kann es bis zu 48 Stunden dauern, bis Änderungen sichtbar sind.
