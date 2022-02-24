@@ -91,7 +91,7 @@ Auf diese Weise müssen Sie nicht zwingend Ihre Seite umbauen.
 
 Nutzen Sie die Funktion „Skripte blockieren, die folgenden Text enthalten“, können Ihre Skripte auf der Website bleiben und CCM19 blockiert diese beim Aufbau der Seite. Allerdings laden alle aktuellen Browser diese Ressourcen trotz korrekter Integration vor dem Eingreifen von CCM19, da diese durch automatisches Preloading durch die Browser geladen werden. Weder CCM19 noch andere Tools können dies verhindern, da der Download der Ressourcen startet, bevor die Ausführung von Skripten durch Browser beginnt.
 
-Um dies nun doch zu verhindern, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
+Um dies nun doch zu verhindern, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Verwenden Sie des Weiteren nicht das `src`-Attribut zur Angabe der Skript-URL, sondern `data-ccm-loader-src`. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
 
 CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
 
@@ -99,7 +99,7 @@ CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zu
 
 Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
 ```html
-<script src="https://your.site/script.js" type="text/x-ccm-loader"></script>
+<script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
 #### Gruppe für den Script-Loader
@@ -110,7 +110,7 @@ Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfall
 
 Zusammen mit dem `type`-Attribut sieht es dann so aus:
 ```html
-<script src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
+<script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 
 Tragen Sie den Gruppennamen in der relevanten Einbindung unter dem Punkt "Gruppe für den Script-Loader" ein, um die Einbindung mit den markierten Skripten Ihrer Webseite zu verknüpfen.
@@ -132,12 +132,6 @@ Für einen Google Maps-iFrame wäre die Zeichenkette zum Beispiel "maps.google.c
 Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames freigeschaltet.
 
 **Bitte beachten Sie weiterhin die rechtlichen Regelungen in Bezug auf IFrames und die korrekte Kategorisierung.**
-
-### Automatische Aktualisierung
-
-Mit dieser Funktion wird die Einbindung fortlaufend durch die Datenbank aktuell gehalten. Gibt es dort Änderungen, werden diese auch mit Aktivierung dieser Funktion in der Einbindung umgesetzt. Die Daten werden 1x pro Tag abgeglichen, daher kann es etwas dauern, bis Sie Änderungen sehen können.
-
-**Achtung: Individuelle Änderungen von Ihnen werden mit dieser Funktion mit Daten aus der Datenbank überschrieben!**
 
 ## Einträge je Sprache
 

@@ -38,7 +38,7 @@ Technisch betrachtet wird dabei durch CCM19 das  **Laden** UND die  **Ausführun
 
 Sie können CCM19 auch nutzen um im Quelltext blockierte Skripte via Consent freizugeben und ausführen zu lassen.
 
-Um dies zu nutzen, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
+Um dies zu nutzen, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Verwenden Sie des Weiteren nicht das `src`-Attribut zur Angabe der Skript-URL, sondern `data-ccm-loader-src`. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
 
 CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
 
@@ -47,7 +47,7 @@ CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zu
 Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
 
 ```javascript
-<script src="https://your.site/script.js" type="text/x-ccm-loader"></script>
+<script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
 #### Gruppe für den Script-Loader
@@ -59,7 +59,7 @@ Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfall
 Zusammen mit dem `type`-Attribut sieht es dann so aus:
 
 ```javascript
-<script src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
+<script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 
 Tragen Sie den Gruppennamen in der relevanten Einbindung unter dem Punkt "Gruppe für den Script-Loader" ein, um die Einbindung mit den markierten Skripten Ihrer Webseite zu verknüpfen.
