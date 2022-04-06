@@ -1,26 +1,26 @@
 # CCM19 Integrationsvarianten
 
-Es gibt 3 mögliche Varianten wie Sie das CCM19 Cookie Consent Tool nutzen können. Prinzipiell dient das Tool dazu die Ausführung bestimmter Skripten solange zu unterbinden bis ein Consent / Zustimmung für die Ausführung vorliegt.
+Es gibt drei mögliche Varianten, wie Sie das CCM19 Cookie Consent Tool nutzen können. Prinzipiell dient das Tool dazu, die Ausführung bestimmter Skripte solange zu unterbinden, bis ein Consent / Zustimmung für die Ausführung vorliegt.
 
-Diese Skripte können Cookies, Local Storage Elemente oder andere Objekte in den Browsern der Besucher speichern oder anderweitig Daten auslesen. Zu den rechtlichen Hintergründen sagen wir hier nichts, hier geht es um die technische Realisierung.
+Diese Skripte können Cookies, Local-Storage-Elemente oder andere Objekte in den Browsern der Besucher speichern oder anderweitig Daten auslesen. Auf die rechtlichen Hintergründen werden wir an dieser Stelle nicht weiter eingehen, hier geht es ausschließlich um die technische Realisierung.
 
-Jeder der 3 Möglichkeiten kann die Ausführung der Skripte zuverlässig blockieren, Möglichkeiten 2 und 3 verhindern auch effektiv das Skripte vorgeladen werden.
+Jede der drei Möglichkeiten kann die Ausführung der Skripte zuverlässig blockieren, Möglichkeiten 2 und 3 verhindern auch effektiv, dass Skripte vorgeladen werden. Diese sind in der Umsetzung aber auch etwas aufwändiger.
 
-Generell muss aber immer das CCM19 Code Schnipsel in Ihre Seite integriert werden, das wird [hier](/integrationen/ccm19-standard/) erklärt.
+Die Grundvoraussetzung ist jeweils, dass der CCM19-Code-Schnipsel in Ihre Seite integriert wurde; dieser Schritt wird [hier](/integrationen/ccm19-standard/) erklärt.
 
 
 
 ## Möglichkeit 1 - Blocking
 
-Das ist die Standard Möglichkeit die auch beim Onboarding Prozess genutzt wird. Der CCM19 Scanner untersucht Ihre Seite, liest aus welche Skripte genutzt werden und setzt daraus dem Inhalt Ihres Banners zusammen.
+Das ist die Standard-Möglichkeit, die auch beim Onboarding-Prozess genutzt wird. Der CCM19 Scanner untersucht Ihre Seite, liest aus, welche Skripte genutzt werden, und setzt daraus den Inhalt Ihres Banners zusammen.
 
-Hierbei muss nur der Script / HTML Schnipsel von CCM19 in Ihre Seite integriert werden, der Rest wird über die Benutzeroberfläche verwaltet.
+Hierbei muss nur der Script-/HTML-Schnipsel von CCM19 in Ihre Seite integriert werden, der Rest wird über die Benutzeroberfläche verwaltet.
 
 Technisch betrachtet wird dabei durch CCM19 die **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt.
 
 **Einfache Nutzung, alles in einer Oberfläche, super schnell eingerichtet. Zuverlässige Blockierung der Skripte. Keine tieferen Arbeiten im HTML / Templates der Seiten notwendig.**
 
-Skripte können trotzdem vom Browser **geladen** aber **nicht** ausgeführt werden. Falls der Load alleine schon Cookies setzt, kann das zu Problemen führen. Daher sollte das auf jeden Fall beobachtet und kontrolliert werden.
+Skripte können trotzdem vom Browser **geladen**, aber **nicht** ausgeführt werden. Falls der Load alleine schon Cookies setzt, kann das zu Problemen führen. Daher sollte im Anschluss auf jeden Fall kontrolliert werden, ob vor dem Consent nicht doch noch Cookies gesetzt werden, die nicht technisch notwendig sind.
 
 
 
@@ -28,15 +28,15 @@ Skripte können trotzdem vom Browser **geladen** aber **nicht** ausgeführt werd
 
 Sie können CCM19 als vollwertigen Tag Manager nutzen, der die Skripte innerhalb von CCM19 verwaltet und diese auch erst nach Consent lädt und ausführt.
 
-Dabei tragen Sie z.B. das Google Analytics Skript im CCM19 ein und entfernen dieses aus dem HTML Ihrer Seite. Wo und wie Sie das durchführen, hängt von Ihrem CMS / Shop System ab. Oft kann man diese Skripte auch über die CMS Oberfläche deaktivieren.
+Dazu tragen Sie den HTML-Code, z.B. das Google Analytics Skript, im CCM19 bei der passenden Einbindung im Feld "Quellcode der Einbindung" ein und entfernen den Code dafür aus dem HTML Ihrer Seite. Wo und wie Sie das durchführen, hängt von Ihrem CMS / Shop System ab. Oft kann man diese Skripte auch über die CMS Oberfläche deaktivieren.
 
-Technisch betrachtet wird dabei durch CCM19 das  **Laden** UND die  **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt.
+Technisch betrachtet wird dabei durch CCM19 das  **Laden** UND die  **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt. Es ist also eine sauberere Methode, die außerdem den Vorteil hat, dass sie sich positiv auf die Ladegechwindigkeit der Seite auswirkt, weil Skripte nur noch geladen werden müssen, wenn Consent vorliegt.
 
 
 
 ## Möglichkeit 3 - HTML Manipulierung
 
-Sie können CCM19 auch nutzen um im Quelltext blockierte Skripte via Consent freizugeben und ausführen zu lassen.
+Sie können CCM19 auch nutzen, um im Quelltext blockierte Skripte via Consent freizugeben und ausführen zu lassen.
 
 Um dies zu nutzen, können Sie Ihren Skripten unseren CCM19-spezifischen Wert für das `type`-Attribut vergeben. Verwenden Sie des Weiteren nicht das `src`-Attribut zur Angabe der Skript-URL, sondern `data-ccm-loader-src`. Durch diese Anpassung erkennt ein Browser das entsprechende Skript nun nicht mehr als auszuführenden Javascript-Code und lässt von der Verarbeitung dessen zunächst ab.
 
