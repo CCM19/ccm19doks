@@ -84,9 +84,12 @@ Beim obrigen Beispielplugin wäre `templates/index.html.twig` also `@plugin:Exam
 
 ### Templates des Hauptsystems verändern
 
-Um Templates anderer Menüpunkte als der eigenen zu ergänzen oder zu bearbeiten, kann das Event `App\Event\TemplateRenderEvent` verwendet werden.
+Um Templates anderer Menüpunkte als der eigenen zu ergänzen oder zu bearbeiten, können die Events `App\Event\TemplateResolveEvent` und `App\Event\TemplateRenderEvent` verwendet werden.
 
-Dabei können Twig-Blöcke genutzt werden um Teile des Ausgabe zu ersetzen und Template-Variablen gelesen und gesetzt werden.
+Mit `App\Event\TemplateResolveEvent` kann jede Template-Datei (auch solche, die z.B. mit `{% include(…) %}` eingebunden werden) mit einem eigenen Template erweitert oder ersetzt werden.
+Dafür wird in der Regel `$event->extendTemplate('@plugin:ExamplevendorReallySpecialPlugin/….twig')` verwendet, um mit Twig-Blöcken Teile der Ausgabe zu ersetzen oder zu ergänzen.
+
+Mit `App\Event\TemplateRenderEvent` können Template-Variablen mit `$event->get()` und `$event->set()` gelesen bzw. gesetzt werden und auch Menüpunkt-Templates (nicht inkludierte Sub-Templates) erweitert oder ersetzt werden.
 
 ```
 class BackendTemplateListener implements EventSubscriberInterface
