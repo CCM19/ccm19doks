@@ -41,6 +41,7 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - attr_list
 
 nav:
   - "Home": index.md
@@ -123,7 +124,18 @@ nav:
       - Enterprise Funktionen:
         - agency-version/agency.md
         - agency-version/kunden.md
-        - agency-version/kunden-api.md
+        - Hosting-API (Headless):
+          - agency-version/hosting-api/settings.md
+          - Endpunkte:
+            - agency-version/hosting-api/endpoints/client.md
+            - agency-version/hosting-api/endpoints/domain.md
+            - agency-version/hosting-api/endpoints/locale.md
+            - agency-version/hosting-api/endpoints/theme.md
+            - agency-version/hosting-api/endpoints/placeholder.md
+            - agency-version/hosting-api/endpoints/embedding.md
+            - agency-version/hosting-api/endpoints/embedding-asset.md
+            - agency-version/hosting-api/endpoints/onboarding.md
+          - agency-version/hosting-api/components.md
         - agency-version/einbettungsvorlagen.md
         - agency-version/themes.md
         - agency-version/email.md
