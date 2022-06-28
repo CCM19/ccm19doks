@@ -127,6 +127,10 @@ nav:
         - agency-version/einbettungsvorlagen.md
         - agency-version/themes.md
         - agency-version/email.md
+      - Whitelabel Einstellungen:
+        - agency-version/einstellungen.md
+        - agency-version/einstellungen_layout.md
+        - agency-version/einstellungen_content.md  
       - Hosting-API (Headless):
         - agency-version/hosting-api/settings.md
         - agency-version/hosting-api/components.md
@@ -139,11 +143,6 @@ nav:
         - agency-version/hosting-api/endpoints/embedding.md
         - agency-version/hosting-api/endpoints/embedding-asset.md
         - agency-version/hosting-api/endpoints/onboarding.md
-        
-      - Whitelabel Einstellungen:
-        - agency-version/einstellungen.md
-        - agency-version/einstellungen_layout.md
-        - agency-version/einstellungen_content.md
   - "Probleme & Lösungen":
      "Probleme & Lösungen":
       - troubleshooting/probleme-und-loesungen.md
