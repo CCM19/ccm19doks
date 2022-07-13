@@ -4,7 +4,7 @@ Wir setzen auf weltweit millionenfach bewährte Standards bei der Umsetzung von 
 
 ## Frontend-Widgets
 
-Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks wie z.B. jquery, vue, react oder sonstige um mögliche Inkompatibilitäten so weit es möglich ist zu vermeiden.
+Die Frontend-Widgets werden durch pures Javascript realisiert, ohne Rückgriff auf Frameworks wie z.B. jquery, vue oder react, um mögliche Inkompatibilitäten so weit es möglich ist zu vermeiden.
 
 ## Sicherheit
 
@@ -29,7 +29,13 @@ Die Speicherung und Verarbeitung ist so effizient, dass auch mehrere Millionen A
 
 ## Speicherung mit Datenbank
 
-CCM19 nutzt alternativ MongoDB ab Version 4, in dieser Vairante werden alle Daten in der Datenbank gespeichert.
+CCM19 nutzt alternativ MongoDB ab Version 4.0. In dieser Variante werden alle Daten in der Datenbank gespeichert.
+
+Das */var*-Verzeichnis wird in diesem Fall noch für Caching-Zwecke genutzt, muss also weiterhin beschreibbar sein.
+
+CCM19 benötigt Multi-Document-Transactions. Diese werden nur in Replica-Sets und (ab MongoDB-Version 4.2) in Sharded Clusters unterstützt.
+Es ist also in der Regel notwendig, auch bei 1-Server-Konfigurationen ein [Replica-Set einzurichten](https://www.mongodb.com/docs/manual/administration/replica-set-deployment/).
+Weitere spezielle Einstellungen werden nicht benötigt.
 
 ## Beta-Phase
 
@@ -54,7 +60,7 @@ Beim Betrieb mit Apache httpd werden folgende Module benötigt:
 - mod_headers (optional)
 - mod_expires (optional)
 
-CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel. Zusätzlich empfiehlt es sich auf Performance Optimierung zu setzen. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
+CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel. Zusätzlich empfiehlt es sich die Performance des Apache httpd zu optimieren. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
 
 ### nginx
 
