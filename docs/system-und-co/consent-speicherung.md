@@ -58,18 +58,36 @@ Wenn Sie hier ein Datum eintragen, werden alle Consents die vor diesem Datum ges
 
 Wird die Option "Consent automatisch bei rechtlich relevanten Änderungen aufheben" aktiviert, führen rechtlich relevanten Änderungen an Einbindungen und Cookies dazu, dass eine Einwillungung nicht mehr gilt und erneut abgefragt wird. Dazu gehören folgende Änderungen:
 
-Embeddings:
-Name
-Zweck
-Hersteller/Anbieter (Auch TCF-Anbieter)
-TCF-
-Beschreibung
-Datenschutz-URL
-Gesammelte Daten
-Zweck der Sammlung
-Rechtliche Grundlage
-Ort der Verarbeitung
-Cookie & Co. (Hinzufügen/Löschen/Beabeiten [Siehe EmbeddingAsset])
-Google Consent Mode Zustimmungen
-TCF Zwecke
-TCF besonderen Verarbeitungsmöglichkeiten
+Einbindungen:
+* Name
+* Zweck
+* Hersteller/Anbieter (Auch TCF-Anbieter)
+* Beschreibung
+* Datenschutz-URL
+* Gesammelte Daten
+* Zweck der Sammlung
+* Rechtliche Grundlage
+* Ort der Verarbeitung
+* Cookie & Co. (Hinzufügen/Löschen/Beabeiten [Siehe EmbeddingAsset])
+* Google Consent Mode Zustimmungen
+* TCF Zwecke
+* TCF besonderen Verarbeitungsmöglichkeiten
+
+EmbeddingAsset: [(Liste der Cookies und Storage Elemente in einer Einbindung)](../funktionen/cookies-und-andere.md)
+* Name
+* Beschreibung
+* SpeicherTyp
+* Ablauf
+
+Cookies: (Alte Verwaltungsstruktur)
+* Name
+* Name des Cookies im Browser
+* Zweck
+* Hersteller/Anbieter
+* Beschreibung
+* Lebensdauer des Cookies
+* Datenschutz-URL
+* Gesammelte Daten
+* Zweck der Sammlung
+* Rechtliche Grundlage
+* Ort der Verarbeitung
