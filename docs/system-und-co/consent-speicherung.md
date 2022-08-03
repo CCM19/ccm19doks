@@ -52,8 +52,24 @@ Falls Sie eine Webseite haben, bei der ein IFrame einer anderen ihrer Seiten ein
 
 Mit diesen Einstellungen kann man erzwingen dass alle Besucher die Ihren Consent vor diesem Datum gesetzt haben, den Consent neu erteilen müssen. Dies kommt vor wenn man die Maske geändert hat und den Consent neu bekommen möchte, auch für Bestandsbesucher.
 
+Wenn Sie hier ein Datum eintragen, werden alle Consents die vor diesem Datum gesetzt wurden von Ihren Besuchern zwangsweise zurück gesetzt und die müssen die Maske neu abnicken.
+
 ![screenshot-1641906827649](../assets/screenshot-1641906827649.jpg)
 
+Wird die Option "Consent automatisch bei rechtlich relevanten Änderungen aufheben" aktiviert, führen rechtlich relevanten Änderungen an Einbindungen und Cookies dazu, dass eine Einwillungung nicht mehr gilt und erneut abgefragt wird. Dazu gehören folgende Änderungen:
 
-
-Wenn Sie hier ein Datum eintragen, werden alle Consents die vor diesem Datum gesetzt wurden von Ihren Besuchern zwangsweise zurück gesetzt und die müssen die Maske neu abnicken.
+Embeddings:
+Name
+Zweck
+Hersteller/Anbieter (Auch TCF-Anbieter)
+TCF-
+Beschreibung
+Datenschutz-URL
+Gesammelte Daten
+Zweck der Sammlung
+Rechtliche Grundlage
+Ort der Verarbeitung
+Cookie & Co. (Hinzufügen/Löschen/Beabeiten [Siehe EmbeddingAsset])
+Google Consent Mode Zustimmungen
+TCF Zwecke
+TCF besonderen Verarbeitungsmöglichkeiten
