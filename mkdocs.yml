@@ -122,8 +122,6 @@ nav:
       - Plugins programmieren:
           - plugins/programmieren/plugins_programmieren.md
   - Enterprise / Agency Version:
-      - Cloud+ Agentur Tarif:
-        - cloudplus/cloudplus-tarif.md
       - Enterprise Funktionen:
         - agency-version/agency.md
         - agency-version/kunden.md
@@ -146,6 +144,8 @@ nav:
         - agency-version/hosting-api/endpoints/embedding.md
         - agency-version/hosting-api/endpoints/embedding-asset.md
         - agency-version/hosting-api/endpoints/onboarding.md
+      - Cloud+ Agentur Tarif:
+        - cloudplus/cloudplus-tarif.md
   - "Probleme & Lösungen":
      "Probleme & Lösungen":
       - troubleshooting/probleme-und-loesungen.md
