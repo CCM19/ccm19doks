@@ -2,7 +2,7 @@
 
 Den Cloud+ Agentur Tarif können Sie auf der Webseite hier buchen: 
 
-`https://www.ccm19.de/ccm19-preise-reseller.html`
+[https://www.ccm19.de/ccm19-preise-reseller.html](https://www.ccm19.de/ccm19-preise-reseller.html)
 
 In diesem Tarif können Sie selber Kunden einladen und Kunden verwalten, Tarife buchen und vieles mehr. Den Ablauf für die beiden verschiedenen Wege haben wir hier einmal skizziert.
 
