@@ -65,3 +65,50 @@ Sie können diese Tarife auch für Ihre Kunden buchen, dafür müssen Sie sich a
 Damit Ihre Kunden nicht ihr Passwort verraten müssen, haben Sie als betreuende Agentur die Möglichkeit die Accounts ohne Login zu betreten. Das klappt natürlich nur mit Ihnen zugeordneten Accounts die in der Liste im Plugin zu sehen sind.
 
 ![screenshot-1661435666592](../assets/screenshot-1661435666592.jpg)
+
+
+
+Mit Klick auf den Button Nr.2 können Sie sich **ohne Login** in den Account Ihres Kunden einloggen und können dort frei agieren. Wir gehen davon aus dass Sie selbstverständlich verantwortungsvoll damit umgehen, ansonsten  werden Accounts gelöscht.
+
+Von dort aus können Sie auch eine Buchung eines Tarifes für Ihre Kunden vornehmen, Domains und Embeddings / Cookies eintragen, Seite scannen uvm.
+
+Der Klick auf Button Nr.1 bringt Sie in die Bearbeitungsmaske wo Sie einige wenige Daten ändern können. Die meisten Funktionen werden durch den verwendeten Tarif Ihres Kunden gesteuert und frei geschaltet.
+
+![screenshot-1661436392275](../assets/screenshot-1661436392275.jpg)
+
+
+
+Löschen können Sie hier keine Accounts, die Löschung muss aus den Accounts selber heraus erfolgen über den normalen Kündigungsweg.
+
+
+
+## Eigenen Kunden erstellen
+
+Alternativ zum Affiliate Weg können Sie auch eigene Kunden erstellen und verwalten. Dazu klicken Sie in der Maske auf den rechten Button.
+
+
+
+![screenshot-1661436577922](../assets/screenshot-1661436577922.jpg)
+
+
+
+Wenn Sie darauf geklickt haben springen Sie in die Maske für die Erstellung neuer Kundendatensätze.
+
+![screenshot-1661436640624](../assets/screenshot-1661436640624.jpg)
+
+Tragen Sie hier die Daten für Benutzername, Passwort und Adressdaten ein soweit möglich. Nach dem Klick auf den Button speichern taucht der Account als "NoLogin" Kunden in Ihrem Listing auf.
+
+![screenshot-1661436720051](../assets/screenshot-1661436720051.jpg)
+
+
+
+Auch bei diesen Kunden steht Ihnen die Möglichkeit offen die Daten zu bearbeiten und sich über den blauen Button auf der rechten Seite in den Account einzulogggen.
+
+### Tarif buchen
+
+Da Ihre Kunden hier keinen eigenen Login haben, müssen Sie die Buchung der Tarife für sie übernehmen. Diese Tarife werden dann auch direkt mit Ihnen abgerechnet, Sie bekommen die Rechnung und können dann entsprechend frei weiter tarifieren.
+
+Alle Kunden die so angelegt werden, bekommen 30% Rabatt direkt bei jeder Buchung mit abgerechnet, die Rechnung wird auf Ihren Namen ausgestellt und auch Ihnen zugestellt.
+
+
+

@@ -122,6 +122,8 @@ nav:
       - Plugins programmieren:
           - plugins/programmieren/plugins_programmieren.md
   - Enterprise / Agency Version:
+      - Cloud+ Agentur Tarif:
+        - cloudplus/cloudplus-tarif.md
       - Enterprise Funktionen:
         - agency-version/agency.md
         - agency-version/kunden.md
