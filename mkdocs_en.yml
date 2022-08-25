@@ -68,7 +68,6 @@ nav:
       - "First Steps":
 =======
       - "FIrst Steps":
->>>>>>> parent of 1645c8c... Dokumentation automatisch aus lokalen Commits erweitert
           - "Registration": erste_schritte/registrierung.md
           - erste_schritte/login-und-passwoerter.md
       - Administration:
@@ -85,7 +84,6 @@ nav:
           - erste_schritte/installation.md
           - verwaltung/lizenzverwaltung.md
           - "Upgrade gen. 2": erste_schritte/upgrade_g2.md
->>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
   - Cookies & Co. einrichten:
       - "Onboarding":
           - "Onboarding road": erste_schritte/onboarding-complete.md
@@ -127,7 +125,6 @@ nav:
       - "Frontend / website":
           - frontend/frontend.md
       - "CMS / Shop integration":
->>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
           - integrationen/ccm19-standard.md
           - integrationen/ccm19-shopware.md
           - integrationen/ccm19-shopify.md
@@ -135,11 +132,11 @@ nav:
           - integrationen/ccm19-wix.md
           - integrationen/ccm19-magento.md
           - integrationen/ccm19-typo3.md
+          - integrationen/ccm19-joomla.md
       - API & Co.:
           - api/javascript-apis.md
           - api/google-tag-manager.md
           - api/general_api.md
-<<<<<<< HEAD
       - "Technics & Server":
           - api/technik.md
       - Plugins:
@@ -184,4 +181,4 @@ nav:
           - agency-version/themes.md
           - agency-version/einstellungen.md
           - agency-version/email.md
->>>>>>> 1645c8cc3b2bc5e319fd50eee77ddfaad579bf1b
+
