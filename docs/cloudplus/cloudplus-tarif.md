@@ -40,3 +40,28 @@ Den Text der Mail können Sie unter dem obigen Links "E-Mail Vorlage bearbeiten"
 
 Wichtig ist dabei dass der Eintrag **#inviteLink#** erhalten bleibt, da dort der Link mit erzeugt wird mit der potentielle Kunden Ihnen zugewiesen wird. Ohne diesen Link klappt das nicht.
 
+Nachdem Sie die Einladung verschickt haben, tauchen die Einladungen in der Liste unten auf.
+
+![screenshot-1661435696138](../assets/screenshot-1661435696138.jpg)
+
+Hier können Sie mit einem Klick auf den grünen Button die Einladungen erneut versenden. Beachten Sie bitte dass Sie die Einladung nur 4x versenden können. Mit dem Klick auf den roten Button löschen Sie die Einladungen.
+
+Wenn die Einladungen angenommen wurden, steht der Status dann auch auf angenommen.
+
+### Einladung annehmen
+
+Wenn die potentiellen Kunden nun auf den Link klicken kommen Sie direkt zur Anmeldemaske für den Free Tarif.
+
+![screenshot-1661435477347](../assets/screenshot-1661435477347.jpg)
+
+
+
+Nachdem sich Ihre Kunden dort angemeldet haben, können Sie entweder über die normale Buchungsmaske auf der Webseite oder über die Administration im CCM19 neue und erweiterte Tarife buchen. 
+
+Sie können diese Tarife auch für Ihre Kunden buchen, dafür müssen Sie sich allerdings in das Kundenkonto einloggen
+
+### Login ins Kundenkonto
+
+Damit Ihre Kunden nicht ihr Passwort verraten müssen, haben Sie als betreuende Agentur die Möglichkeit die Accounts ohne Login zu betreten. Das klappt natürlich nur mit Ihnen zugeordneten Accounts die in der Liste im Plugin zu sehen sind.
+
+![screenshot-1661435666592](../assets/screenshot-1661435666592.jpg)
