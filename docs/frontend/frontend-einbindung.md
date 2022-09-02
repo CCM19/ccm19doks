@@ -8,6 +8,8 @@ Jede der drei Möglichkeiten kann die Ausführung der Skripte zuverlässig block
 
 Die Grundvoraussetzung ist jeweils, dass der CCM19-Code-Schnipsel in Ihre Seite integriert wurde; dieser Schritt wird [hier](/integrationen/ccm19-standard/) erklärt.
 
+**Bitte wählen Sie immer nur EINE der drei Methoden zur Anwendung aus!**
+
 
 
 ## Möglichkeit 1 - Blocking
@@ -21,6 +23,8 @@ Technisch betrachtet wird dabei durch CCM19 die **Ausführung** der Skripte unte
 **Einfache Nutzung, alles in einer Oberfläche, super schnell eingerichtet. Zuverlässige Blockierung der Skripte. Keine tieferen Arbeiten im HTML / Templates der Seiten notwendig.**
 
 Skripte können trotzdem vom Browser **geladen**, aber **nicht** ausgeführt werden. Falls der Load alleine schon Cookies setzt, kann das zu Problemen führen. Daher sollte im Anschluss auf jeden Fall kontrolliert werden, ob vor dem Consent nicht doch noch Cookies gesetzt werden, die nicht technisch notwendig sind.
+
+<video src="../../assets/Script-Blocking%20Video%20Version%204%2016zu9.mp4"></video>
 
 
 
