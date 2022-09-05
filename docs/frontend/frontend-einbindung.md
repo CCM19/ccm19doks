@@ -24,10 +24,6 @@ Technisch betrachtet wird dabei durch CCM19 die **Ausführung** der Skripte unte
 
 Skripte können trotzdem vom Browser **geladen**, aber **nicht** ausgeführt werden. Falls der Load alleine schon Cookies setzt, kann das zu Problemen führen. Daher sollte im Anschluss auf jeden Fall kontrolliert werden, ob vor dem Consent nicht doch noch Cookies gesetzt werden, die nicht technisch notwendig sind.
 
-<video src="../../assets/Script-Blocking%20Video%20Version%204%2016zu9.mp4"></video>
-
-
-
 ## Möglichkeit 2 - Tag Manager Funktionalität
 
 Sie können CCM19 als vollwertigen Tag Manager nutzen, der die Skripte innerhalb von CCM19 verwaltet und diese auch erst nach Consent lädt und ausführt.
