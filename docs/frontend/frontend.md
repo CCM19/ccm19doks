@@ -66,7 +66,7 @@ Abbrechen bringt einen zurück zur vorherigen Maske.
 
 Die einzelnen Kategorien können auch Zusatztexte bekommen, diese können Sie in der Administration pflegen, Beispiel siehe im folgenden Screenshot.
 
-![screenshot-2020.09.30-20_21_46-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-20_21_46-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-20_21_46](../assets/screenshot-2020.09.30-20_21_46.jpg)
 
 
 
@@ -122,7 +122,7 @@ Weitere Möglichkeiten finden Sie hier -  [Javascript / programmatische Steuerun
 
 Das Impressum können Sie entweder per Link oder direkt einbinden - wie das funktioniert lesen Sie hier nach:  [Impressum bearbeiten](../funktionen/impressum.md) . Die Maske im Frontend sieht dann so aus:
 
-![screenshot-2020.09.30-12_51_32-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-12_51_32](../assets/screenshot-2020.09.30-12_51_32.jpg)
 
 
 
@@ -132,4 +132,4 @@ Die Datenschutzerklärung erreichen Sie wenn Sie auf den Link "Datenschutzerklä
 
 
 
-![screenshot-2020.09.30-13_03_09-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-13_03_09-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-13_03_09](../assets/screenshot-2020.09.30-13_03_09.jpg)

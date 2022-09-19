@@ -44,7 +44,7 @@ Der Link öffnet dann eine Maske wo die Datenschutzerklärung der Seite ausgeben
 
 ## Direkte Anzeige der Datenschutzerklärung
 
-![screenshot-2020.09.30-13_03_09-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-13_03_09-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-13_03_09](../assets/screenshot-2020.09.30-13_03_09.jpg)
 
 
 

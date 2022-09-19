@@ -42,7 +42,7 @@ Der Link öffnet dann eine Maske wo das Impressum der Seite ausgeben wird - wie 
 
 ## Direkte Anzeige des Impressums
 
-![screenshot-2020.09.30-12_51_32-BGH konformer Cookie Banner - Cookie Consent Manager - Cookie Consent Management Software - mandatenfähig, multidomain](../assets/screenshot-2020.09.30-12_51_32-BGH%20konformer%20Cookie%20Banner%20-%20Cookie%20Consent%20Manager%20-%20Cookie%20Consent%20Management%20Software%20-%20mandatenf%C3%A4hig,%20multidomain.jpg)
+![screenshot-2020.09.30-12_51_32](../assets/screenshot-2020.09.30-12_51_32.jpg)
 
 
 
