@@ -26,7 +26,7 @@ Skripte können trotzdem vom Browser **geladen**, aber **nicht** ausgeführt wer
 
 ## Möglichkeit 2 - Tag Manager Funktionalität
 
-Sie können CCM19 als vollwertigen Tag Manager nutzen, der die Skripte innerhalb von CCM19 verwaltet und diese auch erst nach Consent lädt und ausführt.
+Sie können CCM19 als Tag Manager nutzen, der die Skripte innerhalb von CCM19 verwaltet und diese auch erst nach Consent lädt und ausführt.
 
 Dazu tragen Sie den HTML-Code, z.B. das Google Analytics Skript, im CCM19 bei der passenden Einbindung im Feld "Quellcode der Einbindung" ein und entfernen den Code dafür aus dem HTML Ihrer Seite. Wo und wie Sie das durchführen, hängt von Ihrem CMS / Shop System ab. Oft kann man diese Skripte auch über die CMS Oberfläche deaktivieren.
 
