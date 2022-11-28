@@ -6,6 +6,7 @@
 | ------------------------------------------------------------ | ------- | ------------------------------------------------------------ |
 | [Domain scannen](#scan-domain)                               | `GET`   | `/hosting/api/client/{clientId}/domain/{domainId}/onboarding/scan` |
 | [Vorlagen importieren](#import-presets)                      | `POST`  | `/hosting/api/client/{clientId}/domain/{domainId}/onboarding/presets` |
+| [Einbindungen aus Cookies erzeugen](#embeddings-from-cookies) | `POST`  | `/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embeddingsFromCookies` |
 | [Code-Schnipsel zur Einbindung von CCM19 auslesen](#get-embed-code-snippets) | `GET`   | `/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embed` |
 
 ## Domain scannen {#scan-domain}
@@ -44,6 +45,25 @@
 
 - `201` – Ressource erfolgreich erzeugt
   - [OnboardingPresetResult](../components.md#onboarding-preset-result)[]
+- `400` – Ungültige oder fehlende Eigenschaften
+- `404` – Ressource nicht gefunden
+
+## Einbindungen aus Cookies erzeugen {#embeddings-from-cookies}
+
+**Endpunkt:** `/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embeddingsFromCookies`
+
+**Methode:** `POST`
+
+**Query:**
+
+- `{clientId}`: *string* – Die ID eines CCM19-Kundenkontos
+- `{domainId}`: *string* – Die ID einer Domain, die in dem Kundenkonto vorhanden ist
+
+**Payload:** [OnboardingCookie](../components.md#onboarding-cookie)[]
+
+**Response:**
+
+- `201` – Ressource(n) erfolgreich erzeugt
 - `400` – Ungültige oder fehlende Eigenschaften
 - `404` – Ressource nicht gefunden
 

@@ -1,0 +1,100 @@
+<h1>Onboarding</h1>
+<h2>Übersicht</h2>
+<table>
+<thead>
+<tr>
+<th>Beschreibung</th>
+<th>Methode</th>
+<th>Endpunkt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#scan-domain">Domain scannen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/scan</code></td>
+</tr>
+<tr>
+<td><a href="#import-presets">Vorlagen importieren</a></td>
+<td><code>POST</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/presets</code></td>
+</tr>
+<tr>
+<td><a href="#embeddings-from-cookies">Einbindungen aus Cookies erzeugen</a></td>
+<td><code>POST</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embeddingsFromCookies</code></td>
+</tr>
+<tr>
+<td><a href="#get-embed-code-snippets">Code-Schnipsel zur Einbindung von CCM19 auslesen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Domain scannen {#scan-domain}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/scan</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#onboarding-scan-result">OnboardingScanResult</a></li>
+</ul></li>
+<li><code>400</code> – Die Website hat einen fehlerhaften Antwortcode oder einen leeren Inhalt gesendet</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+<li><code>500</code> – Beim Crawlen der Website ist ein Problem aufgetreten</li>
+</ul>
+<h2>Vorlagen importieren {#import-presets}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/presets</code></p>
+<p><strong>Methode:</strong> <code>POST</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#onboarding-preset">OnboardingPreset</a>[]</p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>201</code> – Ressource erfolgreich erzeugt
+<ul>
+<li><a href="../components.md#onboarding-preset-result">OnboardingPresetResult</a>[]</li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Einbindungen aus Cookies erzeugen {#embeddings-from-cookies}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embeddingsFromCookies</code></p>
+<p><strong>Methode:</strong> <code>POST</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#onboarding-cookie">OnboardingCookie</a>[]</p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>201</code> – Ressource(n) erfolgreich erzeugt</li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Code-Schnipsel zur Einbindung von CCM19 auslesen {#get-embed-code-snippets}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/onboarding/embed</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#onboarding-embed-code-snippets">OnboardingEmbedCodeSnippets</a></li>
+</ul></li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>

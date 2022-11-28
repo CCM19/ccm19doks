@@ -16,8 +16,9 @@ Die folgenden Komponenten beschreiben die Datenstruktur, wie sie bei Anfragen an
 | [Embedding](#embedding)                                      | Der Deskriptor für die Struktur der Ressource, wie er von der API erwartet und gesendet wird. |
 | [EmbeddingAsset](#embedding-asset)                           | Der Deskriptor für die Struktur der Ressource, wie er von der API erwartet und gesendet wird. |
 | [OnboardingScanResult](#onboarding-scan-result)              | Der Deskriptor für die Daten, die von der API nach dem Scannen einer Domain gesendet werden. |
-| [OnboardingPreset](#onboarding-preset) | Der Deskriptor für die Daten, wie er beim Importieren einer Vorlage erwartet wird. |
+| [OnboardingPreset](#onboarding-preset)                       | Der Deskriptor für die Daten, wie er beim Importieren einer Vorlage erwartet wird. |
 | [OnboardingPresetResult](#onboarding-preset-result)          | Der Deskriptor für die Daten, die von der API gesendet werden, nachdem eine Vorlage importiert wurde. |
+| [OnboardingCookie](#onboarding-cookie)                       |                                                              |
 | [OnboardingEmbedCodeSnippets](#onboarding-embed-code-snippets) | Der Deskriptor für die Daten, die von der API bei der Anforderung von Code-Schnipseln zur Einbindung von CCM19 gesendet werden. |
 
 ## Client {#client}
@@ -392,6 +393,15 @@ Die folgenden Komponenten beschreiben die Datenstruktur, wie sie bei Anfragen an
 | ------------- | -------- | ----- | --------- | -------------------------------------- |
 | `presetId`    | *int*    | ✅     | ❌         |                                        |
 | `embeddingId` | *string* | ✅     | ❌         | Die ID der soeben erzeugten Ressource. |
+
+## OnboardingCookie {#onboarding-cookie}
+
+| Eigenschaft   | Datentyp | Lesen | Schreiben | Beschreibung                           |
+| ------------- | -------- | ----- | --------- | -------------------------------------- |
+| **`name`** (*) | *string*    | ❌    | ✅        |                                        |
+| **`storageType`** (*) | *string* | ❌    | ✅        | Zulässige Werte:<br />`cookie` `localStorage` `sessionStorage` |
+
+(*) Diese Eigenschaften sind Pflichtfelder.
 
 ## OnboardingEmbedCodeSnippets {#onboarding-embed-code-snippets}
 

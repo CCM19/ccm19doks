@@ -1,0 +1,35 @@
+<h1>Einstellungen</h1>
+<p>Die folgenden Informationen zur Hosting-API finden Sie ebenfalls im Admin-Bereich von CCM19. Diese API ermöglicht den Headless-Zugriff auf Funktionen für folgender Ressourcen:</p>
+<ul>
+<li><a href="./endpoints/client.md">Kunden</a></li>
+<li><a href="./endpoints/domain.md">Domains</a></li>
+<li><a href="./endpoints/locale.md">Locales</a> (Übersetzungen)</li>
+<li><a href="./endpoints/theme.md">Themes</a></li>
+<li><a href="./endpoints/placeholder.md">Platzhalter</a></li>
+<li><a href="./endpoints/embedding.md">Einbindungen</a> &amp; <a href="./endpoints/embedding-asset.md">Cookies</a></li>
+<li><a href="./endpoints/onboarding.md">Onboarding</a></li>
+</ul>
+<p>Natürlich können alle diese Aktionen nur durchgeführt werden, wenn eine entsprechende Autorisierung vorliegt.</p>
+<h2>Verbindung zur API herstellen</h2>
+<p>Um eine API-Anfrage erfolgreich zu verarbeiten, hängen Sie den API-Schlüssel an <strong>jede Anfrage</strong> an, indem Sie den GET-Parameter <code>apiKey</code> hinzufügen und den Schlüssel als Wert festlegen.</p>
+<p>Setzen Sie für jede POST- und PUT-Anfrage den HTTP-Header <code>Content-Type</code> auf <code>application/json</code>; d.h. für jede Anfrage, die einen Nachrichtenkörper enthält. Kodieren Sie den zu sendenden Payload entsprechend.</p>
+<p><img src="../../assets/screenshot-2020.10.01-13_53_19-1601553199653.jpg" alt="screenshot-2020.10.01-13_53_19-1601553199653" /></p>
+<p>Die echten API Schlüssel sind natürlich wesentlich komplexer. 😉</p>
+<blockquote>
+<p><strong>Halten Sie Ihren API-Schlüssel immer geheim. Wenn der Schlüssel kompromittiert ist, können Sie ihn hier ändern; danach müssen Sie all Ihre Apps aktualisieren.</strong></p>
+</blockquote>
+<h2>Hawk HTTP-Authentifizierung verwenden</h2>
+<p>Wenn Sie diese Option aktivieren, kann eine signierte Anfrage verifiziert werden. Die Clientseite für diese Authentifizierungsmethode müssen sie jedoch selbst implementieren und in Ihre Anwendungen integrieren.</p>
+<p>Verwenden Sie das Shared Secret, um Ihre Anfragen zu signieren. Dazu müssen Sie mithilfe des <code>PBKDF2</code>-Algorithmus einen Schlüssel aus dem Shared Secret ableiten. </p>
+<h2>Hawk HTTP-Authentifizierung verwenden</h2>
+<p>Wenn Sie diese Option aktivieren, kann eine signierte Anfrage verifiziert werden. Die Clientseite für diese Authentifizierungsmethode müssen sie jedoch selbst implementieren und in Ihre Anwendungen integrieren.</p>
+<p>Verwenden Sie das Shared Secret, um Ihre Anfragen zu signieren. Dazu müssen Sie mithilfe des <code>PBKDF2</code>-Algorithmus einen Schlüssel aus dem Shared Secret ableiten. </p>
+<blockquote>
+<p>Diese Funktion ist optional. Verwenden Sie diese Option, um eine teilweise kryptografische Verifizierung Ihrer Anfragen zu ermöglichen.</p>
+</blockquote>
+<p>Sehen Sie sich folgende Ressourcen an, um Ihre Anfragen korrekt zu signieren.</p>
+<ul>
+<li><a href="https://github.com/dflydev/dflydev-hawk#building-a-client">Hawk — A PHP Implementation</a></li>
+<li><a href="https://www.php.net/manual/en/function.hash-pbkdf2.php">hash_pbkdf2 — Generate a PBKDF2 key derivation of a supplied password</a></li>
+</ul>
+<p><img src="../../assets/screenshot-2020.10.01-14_02_14-1601553734725.jpg" alt="screenshot-2020.10.01-14_02_14-1601553734725" /></p>

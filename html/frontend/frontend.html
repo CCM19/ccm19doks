@@ -1,0 +1,65 @@
+<h1>Frontend Widgets</h1>
+<p>Das Frontend von CCM19 besteht aus den Widgets die Sie sehen und bedienen können und den Funktionen im Quellcode die das Skript umsetzt, um die notwendigen Funktionen zu realisieren. Im Folgenden werden wir alle Punkte durchgehen und alle Fenster zeigen die das CCM19 erstellt.</p>
+<h2>Performance der Widgets</h2>
+<p>Das Widget und alle anderen Daten werden minifiziert, komprimiert und serverseitig gechached um einen bestmögliche Performance zu erreichen. </p>
+<p>Durchschnittliche Ladezeiten unseres Skriptes betragen zwischen 0,03 und 0,2 Sekunden pro Aufruf.</p>
+<blockquote>
+<p>Wenn Sie eine Download Version verwenden wird die Aufrufzeit durch Ihren Server wesentlich mitbestimmt. In der Regel ist aber auch bei fast allen Server gewährleistet dass ein schneller Aufruf möglich ist.</p>
+</blockquote>
+<h2>Primäres Widget</h2>
+<p>Dies ist das erste Widget was die Besucher Ihrer Webseite zu sehen bekommen. Daher ist es wichtig dass Sie es optimal an das Look &amp; Feel Ihrer Webseite anpassen. Wie Sie das machen lesen Sie hier: <a href="../funktionen/themes.md">Themes</a> - grundsätzlich lassen sich alle Widgets komplett individualisieren und positionieren:</p>
+<ul>
+<li>
+<p>Mittig</p>
+</li>
+<li>
+<p>Links</p>
+</li>
+<li>
+<p>Rechts</p>
+</li>
+<li>
+<p>Oben</p>
+</li>
+<li>
+<p>Unten</p>
+</li>
+</ul>
+<p><img src="../assets/screenshot-1641918855521.jpg" alt="screenshot-1641918855521" /></p>
+<p>Der Klick auf &quot;Akzeptieren&quot; akzeptiert alle eingestellten Skripte und Cookies und schließt das Fenster sofort. Der Consent wird dabei im Browser der Besucher gespeichert. Der Klick auf &quot;Schließen&quot; entspricht einer Ablehnung und über Informationen kommt man zu den weiteren Daten in einem weiteren Widget.</p>
+<h3>Consent bleibt erhalten</h3>
+<p>Der Consent bleibt solange erhalten wie der Besucher die Cookie oder Local Storage Daten in seinem Browser nicht löscht. Die maximale Laufzeit stellen Sie hier <a href="../system-und-co/consent-speicherung.md">Consentspeicherung</a> ein.  Bei einem weiteren Aufruf der Seite wird die Maske <strong>nicht</strong> mehr gezeigt. </p>
+<p>Sie können die Laufzeit auch manuell beenden über die Administration indem Sie die Cookie Laufzeit absenken oder einen Reset erzwingen.</p>
+<h2>Einstellungen / Informationen</h2>
+<p>Klickt der Besucher auf den Button Einstellungen erreicht er die nächste Maske wo er die Kategorien der Einbindungen, Skripte und Cookies anschauen, durchlesen und bestätigen kann.</p>
+<p><img src="../assets/screenshot-1641919201131.jpg" alt="screenshot-1641919201131" /></p>
+<p>Die Kategorie &quot;Technisch notwendig&quot; oder auch &quot;Technisch notwendig / Essentiell&quot; ist immer angehakt und kann nicht abgehakt werden. </p>
+<p>Hier werden nur die Einbindungen und Cookies beschrieben die für das Funktionieren der Webseite unabdingbar sind. Seit dem das neue TTDSG gilt können Cookies oder Skripte hier nicht mehr nach §6 DSGVO - begründetes Interesse des Betreibers - eingetragen werden. </p>
+<p>Auf die rechtlichen Implikationen wollen wir an dieser Stelle lieber <strong>nicht</strong> eingehen. Hier fragen Sie den am besten den Anwalt Ihres Vertrauens.</p>
+<p>Die Besucher können nur diese Haken setzen oder nicht. Klicken die Besucher auf Speichern wird der Zustand wie er angezeigt wird, gespeichert. Klickt man hier auf &quot;Alle Akzeptieren&quot; werden alle Kategorien mit allen sich darin befindenden Einbindungen akzeptiert.</p>
+<p>Abbrechen bringt einen zurück zur vorherigen Maske.</p>
+<h3>Informationen zu den Kategorien</h3>
+<p>Die einzelnen Kategorien können auch Zusatztexte bekommen, diese können Sie in der Administration pflegen, Beispiel siehe im folgenden Screenshot.</p>
+<p><img src="../assets/screenshot-2020.09.30-20_21_46.jpg" alt="screenshot-2020.09.30-20_21_46" /></p>
+<h2>Mehr Informationen</h2>
+<p>Wenn Besucher mehr Informationen über die einzelnen Einbindungen lesen möchte dann können sie auf das Fragezeichen klicken und kommen dann in die folgende Maske.</p>
+<p><img src="../assets/screenshot-1641919400638.jpg" alt="screenshot-1641919400638" /></p>
+<p>Hier können die Besucher nun alle Elemente die auf der Webseite verwendet im Detail nachlesen, was machen die Skripte, was wird wohin gespeichert, wer hat Zugriff darauf usw. Diese Einstellungen können Sie hier anpassen:  <a href="../funktionen/cookies-und-andere.md">Embeddings &amp; Cookies</a> .#</p>
+<p>In der linken Spalte sehen Sie die Einbindungen sortiert nach Kategorien, jeder Eintrag kann angeklickt werden und die Besucher springen dann direkt zu dem passenden Eintrag um weitere Informationen zu bekommen. Die Besucher können jeder einzelnen Einbindung oder auch kategorieweise der Nutzung zustimmen.</p>
+<h2>Einfacher Widerruf oder Änderung - Konfigurationsbox öffnen</h2>
+<p>CCM19 bietet den Besuchern eine einfache Möglichkeit den Consent jederzeit zu widerrufen oder anzupassen. Als Betreiben können Sie das unten stehende Icon einfach einblenden lassen, ein Klick auf dieses Icon öffnet wieder die Consent Maske - so dass Ihre Besucher dort wieder Ihre Einstellungen anpassen können.</p>
+<p><img src="../assets/screenshot-2020.09.29-13_59_03-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg" alt="screenshot-2020.09.29-13_59_03-CCM19 - Cookie Consent Management Software" /></p>
+<h2>Konfigurationsbox erneut öffnen per Link</h2>
+<p>Sie möchten Ihren Besuchern die Möglichkeit geben, sich nachträglich noch umzuentscheiden und z.B. doch keine Analyse-Cookies zuzulassen? Fügen Sie einfach folgendes HTML Snippet ein:</p>
+<pre><code class="language-html">&lt;a href="#" onclick="CCM.openWidget();return false;"&gt;Konfigurationsbox öffnen&lt;/a&gt;</code></pre>
+<p>Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den Besucher geöffnet.</p>
+<p>Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: <strong>#CCM.openWidget</strong>.</p>
+<pre><code class="language-html">&lt;a href="#CCM.openWidget"&gt;Konfigurationsbox öffnen&lt;/a&gt;</code></pre>
+<h2>Weitere Möglichkeiten der Steuerung im Frontend</h2>
+<p>Weitere Möglichkeiten finden Sie hier -  <a href="../api/javascript-apis.md">Javascript / programmatische Steuerung</a> </p>
+<h2>Impressum im Frontend</h2>
+<p>Das Impressum können Sie entweder per Link oder direkt einbinden - wie das funktioniert lesen Sie hier nach:  <a href="../funktionen/impressum.md">Impressum bearbeiten</a> . Die Maske im Frontend sieht dann so aus:</p>
+<p><img src="../assets/screenshot-2020.09.30-12_51_32.jpg" alt="screenshot-2020.09.30-12_51_32" /></p>
+<h2>Datenschutz im Frontend</h2>
+<p>Die Datenschutzerklärung erreichen Sie wenn Sie auf den Link &quot;Datenschutzerkläriung&quot; klicken, bearbeiten können Sie die Daten hier:  <a href="../funktionen/datenschutz.md">Datenschutz bearbeiten</a> </p>
+<p><img src="../assets/screenshot-2020.09.30-13_03_09.jpg" alt="screenshot-2020.09.30-13_03_09" /></p>

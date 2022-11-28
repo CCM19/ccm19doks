@@ -1,0 +1,48 @@
+<h1>E-Mail</h1>
+<p>Der E-Mail Bereich für die Agency Version ist erweitert im Vergleich zur Downloadversion. Die grundsätzlichen Einstellungen sind aber identisch und sind hier zu finden: <a href="../system-und-co/email.md">Standard Mail Einstellungen</a> </p>
+<h2>Quota Mails</h2>
+<p>Wenn Sie ein Quota für die Zugriffszahlen nutzen, gehen automatisch bei Annährung an das Quota Mails an die Kunden raus die darauf hinweisen. Sie können einstellen dass der Admin oder eine andere E-Mail Adresse eine Kopie der Quota Mails bekommt.</p>
+<p><img src="../assets/screenshot-1641988621764.jpg" alt="screenshot-1641988621764" /></p>
+<p>Zusätzlich können Sie einstellen ob eine Kopie der Quota Mails an den Admin rausgehen und ob Kunden über durchgeführte Updates per E-Mail informiert werden.</p>
+<p>Falls Sie Call Limits nutzen, können Sie hier die prozentualen Schwellenwerte eintragen ab denen die jeweiligen Mails rausgehen die die Kunden / Mandanten darauf hinweisen dass demnächst der maximale Call Count erreicht wird.</p>
+<h2>Quota Mails Vorlagen resp. Inhalt</h2>
+<p>Die Quota Mails selber können Sie hier vorbelegen. Dabei stehen folgende Variablen zur Verfügung. Die Synthax muss dabei beachtet werden - die geschweiften Klammern sind obligatorisch {{ varname }}.</p>
+<table>
+<thead>
+<tr>
+<th>Variablen</th>
+<th>Inhalt</th>
+<th>Benutzen in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{ callMaxCount }}</td>
+<td>Die Anzahl der verfügbaren Aufrufe im jeweils <br />gewählten Tarif</td>
+<td>Mail für die gefundenen Cookies</td>
+</tr>
+<tr>
+<td>{{ quota }}</td>
+<td>Der numerische Wert des prozentualen Verbrauchs - <br />d.h. wenn 94% verbraucht sind enthält die Variable den Wert 94</td>
+<td>In der Mail &quot;Call Limit&quot;</td>
+</tr>
+<tr>
+<td>{{ username }}</td>
+<td>Benutzername des Kunden</td>
+<td>In der Mail &quot;Call Limit&quot;</td>
+</tr>
+<tr>
+<td>{{ email }}</td>
+<td>E-Mail Adresse des Kunden</td>
+<td>In der Mail &quot;Call Limit&quot;</td>
+</tr>
+<tr>
+<td>{{ domainvar }}</td>
+<td>Der Name der Domain für die die Mail versendet wurde</td>
+<td>Alle E-Mail Templates</td>
+</tr>
+</tbody>
+</table>
+<h2>Mail Templates</h2>
+<p>Die Variablen können im Fließtext der Mails verwendet werden.</p>
+<p><img src="../assets/screenshot-1641988818841.jpg" alt="screenshot-1641988818841" /></p>

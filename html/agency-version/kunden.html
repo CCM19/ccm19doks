@@ -1,0 +1,61 @@
+<h1>Kunden</h1>
+<p>Innerhalb von der CCM19 Enterprise / Agency Version können Sie eigene Kunden verwalten. Jeder Kunde kann sich mit eigenen Benutzerdaten einloggen und seine eigenen Domains in seinem Account verwalten.</p>
+<p><img src="../assets/screenshot-1641983588731.jpg" alt="screenshot-1641983588731" /></p>
+<p>Hier sehen Sie die Übersicht der Kunden in der Ihrer Datenbank. Das können beliebig viele sein. Der Klick auf den grünen Button führt zu nächsten Maske.</p>
+<h2>Neuen Kunden erstellen / Kunden bearbeiten</h2>
+<p>Mit Klick auf den grünen Button neuen Kunden erstellen springen Sie in die passende Maske hinein.</p>
+<p><img src="../assets/screenshot-2020.10.01-12_17_23-1601547443774_2-1601552530713.jpg" alt="screenshot-2020.10.01-12_17_23-1601547443774_2" /></p>
+<h2>Kunden erstellen Maske</h2>
+<p>Hier können Sie die wichtigen Basisdaten für neue Kunden einstellen. Diese Maske können Sie nutzen wenn Sie die Kunden in Ihrer Installation nicht mit Hilfe der API verarbeiten.</p>
+<p><img src="../assets/screenshot-1641983897505.jpg" alt="screenshot-1641983897505" /></p>
+<h2>Pflichtfelder für neuen Kunden</h2>
+<p>Die Felder </p>
+<ul>
+<li>Username, </li>
+<li>Passwort </li>
+<li>und E-Mail Adresse </li>
+</ul>
+<p>sind Pflichtfelder die immer gesetzt werden müssen. Die restlichen Felder dienen eher statistischen Zwecken und damit User sich darin etwas sicherer fühlen.</p>
+<h3>Aktivieren</h3>
+<p>Der Haken &quot;aktiv&quot; setzt einen Kunden aktiv oder deaktiviert ihn.</p>
+<h3>Whitelabel Lizenzen</h3>
+<p>Hier können Sie definieren wieviele WL Lizenzen der jeweilige User in seinem Account zur Verfügung hat. Diese können die Kunden dann frei auf Ihre Domains verteilen. Whitelabel bedeutet hier - Ihre kunden können den Link zum Hersteller im Frontend Widget entfernen.</p>
+<h3>Verfügbare CCM19 Aufrufe</h3>
+<p>Hier stellen Sie ein wieviel Aufrufe den Kunden jeweils zur Verfügung stehen sollen. -1 bedeutet es gibt kein Limit. Sie können darüber also ebenfalls frei entscheiden. Die Anzahl der Aufrufe wird dabei über die Domains verteilt.</p>
+<h3>Max Anzahl Domains</h3>
+<p>Stellen Sie ein wieviele Domains Kunden in Ihren Accounts zur Verfügung haben. Auch hier gilt -1 = kein Limit.</p>
+<h3>Automatische Domain Erstellung</h3>
+<p>Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in die Seite einbinden ohne individuelle Domainerkennung. D.h. der Link der eingebunden wird enthält <strong>nicht</strong> den Parameter domainid=1234.</p>
+<p>Domains werden damit auch automatisch erstellt. Das heißt Sie binden den Code ein und wenn CCM19 erkennt der Code läuft unter einer Domain die das System noch nicht kennt wird ein Eintrag in der Datenbank erstellt und er erscheint im Domainlisting im Backend. Hier können die Einträge dann darüber verwaltet werden. </p>
+<p><strong>Hier gibt es aber oft unsinnigen Beifang wenn z.B. Domains wie Google die Seite als iframe einbinden oder über Proxys die Seite besuchen.</strong></p>
+<blockquote>
+<p>Hier sollten Sie das also gut im Auge behalten was passiert.</p>
+</blockquote>
+<h2>Rechte</h2>
+<p><img src="../assets/screenshot-16419838975051.jpg" alt="screenshot-16419838975051" /></p>
+<p>Hier können Sie einstellen welche Rechte der Kunde jeweils haben soll. Hier können detaillierte Einstellungen durchgeführt werden worauf Kunden Zugriff haben und worauf nicht. </p>
+<p>Standardmäßig werden Neukunden so angelegt dass sie Zugriff auf alles haben, es muss also nur dann etwas eingestellt werden wenn es <strong>nicht</strong> so sein soll.</p>
+<p>Auch der Zugriff auf die Plugins kann hier abseits der Plugin eigenen Regeln nochmal geändert werden. Es gilt dann folgendes:</p>
+<ol>
+<li>Plugin ist für alle freigeschaltet</li>
+<li>User hat keinen Zugriff auf das Plugin laut Usereinstellungen weil der Haken nicht gesetzt ist.</li>
+</ol>
+<p>Die Usereinstellungen überschreiben damit die Plugineinstellungen, die also nur dann gelten wenn Zugriff vorhanden ist.</p>
+<h2>Kunden bearbeiten</h2>
+<p>Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Informationen im Bereich Aufrufe.</p>
+<p><img src="../assets/screenshot-2020.10.02-15_04_41-1601643881678.jpg" alt="screenshot-2020.10.02-15_04_41-1601643881678" /></p>
+<p>Es wird hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.</p>
+<h2>Übersicht über vorhandene Kunden</h2>
+<p>Eine Auflistung Ihrer Kunden finden Sie wenn Sie auf den Menüpunkte Kunden links im Menü klicken.</p>
+<p><img src="../assets/screenshot-2020.10.01-12_13_49-1601547229455.jpg" alt="screenshot-2020.10.01-12_13_49-1601547229455" /></p>
+<p>In der Auflistung werden die Basisdaten Ihrer Kunden aufgelistet, wieviel Zugriffe und Domains erlaubt und genutzt wurden.</p>
+<p>Außerdem sehen Sie eine Übersicht über die Domains die der Kunden nutzt. In der Übersicht sehen Sie einen Testkunden dessen Domains wir zu Darstellungszwecken immer wieder kopiert haben.</p>
+<p>Außerdem wird angezeigt, wann der Kunde sich das letzte mal eingeloggt hat und ob der Kunde überhaupt aktiv ist.</p>
+<h3>Bearbeiten</h3>
+<p>Klicken Sie auf den grünen Button mit dem Stiftsymbol um in die Bearbeitungsmaske zu springen - diese ist die gleiche wie die oben stehende Maske zur Erstellung neuer Benutzer.</p>
+<h3>Kunden löschen</h3>
+<p>Mit dem roten Papierkorb Button können Sie einen Kunden (nach Nachfrage) restlos löschen.</p>
+<h3>In Kundenaccount einloggen</h3>
+<p>Mit dem blauen Button können Sie sich ohne Passwort in den jeweiligen Kundenaccount einloggen. Beachten Sie aber bitte dass Sie sich dafür immer die Freigabe von Ihrem Kunden geben lassen. </p>
+<h2>Kunden suchen</h2>
+<p>Mit Hilfe der Suchmaske können Sie nach bestimmten Kunden suchen, die Suchfunktion durchsucht alle Datensätze der Kunden und listet nur die auf die gefunden werden.</p>

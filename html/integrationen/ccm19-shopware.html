@@ -1,0 +1,11 @@
+<h1>Shopware</h1>
+<p>Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code im Dashboard von CCM19 (hier unten im Screenshot zu sehen).</p>
+<p><img src="../assets/10-01.png" alt="CCM19 Backend Screen" /></p>
+<p>Danach wechseln Sie zu Ihrer Shopware Installation. Dort gehen Sie im oberen Menü auf den Punkt <strong>Einstellungen</strong> und dann auf <strong>Plugin Manager</strong>. Dort suchen Sie nach dem Plugin <strong>CCM19-Interation</strong> und installieren dieses in Ihrer Shopware-Instanz.</p>
+<p><img src="../assets/10-02-1.png" alt="Shopware Menüstruktur" /></p>
+<p>Ist die Installation abgeschlossen können Sie das CCM19 Code-Snippet in das dafür vorgesehene Feld einfügen. Bitte beachten Sie, dass der Punkt &quot;Google Analytics blockieren&quot; aktiv geschaltet sein sollte.</p>
+<p><img src="../assets/10-02.png" alt="Shopware Screen" /></p>
+<p>Gehen Sie anschließend in CCM19 zurück. Rufen Sie den Cookie <strong>_ga</strong> auf und fügen Sie folgende Zeile in den Quellcode des <a href="https://www.ccm19.de/integration/glossar/13-Cookies.html#13">Cookies</a> ein:</p>
+<p><code>&lt;script src="/custom/plugins/SwagGoogle/Resources/frontend/js/jquery.google_analytics_plugin.js"&gt;&lt;/script&gt;</code></p>
+<p><img src="../assets/10-03.png" alt="CCM19 Backend Screen _ga Cookie" /></p>
+<p>Damit ist die Einrichtung abgeschlossen und CCM19 sollte nun in Ihrem Shop aktiv sein.</p>

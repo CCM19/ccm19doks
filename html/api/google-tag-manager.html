@@ -1,0 +1,83 @@
+<h1>Google Tag Manager</h1>
+<p>Da der Tag Manager als Container fungiert, über den Skripte in die Webseite eingebunden werden können, tauchen die Skripte nicht direkt im Quellcode auf. Entsprechend ist es nie möglich, die Skripte aus der Seite zu entfernen und beim Cookie neu einzubinden.</p>
+<p>Um Skripte, die über den Tag Manager geladen werden, zu blocken, wird idealerweise ausschließlich das Feature &quot;Embeddings blockieren, die folgenden Text enthalten&quot; verwendet. Damit das Blocken der Skripte funktioniert, muss aber sichergestellt werden, dass der CCM19-Code im Quelltext vor dem Tag-Manager-Code steht.</p>
+<p>Vorab möchten wir ausdrücklich darauf hinweisen, dass wir die Nutzung des Google Tag Managers nicht empfehlen, weil in den meisten Fällen ein Cookie gesetzt werden muss damit es funktioniert was technisch nicht wirklich notwendig ist, aber als solches definiert werden muss.</p>
+<p>Außerdem ist unter dem Gesichtspunkt des Schrems II Urteils in Hinsicht Privacy Shield die ungefragte Einbindung von Google Services zumindest fraglich und sollte gut überlegt sein.</p>
+<p>Um die Funktionalität des Tag Managers und auch von allen damit verbunden Diensten gewährleisten zu können, muss der Tag Manager immer aktiv sein. Somit sendet er zumindest immer die IP-Adresse des Nutzers an den Server des Tag Managers und damit auch an Google.</p>
+<p>CCM19 stellt für die Kernfunktion des Google Tag Managers, Skripte auf der Website zu implementieren ohne den Quelltext bearbeiten zu müssen, eine Alternative dar.</p>
+<p>Falls dies für Sie dennoch keine Option ist, folgen Sie bitte dieser Anleitung:</p>
+<h2>Integration in Google Tag Manager</h2>
+<p>Über die Schnittstelle <code>window.dataLayer</code> werden Events im Google Tag Manager ausgelöst, falls dieser auf der Zielseite eingebunden ist.</p>
+<p>Sobald ein Embedding über die CCM19-Oberfläche zugelassen wird, wird folgendes Event ausgelöst. Die Events werden bei jedem Seitenaufruf für alle zugelassenen Embeddings wiederholt abgefeuert.</p>
+<pre><code class="language-javascript">window.dataLayer.push({
+    event: 'CCM19.embeddingAccepted', // Konstanter Bezeichner
+    id: 'xxxxxxx', // CCM19-interne Embedding-ID
+    name: 'Google Analytics', // Benutzerdefinierter Embedding-Name
+});</code></pre>
+<p>Im Tag Manager kann über Triggers → New → Custom Events darauf reagiert werden.</p>
+<p><img src="../assets/Mon%20Oct%2025%202021%2011:17:23%20GMT+0200%20(Mitteleurop%C3%A4ische%20Sommerzeit).png" alt="" /></p>
+<p>So sehen die Informationen aus, die der Data Layer beinhaltet. Unser Ziel ist die Trigger auf diese Informationen festzulegen.</p>
+<p>Unser Ausgangspunkt beginnt nach der erfolgreichen Implementierung von CCM19 und des Tag Managers auf Ihrer Website.</p>
+<h3>1. Der Eintrag in CCM19 für den Google Tag Manager</h3>
+<p>Navigieren Sie in CCM19 vom Dashboard &amp; Einbindungen zu den Einbindungen &amp; Cookies. Erstellen Sie dort einen Eintrag für den Google Tag Manager. Wie Sie einen Eintrag erstellen und worauf Sie achten müssen, finden Sie <a href="https://docs.ccm19.de/funktionen/cookies-und-andere/">hier</a>. Achten Sie darauf den Tag Manager als <strong>technisch notwendig</strong> einzustellen.</p>
+<h3>2. Tag einrichten</h3>
+<p>Für unser Beispiel erstellten wir ein Tag für das Webanalysetool Google Analytics. Den Tracking-Typ haben wir auf Seitenaufruf stehen lassen.</p>
+<p><img src="../assets/Mon%20Mar%2022%202021%20154243%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png" alt="" /></p>
+<h3>3. Trigger auswählen</h3>
+<p>Als Triggertyp [a)] stellen wir ein benutzerdefiniertes Ereignis ein und benennen es <em>.*</em> [b)]. Haken Sie die Option <em>Übereinstimmung mit regulärem Ausdruck verwenden</em> an [c)].</p>
+<p><img src="../assets/Mon%20Mar%2022%202021%20154642%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png" alt="" /></p>
+<h3>4.Variablen erstellen</h3>
+<p>Da das Ereignis für jedes Embedding gleich ist, wollen wir nun noch mit Variablen definieren, dass das Tag nur bei einer Einwilligung des Google Analytics Embedding gefeuert wird.
+Wir klicken also auf <em>Diesen Trigger auslösen bei: Einige benutzerdefinierte Ereignisse</em> und fügen eine neue Variable ein.</p>
+<p><img src="../assets/cbimage.jpg" alt="cbimage" /></p>
+<p>Als Variablentyp wählen wir die Datenschichtvariable aus [a)]. Als Namen tragen wir den Key <em>name</em> ein [b)] und stellen auf Version 1 um [c)].</p>
+<p><img src="../assets/Mon%20Mar%2022%202021%20162718%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png" alt="" /></p>
+<h3>5. Variablenfilter hinzufügen</h3>
+<p>Nun definieren wir, welcher Wert der Key <em>name</em> haben muss, um den Trigger auszulösen. Hier tragen wir <strong>immer</strong> den Namen des Embeddings ein (so wie er in CCM19 hinterlegt wurde), also in diesem Fall <em>Google Analytics</em> [a)].</p>
+<p>Außerdem fügen wir noch ein Event hinzu [b)].</p>
+<p><img src="../assets/Mon%20Mar%2022%202021%20162726%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png" alt="" /></p>
+<p>Das Event, welches wir hier eintragen lautet <em>CCM19.embeddingAccepted</em>.<img src="../assets/Mon%20Mar%2022%202021%20162738%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png" alt="" /></p>
+<h3>6. Testen, testen, testen…</h3>
+<p>Der Tag Manager bietet einen Vorschaumodus zum testen an. Bevor man also die Version live schaltet, sollte man überprüfen, ob die Tags auch gefeuert werden.
+In den Nachrichten schauen Sie nach dem entsprechendem Embedding und sehen sich das Tag genauer an. Wenn dort alle Häkchen gesetzt worden sind, funktioniert das Tracking.</p>
+<p><img src="../assets/cbimage%20(1).jpg" alt="cbimage (1)" /></p>
+<h1>Weitere Events</h1>
+<h3>CCM19.consentStateChanged</h3>
+<blockquote>
+<p>nach Version 2020.11.26</p>
+</blockquote>
+<p>Dieses Event wird jedes Mal ausgelöst, wenn der Seitenbesucher die Consent-Konfiguration abspeichert. Nachdem die initiale Zustimmung erfolgt, wird wird es zudem bei darauffolgenden Seitenaufrufen gesendet.</p>
+<p>Es gibt Auskunft über die Berechtigungen, die der Seitenbesucher zuletzt konfiguriert hat.</p>
+<p>Beispiel:</p>
+<pre><code class="language-javascript">window.dataLayer.push({
+    event: 'CCM19.consentStateChanged',
+    initialConsent: true,
+    'ccm19_Google Ads Conversion': true,
+    'ccm19_Facebook Pixel': true,
+    'ccm19_YouTube Webplayer': true,
+});</code></pre>
+<ul>
+<li><strong>event</strong>: <em>string</em> — Event-Bezeichner</li>
+<li><strong>initialConsent</strong>: <em>boolean</em> — Bei initialer Konfiguration des Seitenbesuchers <code>true</code>, andernfalls <code>false</code>.</li>
+<li><strong>ccm19_{EMBEDDING_NAME}</strong>: <em>boolean</em> — Sofern Embedding durch Seitenbesucher zugestimmt, <code>true</code>, andernfalls <code>false</code>.</li>
+</ul>
+<h3>CCM19.embeddingAccepted</h3>
+<p>Dieses Event wird bei jedem Seitenaufruf und Bestätigen des Consent-Dialogs für jedes Embedding abgefeuert, dem der Seitenbesucher durch seine letzte Konfiguration zugestimmt hat.</p>
+<p>Beispiel:</p>
+<pre><code class="language-javascript">window.dataLayer.push({
+    event: 'CCM19.embeddingAccepted',
+    id: 'xxxxxxx',
+    name: 'CMS Session',
+});</code></pre>
+<ul>
+<li><strong>event</strong>: <em>string</em> — Event-Bezeichner</li>
+<li><strong>id</strong>: <em>string</em> — CCM19-interne Embedding-ID</li>
+<li><strong>name</strong>: <em>string</em> — Benutzerdefinierter Embedding-Name</li>
+</ul>
+<h2>Cookiebasiert (veraltet)</h2>
+<blockquote>
+<p><strong>Veraltet:</strong> Bitte nicht für neue Projekte verwenden; alten Code auf Embedding-Events umstellen.</p>
+</blockquote>
+<p>Über den DataLayer wird im Google Tag Manager für jedes Cookie, das erlaubt wird, ein „Custom Event&quot; ausgelöst:</p>
+<pre><code>CCM19.cookieAccepted.&lt;cookiename&gt;</code></pre>
+<p>Also z.B. <code>CCM19.cookieAccepted._ga</code> für das Cookie <strong>_ga</strong>.</p>

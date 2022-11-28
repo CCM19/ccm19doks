@@ -1,0 +1,189 @@
+<h1>CCM19-Plugins</h1>
+<p>CCM19 kann durch Plugins um diverse Funktionalitäten erweitert werden.</p>
+<h2>Namensgebung</h2>
+<p>Jedes Plugin hat einen eindeutigen Namen, der aus einem Hersteller-Präfix und dem eigentlichen Plugin-Namen besteht. Der Plugin-Name sollte aus englischen Wörtern bestehen.</p>
+<p>Hersteller-Präfixe werden in Zukunft zentral vergeben. Falls Sie Plugins selbst entwickeln, achten Sie derzeit bitte auf einen möglichst eindeutigen Namen, damit beim Herstellerpräfix keine Namenskollisionen auftreten.</p>
+<p>Für das Plugin-Verzeichnis wird der Name mit dem Hersteller-Präfix in CamelCase-Schreibweise zusammengesetzt.</p>
+<p>Als Plugin-ID im <code>name</code>-Feld der <code>composer.json</code> wird der Name als <code>hersteller/pluginname</code> in snake_case geschrieben.</p>
+<p>Vom CCM19-Entwicklerteam entwickelte Plugins tragen den Präfix <code>Ccm19</code>.</p>
+<p>Ein Plugin von CCM19 für &quot;erweiterten Iframe-Support&quot; würde also <code>ccm19/extended_iframe</code> bzw. <code>Ccm19ExtendedIframe</code> heißen,
+ein Plugin des Herstellers &quot;Example Vendor&quot; z.B. <code>examplevendor/really_special_plugin</code> bzw. <code>ExamplevendorReallySpecialPlugin</code>.</p>
+<h2>Grundstruktur</h2>
+<p>Ein Plugin wird als Ordner im Verzeichnis <code>plugins</code> angelegt und enthält folgende Dateien und Ordner:</p>
+<ul>
+<li><code>composer.json</code> – Metadaten über das Plugin</li>
+<li><code>preview.</code>{<code>png</code>|<code>jpeg</code>|<code>svg</code>|<code>webp</code>|<code>gif</code>} – Vorschaubild</li>
+<li><code>src/</code> – PHP-Quelldateien (Idealerweise in einer Substruktur wie im CCM19-src-Verzeichnis)</li>
+<li><code>src/Controller/</code> – Controller-PHP-Dateien (optional)</li>
+<li><code>config/</code> – Symfony-Config-Dateien (optional)</li>
+<li><code>templates/</code> – Twig-Templates (optional)</li>
+<li><code>translations/</code> – Übersetzungsdateien (optional)</li>
+</ul>
+<h2>Composer.json</h2>
+<p>Die <code>composer.json</code> sieht folgendermaßen aus:</p>
+<pre><code>{
+    "name": "examplevendor/really_special_plugin",
+    "description": "This plugin does something really special that should be described here.",
+    "version": "1.0",
+    "type": "ccm19-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "ExampleVendor GmbH",
+            "role": "Manufacturer"
+        }
+    ],
+    "extra": {
+        "copyright": "(c) Copyright...",
+        "activatePerDomain": true, // Plugin in der Agency-Version für einzelne Domains (de-)aktivierbar
+        "label": {
+            "en": "Really special plugin", // Anzeigename in der Pluginverwaltung
+            "de": "Wirklich besonderes Plugin",
+            "fr": "Plugin vraiment spécial"
+        },
+        "description": {
+            "de": "Dieses Plugin macht etwas ganz Besonderes, das hier beschrieben werden sollte.",
+            "fr": "Ce plugin fait quelque chose de vraiment spécial qui devrait être décrit ici."
+        },
+        "manufacturerLink": {
+            "de": "https://examplevendor.example",
+            "en": "https://examplevendor.example"
+        },
+        "supportLink": {
+            "de": "https://examplevendor.example/support_de/",
+            "en": "https://examplevendor.example/support_en/"
+        },
+        "preview": "pfad/zu/preview.png" // OPTIONAL: Wenn das Vorschaubild nicht am o.g. Standard-Ort liegt
+    }
+}</code></pre>
+<p>Wenn übersetzbare Angaben in einer Sprache fehlen, wird als Fallback die englische Angabe verwendet.</p>
+<p>Plugins können auch eigene Abhängigkeiten mittels Composer mitliefern. Dafür müssen die <code>composer.lock</code> und das <code>vendor/</code>-Verzeichnis mit im
+Hauptverzeichnis des Plugins mitgeliefert werden. Die Abhängigkeiten des Plugins werden dann automatisch beim Aktivieren des Plugins mitgeladen.</p>
+<h2>Templates</h2>
+<p>Templates aus dem <code>templates/</code>-Verzeichnis des Plugins werden über Twig-Namespaces nach dem Schema <code>@plugin:PluginVerzeichnis/</code> eingebunden.</p>
+<p>Beim obrigen Beispielplugin wäre <code>templates/index.html.twig</code> also <code>@plugin:ExamplevendorReallySpecialPlugin/index.html.twig</code>.</p>
+<h3>Templates des Hauptsystems verändern</h3>
+<p>Um Templates anderer Menüpunkte als der eigenen zu ergänzen oder zu bearbeiten, können die Events <code>App\Event\TemplateResolveEvent</code> und <code>App\Event\TemplateRenderEvent</code> verwendet werden.</p>
+<p>Mit <code>App\Event\TemplateResolveEvent</code> kann jede Template-Datei (auch solche, die z.B. mit <code>{% include(…) %}</code> eingebunden werden) mit einem eigenen Template erweitert oder ersetzt werden.
+Dafür wird in der Regel <code>$event-&gt;extendTemplate('@plugin:ExamplevendorReallySpecialPlugin/….twig')</code> verwendet, um mit Twig-Blöcken Teile der Ausgabe zu ersetzen oder zu ergänzen.</p>
+<p>Mit <code>App\Event\TemplateRenderEvent</code> können Template-Variablen mit <code>$event-&gt;get()</code> und <code>$event-&gt;set()</code> gelesen bzw. gesetzt werden und auch Menüpunkt-Templates (nicht inkludierte Sub-Templates) erweitert oder ersetzt werden.</p>
+<pre><code>class BackendTemplateListener implements EventSubscriberInterface
+{
+    private $pluginState;
+
+    public function __construct(PluginState $pluginState)
+    {
+        $this-&gt;pluginState = $pluginState;
+    }
+
+    /**
+     * @return array
+     */
+    public static function getSubscribedEvents()
+    {
+        return [
+            TemplateRenderEvent::nameForView('domain/index.html.twig') =&gt; ['onRenderDomainIndex', 100],
+        ];
+    }
+
+    /**
+     * @return void
+     */
+    public function onRenderDomainIndex(TemplateRenderEvent $event)
+    {
+        if (!$this-&gt;pluginState-&gt;isActiveForCurrentDomain()) {
+            return;
+        }
+
+        $event-&gt;extendTemplate('@plugin:ExamplevendorReallySpecialPlugin/domain_index.html.twig');
+        $event-&gt;set('someVariable', ...);
+    }
+}</code></pre>
+<h2>Routen und Menüpunkte</h2>
+<p>Routen und Menüpunkte können über die <a href="https://symfony.com/doc/4.4/routing.html#creating-routes-as-annotations"><code>@Route</code></a> und <code>@Menu</code>-Annotations in Controllern in <code>src/Controller/</code> erzeugt werden.
+Die Abhängigkeiten für die Annotationen werden bereits vom Hauptsystem importiert.
+Im Plugin müssen Sie die Annotationen also nur mit <code>use Symfony\Component\Routing\Annotation\Route;</code> und <code>use App\Component\Menu\Annotation\Menu;</code> importieren.</p>
+<p>Routen-Namen <strong>müssen</strong> mit <code>plugin_herstellername_pluginname_</code> beginnen, damit die Rechteverwaltung greift und Plugin-Routen aktiviert/deaktiviert werden, je nachdem ob ein Plugin für einen User aktiviert ist. Der Plugin-Name und der Herstellerpräfix sind dabei in der gleichen snake_case-Schreibweise wie in der <code>composer.json</code> zu schreiben (nur mit Unterstrich statt Schrägstrich).</p>
+<h3><code>@Menu</code>-Annotation</h3>
+<p>Die <code>Menu</code>-Annotation erzeugt einen Menüpunkt zu einer Route.</p>
+<p>Sie kann folgende Parameter haben:</p>
+<ul>
+<li><em>erster Parameter</em> bzw. <code>name</code>: <em>string</em> Der Name der für die Anzeige des Menüpunkts verwendet wird.
+Dieser wird mit dem normalen Übersetzungssystem übersetzt.</li>
+<li><code>group</code>: <em>string</em> Menügruppe in dem der Menüpunkt angezeigt werden soll (optional, standardmäßig unter &quot;Plugins&quot;)</li>
+<li><code>icon</code>: <em>string</em> Icon-Name. Derzeit werden <code>glyphicon-…</code> und <code>fa-…</code> unterstützt.</li>
+<li><code>order</code>: <em>integer</em> Order-ID, mit der die Position im Menü bestimmt wird</li>
+<li><code>route</code>: <em>string</em> Route zu der der Menüpunkt führen soll (Standard: wird aus der <code>@Route</code>-Annotation der
+Methode gelesen)</li>
+<li><code>route_group</code>: <em>string</em> Präfix aller Routen, die zu dem Menüpunkt gehören (Standard: wird aus der
+<code>@Route</code>-Annotation der Klasse gelesen, wenn vorhanden, sonst gleich <code>route</code>). Das wird für die Anzeige,
+ob der Menüpunkt noch aktiv ist, verwendet.</li>
+<li><code>access={…}</code>: <em>string[]</em> Wer Zugriff auf den Menüpunkt haben soll. Mögliche Werte sind <code>"admin"</code>,
+<code>"user"</code> und <code>"subuser"</code>. (Standard: wird aus der Superklasse der Controller-Klasse bestimmt).</li>
+<li><code>navigation</code>: <em>string</em> In welcher Navigation der Menüpunkt angezeigt werden soll. Mögliche Werte sind
+<code>main</code>, <code>domain</code> und <code>meta</code>. Dabei entspricht <code>main</code> der Navigation die der Benutzer beim Einloggen
+angezeigt bekommt. Also entweder <code>domain</code> oder <code>meta</code>, je nach Edition und Benutzertyp.
+(Standard: <code>domain</code> bei <code>DomainDependantController</code>n, ansonsten <code>main</code>).</li>
+<li><code>editions={…}</code>: <em>string[]</em> Editionen, in denen der Menüpunkt angezeigt werden soll. (Standard:
+<code>{"extended"}</code> für <code>HostingController</code>, ansonsten alle Editionen).</li>
+<li><code>envs={…}</code>: <em>string[]</em> Environments in denen der Menüpunkt angezeigt werden soll. Z.B. <code>{"dev"}</code> für
+nur im Entwicklermodus. (Standard: alle)</li>
+</ul>
+<h3>Voreinstellung der Zugriffsrechte und des Navigationsbereichs</h3>
+<p>Wenn nicht explizit mit <code>access</code> und <code>navigation</code> gesetzt, hängt es von der Klasse ab, von der der Controller ableitet,
+wer wo den Menüpunkt zu sehen bekommt.</p>
+<ul>
+<li><code>DomainDependantController</code>: In der Domain-Navigation. Nur sichtbar für Benutzer die Domainzugriff haben können (keine Agency-Admins)</li>
+<li><code>AdminController</code>: In der Hauptnavigation. Nur sichtbar für Admins in der Agency-Edition und den Benutzer in der Basic-Edition.</li>
+<li><code>HostingController</code>: In der Hauptnavigation. Nur sichtbar für Admins in der Agency-Edition.</li>
+<li><code>AbstractController</code>: In der Hauptnavigation . Nur sichtbar für Benutzer die Domainzugriff haben können (keine Agency-Admins)</li>
+<li><code>UniversalController</code>: In der Hauptnavigation. Für alle sichtbar.</li>
+<li><code>UnrestrictedController</code>: In der Hauptnavigation. Für alle sichtbar.</li>
+</ul>
+<p>Was die Hauptnavigation ist, unterscheidet sich je nach Edition und Benutzertyp. Es ist immer die Navigation, die nach
+dem Einloggen erscheint. Also die Domain-Navigation für Basic-Edition-Nutzer und die Meta/User-Navigation für
+Agency-Kunden. Bei Agency-Admins ist es wieder die &quot;Domain&quot;-Navigation (auch wenn es keine Domain gibt).</p>
+<p>Beispiel:</p>
+<pre><code class="language-php">namespace Plugins\ExamplevendorReallySpecialPlugin;
+
+use App\Component\Menu\Annotation\Menu;
+use App\Controller\DomainDependantController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+/**
+ * @Route("/domains/{_domainId}/plugins/examplevendor/really_special/", name="plugin_examplevendor_really_special_plugin_")
+ */
+class MainController extends DomainDependantController
+{
+    /**
+     * @Menu("Really special", icon="fa-plug")
+     * @Route("", name="index", methods={"HEAD", "GET"})
+     */
+    public function index(...): Response
+    {
+        ...
+    }
+
+    /**
+     * @Route("", name="save")
+     */
+    public function indexSave(...): Response
+    {
+        ...
+    }
+}</code></pre>
+<p>Das Symfony-Autowiring kann verwendet werden. Innerhalb von Plugins sind zusätzlich zwei besondere Autowiring-Argumente möglich:</p>
+<ul>
+<li><code>App\Model\PluginState</code> liefert das Plugin-Status-Model für das aktuelle Plugin, mit dem z.B. überprüft werden kann, ob das Plugin aktiv sein soll.</li>
+<li><code>string $PLUGINPATH</code> liefert den vollständigen Pfad zum Plugin-Verzeichnis.</li>
+</ul>
+<p>Menüpunkte im Domain-Menü (also solche, deren Controller von <code>DomainDependantController</code> ableitet) werden automatisch ein-/ausgeblendet, wenn das Plugin für die Domain (de-)aktiviert wird.</p>
+<p>Menüpunkte die nicht domainabhängig sind, werden in der Agency-Version automatisch ausgeblendet, wenn das Plugin für einen Kunden gesperrt wird.</p>
+<p>Für speziellere Anforderungen ist es auch möglich Menüeinträge über einen Event-Listerner auf das Event <code>App\Event\MenuGenerationEvent</code> manuell zu setzen.</p>
+<h3>Auf Routen anderer Controller reagieren</h3>
+<p>Mit dem Event <code>ccm19.controller.request.&lt;route_name&gt;</code> also z.B. <code>ccm19.controller.request.app_dashboard</code> kann auf eine Route, bevor der jeweilige Controller ausgeführt wird, reagiert werden.</p>
+<p>Das Event-Objekt ist ein <code>Symfony\Component\HttpKernel\Event\ControllerEvent</code>. Mit der Methode <code>setController()</code> kann der Request auch auf einen anderen Controller umgeleitet werden.</p>
+<p>Das Event <code>ccm19.controller.response.&lt;route_name&gt;</code> ermöglicht dagegen Code auszuführen, nachdem der Controller durchgelaufen ist.</p>
+<p>Beide Events werden nicht bei unautorisiertem Zugriff ausgelöst, also z.B. wenn eine Route, die einen angemeldeten Benutzer erfordert, ohne gültige Session aufgerufen wird.</p>
+<p><strong>Wichtig:</strong> Bei allen Event-Handlern ist grundsätzlich mittels <code>$pluginState-&gt;isActiveForCurrentDomain()</code> bzw. je nach Kontext <code>$pluginState-&gt;isAllowedForCurrentUser()</code> zu überprüfen, ob eine Aktion des Plugins im aktuellen Kontext erwünscht ist.</p>

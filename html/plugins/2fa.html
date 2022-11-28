@@ -1,0 +1,41 @@
+<h1>2-Faktor-Authentifizierung</h1>
+<p>Mit diesem Plugin können Sie die Anmeldung Ihres Accounts zusätzlich absichern, indem nach der Passwortabfrage noch ein wechselnder Anmeldecode abgefragt wird, der auf Ihrem Smartphone oder Tablet generiert wird. Nur die erneute Anmeldung bei abgelaufener Session in einem Browserfenster, in dem das CCM19-Backend noch geöffnet ist, ist von der Codeeingabe ausgenommen.</p>
+<p><img src="../assets/2fa/Screenshot-2FA-Login.jpg" alt="Zweiter Login-Dialog nach Eingabe des Passworts" /></p>
+<p>Das Plugin muss in den On-Premise-Editionen in der Plugin-Verwaltung vom Administrator aktiviert und für Benutzer freigeschaltet werden.
+In den Cloud-Tarifen wird das Plugin im Laufe des Januars 2022 verfügbar sein.</p>
+<h2>Funktionalität aktivieren</h2>
+<p>Melden Sie sich in CCM19 an und öffnen Sie die „Kontoeinstellungen“ über das Benutzermenü oben rechts.</p>
+<p>Klicken Sie dort unten auf „2-Faktor-Authentifizierung mit einer Smartphone-App aktivieren“.
+Fehlt dieser Button, ist das Plugin nicht aktiv oder noch nicht für Sie freigeschaltet.</p>
+<p><img src="../assets/2fa/Screenshot-Account.jpg" alt="&quot;Kontoeinstellungen&quot; im CCM19-Backend" /></p>
+<p>Nachdem Sie auf den Button geklickt haben, öffnet sich ein Konfigurationsbereich mit einem zufällig
+generierten Schlüssel und einem QR-Code.</p>
+<p><img src="../assets/2fa/Screenshot-2FA-Settings.jpg" alt="2FA-Dialog im CCM19-Backend" /></p>
+<p>Installieren Sie eine Authentifizierungs-App auf Ihrem Smartphone, sofern noch nicht vorhanden.
+Im Einleitungstext des Formulars ist eine Auswahl von unterstützten Apps verlinkt.</p>
+<p>Im folgenden wird der Ablauf anhand der App „Aegis Authenticator“ (verfügbar im Google Play Store und dem FDroid Store) demonstriert.
+Der Ablauf ist in anderen Apps weitgehend vergleichbar.</p>
+<p>Öffnen Sie die Authentifizierungs-App auf Ihrem Smartphone und scannen Sie den QR-Code.
+Falls Sie das CCM19-Backend direkt auf Ihrem Smartphone geöffnet haben, tippen Sie stattdessen doppelt auf den QR-Code.</p>
+<p><img src="../assets/2fa/Screenshot-App-Add.png" alt="Ablauf in der App &#039;Aegis Authenticator&#039;" /></p>
+<p>Die App sollte durch das Scannen des Codes die notwenigen Parameter automatisch importieren.
+Sollte das nicht funktionieren, können Sie die Daten auch manuell aus dem linken Bereich neben dem QR-Code übertragen.</p>
+<p>Drücken Sie schließlich auf &quot;Speichern&quot;. Sie sollten jetzt einen 6-stelligen Code sehen, der sich alle 30 Sekunden ändert.</p>
+<p><img src="../assets/2fa/Screenshot_1642005762.png" alt="App: Ein Code wurde generiert und ändert sich alle 30 Sekunden" /></p>
+<p>Tippen Sie den generierten Code in das Feld „Anmeldecode“ und klicken Sie dann auf „Aktivieren“.
+Für das Klicken auf den Button haben Sie noch ca. 30 Sekunden Zeit nachdem der Code in der App gewechselt hat.</p>
+<p><img src="../assets/2fa/Screenshot-2FA-Settings-2.jpg" alt="2FA-Dialog im CCM19-Backend mit eingetragenem Anmeldecode" /></p>
+<p>Wenn alles geklappt hat, erscheint ein Hinweis „2-Faktor-Authentifizierung erfolgreich aktiviert.“</p>
+<p>Danach benötigen Sie für jede Anmeldung in CCM19 einen aktuellen Anmeldecode aus Ihrer App.</p>
+<h2>Funktionalität deaktivieren</h2>
+<p>Melden Sie sich in CCM19 an und öffnen Sie die „Kontoeinstellungen“ über das Benutzermenü oben rechts.</p>
+<p>Klicken Sie dort unten auf „2-Faktor-Authentifizierung mit einer Smartphone-App deaktivieren“.</p>
+<p><img src="../assets/2fa/Screenshot-2FA-Disable.jpg" alt="2FA-Deaktivierungs-Dialog im CCM19-Backend" /></p>
+<p>Geben Sie einen aktuellen Anmeldecode aus Ihrer App ein und klicken Sie danach auf „Deaktivieren“.</p>
+<p>Wenn alles geklappt hat, erscheint ein Hinweis „2-Faktor-Authentifizierung erfolgreich deaktiviert.“
+und Sie benötigen keinen Anmeldecode mehr um sich in CCM19 anzumelden.</p>
+<h2>Was kann ich tun, wenn ich keinen Zugriff mehr auf die App habe?</h2>
+<p>Falls Sie keine Anmeldecodes mehr erstellen können, nutzen Sie die „Passwort vergessen?“-Funktion
+im Anmeldefenster von CCM19.</p>
+<p>Sie erhalten daraufhin eine E-Mail. Befolgen Sie die Anleitung in der Mail, um ein neues Passwort
+zu setzen. Mit dem neuen Passwort wird auch die 2-Faktor-Authentizifizerung zurückgesetzt.</p>

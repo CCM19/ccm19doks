@@ -1,0 +1,120 @@
+<h1>Domain API / General API</h1>
+<p>Mit der domainspezifischen API können Sie Consent und Ereignisdaten pro Domain und über eine gesicherte SSL Schnittstelle in andere Systeme integrieren.</p>
+<h2>API Key</h2>
+<p>Der Api Key selber finden Sie in der unten stehenden Maske. Mit dem Button &quot;Neuen Api Key erstellen&quot; wird der Key neu gesetzt und erscheint dann direkt in der Maske.</p>
+<p>Beachten Sie bitte das bei diesem Schritt evtl. vorhandene Abfragen nicht mehr funktionieren da der alte Key nicht mehr valide ist.</p>
+<p><img src="../assets/screenshot-2020.12.17-13_59_55-1608209995197.jpg" alt="screenshot-2020.12.17-13_59_55-1608209995197" /></p>
+<p>Der Aufruf erfolgt generell mit Ihrem Api Key als GET-Parameter <code>apiKey</code> - ohne diesen ist der Aufruf nicht erfolgreich. Jeder Key ist immer nur für einen Account valide.</p>
+<p>Der Aufruf erfolgt generell per simplen GET Aufruf im Browser, curl oder eine beliebige andere Möglichkeit Webdaten aufzurufen.</p>
+<h2>API testen</h2>
+<p>Sie können einen Testaufruf durchführen. Nutzen Sie dafür folgenden API-Endpunkt:</p>
+<pre><code class="language-url">GET /api/test</code></pre>
+<p>Darauf sollte das System folgendermaßen antworten.</p>
+<pre><code class="language-json">{
+    "username": "Ihr_Username",
+    "apiKey": "IHR_API_KEY"
+}</code></pre>
+<h2>Alle Domains des Accounts listen</h2>
+<p>Um alle Domains Ihres Accounts zu listen, nutzen Sie bitte folgenden API-Endpunkt.</p>
+<pre><code class="language-url">GET /api/domains</code></pre>
+<p>Die Antwort sollte folgendermaßen lauten:</p>
+<pre><code class="language-json">[
+    {
+        "id": "b61cd4a",
+        "name": "https:\/\/www.test-xy.de",
+        "whiteLabel": false,
+        "viewCount": 0
+    },
+    {
+        "id": "1ed845d",
+        "name": "test-12.de",
+        "whiteLabel": false,
+        "viewCount": 0
+    }
+]</code></pre>
+<p>Die domId ist die wichtigste Information - damit können Sie weitere Informationen zur Domain holen.</p>
+<h2>Alle Consents aus dem Protokoll holen</h2>
+<p>Mit dem folgenden API-Endpunkt holen Sie alle Consents aus dem aktuellen Datenblock des Protokolls. Bereits archivierte Protokolleinträge werden dabei nicht berücksichtigt. Bitte ersetzen Sie in der url <code>{domainId}</code> mit einer Domain-ID aus der obigen Abfrage.</p>
+<pre><code class="language-url">GET /api/domains/{domainId}/consents</code></pre>
+<p>Die Antwort lautet wie folgt:</p>
+<pre><code class="language-json">[
+    {
+        "consent": true,
+        "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
+        "timestamp": 1608208345,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    },
+    {
+        "consent": true,
+        "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
+        "timestamp": 1608208338,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    },
+    {
+        "consent": true,
+        "ucid": "cba4803da92a9b39ffa82cc93aecbe00bc3f695530ebd3f7e67326404073bdbd",
+        "timestamp": 1608131136,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    }
+]</code></pre>
+<p>Aufgelistet werden die Consents folgendermaßen:</p>
+<ul>
+<li>consent: true / false - wurde ein Consent erteilt</li>
+<li>ucid: eine individuelle Consent ID eines Besuchers</li>
+<li>timestamp: Zeitstempel des Consentes</li>
+<li>purposes: Welche Kategorie der Consent angehört</li>
+<li>embeddings: Welchen Einbettungen resp. Cookies der Besucher zugestimmt hat</li>
+<li>manipulationPrevention: true / false - ob Versuche zur Manipulation unterbunden wurden - d.h. nicht dass es welche gab, sondern nur das der Unterdrückungsmechanismus aktiv war.</li>
+</ul>
+<p>Mit Hilfe der ucId können Sie dann einen Eintrag herausholen.</p>
+<h2>Einen Eintrag finden und Daten auslesen</h2>
+<p>Mit diesem API-Endpunkt lassen sich die Protokolleinträge nach Consent-ID filtern. Entweder ist diese vollständig anzugeben oder eine Teilzeichenkette beginnend vom Anfang der Consent-ID. Im folgenden Beispiel lassen sich die Einträge also auch mit dem Wert <code>387f1</code> für den Parameter <code>{consentId}</code>.</p>
+<p>Wichtig dabei ist lediglich, dass es nur eine Consent-ID gibt, die mit <code>387f1</code> beginnt. <strong>Bei Kollisionen liefert die Anfrage eine leere Liste.</strong></p>
+<pre><code class="language-url">GET /api/domains/{domainId}/consents/{consentId}</code></pre>
+<p>Dieser Aufruf zeigt dann die gesamte Consent Historie dieses Key - im Beispiel</p>
+<pre><code class="language-json">
+[
+    {
+        "consent": true,
+        "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
+        "timestamp": 1608208345,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    },
+    {
+        "consent": true,
+        "ucid": "387f1d311b2e7ba1f67722ac08bfdaf56aad3ecab6f11309d0c829f4e255af12",
+        "timestamp": 1608208338,
+        "purposes": {
+            "41ba25c": "Technisch notwendig"
+        },
+        "embeddings": {
+            "16bd7f0": "Papoo CMS Verwaltung der Session"
+        },
+        "manipulationPrevention": true
+    }
+]</code></pre>
+<p>Sie sehen, die ucid ist jeweils identisch und die Consents haben unterschiedliche Zeitstempel.</p>

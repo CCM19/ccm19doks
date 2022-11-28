@@ -1,0 +1,142 @@
+<h1>Placeholder</h1>
+<h2>Übersicht</h2>
+<table>
+<thead>
+<tr>
+<th>Beschreibung</th>
+<th>Methode</th>
+<th>Endpunkt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#create-placeholder">Platzhalter erstellen</a></td>
+<td><code>POST</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></td>
+</tr>
+<tr>
+<td><a href="#create-placeholder-bulk">Alle Platzhalter überschreiben (bulk)</a></td>
+<td><code>PUT</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></td>
+</tr>
+<tr>
+<td><a href="#read-all-placeholders">Alle Platzhalter auslesen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></td>
+</tr>
+<tr>
+<td><a href="#read-placeholder">Platzhalter auslesen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></td>
+</tr>
+<tr>
+<td><a href="#update-placeholder">Platzhalter aktualisieren</a></td>
+<td><code>PUT</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></td>
+</tr>
+<tr>
+<td><a href="#delete-placeholder">Platzhalter entfernen</a></td>
+<td><code>DELETE</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Platzhalter erstellen {#create-placeholder}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></p>
+<p><strong>Methode:</strong> <code>POST</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#placeholder">Placeholder</a></p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>201</code> – Ressource erfolgreich erzeugt
+<ul>
+<li><a href="../components.md#placeholder">Placeholder</a></li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+</ul>
+<h2>Alle Platzhalter überschreiben (bulk) {#create-placeholder-bulk}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></p>
+<p><strong>Methode:</strong> <code>PUT</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#placeholder">Placeholder</a>[]</p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>201</code> – Ressource(n) erfolgreich erzeugt
+<ul>
+<li><a href="../components.md#placeholder">Placeholder</a>[]</li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+</ul>
+<h2>Alle Platzhalter auslesen {#read-all-placeholders}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#placeholder">Placeholder</a>[]</li>
+</ul></li>
+</ul>
+<h2>Platzhalter auslesen {#read-placeholder}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{placeholderName}</code>: <em>string</em> – Die Name der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#placeholder">Placeholder</a></li>
+</ul></li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Platzhalter aktualisieren {#update-placeholder}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></p>
+<p><strong>Methode:</strong> <code>PUT</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{placeholderName}</code>: <em>string</em> – Die Name der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#placeholder">Placeholder</a></p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#placeholder">Placeholder</a></li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Platzhalter entfernen {#delete-placeholder}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}</code></p>
+<p><strong>Methode:</strong> <code>DELETE</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{placeholderName}</code>: <em>string</em> – Die Name der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>204</code> – Ressource erfolgreich gelöscht</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>

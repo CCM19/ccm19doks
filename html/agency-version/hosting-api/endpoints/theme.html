@@ -1,0 +1,120 @@
+<h1>Theme</h1>
+<h2>Übersicht</h2>
+<table>
+<thead>
+<tr>
+<th>Beschreibung</th>
+<th>Methode</th>
+<th>Endpunkt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#create-theme">Theme erstellen</a></td>
+<td><code>POST</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/theme</code></td>
+</tr>
+<tr>
+<td><a href="#read-all-themes">Alle Themes auslesen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/theme</code></td>
+</tr>
+<tr>
+<td><a href="#read-theme">Theme auslesen</a></td>
+<td><code>GET</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></td>
+</tr>
+<tr>
+<td><a href="#update-theme">Theme aktualisieren</a></td>
+<td><code>PUT</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></td>
+</tr>
+<tr>
+<td><a href="#delete-theme">Theme entfernen</a></td>
+<td><code>DELETE</code></td>
+<td><code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Theme erstellen {#create-theme}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/theme</code></p>
+<p><strong>Methode:</strong> <code>POST</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#theme">Theme</a></p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>201</code> – Ressource erfolgreich erzeugt
+<ul>
+<li><a href="../components.md#theme">Theme</a></li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+</ul>
+<h2>Alle Themes auslesen {#read-all-themes}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/theme</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#theme">Theme</a>[]</li>
+</ul></li>
+</ul>
+<h2>Theme auslesen {#read-theme}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></p>
+<p><strong>Methode:</strong> <code>GET</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{themeId}</code>: <em>string</em> – Die ID der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#theme">Theme</a></li>
+</ul></li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Theme aktualisieren {#update-theme}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></p>
+<p><strong>Methode:</strong> <code>PUT</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{themeId}</code>: <em>string</em> – Die ID der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Payload:</strong> <a href="../components.md#theme">Theme</a></p>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>200</code> – Erfolg
+<ul>
+<li><a href="../components.md#theme">Theme</a></li>
+</ul></li>
+<li><code>400</code> – Ungültige oder fehlende Eigenschaften</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
+<h2>Theme entfernen {#delete-theme}</h2>
+<p><strong>Endpunkt:</strong> <code>/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}</code></p>
+<p><strong>Methode:</strong> <code>DELETE</code></p>
+<p><strong>Query:</strong></p>
+<ul>
+<li><code>{clientId}</code>: <em>string</em> – Die ID eines CCM19-Kundenkontos</li>
+<li><code>{domainId}</code>: <em>string</em> – Die ID einer Domain, die in dem Kundenkonto vorhanden ist</li>
+<li><code>{themeId}</code>: <em>string</em> – Die ID der zu behandelnden Ressource</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li><code>204</code> – Ressource erfolgreich gelöscht</li>
+<li><code>404</code> – Ressource nicht gefunden</li>
+</ul>
