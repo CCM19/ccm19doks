@@ -2,10 +2,10 @@
 
 ## Übersicht
 
-| Beschreibung                                       | Methode  | Endpunkt                                                     |
-| -------------------------------------------------- | -------- | ------------------------------------------------------------ |
-| [Einbindung erstellen](#create-embedding)          | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/embedding` |
-| [Alle Einbindungen auslesen](#read-all-embeddings) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding` |
+| Beschreibung                                       | Methode  | Endpunkt                                                                   |
+| -------------------------------------------------- | -------- | -------------------------------------------------------------------------- |
+| [Einbindung erstellen](#create-embedding)          | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/embedding`               |
+| [Alle Einbindungen auslesen](#read-all-embeddings) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding`               |
 | [Einbindung auslesen](#read-embedding)             | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}` |
 | [Einbindung aktualisieren](#update-embedding)      | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}` |
 | [Einbindung entfernen](#delete-embedding)          | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}` |
@@ -43,7 +43,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Embedding](../components.md#embedding)[]
+  - [Embedding](../components.md#embedding)\[]
 
 ## Einbindung auslesen {#read-embedding}
 
@@ -100,4 +100,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

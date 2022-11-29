@@ -6,9 +6,7 @@ Wenn das Banner trotz Einbindung des Codes in den `<head>`-Breich Ihrer Seite ni
 
 Es kann passieren, dass das Frontend-Widget bei der Einrichtung nicht automatisch aktiviert oder versehentlich deaktiviert wurde. Überprüfen Sie deswegen unter dem Menüpunkt „Frontend-Verhalten“, ob das Widget wirklich aktiv ist:
 
-![ccm19-widget-aktiv](../assets/ccm19-widget-aktiv.png)
-
-
+![ccm19-widget-aktiv.png](../../assets/ccm19-widget-aktiv.png)
 
 ## 2. Die Domain stimmt nicht mit der Domain überein, für die CCM19 konfiguriert wurde
 
@@ -16,7 +14,6 @@ Es kann passieren, dass das Frontend-Widget bei der Einrichtung nicht automatisc
 
 ## 3. Die im Tarif verfügbaren Banneraufrufe sind aufgebraucht
 
-Wenn in Ihrem Tarif keine Impressionen mehr verfügbar sind, wird das Banner nicht mehr angezeigt. In den Entwicklerwerkzeugen des Browsers wird unter dem Punkt „Console“ eine Fehlermeldung mit dem Hinweis „Quota exceeded“ ausgegeben.
-Sie können den aktuellen Status aber auch im CCM19-Konto überprüfen. In der Seite nach dem Login sehen Sie die gebuchten Tarife und Informationen darüber, ob für den laufenden Monat noch CCM19-Aufrufe zur Verfügung stehen.
+Wenn in Ihrem Tarif keine Impressionen mehr verfügbar sind, wird das Banner nicht mehr angezeigt. In den Entwicklerwerkzeugen des Browsers wird unter dem Punkt „Console“ eine Fehlermeldung mit dem Hinweis „Quota exceeded“ ausgegeben. Sie können den aktuellen Status aber auch im CCM19-Konto überprüfen. In der Seite nach dem Login sehen Sie die gebuchten Tarife und Informationen darüber, ob für den laufenden Monat noch CCM19-Aufrufe zur Verfügung stehen.
 
-![tarifuebersicht](../assets/tarifuebersicht.png)
+![tarifuebersicht.png](../../assets/tarifuebersicht.png)

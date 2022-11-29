@@ -4,7 +4,7 @@ Um mit CCM19 zu starten brauchen Sie entweder einen Account aus unserem Fullserv
 
 ## Fullservice Version
 
-Die Registrierung bei der Service-Variante ist denkbar einfach. Sie wählen auf der Webseite im [Bereich "Service-Variante"](https://www.ccm19.de/ccm19-service-tarife.html) den für Sie passenden Tarif aus und registrieren sich mit Ihren Daten. Danach erhalten Sie per E-Mail die Daten für den Login ins System bzw. Sie haben die Daten schon vorher eingetragen. 
+Die Registrierung bei der Service-Variante ist denkbar einfach. Sie wählen auf der Webseite im [Bereich "Service-Variante"](https://www.ccm19.de/ccm19-service-tarife.html) den für Sie passenden Tarif aus und registrieren sich mit Ihren Daten. Danach erhalten Sie per E-Mail die Daten für den Login ins System bzw. Sie haben die Daten schon vorher eingetragen.
 
 Sollten Sie bereits einen Account auf CCM19 haben, loggen Sie sich in den bestehenden Account ein und navigieren Sie wieder zu der Service-Varianten Übersicht.
 
@@ -14,10 +14,10 @@ Weitere Informationen zum Login finden Sie hier: [Login](login-und-passwoerter.m
 
 ## Downloadversion
 
-Die Download Version finden Sie auf unserer Webseite in diesem Bereich: https://www.ccm19.de/ccm19-download-lizenzen.html
+Die Download Version finden Sie auf unserer Webseite in diesem Bereich: <https://www.ccm19.de/ccm19-download-lizenzen.html>
 
-Nach der Bestellung der Mietversion können Sie das CCM19 Tool einfach über unsere Webseite herunterladen. Nutzen Sie dafür einfach [diesen Link](https://www.ccm19.de/ccm19-login.html) oder gehen Sie über das Menü hierhin: [https://www.ccm19.de/account/](https://www.ccm19.de/account/). Danach klicken Sie im kleinen Untermenu auf **Download** und können dort Ihre Dateien herunterladen.
+Nach der Bestellung der Mietversion können Sie das CCM19 Tool einfach über unsere Webseite herunterladen. Nutzen Sie dafür einfach [diesen Link](https://www.ccm19.de/ccm19-login.html) oder gehen Sie über das Menü hierhin: <https://www.ccm19.de/account/>. Danach klicken Sie im kleinen Untermenu auf **Download** und können dort Ihre Dateien herunterladen.
 
-![screenshot-2020.09.30-11_13_10-Account _ Download Version Login](../assets/screenshot-2020.09.30-11_13_10-Account%20_%20Download%20Version%20Login.jpg)
+![screenshot-2020.09.30-11_13_10-Account _ Download Version Login.jpg](<../../assets/screenshot-2020.09.30-11_13_10-Account _ Download Version Login.jpg>)
 
 Sollten Sie Probleme beim Download haben oder die Dateien nicht angezeigt werden können Sie sich gerne an unseren Online-Support oder per E-Mail an uns wenden. Im Reiter Lizenzen finden Sie auch den Lizenzkey den Sie für die Installation brauchen. Alle Informationen zur Installation finden Sie [hier](https://www.docs.ccm19.de/erste_schritte/installation/).

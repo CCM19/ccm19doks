@@ -41,7 +41,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Domain](../components.md#domain)[]
+  - [Domain](../components.md#domain)\[]
 
 ## Domain auslesen {#read-domain}
 
@@ -95,4 +95,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

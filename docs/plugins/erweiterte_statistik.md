@@ -6,13 +6,13 @@ Mit Hilfe der erweiterten Statistik können Sie die statistischen Consent Daten 
 
 Hier sehen Sie die Daten einer Beispielseite von einer unserer vielen Kundenseiten die uns freundlicherweise zur Verfügung gestellt wurden, es handelt sich hier um eine reine Infoseite aus dem Agrarbereich. Das ist aber für die Erläuterung der Oberfläche letztlich nicht relevant.
 
-![screenshot-1641940415783](../assets/screenshot-1641940415783.jpg)
+![screenshot-1641940415783.jpg](../../assets/screenshot-1641940415783.jpg)
 
 ## Nutzung der Maske
 
 Oben links können Sie auswählen ob die Daten absolut - also die reinen Zahlen oder prozentual dargestellt werden sollen.
 
-Die prozentualen Werte stehen aber für die Vergangenheit aber nur für einige kurze Zeiträume zur Verfügung da sehr lange nur die Zustimmungen geloggt wurden, aber keine Einblendungen. Die wurden jeweils nur für den jeweiligen Monat für die Abrechnung gezählt und dann verworfen wurden. 
+Die prozentualen Werte stehen aber für die Vergangenheit aber nur für einige kurze Zeiträume zur Verfügung da sehr lange nur die Zustimmungen geloggt wurden, aber keine Einblendungen. Die wurden jeweils nur für den jeweiligen Monat für die Abrechnung gezählt und dann verworfen wurden.
 
 Wenn keine prozentualen Werte vorliegen, wird jeweils eine 0 angezeigt.
 
@@ -46,4 +46,4 @@ Mitunter kann es zu Problemen bei der Verarbeitung der Daten kommen, klicken Sie
 
 Da diese Daten ohnehin immer übermittelt werden, kann man diese auch problemlos darstellen und auswerten. Ein DSGVo / Personenbezug existiert nicht.
 
-![screenshot-1641940714580](../assets/screenshot-1641940714580.jpg)
+![screenshot-1641940714580.jpg](../../assets/screenshot-1641940714580.jpg)

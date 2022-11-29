@@ -2,10 +2,10 @@
 
 ## Übersicht
 
-| Beschreibung                                     | Methode  | Endpunkt                                                     |
-| ------------------------------------------------ | -------- | ------------------------------------------------------------ |
-| [Übersetzung erstellen](#create-locale)          | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/locale`    |
-| [Alle Übersetzungen auslesen](#read-all-locales) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/locale`    |
+| Beschreibung                                     | Methode  | Endpunkt                                                               |
+| ------------------------------------------------ | -------- | ---------------------------------------------------------------------- |
+| [Übersetzung erstellen](#create-locale)          | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/locale`              |
+| [Alle Übersetzungen auslesen](#read-all-locales) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/locale`              |
 | [Übersetzung auslesen](#read-locale)             | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/locale/{localeName}` |
 | [Übersetzung aktualisieren](#update-locale)      | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/locale/{localeName}` |
 | [Übersetzung entfernen](#delete-locale)          | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/locale/{localeName}` |
@@ -43,7 +43,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Locale](../components.md#locale)[]
+  - [Locale](../components.md#locale)\[]
 
 ## Übersetzung auslesen {#read-locale}
 
@@ -100,4 +100,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

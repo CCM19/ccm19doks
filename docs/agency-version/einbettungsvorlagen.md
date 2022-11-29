@@ -4,7 +4,7 @@ Die Einbettungsvorlagen sind nichts anderes als eine eigene Datenbank für Cooki
 
 Hier können Sie auch eigene Einträge erstellen die nur Ihren Kunden oder in Ihrem Unternehmen zur Verfügung stehen, oder bestehende Einträge aus der CCM19 Datenbank übernehmen und ergänzen.
 
-![screenshot-1641985247773](../assets/screenshot-1641985247773.jpg)
+![screenshot-1641985247773.jpg](../../assets/screenshot-1641985247773.jpg)
 
 ## Einstellungen
 
@@ -16,13 +16,13 @@ Zusätzlich können Sie hier auch festlegen für welche **Sprachen** Sie diese V
 
 Sie können einen neuen Eintrag einfach aus der CCM19 Datenbank übernehmen, klicken Sie dafür auf den blauen Button.
 
-![screenshot-1641985526514](../assets/screenshot-1641985526514.jpg)
+![screenshot-1641985526514.jpg](../../assets/screenshot-1641985526514.jpg)
 
 Hieraus können Sie dann einen Eintrag direkt übernehmen, er steht dann in Ihrer Datenbank zur Verfügung und Sie können den Eintrag dort bearbeiten.
 
 Die Bearbeitung erfolgt genauso wie im Bereich [Cookies & Einbindungen](/funktionen/cookies-und-andere/) beschrieben.
 
-![screenshot-1641987916812](../assets/screenshot-1641987916812.jpg)
+![screenshot-1641987916812.jpg](../../assets/screenshot-1641987916812.jpg)
 
 ### Automatische Aktualisierung
 

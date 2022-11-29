@@ -8,9 +8,9 @@ Wie Sie das `type` Attribut in Ihre Website verändern, werden wir hier chronolo
 
 ### 1. Skript lokalisieren
 
-Zuerst müssen wir alle Skripte auf **Ihrer** **Website** finden. Häufig werden Skripte im <head> der Website platziert, da dieser auf jeder Seite der Domain geladen wird. Bei Google Adsense erhält man jedoch neben dem allgemeinen Skript, auch weitere, die mit den individuellen Anzeigen eingebunden werden.
+Zuerst müssen wir alle Skripte auf **Ihrer Website** finden. Häufig werden Skripte im der Website platziert, da dieser auf jeder Seite der Domain geladen wird. Bei Google Adsense erhält man jedoch neben dem allgemeinen Skript, auch weitere, die mit den individuellen Anzeigen eingebunden werden.
 
-Hier sehen wir das Skript zur Einbindung im <head> der Seite:
+Hier sehen wir das Skript zur Einbindung im der Seite:
 
 ```
 <script data-ad-client="ca-pub-XXXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -18,7 +18,7 @@ Hier sehen wir das Skript zur Einbindung im <head> der Seite:
 
 Und hier wäre ein Beispiel für eine horizontale Anzeige, die an einem festen Ort auf der Seite platziert wird:
 
-```html
+```
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous"></script>
 <!-- Horizontale Anzeige Test -->
@@ -57,7 +57,7 @@ Die Zeilenumbrüche sind nur zur simpleren Veranschaulichung, es kann auch alles
 
 Da wir ja auch weitere Skripte haben, müssen nun alle anderen ebenfalls bearbeitet werden. In unserem Beispiel betrifft das noch die horizontale Anzeige:
 
-```javascript
+```
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous" type="text/x-ccm-loader" ></script>
 <!-- Horizontale Anzeige Test -->
@@ -76,7 +76,7 @@ Da wir ja auch weitere Skripte haben, müssen nun alle anderen ebenfalls bearbei
 
 Damit die Skripte nun auch zusammen freigeschaltet werden können bzw. durch den Consent der Besucher aktiviert werden können, fügen wir den Skripten ein weiteres Attribut hinzu:
 
-```javascript
+```
 data-ccm-loader-group="adsbygoogle"
 ```
 
@@ -84,13 +84,13 @@ Dabei ist der Ausdruck in den Anführungszeichen frei wählbar. Hier haben wir u
 
 Nun fügen wir diesen Teil noch den bereits bearbeiteten Skripten hinter dem Type-Attribut hinzu:
 
-```javascript
+```
 <script data-ad-client="ca-pub-XXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/x-ccm-loader" data-ccm-loader-group="adsbygoogle"></script>
 ```
 
 Und auch wider in der horizontalen Anzeige:
 
-```javascript
+```
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXX"
      crossorigin="anonymous" type="text/x-ccm-loader" data-ccm-loader-group="adsbygoogle"></script>
 <!-- Horizontale Anzeige Test -->
@@ -109,11 +109,10 @@ Und auch wider in der horizontalen Anzeige:
 
 Aktuell hat die letzte Maßnahme noch keinen Effekt, da CCM19 die Gruppierung nicht kennt. Navigieren wir also in der administrativen Oberfläche von CCM19 zum entsprechenden Embedding und bearbeiten wir es:
 
-![Embedding bearbeiten Adsense](../assets/Embedding%20bearbeiten%20Adsense.png)
+![Embedding bearbeiten Adsense.png](<../../assets/Embedding bearbeiten Adsense.png>)
 
 Hier sehen wir recht weit oben ein Feld, um Gruppennamen einzutragen. Dort tragen wir unser selbst definierten Gruppennamen ein. In unserem Fall lautet er "adsbygoogle".
 
-![CCM19 Gruppenname definieren](../assets/CCM19%20Gruppenname%20definieren.png)
+![CCM19 Gruppenname definieren.png](<../../assets/CCM19 Gruppenname definieren.png>)
 
 Vergessen Sie nicht zu speichern!
-

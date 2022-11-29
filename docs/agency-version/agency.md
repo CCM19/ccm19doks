@@ -18,6 +18,6 @@ Mit der Agency Version haben Sie auch die Möglichkeit das CCM19 an Ihre Kundenv
 
 Das Dashboard bietet einige Basisinformationen über die Nutzung der Agency Version. Zum einem wieviel Kunden in der Datenbank vorliegen und wieviele Domains darüber genutzt werden. Außerdem sehen Sie eine kleine Grafik die die Auslastung Ihrer CCM19 Instanz zeigt im aktuellen Monat anzeigt.
 
-![screenshot-1641982525189](../assets/screenshot-1641982525189.jpg)
+![screenshot-1641982525189.jpg](../../assets/screenshot-1641982525189.jpg)
 
- Weitere Informationen finden Sie links im Menü.
+Weitere Informationen finden Sie links im Menü.

@@ -2,14 +2,14 @@
 
 ## Übersicht
 
-| Beschreibung                                                 | Methode  | Endpunkt                                                     |
-| ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
-| [Platzhalter erstellen](#create-placeholder)                 | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder` |
-| [Alle Platzhalter überschreiben (bulk)](#create-placeholder-bulk) | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder` |
-| [Alle Platzhalter auslesen](#read-all-placeholders)          | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder` |
-| [Platzhalter auslesen](#read-placeholder)                    | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
-| [Platzhalter aktualisieren](#update-placeholder)             | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
-| [Platzhalter entfernen](#delete-placeholder)                 | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
+| Beschreibung                                                      | Methode  | Endpunkt                                                                         |
+| ----------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------- |
+| [Platzhalter erstellen](#create-placeholder)                      | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder`                   |
+| [Alle Platzhalter überschreiben (bulk)](#create-placeholder-bulk) | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder`                   |
+| [Alle Platzhalter auslesen](#read-all-placeholders)               | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder`                   |
+| [Platzhalter auslesen](#read-placeholder)                         | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
+| [Platzhalter aktualisieren](#update-placeholder)                  | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
+| [Platzhalter entfernen](#delete-placeholder)                      | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/placeholder/{placeholderName}` |
 
 ## Platzhalter erstellen {#create-placeholder}
 
@@ -41,12 +41,12 @@
 - `{clientId}`: *string* – Die ID eines CCM19-Kundenkontos
 - `{domainId}`: *string* – Die ID einer Domain, die in dem Kundenkonto vorhanden ist
 
-**Payload:** [Placeholder](../components.md#placeholder)[]
+**Payload:** [Placeholder](../components.md#placeholder)\[]
 
 **Response:**
 
 - `201` – Ressource(n) erfolgreich erzeugt
-  - [Placeholder](../components.md#placeholder)[]
+  - [Placeholder](../components.md#placeholder)\[]
 - `400` – Ungültige oder fehlende Eigenschaften
 
 ## Alle Platzhalter auslesen {#read-all-placeholders}
@@ -63,7 +63,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Placeholder](../components.md#placeholder)[]
+  - [Placeholder](../components.md#placeholder)\[]
 
 ## Platzhalter auslesen {#read-placeholder}
 
@@ -120,4 +120,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

@@ -20,7 +20,7 @@ Falls dies für Sie dennoch keine Option ist, folgen Sie bitte dieser Anleitung:
 
 Sobald ein Embedding über die CCM19-Oberfläche zugelassen wird, wird folgendes Event ausgelöst. Die Events werden bei jedem Seitenaufruf für alle zugelassenen Embeddings wiederholt abgefeuert.
 
-```javascript
+```
 window.dataLayer.push({
     event: 'CCM19.embeddingAccepted', // Konstanter Bezeichner
     id: 'xxxxxxx', // CCM19-interne Embedding-ID
@@ -30,7 +30,7 @@ window.dataLayer.push({
 
 Im Tag Manager kann über Triggers → New → Custom Events darauf reagiert werden.
 
-![](../assets/Mon%20Oct%2025%202021%2011:17:23%20GMT+0200%20(Mitteleurop%C3%A4ische%20Sommerzeit).png)
+![Mon Oct 25 2021 11:17:23 GMT+0200 (Mitteleuropäische Sommerzeit).png](<../../assets/Mon Oct 25 2021 11:17:23 GMT+0200 (Mitteleuropäische Sommerzeit).png>)
 
 So sehen die Informationen aus, die der Data Layer beinhaltet. Unser Ziel ist die Trigger auf diese Informationen festzulegen.
 
@@ -44,44 +44,39 @@ Navigieren Sie in CCM19 vom Dashboard & Einbindungen zu den Einbindungen & Cooki
 
 Für unser Beispiel erstellten wir ein Tag für das Webanalysetool Google Analytics. Den Tracking-Typ haben wir auf Seitenaufruf stehen lassen.
 
-![](../assets/Mon%20Mar%2022%202021%20154243%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png)
+![Mon Mar 22 2021 154243 GMT+0100 (Mitteleuropäische Normalzeit).png](<../../assets/Mon Mar 22 2021 154243 GMT+0100 (Mitteleuropäische Normalzeit).png>)
 
 ### 3. Trigger auswählen
 
-Als Triggertyp [a)] stellen wir ein benutzerdefiniertes Ereignis ein und benennen es *.\** [b)]. Haken Sie die Option *Übereinstimmung mit regulärem Ausdruck verwenden* an [c)].
+Als Triggertyp \[a)] stellen wir ein benutzerdefiniertes Ereignis ein und benennen es *.\** \[b)]. Haken Sie die Option *Übereinstimmung mit regulärem Ausdruck verwenden* an \[c)].
 
-![](../assets/Mon%20Mar%2022%202021%20154642%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png)
+![Mon Mar 22 2021 154642 GMT+0100 (Mitteleuropäische Normalzeit).png](<../../assets/Mon Mar 22 2021 154642 GMT+0100 (Mitteleuropäische Normalzeit).png>)
 
 ### 4.Variablen erstellen
 
-Da das Ereignis für jedes Embedding gleich ist, wollen wir nun noch mit Variablen definieren, dass das Tag nur bei einer Einwilligung des Google Analytics Embedding gefeuert wird.
-Wir klicken also auf *Diesen Trigger auslösen bei: Einige benutzerdefinierte Ereignisse* und fügen eine neue Variable ein.
+Da das Ereignis für jedes Embedding gleich ist, wollen wir nun noch mit Variablen definieren, dass das Tag nur bei einer Einwilligung des Google Analytics Embedding gefeuert wird. Wir klicken also auf *Diesen Trigger auslösen bei: Einige benutzerdefinierte Ereignisse* und fügen eine neue Variable ein.
 
-![cbimage](../assets/cbimage.jpg)
+![cbimage.jpg](../../assets/cbimage.jpg)
 
+Als Variablentyp wählen wir die Datenschichtvariable aus \[a)]. Als Namen tragen wir den Key *name* ein \[b)] und stellen auf Version 1 um \[c)].
 
-
-Als Variablentyp wählen wir die Datenschichtvariable aus [a)]. Als Namen tragen wir den Key *name* ein [b)] und stellen auf Version 1 um [c)].
-
-![](../assets/Mon%20Mar%2022%202021%20162718%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png)
+![Mon Mar 22 2021 162718 GMT+0100 (Mitteleuropäische Normalzeit).png](<../../assets/Mon Mar 22 2021 162718 GMT+0100 (Mitteleuropäische Normalzeit).png>)
 
 ### 5. Variablenfilter hinzufügen
 
-Nun definieren wir, welcher Wert der Key *name* haben muss, um den Trigger auszulösen. Hier tragen wir **immer** den Namen des Embeddings ein (so wie er in CCM19 hinterlegt wurde), also in diesem Fall *Google Analytics* [a)].
+Nun definieren wir, welcher Wert der Key *name* haben muss, um den Trigger auszulösen. Hier tragen wir **immer** den Namen des Embeddings ein (so wie er in CCM19 hinterlegt wurde), also in diesem Fall *Google Analytics* \[a)].
 
-Außerdem fügen wir noch ein Event hinzu [b)].
+Außerdem fügen wir noch ein Event hinzu \[b)].
 
+![Mon Mar 22 2021 162726 GMT+0100 (Mitteleuropäische Normalzeit).png](<../../assets/Mon Mar 22 2021 162726 GMT+0100 (Mitteleuropäische Normalzeit).png>)
 
-![](../assets/Mon%20Mar%2022%202021%20162726%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png)
-
-Das Event, welches wir hier eintragen lautet *CCM19.embeddingAccepted*.![](../assets/Mon%20Mar%2022%202021%20162738%20GMT+0100%20(Mitteleurop%C3%A4ische%20Normalzeit).png)
+Das Event, welches wir hier eintragen lautet *CCM19.embeddingAccepted*.
 
 ### 6. Testen, testen, testen…
 
-Der Tag Manager bietet einen Vorschaumodus zum testen an. Bevor man also die Version live schaltet, sollte man überprüfen, ob die Tags auch gefeuert werden.
-In den Nachrichten schauen Sie nach dem entsprechendem Embedding und sehen sich das Tag genauer an. Wenn dort alle Häkchen gesetzt worden sind, funktioniert das Tracking.
+Der Tag Manager bietet einen Vorschaumodus zum testen an. Bevor man also die Version live schaltet, sollte man überprüfen, ob die Tags auch gefeuert werden. In den Nachrichten schauen Sie nach dem entsprechendem Embedding und sehen sich das Tag genauer an. Wenn dort alle Häkchen gesetzt worden sind, funktioniert das Tracking.
 
-![cbimage (1)](../assets/cbimage%20(1).jpg)
+![cbimage (1).jpg](<../../assets/cbimage (1).jpg>)
 
 # Weitere Events
 
@@ -95,7 +90,7 @@ Es gibt Auskunft über die Berechtigungen, die der Seitenbesucher zuletzt konfig
 
 Beispiel:
 
-```javascript
+```
 window.dataLayer.push({
     event: 'CCM19.consentStateChanged',
     initialConsent: true,
@@ -107,7 +102,7 @@ window.dataLayer.push({
 
 - **event**: *string* — Event-Bezeichner
 - **initialConsent**: *boolean* — Bei initialer Konfiguration des Seitenbesuchers `true`, andernfalls `false`.
-- **ccm19_{EMBEDDING_NAME}**: *boolean* — Sofern Embedding durch Seitenbesucher zugestimmt, `true`, andernfalls `false`.
+- **ccm19\_{EMBEDDING\_NAME}**: *boolean* — Sofern Embedding durch Seitenbesucher zugestimmt, `true`, andernfalls `false`.
 
 ### CCM19.embeddingAccepted
 
@@ -115,7 +110,7 @@ Dieses Event wird bei jedem Seitenaufruf und Bestätigen des Consent-Dialogs fü
 
 Beispiel:
 
-```javascript
+```
 window.dataLayer.push({
     event: 'CCM19.embeddingAccepted',
     id: 'xxxxxxx',
@@ -137,4 +132,4 @@ window.dataLayer.push({
 CCM19.cookieAccepted.<cookiename>
 ```
 
-Also z.B. `CCM19.cookieAccepted._ga` für das Cookie **_ga**.
+Also z.B. `CCM19.cookieAccepted._ga` für das Cookie **\_ga**.

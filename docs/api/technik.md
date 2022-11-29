@@ -12,13 +12,13 @@ CCM19 nutzt intensiv [Content Security Policy (CSP)](https://content-security-po
 
 ```
 Content-Security-Policy:
-	default-src 'self';
-	connect-src 'self' https://update.ccm19.de;
-	script-src 'self' 'unsafe-inline';
-	style-src 'self' 'unsafe-inline';
-	img-src 'self' data:;
-	frame-ancestors 'self';
-	form-action 'self'
+    default-src 'self';
+    connect-src 'self' https://update.ccm19.de;
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    frame-ancestors 'self';
+    form-action 'self'
 ```
 
 ## Speicherung ohne Datenbank
@@ -33,9 +33,7 @@ CCM19 nutzt alternativ MongoDB ab Version 4.0. In dieser Variante werden alle Da
 
 Das */var*-Verzeichnis wird in diesem Fall noch für Caching-Zwecke genutzt, muss also weiterhin beschreibbar sein.
 
-CCM19 benötigt Multi-Document-Transactions. Diese werden nur in Replica-Sets und (ab MongoDB-Version 4.2) in Sharded Clusters unterstützt.
-Es ist also in der Regel notwendig, auch bei 1-Server-Konfigurationen ein [Replica-Set einzurichten](https://www.mongodb.com/docs/manual/administration/replica-set-deployment/).
-Weitere spezielle Einstellungen werden nicht benötigt.
+CCM19 benötigt Multi-Document-Transactions. Diese werden nur in Replica-Sets und (ab MongoDB-Version 4.2) in Sharded Clusters unterstützt. Es ist also in der Regel notwendig, auch bei 1-Server-Konfigurationen ein [Replica-Set einzurichten](https://www.mongodb.com/docs/manual/administration/replica-set-deployment/). Weitere spezielle Einstellungen werden nicht benötigt.
 
 ## Beta-Phase
 
@@ -56,11 +54,11 @@ Als Server empfehlen wir einen LAMP-Server – wobei das M für MySQL nicht notw
 
 Beim Betrieb mit Apache httpd werden folgende Module benötigt:
 
-- mod_rewrite
-- mod_headers (optional)
-- mod_expires (optional)
+- mod\_rewrite
+- mod\_headers (optional)
+- mod\_expires (optional)
 
-CCM19 ist mit dem Caching-Modul mod_cache vollständig kompatibel. Zusätzlich empfiehlt es sich die Performance des Apache httpd zu optimieren. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
+CCM19 ist mit dem Caching-Modul mod\_cache vollständig kompatibel. Zusätzlich empfiehlt es sich die Performance des Apache httpd zu optimieren. Wie man das macht, dazu verweisen wir auf die zahllosen Tutorials die es auf anderen Seiten gibt.
 
 ### nginx
 
@@ -86,49 +84,49 @@ Beispiel:
 # - "unix:/run/php/php7.2-fpm.sock" je nach Serverkonfiguration durch den
 #   Socket-Pfad zu Ihrem PHP-FPM-Modul ersetzen.
 
-	set $ccm19_urlpath /ccm19;
-	set $ccm19_realpath /path/to/ccm/public;
+    set $ccm19_urlpath /ccm19;
+    set $ccm19_realpath /path/to/ccm/public;
 
-	location ~ /ccm19(/.*) {
-		root $ccm19_realpath;
-		try_files $1 @ccm19;
-	}
+    location ~ /ccm19(/.*) {
+        root $ccm19_realpath;
+        try_files $1 @ccm19;
+    }
 
-	location ^~ /ccm19/index.php {
-		return 403;
-	}
+    location ^~ /ccm19/index.php {
+        return 403;
+    }
 
-	location @ccm19 {
-		root $ccm19_realpath;
+    location @ccm19 {
+        root $ccm19_realpath;
 
-		fastcgi_index index.php;
-		fastcgi_split_path_info ^(/ccm19)(/.*)$;
-		set $path_info $fastcgi_path_info;
+        fastcgi_index index.php;
+        fastcgi_split_path_info ^(/ccm19)(/.*)$;
+        set $path_info $fastcgi_path_info;
 
-		fastcgi_param SCRIPT_FILENAME $document_root/index.php;
-		fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
-		fastcgi_param PATH_INFO $path_info;
+        fastcgi_param SCRIPT_FILENAME $document_root/index.php;
+        fastcgi_param SCRIPT_NAME $ccm19_urlpath/index.php;
+        fastcgi_param PATH_INFO $path_info;
 
-		fastcgi_param HTTP_PROXY	"";
-		fastcgi_param QUERY_STRING	$query_string;
-		fastcgi_param REQUEST_METHOD	$request_method;
-		fastcgi_param CONTENT_TYPE	$content_type;
-		fastcgi_param CONTENT_LENGTH	$content_length;
-		fastcgi_param REQUEST_URI	$request_uri;
-		fastcgi_param DOCUMENT_URI	$document_uri;
-		fastcgi_param DOCUMENT_ROOT	$document_root;
-		fastcgi_param SERVER_PROTOCOL	$server_protocol;
-		fastcgi_param REQUEST_SCHEME	$scheme;
-		fastcgi_param HTTPS		$https if_not_empty;
-		fastcgi_param GATEWAY_INTERFACE	CGI/1.1;
-		fastcgi_param SERVER_SOFTWARE	nginx/$nginx_version;
-		fastcgi_param REMOTE_ADDR	$remote_addr;
-		fastcgi_param REMOTE_PORT	$remote_port;
-		fastcgi_param SERVER_ADDR	$server_addr;
-		fastcgi_param SERVER_PORT	$server_port;
-		fastcgi_param SERVER_NAME	$server_name;
+        fastcgi_param HTTP_PROXY    "";
+        fastcgi_param QUERY_STRING  $query_string;
+        fastcgi_param REQUEST_METHOD    $request_method;
+        fastcgi_param CONTENT_TYPE  $content_type;
+        fastcgi_param CONTENT_LENGTH    $content_length;
+        fastcgi_param REQUEST_URI   $request_uri;
+        fastcgi_param DOCUMENT_URI  $document_uri;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+        fastcgi_param SERVER_PROTOCOL   $server_protocol;
+        fastcgi_param REQUEST_SCHEME    $scheme;
+        fastcgi_param HTTPS     $https if_not_empty;
+        fastcgi_param GATEWAY_INTERFACE CGI/1.1;
+        fastcgi_param SERVER_SOFTWARE   nginx/$nginx_version;
+        fastcgi_param REMOTE_ADDR   $remote_addr;
+        fastcgi_param REMOTE_PORT   $remote_port;
+        fastcgi_param SERVER_ADDR   $server_addr;
+        fastcgi_param SERVER_PORT   $server_port;
+        fastcgi_param SERVER_NAME   $server_name;
 
-		fastcgi_pass unix:/run/php/php7.2-fpm.sock;
-	}
+        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+    }
 
 ```

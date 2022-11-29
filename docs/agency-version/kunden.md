@@ -2,7 +2,7 @@
 
 Innerhalb von der CCM19 Enterprise / Agency Version können Sie eigene Kunden verwalten. Jeder Kunde kann sich mit eigenen Benutzerdaten einloggen und seine eigenen Domains in seinem Account verwalten.
 
-![screenshot-1641983588731](../assets/screenshot-1641983588731.jpg)
+![screenshot-1641983588731.jpg](../../assets/screenshot-1641983588731.jpg)
 
 Hier sehen Sie die Übersicht der Kunden in der Ihrer Datenbank. Das können beliebig viele sein. Der Klick auf den grünen Button führt zu nächsten Maske.
 
@@ -10,27 +10,21 @@ Hier sehen Sie die Übersicht der Kunden in der Ihrer Datenbank. Das können bel
 
 Mit Klick auf den grünen Button neuen Kunden erstellen springen Sie in die passende Maske hinein.
 
-
-
-![screenshot-2020.10.01-12_17_23-1601547443774_2](../assets/screenshot-2020.10.01-12_17_23-1601547443774_2-1601552530713.jpg)
-
-
+![screenshot-2020.10.01-12_17_23-1601547443774_2-1601552530713.jpg](../../assets/screenshot-2020.10.01-12_17_23-1601547443774_2-1601552530713.jpg)
 
 ## Kunden erstellen Maske
 
 Hier können Sie die wichtigen Basisdaten für neue Kunden einstellen. Diese Maske können Sie nutzen wenn Sie die Kunden in Ihrer Installation nicht mit Hilfe der API verarbeiten.
 
-![screenshot-1641983897505](../assets/screenshot-1641983897505.jpg)
-
-
+![screenshot-1641983897505.jpg](../../assets/screenshot-1641983897505.jpg)
 
 ## Pflichtfelder für neuen Kunden
 
-Die Felder 
+Die Felder
 
-* Username, 
-* Passwort 
-* und E-Mail Adresse 
+- Username,
+- Passwort
+- und E-Mail Adresse
 
 sind Pflichtfelder die immer gesetzt werden müssen. Die restlichen Felder dienen eher statistischen Zwecken und damit User sich darin etwas sicherer fühlen.
 
@@ -54,19 +48,17 @@ Stellen Sie ein wieviele Domains Kunden in Ihren Accounts zur Verfügung haben. 
 
 Das ist ein etwas heikler Automatismus. Damit können die Kunden einen Code in die Seite einbinden ohne individuelle Domainerkennung. D.h. der Link der eingebunden wird enthält **nicht** den Parameter domainid=1234.
 
-Domains werden damit auch automatisch erstellt. Das heißt Sie binden den Code ein und wenn CCM19 erkennt der Code läuft unter einer Domain die das System noch nicht kennt wird ein Eintrag in der Datenbank erstellt und er erscheint im Domainlisting im Backend. Hier können die Einträge dann darüber verwaltet werden. 
+Domains werden damit auch automatisch erstellt. Das heißt Sie binden den Code ein und wenn CCM19 erkennt der Code läuft unter einer Domain die das System noch nicht kennt wird ein Eintrag in der Datenbank erstellt und er erscheint im Domainlisting im Backend. Hier können die Einträge dann darüber verwaltet werden.
 
 **Hier gibt es aber oft unsinnigen Beifang wenn z.B. Domains wie Google die Seite als iframe einbinden oder über Proxys die Seite besuchen.**
 
 > Hier sollten Sie das also gut im Auge behalten was passiert.
 
-
-
 ## Rechte
 
-![screenshot-16419838975051](../assets/screenshot-16419838975051.jpg)
+![screenshot-16419838975051.jpg](../../assets/screenshot-16419838975051.jpg)
 
-Hier können Sie einstellen welche Rechte der Kunde jeweils haben soll. Hier können detaillierte Einstellungen durchgeführt werden worauf Kunden Zugriff haben und worauf nicht. 
+Hier können Sie einstellen welche Rechte der Kunde jeweils haben soll. Hier können detaillierte Einstellungen durchgeführt werden worauf Kunden Zugriff haben und worauf nicht.
 
 Standardmäßig werden Neukunden so angelegt dass sie Zugriff auf alles haben, es muss also nur dann etwas eingestellt werden wenn es **nicht** so sein soll.
 
@@ -81,23 +73,15 @@ Die Usereinstellungen überschreiben damit die Plugineinstellungen, die also nur
 
 Wenn Sie einen Kundendatensatz bearbeiten sehen Sie noch einige zusätzliche Informationen im Bereich Aufrufe.
 
-
-
-![screenshot-2020.10.02-15_04_41-1601643881678](../assets/screenshot-2020.10.02-15_04_41-1601643881678.jpg)
-
-
+![screenshot-2020.10.02-15_04_41-1601643881678.jpg](../../assets/screenshot-2020.10.02-15_04_41-1601643881678.jpg)
 
 Es wird hier die tatsächliche Anzahl der Aufrufe angezeigt und ein Button um den Zähler für den aktuellen Monat zurückzusetzen.
-
-
 
 ## Übersicht über vorhandene Kunden
 
 Eine Auflistung Ihrer Kunden finden Sie wenn Sie auf den Menüpunkte Kunden links im Menü klicken.
 
-![screenshot-2020.10.01-12_13_49-1601547229455](../assets/screenshot-2020.10.01-12_13_49-1601547229455.jpg)
-
-
+![screenshot-2020.10.01-12_13_49-1601547229455.jpg](../../assets/screenshot-2020.10.01-12_13_49-1601547229455.jpg)
 
 In der Auflistung werden die Basisdaten Ihrer Kunden aufgelistet, wieviel Zugriffe und Domains erlaubt und genutzt wurden.
 
@@ -115,9 +99,8 @@ Mit dem roten Papierkorb Button können Sie einen Kunden (nach Nachfrage) restlo
 
 ### In Kundenaccount einloggen
 
-Mit dem blauen Button können Sie sich ohne Passwort in den jeweiligen Kundenaccount einloggen. Beachten Sie aber bitte dass Sie sich dafür immer die Freigabe von Ihrem Kunden geben lassen. 
+Mit dem blauen Button können Sie sich ohne Passwort in den jeweiligen Kundenaccount einloggen. Beachten Sie aber bitte dass Sie sich dafür immer die Freigabe von Ihrem Kunden geben lassen.
 
 ## Kunden suchen
 
 Mit Hilfe der Suchmaske können Sie nach bestimmten Kunden suchen, die Suchfunktion durchsucht alle Datensätze der Kunden und listet nur die auf die gefunden werden.
-

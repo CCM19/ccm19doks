@@ -4,23 +4,23 @@ Mit diesem Plugin bekommen Sie die Möglichkeit, über das Backend bestimmte Dat
 
 ## Ansicht in der Domain-Übersicht
 
-![Domain-Übersicht](../assets/imex/übersicht_domain.png)
+![übersicht_domain.png](../../assets/übersicht_domain.png)
 
 Wenn Sie sich in der Übersicht Ihrer Domains befinden, haben Sie dort die Möglichkeit ausgewählte Domains Ihres Accounts zu exportieren und einzelne bis mehrere Domains zu importieren. An dieser Stelle lassen sich nur alle Daten einer Domain exportieren, jedoch haben Sie in der Ansicht der Domain selbst die Möglichkeit, einzelne Teile einer Domain zu exportieren.
 
 ### Import
 
-![Domain-Mapping](../assets/imex/mapping_domains.png)
+![mapping_domains.png](../../assets/mapping_domains.png)
 
 Nach dem Versuch eine oder mehrere Domains in der Übersicht zu importieren, können Sie sich, um den Import komplett kontrollieren zu können, aussuchen was mit jeder Domain aus der hochgeladenen Datei passieren soll.
 
-![Domain-Mapping Optionen](../assets/imex/options_import.png)
+![options_import.png](../../assets/options_import.png)
 
 Nun können Sie als Möglichkeit für jede Domain entweder eine Domain überschreiben, indem Sie den Namen dieser auswählen, eine neue Domain hinzufügen oder sich entscheiden, nichts mit einer Domain aus der Datei zu machen.
 
 ## Ansicht in der Domain
 
-![Domain](../assets/imex/übersicht_single.png)
+![übersicht_single.png](../../assets/übersicht_single.png)
 
 Wenn Sie das Plugin in einer Domain verwenden, haben Sie jetzt die Möglichkeit, einzelne Teile einer Domain zu exportieren und wieder zu importieren. Achten Sie aber auf die Info-Buttons für einzelne Punkte, da diese wichtige Informationen über das Verhalten könnten.
 

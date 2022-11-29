@@ -2,10 +2,10 @@
 
 ## Übersicht
 
-| Beschreibung                                        | Methode  | Endpunkt                                                     |
-| --------------------------------------------------- | -------- | ------------------------------------------------------------ |
-| [Cookie erstellen](#create-embedding-asset)         | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset` |
-| [Alle Cookies auslesen](#read-all-embedding-assets) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset` |
+| Beschreibung                                        | Methode  | Endpunkt                                                                                   |
+| --------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| [Cookie erstellen](#create-embedding-asset)         | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset`           |
+| [Alle Cookies auslesen](#read-all-embedding-assets) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset`           |
 | [Cookie auslesen](#read-embedding-asset)            | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset/{assetId}` |
 | [Cookie aktualisieren](#update-embedding-asset)     | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset/{assetId}` |
 | [Cookie entfernen](#delete-embedding-asset)         | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/embedding/{embeddingId}/asset/{assetId}` |
@@ -45,7 +45,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [EmbeddingAsset](../components.md#embedding-asset)[]
+  - [EmbeddingAsset](../components.md#embedding-asset)\[]
 
 ## Cookie auslesen {#read-embedding-asset}
 
@@ -105,4 +105,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

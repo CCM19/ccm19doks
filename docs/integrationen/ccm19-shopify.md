@@ -4,37 +4,23 @@ Shopify ist ein immer beliebter werdender Baukasten um seinen Webshop schnell un
 
 ## Dashboard in CCM19 anwählen
 
-   Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code. Kopieren Sie sich diesen in Ihren Zwischenspeicher.
+Nach der erfolgreichen Installation von CCM19 auf Ihrem Server bzw. der Einrichtung bekommen Sie einen Javascript-Code. Kopieren Sie sich diesen in Ihren Zwischenspeicher.
 
-![javascript](../../assets/javascript.png)
+<br>
 
-
-
-## Shopify Backend 
+## Shopify Backend
 
 Loggen Sie sich in das Backend Ihres Shops ein. Navigieren Sie in die Themeeinstellungen (1.) und bearbeiten Sie Ihr aktuelles Theme (2.).
 
-
-
-![Anleitung Shopify 1](../../assets/Anleitung%20Shopify%201.png)
-
-
+<br>
 
 Öffnen Sie anschließend die Einstellungen mithilfe der drei Punkte im oberen linken bereich (1.) und klicken Sie auf "Edit code".
 
+<br>
 
+Nun sehen wir die Dateien aus denen Ihr Shop besteht. Unter Layout befindet sich die Datei "theme.liquid", welche Sie nun editieren müssen (1. & 2.). Fügen Sie das Javascript von CCM19, welches sich noch im Zwischenspeicher befindet nach dem Element ein, so wie hier im Bild zu sehen (3.).
 
-![Anleitung Shopify 2](../../assets/Anleitung%20Shopify%202.png)
-
-
-
-Nun sehen wir die Dateien aus denen Ihr Shop besteht. Unter Layout befindet sich die Datei "theme.liquid", welche Sie nun editieren müssen (1. & 2.). Fügen Sie das Javascript von CCM19, welches sich noch im Zwischenspeicher befindet nach dem Element <head> ein, so wie hier im Bild zu sehen (3.).
-
-
-
-![Anleitung Shopify 3](../../assets/Anleitung%20Shopify%203.png)
-
-
+<br>
 
 ## Fertig
 

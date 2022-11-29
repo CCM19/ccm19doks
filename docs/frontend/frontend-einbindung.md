@@ -10,8 +10,6 @@ Die Grundvoraussetzung ist jeweils, dass der CCM19-Code-Schnipsel in Ihre Seite 
 
 **Bitte wählen Sie immer nur EINE der drei Methoden zur Anwendung aus!**
 
-
-
 ## Möglichkeit 1 - Blocking
 
 Das ist die Standard-Möglichkeit, die auch beim Onboarding-Prozess genutzt wird. Der CCM19 Scanner untersucht Ihre Seite, liest aus, welche Skripte genutzt werden, und setzt daraus den Inhalt Ihres Banners zusammen.
@@ -30,9 +28,7 @@ Sie können CCM19 als Tag Manager nutzen, der die Skripte innerhalb von CCM19 ve
 
 Dazu tragen Sie den HTML-Code, z.B. das Google Analytics Skript, im CCM19 bei der passenden Einbindung im Feld "Quellcode der Einbindung" ein und entfernen den Code dafür aus dem HTML Ihrer Seite. Wo und wie Sie das durchführen, hängt von Ihrem CMS / Shop System ab. Oft kann man diese Skripte auch über die CMS Oberfläche deaktivieren.
 
-Technisch betrachtet wird dabei durch CCM19 das  **Laden** UND die  **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt. Es ist also eine sauberere Methode, die außerdem den Vorteil hat, dass sie sich positiv auf die Ladegechwindigkeit der Seite auswirkt, weil Skripte nur noch geladen werden müssen, wenn Consent vorliegt.
-
-
+Technisch betrachtet wird dabei durch CCM19 das **Laden** UND die **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt. Es ist also eine sauberere Methode, die außerdem den Vorteil hat, dass sie sich positiv auf die Ladegechwindigkeit der Seite auswirkt, weil Skripte nur noch geladen werden müssen, wenn Consent vorliegt.
 
 ## Möglichkeit 3 - HTML Manipulierung
 
@@ -42,15 +38,15 @@ Um dies zu nutzen, können Sie Ihren Skripten unseren CCM19-spezifischen Wert f�
 
 CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
 
-**Unser Typ-Attribut sieht so aus: `type="text/x-ccm-loader"`**
+**Unser Typ-Attribut sieht so aus:** **`type="text/x-ccm-loader"`**
 
 Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
 
-```javascript
+```
 <script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
-#### Gruppe für den Script-Loader
+### Gruppe für den Script-Loader
 
 Haben Sie Ihre Skripte auf der Website mit unserem Typ-Attribut `type="text/x-ccm-loader"` manuell ausgestattet, können Sie mit dieser Funktion diese Skripte gruppieren und einheitlich blockieren.
 
@@ -58,7 +54,7 @@ Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfall
 
 Zusammen mit dem `type`-Attribut sieht es dann so aus:
 
-```javascript
+```
 <script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 
@@ -66,6 +62,6 @@ Tragen Sie den Gruppennamen in der relevanten Einbindung unter dem Punkt "Gruppe
 
 Sobald ein Seitenbesucher eine solche Einbindung zulässt, werden die gruppierten Skripte nachgeladen.
 
-Technisch betrachtet wird dabei durch CCM19 das  **Laden** UND die  **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt.
+Technisch betrachtet wird dabei durch CCM19 das **Laden** UND die **Ausführung** der Skripte unterbunden, solange bis ein Consent für die Ausführung vorliegt.
 
 **Diese Variante gibt den Benutzer die meisten Flexibilität, da so auch individuelle Skripte mit speziellen Funktionen die z.B. nur auf einer Seite vorkommen gesteuert werden können.**

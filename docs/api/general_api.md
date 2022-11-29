@@ -2,15 +2,13 @@
 
 Mit der domainspezifischen API können Sie Consent und Ereignisdaten pro Domain und über eine gesicherte SSL Schnittstelle in andere Systeme integrieren.
 
-## API Key 
+## API Key
 
 Der Api Key selber finden Sie in der unten stehenden Maske. Mit dem Button "Neuen Api Key erstellen" wird der Key neu gesetzt und erscheint dann direkt in der Maske.
 
 Beachten Sie bitte das bei diesem Schritt evtl. vorhandene Abfragen nicht mehr funktionieren da der alte Key nicht mehr valide ist.
 
-![screenshot-2020.12.17-13_59_55-1608209995197](../assets/screenshot-2020.12.17-13_59_55-1608209995197.jpg)
-
-
+![screenshot-2020.12.17-13_59_55-1608209995197.jpg](../../assets/screenshot-2020.12.17-13_59_55-1608209995197.jpg)
 
 Der Aufruf erfolgt generell mit Ihrem Api Key als GET-Parameter `apiKey` - ohne diesen ist der Aufruf nicht erfolgreich. Jeder Key ist immer nur für einen Account valide.
 
@@ -20,13 +18,13 @@ Der Aufruf erfolgt generell per simplen GET Aufruf im Browser, curl oder eine be
 
 Sie können einen Testaufruf durchführen. Nutzen Sie dafür folgenden API-Endpunkt:
 
-```url
+```
 GET /api/test
 ```
 
 Darauf sollte das System folgendermaßen antworten.
 
-```json
+```
 {
     "username": "Ihr_Username",
     "apiKey": "IHR_API_KEY"
@@ -37,13 +35,13 @@ Darauf sollte das System folgendermaßen antworten.
 
 Um alle Domains Ihres Accounts zu listen, nutzen Sie bitte folgenden API-Endpunkt.
 
-```url
+```
 GET /api/domains
 ```
 
 Die Antwort sollte folgendermaßen lauten:
 
-```json
+```
 [
     {
         "id": "b61cd4a",
@@ -66,13 +64,13 @@ Die domId ist die wichtigste Information - damit können Sie weitere Information
 
 Mit dem folgenden API-Endpunkt holen Sie alle Consents aus dem aktuellen Datenblock des Protokolls. Bereits archivierte Protokolleinträge werden dabei nicht berücksichtigt. Bitte ersetzen Sie in der url `{domainId}` mit einer Domain-ID aus der obigen Abfrage.
 
-```url
+```
 GET /api/domains/{domainId}/consents
 ```
 
 Die Antwort lautet wie folgt:
 
-```json
+```
 [
     {
         "consent": true,
@@ -115,16 +113,14 @@ Die Antwort lautet wie folgt:
 
 Aufgelistet werden die Consents folgendermaßen:
 
-* consent: true / false - wurde ein Consent erteilt
-* ucid: eine individuelle Consent ID eines Besuchers
-* timestamp: Zeitstempel des Consentes
-* purposes: Welche Kategorie der Consent angehört
-* embeddings: Welchen Einbettungen resp. Cookies der Besucher zugestimmt hat
-* manipulationPrevention: true / false - ob Versuche zur Manipulation unterbunden wurden - d.h. nicht dass es welche gab, sondern nur das der Unterdrückungsmechanismus aktiv war.
+- consent: true / false - wurde ein Consent erteilt
+- ucid: eine individuelle Consent ID eines Besuchers
+- timestamp: Zeitstempel des Consentes
+- purposes: Welche Kategorie der Consent angehört
+- embeddings: Welchen Einbettungen resp. Cookies der Besucher zugestimmt hat
+- manipulationPrevention: true / false - ob Versuche zur Manipulation unterbunden wurden - d.h. nicht dass es welche gab, sondern nur das der Unterdrückungsmechanismus aktiv war.
 
 Mit Hilfe der ucId können Sie dann einen Eintrag herausholen.
-
-
 
 ## Einen Eintrag finden und Daten auslesen
 
@@ -132,13 +128,13 @@ Mit diesem API-Endpunkt lassen sich die Protokolleinträge nach Consent-ID filte
 
 Wichtig dabei ist lediglich, dass es nur eine Consent-ID gibt, die mit `387f1` beginnt. **Bei Kollisionen liefert die Anfrage eine leere Liste.**
 
-```url
+```
 GET /api/domains/{domainId}/consents/{consentId}
 ```
 
 Dieser Aufruf zeigt dann die gesamte Consent Historie dieses Key - im Beispiel
 
-```json
+```
 
 [
     {

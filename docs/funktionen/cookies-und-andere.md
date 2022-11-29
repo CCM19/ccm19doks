@@ -8,7 +8,7 @@ Eine Übersicht über vorhandene Einbindungen finden Sie unter dem Menüpunkt "E
 
 ## Übersicht über die vorhandenen Einbindungen
 
-![screenshot-2020.09.29-16_01_49-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_01_49-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.09.29-16_01_49-CCM19 - Cookie Consent Management Software.jpg](<../../assets/screenshot-2020.09.29-16_01_49-CCM19 - Cookie Consent Management Software.jpg>)
 
 Hier sehen Sie aufgelistet welche Einbindungen auf Ihrer Seite verwendet werden. Sie erkennen auf einen Blick welche Einbindungen aktiv sind, wie sie heißen und von wem diese sind.
 
@@ -18,7 +18,7 @@ Der Button "Neuen Eintrag erstellen" führt Sie zur Erstellungsmaske. Sinnvoller
 
 ## Verfügbare Einbindungen
 
-![screenshot-2020.09.29-16_05_01-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-16_05_01-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
+![screenshot-2020.09.29-16_05_01-CCM19 - Cookie Consent Management Software.jpg](<../../assets/screenshot-2020.09.29-16_05_01-CCM19 - Cookie Consent Management Software.jpg>)
 
 Hier sehen Sie aufgelistet die Einträge aus unserer Datenbank die Ihnen zur Verfügung stehen. Klicken Sie auf den grünen Button übernehmen um die Daten in die Bearbeitungsmaske zu übernehmen.
 
@@ -26,7 +26,7 @@ Mitunter ist noch eine Anpassung an Ihr Unternehmen oder Webseite notwendig, die
 
 ## Bearbeitungsmaske der Einbindungen
 
-![screenshot-1641903648518](../assets/screenshot-1641903648518.jpg)
+![screenshot-1641903648518.jpg](../../assets/screenshot-1641903648518.jpg)
 
 In der Bearbeitungsmaske können Sie folgendes eintragen:
 
@@ -48,9 +48,9 @@ Beim Quellcode der Einbindung müssen Sie den Code einfügen, durch den die Einb
 
 > **Außerdem muss er aus dem direkten Webseitentext entfernt werden, da Sie den Code ansonsten doppelt einbinden würden. Das führt zu technischen Problemen!**
 
-#### Beispiel Matomo
+### Beispiel Matomo
 
-```html
+```
 <!-- Matomo / voll anonymisiert, Daten verbleiben auf Firmeneigenen Servern -->
  <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -95,21 +95,23 @@ Um dies nun doch zu verhindern, können Sie Ihren Skripten unseren CCM19-spezifi
 
 CCM19 ist in der Lage, Skripte diesen Typs zu verarbeiten und gibt das Skript zum Laden frei, sofern laut Ihrer CCM19-Konfiguration nichts dagegen spricht.
 
-**Unser Typ-Attribut sieht so aus: `type="text/x-ccm-loader"`**
+**Unser Typ-Attribut sieht so aus:** **`type="text/x-ccm-loader"`**
 
 Verwenden Sie diesen Wert für jedes `script`-Tag Ihrer Seite, das entsprechend dieser Funktion geblockt bzw. freigegeben und nachgeladen werden soll. Exemplarisch sieht das Ganze dann so aus:
-```html
+
+```
 <script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader"></script>
 ```
 
-#### Gruppe für den Script-Loader
+### Gruppe für den Script-Loader
 
 Haben Sie Ihre Skripte auf der Website mit unserem Typ-Attribut `type="text/x-ccm-loader"` manuell ausgestattet, können Sie mit dieser Funktion diese Skripte gruppieren und einheitlich blockieren.
 
 Den Gruppennamen definieren Sie pro Einbindung selbst und fügen diesen ebenfalls dem entsprechenden Skript hinzu. Die Gruppenbezeichnung besteht immer aus folgendem Teil: `data-ccm-loader-group="beispiel_bezeichnung"`.
 
 Zusammen mit dem `type`-Attribut sieht es dann so aus:
-```html
+
+```
 <script data-ccm-loader-src="https://your.site/script.js" type="text/x-ccm-loader" data-ccm-loader-group="beispiel_bezeichnung"></script>
 ```
 
@@ -135,7 +137,7 @@ Mit dem Akzeptieren der Kategorie werden automatisch alle entsprechenden IFrames
 
 ## Einträge je Sprache
 
-![screenshot-2020.10.29-13_10_37-1603973437002](../assets/screenshot-2020.10.29-13_10_37-1603973437002.jpg)
+![screenshot-2020.10.29-13_10_37-1603973437002.jpg](../../assets/screenshot-2020.10.29-13_10_37-1603973437002.jpg)
 
 Für jede verwendete Sprache können die folgenden sprachabhängigen Inhalte noch erstellt werden.
 
@@ -165,57 +167,55 @@ Wo werden die Daten verarbeitet. Hier gilt nicht nur die die Adresse Ihres Büro
 
 ## Liste der Cookies und Storage Elemente
 
-![screenshot-2020.10.29-13_11_42-1603973502795](../assets/screenshot-2020.10.29-13_11_42-1603973502795.jpg)
+![screenshot-2020.10.29-13_11_42-1603973502795.jpg](../../assets/screenshot-2020.10.29-13_11_42-1603973502795.jpg)
 
 Hier sind alle Cookies und Storage Elemente aufgelistet die das Skript setzt. Sie können von Hand noch weitere Elemente eintragen, da der automatische Scan nicht immer alle Daten finden kann. Z.B. kann der Scanner keine Daten finden für einen eingeloggten Zustand. Auch die von CCM19 handgepflegte Datenbank muss nicht vollständig sein - überprüfen Sie die Daten immer genau.
 
-#### Name
+### Name
 
-Die Bezeichnung im Browser - z.B. _ga für ein Google Analytics Cookie oder _pk_id.\* für Matomo - das \* ist ein Platzhalter.
+Die Bezeichnung im Browser - z.B. \_ga für ein Google Analytics Cookie oder \_pk\_id.\* für Matomo - das \* ist ein Platzhalter.
 
-#### dyn.
+### dyn.
 
-Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit _pk_id.\* alle Cokies geblockt die mit _pk_id. anfangen, also _pk_id.123 usw.
+Hiermit bestimmen Sie ob es eine dynamische Variable ist - z.b. werden mit \_pk\_id.\* alle Cokies geblockt die mit \_pk\_id. anfangen, also \_pk\_id.123 usw.
 
-#### Speichertyp
+### Speichertyp
 
 Wie werden die Daten in Ihrem Browser gespeichert.
 
-#### Livetime / Expires
+### Livetime / Expires
 
 Wann läuft der Speichereintrag automatisch aus.
 
-#### Wert
+### Wert
 
 Welchen Wert transportiert das Cookie - in der Regel sind es kryptische Daten die hier gespeichert werden.
 
-
-
 ## Google Consent Mode (beta)
 
-![screenshot-1641904109779](../assets/screenshot-1641904109779.jpg)
+![screenshot-1641904109779.jpg](../../assets/screenshot-1641904109779.jpg)
 
 Beta deswegen weil er bei Google noch Beta Status hat - nicht bei CCM19. Google Consent Mode ist eine neue Funktionalität für Webseiten, die den Google Tag Manager verwenden, um Google-Dienste wie Google Ads, Floodlight oder Google Analytics einzubinden.
 
 Falls Sie den Google Tag Manager verwenden, wählen Sie bitte aus, welche Zustimmungs-Arten für Google mit dieser Einbindung impliziert werden sollen.
 
-Weitere Informationen zum Google Consent Mode (beta) von Google finden Sie hier: [https://support.google.com/analytics/answer/9976101?hl=de](https://support.google.com/analytics/answer/9976101?hl=de)
+Weitere Informationen zum Google Consent Mode (beta) von Google finden Sie hier: <https://support.google.com/analytics/answer/9976101?hl=de>
 
 ## Urls ausschließen
 
-![screenshot-1641904161415](../assets/screenshot-1641904161415.jpg)
+![screenshot-1641904161415.jpg](../../assets/screenshot-1641904161415.jpg)
 
-Auf diesen Seiten die Einbindung NICHT ausspielen, das bedeutet dass die aktuell ausgewählte Einbindung im Tag Manager Modus die Einbindung nicht aktiviert resp. im Blockmodus diese nicht freigibt. 
+Auf diesen Seiten die Einbindung NICHT ausspielen, das bedeutet dass die aktuell ausgewählte Einbindung im Tag Manager Modus die Einbindung nicht aktiviert resp. im Blockmodus diese nicht freigibt.
 
-Dies kann unter verschiedenen Umständen Sinn machen. 
+Dies kann unter verschiedenen Umständen Sinn machen.
 
-Tragen Sie eine URL pro Zeile ein. Am Ende können Sie ein * als Platzhalter verwenden. Ohne Platzhalter wird die URL exakt verglichen! Tragen Sie also bitte nur vollständige und gültige URLs ein.
+Tragen Sie eine URL pro Zeile ein. Am Ende können Sie ein \* als Platzhalter verwenden. Ohne Platzhalter wird die URL exakt verglichen! Tragen Sie also bitte nur vollständige und gültige URLs ein.
 
-Beispiel: https://www.ccm19.de/data.html* wirkt sich aus auf
+Beispiel: <https://www.ccm19.de/data.html>\* wirkt sich aus auf
 
-- https://www.ccm19.de/data.html
-- https://www.ccm19.de/data.htmlx
-- https://www.ccm19.de/data.html?var1=test
+- <https://www.ccm19.de/data.html>
+- <https://www.ccm19.de/data.htmlx>
+- <https://www.ccm19.de/data.html?var1=test>
 
 … und so weiter.
 

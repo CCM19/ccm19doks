@@ -34,9 +34,9 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Client](../components.md#client)[] – Spezifisch für diesen Endpunkt enthält jedes Element zusätzlich folgende Eigenschaften:
-    - `actualCallCount`: *int*
-    - `domainCountData`: *Array.&lt;domainName, callCount&gt;*
+  - [Client](../components.md#client)\[] – Spezifisch für diesen Endpunkt enthält jedes Element zusätzlich folgende Eigenschaften:
+  - `actualCallCount`: *int*
+  - `domainCountData`: *Array.\<domainName, callCount>*
 
 ## Kunden auslesen {#read-client}
 

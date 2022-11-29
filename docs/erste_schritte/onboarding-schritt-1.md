@@ -6,19 +6,12 @@ Alles was im Onboarding erstellt wird können Sie später in der Administration 
 
 Falls das Onboarding nicht automatisch startet können Sie auf dem Dashboard einfach den folgenden Link klicken:
 
-![screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.29-14_20_02-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
-
-
+![screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software.jpg](<../../assets/screenshot-2020.09.29-14_20_02-CCM19 - Cookie Consent Management Software.jpg>)
 
 ## Eingabe der Domain.
 
-Nach dem ersten Login erscheint die folgende Maske -  hier können Sie Ihre Domain eintragen und nach Cookies und Skripten scannen lassen. Wichtig ist dass Sie den Sicherheitshinweis abhaken.
+Nach dem ersten Login erscheint die folgende Maske - hier können Sie Ihre Domain eintragen und nach Cookies und Skripten scannen lassen. Wichtig ist dass Sie den Sicherheitshinweis abhaken.
 
-![screenshot-1614089750586-586](../assets/screenshot-1614089750586-586.jpg)
+![screenshot-1614089750586-586.jpg](../../assets/screenshot-1614089750586-586.jpg)
 
-Natürlich können Sie auch alles manuell durchführen, klicken Sie dafür einfach auf den Link "Setup überspriungen - ich mache alles manuell". 
-
-
-
-
-
+Natürlich können Sie auch alles manuell durchführen, klicken Sie dafür einfach auf den Link "Setup überspriungen - ich mache alles manuell".

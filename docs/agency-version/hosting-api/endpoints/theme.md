@@ -2,10 +2,10 @@
 
 ## Übersicht
 
-| Beschreibung                             | Methode  | Endpunkt                                                     |
-| ---------------------------------------- | -------- | ------------------------------------------------------------ |
-| [Theme erstellen](#create-theme)         | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/theme`     |
-| [Alle Themes auslesen](#read-all-themes) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/theme`     |
+| Beschreibung                             | Methode  | Endpunkt                                                           |
+| ---------------------------------------- | -------- | ------------------------------------------------------------------ |
+| [Theme erstellen](#create-theme)         | `POST`   | `/hosting/api/client/{clientId}/domain/{domainId}/theme`           |
+| [Alle Themes auslesen](#read-all-themes) | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/theme`           |
 | [Theme auslesen](#read-theme)            | `GET`    | `/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}` |
 | [Theme aktualisieren](#update-theme)     | `PUT`    | `/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}` |
 | [Theme entfernen](#delete-theme)         | `DELETE` | `/hosting/api/client/{clientId}/domain/{domainId}/theme/{themeId}` |
@@ -43,7 +43,7 @@
 **Response:**
 
 - `200` – Erfolg
-  - [Theme](../components.md#theme)[]
+  - [Theme](../components.md#theme)\[]
 
 ## Theme auslesen {#read-theme}
 
@@ -100,4 +100,3 @@
 
 - `204` – Ressource erfolgreich gelöscht
 - `404` – Ressource nicht gefunden
-

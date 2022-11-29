@@ -6,7 +6,7 @@ Laut DSGVO muss das Impressum einer Seite - ebenso wie die Datenschutzbestimmung
 
 Sie haben die Möglichkeit den Link zum Impressum direkt zu setzen, dazu müssen Sie in der folgenden Maske die Einstellung folgendermaßen setzen: "Impressum verlinken".
 
-![screenshot-1641905169722](../assets/screenshot-1641905169722.jpg)
+![screenshot-1641905169722.jpg](../../assets/screenshot-1641905169722.jpg)
 
 Dann können Sie den Link zum Impressum direkt eingeben und er wird auch so im Frontend genutzt.
 
@@ -18,31 +18,22 @@ Daher ist der Haken standardmäßig nicht gesezt **und** Sie sollten gut überle
 
 ### In einem neuen Tab öffnen
 
-Ist der Haken gesetzt öffnen sich die Links in einem neuen Fenster mit target="_blank"
+Ist der Haken gesetzt öffnen sich die Links in einem neuen Fenster mit target="\_blank"
 
 ## Impressum bearbeiten
 
 Das Impressum können Sie in der Administration direkt erstellen und bearbeiten, auf dem folgenden Screenshot sehen Sie die Bearbeitungsmaske.
 
-![screenshot-2020.09.30-12_55_46-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-12_55_46-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
-
-
+![screenshot-2020.09.30-12_55_46-CCM19 - Cookie Consent Management Software.jpg](<../../assets/screenshot-2020.09.30-12_55_46-CCM19 - Cookie Consent Management Software.jpg>)
 
 ## Impressum im Frontend
 
 Um der DSGVO genüge zu tun bindet CCM19 die Möglichkeit ein das Impressum entweder direkt im Widget erreichbar zu machen, wie auf dem Screenshot zu sehen oder zu verlinken.
 
-
-
-![screenshot-2020.09.30-12_47_26-CCM19 - Cookie Consent Management Software](../assets/screenshot-2020.09.30-12_47_26-CCM19%20-%20Cookie%20Consent%20Management%20Software.jpg)
-
-
+![screenshot-2020.09.30-12_47_26-CCM19 - Cookie Consent Management Software.jpg](<../../assets/screenshot-2020.09.30-12_47_26-CCM19 - Cookie Consent Management Software.jpg>)
 
 Der Link öffnet dann eine Maske wo das Impressum der Seite ausgeben wird - wie hier zu sehen ist.
 
 ## Direkte Anzeige des Impressums
 
-![screenshot-2020.09.30-12_51_32](../assets/screenshot-2020.09.30-12_51_32.jpg)
-
-
-
+![screenshot-2020.09.30-12_51_32.jpg](../../assets/screenshot-2020.09.30-12_51_32.jpg)

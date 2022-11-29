@@ -2,9 +2,7 @@
 
 Das Domaindashboar. Hier landen Sie direkt nachdem Sie eine Domain ausgewählt haben im Domain Manager. In diesem Dashboard sind einige Grundfunktionen aufgeführt.
 
-
-![screenshot-1641854392504](../assets/screenshot-1641854392504.jpg)
-
+![screenshot-1641854392504.jpg](../../assets/screenshot-1641854392504.jpg)
 
 ## Quicksetup
 
@@ -16,18 +14,17 @@ Der wichtigeste Punkt an diesers Stelle - hier finden Sie das HTML Schnipsel das
 
 Kopieren Sie den Eintrag der dort gelistet ist - wie hier z.B. zu sehen.
 
-![screenshot-1641854392504 (1)](../assets/screenshot-1641854392504%20(1).jpg)
+![screenshot-1641854392504 (1).jpg](<../../assets/screenshot-1641854392504 (1).jpg>)
 
 Sie sollten natürlich den Eintrag aus der Oberfläche nutzen und nicht den hier aus der Dokumentation :-)
 
 In der Maske können Sie auswählen in welcher Sprache die Maske dargestellt werden soll, generell ist es auch möglich dass die Maske die Sprache des Besuchers aus dem Browser ausliest **und** es gibt die Möglichkeit die Sprache im Frontend Widget auszuwählen.
 
-
 ## Konfigurationsbox erneut öffnen per Link
 
 Sie möchten Ihren Besuchern die Möglichkeit geben, sich nachträglich noch umzuentscheiden und z.B. doch keine Analyse-Cookies zuzulassen? Fügen Sie einfach folgendes HTML Snippet ein:
 
-``` html
+```
 <a href="#" onclick="CCM.openWidget();return false;">Konfigurationsbox öffnen</a>
 ```
 
@@ -35,7 +32,7 @@ Somit wird beim Klick auf diesen Link das Konfigurations Pop-Up erneut für den 
 
 Alternativ, falls Sie keine Javascript-Links einfügen können, können Sie das folgende Ziel in einem Link verwenden: **#CCM.openWidget**.
 
-```html
+```
 <a href="#CCM.openWidget">Konfigurationsbox öffnen</a>
 ```
 
