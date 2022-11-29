@@ -1,7 +1,3 @@
----
-
-## title: Installation
-
 # Installation der Downloadversion
 
 Diesen Teil brauchen Sie nur dann, wenn Sie eine Downloadversion heruntergeladen haben und diese installieren wollen. Die meisten Kunden nutzen unsere Cloudvariante. Für diese ist dieser Teil nicht relevant.

@@ -1,7 +1,3 @@
----
-
-## title: Login
-
 # CCM19 Login & Passwörter
 
 Wenn Sie CCM19 aufrufen - egal mit welcher Version - sehen Sie als erstes das Loginfenster. Loggen Sie sich dort mit ihren Accountdaten ein. Falls Sie Ihr Passwort vergessen haben, können Sie die “Passwort vergessen” Option nutzen.
