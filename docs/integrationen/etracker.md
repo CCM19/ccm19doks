@@ -36,5 +36,3 @@ Um das zu ermöglichen, muss CCM19 die Information, dass der Webseitenbesucher d
 ```
 
 Wichtig ist hierbei, dass der Name der Variable in `i.name == 'eTracker'` immer mit dem Namen der eTracker-Einbindung in CCM19 übereinstimmt. Wenn die Einbindung "eTracker" heißt, muss also nichts geändert werden.
-
-Sollte der eTracker-Code nicht durch die Einbindung von CCM19 geblockt werden, sollte das obige Skript besser in eine technisch notwendige Einbindung verschoben werden, damit es immer ausgeführt wird, um auch ggf. die Funktion `_etracker.disableCookies` ausführen zu können. Hierfür bietet sich beispielsweise die technisch notwendige Einbindung des CCM19 selbst an.
