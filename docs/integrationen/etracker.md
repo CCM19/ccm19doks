@@ -1,6 +1,8 @@
 # eTracker richtig einrichten
 
-Um zu ermöglichen, dass eTracker ohne Consent im Modus ohne Cookies arbeitet und nach Consent zusätzlich das Tracking mithilfe von Cookies aktiviert wird, muss unter "Einbindungen & Cookies" im Eintrag von eTracker im Feld "Quellcode der Einbindung" folgender Code hinterlegt werden:
+eTracker bietet die Möglichkeit des Trackings ohne das Setzen von Cookies an. Diese Art des Trackings ist dadurch auch ohne Zustimmung des Webseitenbesuchers möglich und kann auch aktiv bleiben, wenn alle Cookies abgelehnt wurden. Beim Tracking ohne Cookies können allerdings nicht mehr im gewohnten Maß Daten erfasst werden, so dass idealerweise nach Consent des Users in den Tracking-Modus gewechselt wird, bei dem Cookies gesetzt werden.
+
+Um das zu ermöglichen, muss CCM19 die Information, dass der Webseitenbesucher der Nutzung von eTracker-Cookies zugestimmt hat, an eTracker übermitteln. Um das zu ermöglichen, muss in einer technisch notwendigen Einbindung (beispielsweise die Einbindung von CCM19 selbst, die immer vorhanden ist und ausgeführt wird) unter "Einbindungen & Cookies" im Feld "Quellcode der Einbindung" folgender Code hinterlegt werden:
 
 ```html
 <script defer>
