@@ -106,6 +106,7 @@ nav:
         - integrationen/ccm19-magento.md
         - integrationen/ccm19-typo3.md
         - integrationen/ccm19-joomla.md
+        - integrationen/etracker.md
       - API & Co.:
           - api/javascript-apis.md
           - api/google-tag-manager.md
